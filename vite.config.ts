@@ -21,6 +21,28 @@ import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 
 const baseUrl = process.env.BASE_URL || '/';
 
+const VITE_AVAILABLE_LOCALES = process.env.VITE_AVAILABLE_LOCALES;
+console.log(`Building for locales: ${VITE_AVAILABLE_LOCALES}`);
+
+let includeLocales = [
+  resolve(__dirname, 'locales/en.yml'),
+];
+if (!process.env.VITEST) {
+  if (!VITE_AVAILABLE_LOCALES || VITE_AVAILABLE_LOCALES === '*' || VITE_AVAILABLE_LOCALES === 'all') {
+    includeLocales = [
+      resolve(__dirname, 'src/tools/*/locales/**'),
+      resolve(__dirname, 'locales/**'),
+    ];
+  }
+  else {
+    const fileNameMatching = VITE_AVAILABLE_LOCALES.includes(',') ? `{${VITE_AVAILABLE_LOCALES}}` : VITE_AVAILABLE_LOCALES;
+    includeLocales = [
+      resolve(__dirname, `src/tools/*/locales/${fileNameMatching}.*`),
+      resolve(__dirname, `locales/${fileNameMatching}.*`),
+    ];
+  }
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -28,14 +50,7 @@ export default defineConfig({
       runtimeOnly: true,
       compositionOnly: true,
       fullInstall: true,
-      include: !process.env.VITEST
-        ? [
-            resolve(__dirname, 'src/tools/*/locales/**'),
-            resolve(__dirname, 'locales/**'),
-          ]
-        : [
-            resolve(__dirname, 'locales/en.yml'),
-          ],
+      include: includeLocales,
       strictMessage: false,
       escapeHtml: true,
     }),
