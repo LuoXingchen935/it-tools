@@ -18,6 +18,10 @@ RUN pnpm build
 
 # production stage
 FROM nginxinc/nginx-unprivileged:stable-alpine AS production-stage
+
+LABEL maintainer="ShareVB <sharevb@gmail.com>" \
+      org.opencontainers.image.authors="ShareVB <sharevb@gmail.com>"
+
 ENV VITE_VERCEL_ENV=production
 ARG BASE_URL
 ENV BASE_URL=${BASE_URL}
