@@ -4,6 +4,9 @@
   maybe: Ίσως η προσωρινή μνήμη κάνει δύσκολα πράγματα, δοκιμάστε αναγκαστική
     ανανέωση;
   backHome: Πίσω στο σπίτι
+  page:
+    text:
+      page-not-found-it-tools: Η σελίδα δεν βρέθηκε - Εργαλεία IT
 about:
   alltools-title: Όλα τα {toolsCount} εργαλεία
   tools:
@@ -54,6 +57,13 @@ about:
   import-button: Εισαγωγή
   favorites-imported-successfully: Τα αγαπημένα εισήχθησαν με επιτυχία!
   error-importing-favorites-e: "Σφάλμα εισαγωγής αγαπημένων: {0}"
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Συλλογή εύχρηστων διαδικτυακών εργαλείων για προγραμματιστές, με
+      εξαιρετική εμπειρία χρήστη. Το IT Tools είναι μια δωρεάν και ανοιχτού
+      κώδικα συλλογή εύχρηστων διαδικτυακών εργαλείων για προγραμματιστές και
+      άτομα που εργάζονται στον τομέα της πληροφορικής.
+    about-it-tools: Σχετικά με εμάς - Εργαλεία πληροφορικής
 favoriteButton:
   remove: Αφαίρεση από τα αγαπημένα
   add: Προσθήκη στα αγαπημένα
@@ -109,6 +119,14 @@ home:
     lightMode: Λειτουργία φωτισμού
     mode: Εναλλαγή λειτουργίας σκούρου/φωτεινού
     aboutLabel: Για
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Συλλογή εύχρηστων διαδικτυακών εργαλείων για προγραμματιστές, με
+        εξαιρετική εμπειρία χρήστη. Το IT Tools είναι μια δωρεάν και ανοιχτού
+        κώδικα συλλογή εύχρηστων διαδικτυακών εργαλείων για προγραμματιστές και
+        άτομα που εργάζονται στον τομέα της πληροφορικής.
+      it-tools-handy-online-tools-for-developers: Εργαλεία IT - Χρήσιμα διαδικτυακά εργαλεία για προγραμματιστές
 tools:
   chronometer:
     title: Χρονόμετρο
@@ -134,8 +152,8 @@ tools:
       refresh: Φρεσκάρω
     texts:
       label-denied-characters-ie-visually-similar-oo01li-or-punctuations:
-        Χαρακτήρες που δεν επιτρέπονται (δηλαδή, οπτικά παρόμοιοι {'{'} oO01lI {'}'} ή
-        σημεία στίξης)
+        Χαρακτήρες που δεν επιτρέπονται (δηλαδή, οπτικά παρόμοιοι {'{'} oO01lI
+        {'}'} ή σημεία στίξης)
       placeholder-put-characters-to-deny-from-token: Τοποθετήστε χαρακτήρες προς απόρριψη από το διακριτικό
       label-number-of-token-to-generate: Αριθμός διακριτικών προς δημιουργία
   percentage-calculator:
@@ -467,6 +485,7 @@ tools:
       tag-preview-image: Προεπισκόπηση εικόνας
       tag-download-file: Λήψη αρχείου
       tag-copy: Αντίγραφο
+      include-data-uri-prefix: "Συμπερίληψη δεδομένων: πρόθεμα URI"
   list-converter:
     title: Μετατροπέας λίστας
     description: Αυτό το εργαλείο μπορεί να επεξεργάζεται δεδομένα που βασίζονται σε
@@ -757,6 +776,10 @@ tools:
       tag-refresh-key-pair: Ανανέωση ζεύγους κλειδιών
       tag-public-key: Δημόσιο κλειδί
       tag-private-key: Ιδιωτικό κλειδί
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8:
+        Τα bits πρέπει να είναι 256 <= bits <= 16384 και να είναι πολλαπλάσιο
+        του 8
   html-wysiwyg-editor:
     title: Επεξεργαστής HTML WYSIWYG
     description: Διαδικτυακός, πλούσιος σε λειτουργίες επεξεργαστής HTML WYSIWYG που
@@ -989,6 +1012,8 @@ tools:
       tag-quantity: Ποσότητα
       tag-copy: Αντίγραφο
       tag-refresh: Φρεσκάρω
+      uppercase: Κεφαλαία γράμματα
+      no-hyphen: Χωρίς παύλα
   nanoid-generator:
     title: Γεννήτρια NanoIDs
     description: Δημιουργήστε τυχαία, μοναδικά και φιλικά προς τις διευθύνσεις URL
@@ -1545,6 +1570,10 @@ tools:
       tag-certificate-signing-request: Αίτημα υπογραφής πιστοποιητικού
       tag-public-key: Δημόσιο κλειδί
       tag-private-key: Ιδιωτικό κλειδί
+      label-rsa-bits: "RSA Bits:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8:
+        Τα bits πρέπει να είναι 256 <= bits <= 16384 και να είναι πολλαπλάσιο
+        του 8
   css-prettifier:
     title: Βελτιωτής CSS
     description: CSS Prettify
@@ -2007,6 +2036,7 @@ tools:
       label-file-name: "Όνομα αρχείου:"
       label-extension: "Επέκταση:"
       label-mime-type: "Τύπος MIME:"
+      an-error-occured-processing: Παρουσιάστηκε σφάλμα κατά την επεξεργασία
   folder-structure-diagram:
     title: Διάγραμμα δομής φακέλου
     description: βοηθητικό πρόγραμμα τύπου δέντρου για τη δημιουργία διαγραμμάτων
@@ -2111,6 +2141,8 @@ tools:
       label-pib: PiB
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1MiB = 1024KiB; 1MB = 1000kB; 1GiB = 1024MiB; 1GB = 1000MB;
       tag-see-here-for-details: δείτε εδώ για λεπτομέρειες
+      column-decimal: Δεκαδικός
+      column-binary: Δυάδικος
   heic-converter:
     title: Μετατροπέας HEIC
     description: Μετατροπέας HEIC σε JPEG ή PNG
@@ -2121,6 +2153,8 @@ tools:
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file:
         Σύρετε και αποθέστε ένα αρχείο HEIC εδώ ή κάντε κλικ για να επιλέξετε
         ένα αρχείο
+      an-error-occured-processing-heic-heif-is-invalid: "Παρουσιάστηκε σφάλμα κατά την
+        επεξεργασία: Το HEIC/HEIF δεν είναι έγκυρο."
   hex-file-converter:
     title: Μετατροπέας αρχείων HEX
     description: Μετατροπή μεταξύ αρχείου και δεκαεξαδικής αναπαράστασης
@@ -2192,6 +2226,9 @@ tools:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file:
         Σύρετε και αποθέστε εδώ ένα αρχείο ICO ή PNG/JPEG ή κάντε κλικ για να
         επιλέξετε ένα αρχείο
+      an-error-occured-processing: Παρουσιάστηκε σφάλμα κατά την επεξεργασία
+      invalid-ico-file: Μη έγκυρο αρχείο ICO!
+      invalid-png-file: Μη έγκυρο αρχείο PNG!
   illuminance-converter:
     title: Μετατροπέας Φωτισμού
     description: Μετατροπέας μονάδων φωτισμού (Lux, Foot Candles, Nox, Phot, Flame)
@@ -2210,6 +2247,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Στη συνέχεια, σύρετε και αποθέστε τις εικόνες σας παρακάτω και θα
         μετατραπούν και θα ληφθούν αμέσως:"
+      invalid-image-file: Μη έγκυρο αρχείο εικόνας!
+      an-error-occured-processing: Παρουσιάστηκε σφάλμα κατά την επεξεργασία
   image-exif-reader:
     title: Αναγνώστης εικόνας EXIF/Μεταδεδομένα/GPS/JPEG ποιότητας
     description: Διαβάστε EXIF, IPTC, XMP, GPS και άλλα μεταδεδομένα, ποιότητα JPEG
@@ -2420,6 +2459,7 @@ tools:
       tag-iso2-iso3: Iso2/Iso3
       tag-name-and-info: Όνομα και Πληροφορίες
       tag-gt-see-on-openstreetmap: "> Δείτε στο OpenStreetMap"
+      loading-more-results: Φόρτωση περισσότερων αποτελεσμάτων...
   javascript-prettifier:
     title: Προγραμματιστής Javascript
     description: JS/Javascript Prettifier
@@ -2946,6 +2986,12 @@ tools:
       placeholder-passphrase: Κωδικό πρόσβασης...
       tag-copy: Αντίγραφο
       tag-refresh: Φρεσκάρω
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Δεν είναι δυνατή η δημιουργία κωδικού πρόσβασης [{0} - {1}]
+        χαρακτήρων με τις τρέχουσες ρυθμίσεις, δοκιμάστε να αλλάξετε τον αριθμό
+        λέξεων"
+      words-words: Λέξεις ({0})
+      label-min-passphrase-len: "Ελάχιστη φράση πρόσβασης len:"
   paste-as-markdown:
     title: Επικόλληση ως Markdown
     description: Επικόλληση κελιών/πινάκων και συνδέσμων από το περιεχόμενο του
@@ -3016,10 +3062,10 @@ tools:
         αρχείο
       title-logs: Αρχεία καταγραφής
       label-qpdf: qpdf
-      label-password: 'Κωδικός πρόσβασης:'
+      label-password: "Κωδικός πρόσβασης:"
       placeholder-password: Κωδικός πρόσβασης
       tag-decrypt-pdf: Αποκρυπτογραφία PDF
-      tag-output-file: 'Αρχείο εξόδου:'
+      tag-output-file: "Αρχείο εξόδου:"
   pgp-encryption:
     title: Κρυπτογράφηση PGP
     description: Κρυπτογράφηση και αποκρυπτογράφηση κειμένου με χρήση κλειδιών PGP.
@@ -3975,6 +4021,8 @@ tools:
       label-permanent: Μόνιμος
       title-generated-fw-command: "Δημιουργήθηκε εντολή fw:"
       tag-const-zone-ref: σταθερή ζώνη = αναφ.
+    title: γεννήτρια γραμμής εντολών firewalld
+    description: Δημιουργία γραμμών εντολών firewalld
   fortune-wheel:
     title: Τροχός της τύχης
     description: Ένας διαμορφώσιμος τροχός τύχης
@@ -4880,6 +4928,9 @@ tools:
     physics: Φυσική
     cheatsheets: Φύλλα με cheatsheets
     forensic: Δικανικός
+    finance: Οικονομικά
+    default: Αθέτηση
+    toml: ΤΟΜΛ
   websocket-tester:
     title: Δοκιμή Websocket
     description: Επιτρέπει τον έλεγχο συνδέσεων WebSocket
@@ -5976,6 +6027,8 @@ tools:
     layout:
       text:
         made-with-npmpackages: Φτιαγμένο με {0}
+        runs-entirely-in-your-browser-no-external-requests: Εκτελείται εξ ολοκλήρου στο
+          πρόγραμμα περιήγησής σας. Δεν απαιτούνται εξωτερικά αιτήματα.
   json-viewer:
     texts:
       label-sort-keys: "Κλειδιά ταξινόμησης:"
@@ -6488,6 +6541,9 @@ tools:
       label-django-secret-key: "Μυστικό κλειδί Django:"
       tag-copy: Αντίγραφο
       tag-regenerate: Αναγεννηθείς
+    service:
+      texts:
+        generating-range-is-too-large: Η εμβέλεια παραγωγής είναι πολύ μεγάλη
   dnsbl-checker:
     title: Έλεγχος DNSBL
     description: Ελέγξτε εάν μια δεδομένη IP βρίσκεται σε κάποιον από τους γνωστούς
@@ -6538,6 +6594,7 @@ tools:
       title-html-head-tags: 📄 Ετικέτες κεφαλίδας HTML
       tag-upload-png-image: Μεταφόρτωση εικόνας PNG
       tag-download-zip: 📦 Λήψη ZIP
+      invalid-png-file: Μη έγκυρο αρχείο PNG!
   font-compare:
     title: Σύγκριση γραμματοσειρών
     description: Σύγκριση με γραμματοσειρές σε ένα δεδομένο κείμενο
@@ -6623,6 +6680,12 @@ tools:
       label-fallback: "Εφεδρικό:"
       placeholder-fallback-font: Εφεδρική γραμματοσειρά
       tag-defineprops: ορισμόςΠροσθετών
+    text:
+      by-font-name: Με όνομα γραμματοσειράς
+      by-font-url: Ανά URL γραμματοσειράς
+      by-font-file: Ανά αρχείο γραμματοσειράς
+      by-inline-css: Με ενσωματωμένο CSS
+      by-css-url: Ανά CSS URL
   gpt-token-encoder:
     title: Κωδικοποιητής/Αποκωδικοποιητής διακριτικών GPT
     description: Κωδικοποίηση κειμένου σε διακριτικά GPT και αποκωδικοποίηση
@@ -6660,6 +6723,10 @@ tools:
       tag-original-image: Αρχική εικόνα
       tag-inverted-image: Ανεστραμμένη εικόνα
       tag-clear-upload-new: Εκκαθάριση & Μεταφόρτωση Νέου
+    service:
+      texts:
+        file-must-be-an-image: Το αρχείο πρέπει να είναι εικόνα
+        failed-to-process-image-err: "Αποτυχία επεξεργασίας εικόνας:"
   image-comparer:
     title: Σύγκριση εικόνων
     description: Ένα εργαλείο για οπτική σύγκριση εικόνων
@@ -6674,6 +6741,9 @@ tools:
       tag-compare: Συγκρίνω
       tag-upload-left: Μεταφόρτωση αριστερά
       tag-upload-right: Μεταφόρτωση δεξιά
+    text:
+      compare-by-url: Σύγκριση με βάση τη διεύθυνση URL
+      compare-by-upload: Σύγκριση με μεταφόρτωση
   logrotate-generator:
     title: Γεννήτρια Apache LogRotate
     description: Δημιουργία διαμόρφωσης εναλλαγής Apache .log
@@ -6802,6 +6872,15 @@ tools:
       label-decimal: "Δεκαδικός:"
       label-octal: "Οκτάεδρος:"
       label-hexadecimal: "Δεκαεξαδικό:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Μη έγκυρη εισαγωγή δεκαεξαδικού. Επιτρέπονται μόνο 0-9 και A-F.
+        invalid-1: Ακυρος
+        invalid-0: Ακυρος
+        invalid: Ακυρος
+        unsupported-middle-endian-format: Μη υποστηριζόμενη μορφή middle-endian.
+        failed-to-parse-bytes: Αποτυχία ανάλυσης byte.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Η εισαγωγή πρέπει να είναι {0} δεκαεξαδικοί χαρακτήρες για {1}-bit.
   mttdl-calculator:
     title: Υπολογιστής αξιοπιστίας RAID
     description: Υπολογίζει την αξιοπιστία του συστήματος αποθήκευσης
@@ -6947,6 +7026,11 @@ tools:
       tag-convert: Μετατρέπω
       tag-axial: Αξονικός
       tag-radial: Ακτινικός
+    text:
+      bands-notation: Ζώνες → Σημειογραφία
+      notation-bands: Σημειογραφία → Ζώνες
+      number-notation: Αριθμός → Σημειογραφία
+      notation-number: Σημειογραφία → Αριθμός
   sed-command-generator:
     title: Γεννήτρια εντολών Sed
     description: Δημιουργία εντολών sed σε unix
@@ -7334,6 +7418,9 @@ tools:
       title-mw-to-dbm: mW σε dBm
       label-mw-value: "Τιμή mW:"
       label-corresponding-dbm-value: "Αντίστοιχη τιμή dBm:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Η ισχύς σε milliwatt πρέπει να είναι μεγαλύτερη από 0
   diceware-generator:
     title: Γεννήτρια κωδικών πρόσβασης Diceware
     description: Δημιουργήστε τυχαίο κωδικό πρόσβασης χρησιμοποιώντας τη μέθοδο Diceware
@@ -7568,6 +7655,9 @@ tools:
       label-signature: Υπογραφή
       label-arguments: Επιχειρήματα
       title-structured-output-json: Δομημένη έξοδος JSON
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Τα δεδομένα συναλλαγής πρέπει να ξεκινούν με 0x
   file-splitter:
     title: Διαχωριστής αρχείων
     description: Διαχωρισμός αρχείου JSON, XML ή κειμένου είτε ανά ομάδα κόμβων είτε
@@ -7586,6 +7676,9 @@ tools:
       tag-process-chunks: Τμήματα διεργασίας
       tag-download-all: Λήψη όλων
       tag-download: Λήψη
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Μη υποστηριζόμενη μορφή ή μη έγκυρο περιεχόμενο
   gitignore-generator:
     title: Γεννήτρια GitIgnore
     description: Δημιουργήστε το .gitignore για ένα σύνολο κοινών προτύπων
@@ -7700,6 +7793,8 @@ tools:
         αρχείο
       title-logs: Αρχεία καταγραφής
       label-ghostscript: Ghostscript
+      process-run-failed: Η εκτέλεση της διεργασίας απέτυχε
+      an-error-occured-processing: Παρουσιάστηκε σφάλμα κατά την επεξεργασία
   serial-console:
     title: Κονσόλα σειριακής θύρας
     description: Σύνδεση, ανάγνωση και αποστολή μηνύματος σε σειριακή θύρα
@@ -7940,6 +8035,8 @@ tools:
       tag-esc: ΟΚΕ
       tag-exit-dead-pixel-mode: ": Έξοδος από τη λειτουργία Dead Pixel"
       tag-start-dead-pixel: Έναρξη νεκρού εικονοστοιχείου
+    title: Δοκιμαστής νεκρών εικονοστοιχείων
+    description: Εργαλείο για να ελέγξετε αν ένα pixel στην οθόνη σας είναι νεκρό ή όχι.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Εξαιρούνται τα προθέματα SI
@@ -7967,6 +8064,13 @@ tools:
       tag-convert-batch: Μετατροπή παρτίδας
       tag-longitude-east-is-positive-west-is-negative: "Γεωγραφικό μήκος: Η Ανατολή είναι θετική, η Δύση είναι αρνητική."
       tag-latitude-north-is-positive-south-is-negative: "Γεωγραφικό πλάτος: Ο Βορράς είναι θετικός, ο Νότος είναι αρνητικός."
+    text:
+      coordinate-system: Σύστημα Συντεταγμένων
+      decimal-format-lng-lat: Δεκαδική μορφή (μήκος, πλάτος)
+      dms-format-lng-lat: Μορφή DMS (μήκος, πλάτος)
+      download-results-csv: Λήψη αποτελεσμάτων σε μορφή CSV
+      batch-lat-lng-converter: Μετατροπέας Παρτίδας Γεωγραφικού Πλάτους/Υγρού
+      single-lat-lng-converter: Μετατροπέας μονού γεωγραφικού πλάτους/υγρού
   si-prefixes-converter:
     title: Μετατροπέας προθεμάτων SI
     description: Μετατροπή μεταξύ προθεμάτων μετρικών
@@ -8123,7 +8227,6 @@ tools:
       tag-back: Πίσω (←)
       tag-next: Επόμενο (→)
       tag-reset: Επαναφορά
-      tag-: ↓
       tag-or: "- Ή -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Ελέγξτε την αναπαραγωγή και την πλοήγηση χωρίς να αγγίξετε το ποντίκι.
       tag-shortcut: Συντομότερος τρόπος
@@ -8142,6 +8245,16 @@ tools:
       tag-jump-to-start: Μετάβαση στην αρχή
       tag-end: Τέλος
       tag-jump-to-end: Μετάβαση στο τέλος
+    text:
+      please-provide-some-text-first: Παρακαλώ δώστε πρώτα κάποιο κείμενο.
+      unsupported-file-type: Μη υποστηριζόμενος τύπος αρχείου.
+      display: Επίδειξη
+      text: Κείμενο
+      settings: Ρυθμίσεις
+      keyboard-shortcuts: Συντομεύσεις πληκτρολογίου
+      ready: Ετοιμος
+      words: λόγια
+      wpm: WPM
   speed-converter:
     title: Μετατροπέας ταχύτητας
     description: Μετατροπή τιμών μεταξύ μονάδων ταχύτητας
@@ -8192,7 +8305,617 @@ tools:
       tag-apply-configuration: Εφαρμογή διαμόρφωσης
       tag-clear-logs: Διαγραφή αρχείων καταγραφής
       tag-send: Στέλνω
+      already-connected: ⚠️ Ήδη συνδεδεμένος
+      connected-to-websocket-bridge: ✅ Συνδεδεμένο με τη γέφυρα WebSocket
+      disconnected: 🔌 Αποσυνδεδεμένος
+      no-active-connection: ⚠️ Δεν υπάρχει ενεργή σύνδεση
+      sent-text: "➡️ Απεσταλμένο μήνυμα:"
+      configured: ⚙️ Διαμορφωμένο
+      sent-hex: "➡️ Απεσταλμένο δεκαεξαδικό:"
+      disconnecting: 🔻 Αποσύνδεση...
+      error: "❌ Σφάλμα:"
+      end: "🛑 Τέλος:"
+      text: "📩 Κείμενο:"
+      binary: "📩 Δυαδικό:"
+    text:
+      connected: Συνδεδεμένος
+      disconnected: Ασύνδετος
   volume-flow-rate-converter:
     title: Μετατροπέας ρυθμού ροής όγκου
     description: Μετατροπή τιμών μεταξύ μονάδων ογκομετρικής ροής
     externalAccess: άκυρος
+  tip-calculator:
+    title: Υπολογιστής φιλοδωρήματος
+    description: Υπολογίστε το φιλοδώρημα για έναν λογαριασμό και μοιράστε το σε
+      πολλά άτομα.
+    texts:
+      title-bill-details: Λεπτομέρειες Λογαριασμού
+      label-bill-amount: "Ποσό Λογαριασμού:"
+      placeholder-total-bill: Συνολικός λογαριασμός
+      label-tip-percentage: "Ποσοστό φιλοδωρήματος:"
+      placeholder-tip: "% φιλοδωρήματος"
+      label-number-of-person: "Αριθμός ατόμων:"
+      placeholder-people: Ανθρωποι
+      title-results: Αποτελέσματα
+      label-tip-amount: "Ποσό φιλοδωρήματος:"
+      label-total-bill: "Συνολικός Λογαριασμός:"
+      label-amount-per-person: "Ποσό ανά άτομο:"
+      title-quick-tip: Γρήγορη συμβουλή %
+      tag-const-billamount-ref: const billAmount = αναφ.
+      tag-: "%"
+  json-to-env:
+    title: JSON σε .env
+    description: Μετατρέψτε ένα επίπεδο αντικείμενο JSON σε αρχείο .env. Τα κλειδιά
+      γράφονται με κεφαλαία γράμματα και οι τιμές τοποθετούνται με ασφάλεια σε
+      εισαγωγικά όταν περιέχουν κενά διαστήματα, εισαγωγικά ή ειδικούς
+      χαρακτήρες env.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: Εφόσον το JSON δεν είναι έγκυρο επίπεδο αντικείμενο.
+      input-label-your-json: Το JSON σας
+      input-placeholder-paste-your-json-here: Επικολλήστε το JSON σας εδώ...
+      output-label-env-from-your-json: .env από το JSON σας
+  calendar-converter:
+    service:
+      text:
+        sunday: Κυριακή
+        wednesday: Τετάρτη
+        tuesday: Τρίτη
+        monday: Δευτέρα
+        thursday: Πέμπτη
+        friday: Παρασκευή
+        saturday: Σάββατο
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Μη έγκυρο μήκος έτους: {0} ημέρες."
+        common-deficient-353-days: Συχνή ανεπάρκεια (353 ημέρες)
+        common-regular-354-days: Κοινή τακτική (354 ημέρες)
+        common-complete-355-days: Κοινή πλήρης (355 ημέρες)
+        embolismic-deficient-383-days: Εμβολική ανεπάρκεια (383 ημέρες)
+        embolismic-regular-384-days: Τακτικό εμβολικό (384 ημέρες)
+        embolismic-complete-385-days: Πλήρης εμβολική επέμβαση (385 ημέρες)
+        normal-year: Κανονικό έτος
+        leap-year: Δίσεκτος χρόνος
+    title: Μετατροπέας ημερολογίου
+    description: Μετατροπή ημερομηνιών και ωρών μεταξύ Γρηγοριανού, Ιουλιανού,
+      Εβραϊκού, Ισλαμικού, Περσικού, Μάγια, Ινδικού, Γαλλικού Ρεπουμπλικανικού,
+      ISO‑8601, ώρας Unix και σειριακών μορφών Excel
+    externalAccess: άκυρος
+    texts:
+      label-january: Ιανουάριος
+      label-february: Φεβρουάριος
+      label-march: Πορεία
+      label-april: Απρίλιος
+      label-may: Μάιος
+      label-june: Ιούνιος
+      label-july: Ιούλιος
+      label-august: Αύγουστος
+      label-september: Σεπτέμβριος
+      label-october: Οκτώβριος
+      label-november: Νοέμβριος
+      label-december: Δεκέμβριος
+      label-nisan-נִיסָן: Νισάν
+      label-iyyar-אִיָּר: Ιγιάρ (Ιγιάρ)
+      label-sivan-סִיוָן: Σιβάν
+      label-tammuz-תַּמּוּז: Ταμούζ
+      label-av-אָב: Μέσος όρος (Μέσος όρος)
+      label-elul-אֱלוּל: Ελούλ
+      label-tishri-תִּשְׁרֵי: Τισρί
+      label-heshvan-חֶשְׁוָן: Χεσβάν (Χεσβάν)
+      label-kislev-כִּסְלֵו: Κισλέβ
+      label-teveth-טֵבֵת: Τεβέθ
+      label-shevat-שְׁבָט: Σεβάτ (שאבט)
+      label-adar-adar-i-אֲדָר: Αντάρ/Αντάρ Ι (Αντάρ)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Βεαντάρ/Αντάρ II (Δεύτερο Αντάρ)
+      label-muharram-مُحَرَّم: Μουχάραμ (مُحَرَّم)
+      label-safar-صَفَر: Σαφάρ (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath-Thani (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al-Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Ρατζάμπ (رجب)
+      label-shaʿban-شَعْبان: Σαμπάν (شعبان)
+      label-ramadan-رَمَضان: Ραμαζάνι
+      label-shawwal-شَوّال: Σαουάλ
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al-Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al-Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: Φαρβαρντίν (Φαρβαρντίν)
+      label-ordibehesht-اردیبهشت: Ορντιμπεχέστ (Ορντιμπεχέστ)
+      label-khordad-خرداد: Χορντάντ (Χορντάντ)
+      label-tir-تیر: Τιρ (Τιρ)
+      label-mordad-مرداد: Μορντάντ (Μορντάντ)
+      label-shahrivar-شهریور: Σαχριβάρ (Σαχριβάρ)
+      label-mehr-مهر: Μεχρ (Μεχρ)
+      label-aban-آبان: Αμπάν (Νοέμβριος)
+      label-azar-آذر: Αζάρ (Αζάρ)
+      label-dey-دی: Ντέι (Το)
+      label-bahman-بهمن: Μπαχμάν (Μπαχμάν)
+      label-esfand-اسفند: Εσφάντ (Μάρτιος)
+      label-caitra-चैत्र: Κάιτρα (Τσάιτρα)
+      label-vaisakha-वैशाख: Βαϊσάχα (Βαϊσάχ)
+      label-jyaistha-ज्येष्ठ: Τζάιστα (Πρεσβύτερος)
+      label-asadha-आषाढ़: Ασάντα
+      label-sravana-श्रावण: Σραβάνα
+      label-bhadra-भाद्रपद: Μπάντρα (Μπαδραπάντα)
+      label-asvina-आश्विन: Ασβίνα (Άσουιν)
+      label-kartika-कार्तिक: Καρτίκα
+      label-agrahayana-अग्रहायण: Αγκραταγιάνα (Ακραταγιάνα)
+      label-pausa-पौष: Παύση
+      label-magha-माघ: Μάγκα
+      label-phalguna-फाल्गुन: Φαλγκούνα
+      label-vendémiaire: Βεντεμιέρ
+      label-brumaire: Μπρυμαίρ
+      label-frimaire: Φριμαίρ
+      label-nivôse: Νιβόζ
+      label-pluviôse: Πλουβιόζε
+      label-ventôse: Βεντόζε
+      label-germinal: Σπερματικός
+      label-floréal: Φλορεάλ
+      label-prairial: Πραιρία
+      label-messidor: Μεσσιδόρ
+      label-thermidor: Θερμιδώρ
+      label-fructidor: Φρουκτιδόρ
+      label-sans-culottides: Σανς-κουλοτίδες
+      label-i: εγώ
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Πριμίντι (1)
+      label-duodi-2: Δώστε (2)
+      label-tridi-3: Τρία (3)
+      label-quartidi-4: Τεταρτημόρια (4)
+      label-quintidi-5: Κοϊντίδιος (5)
+      label-sextidi-6: Σεξτίντι (6)
+      label-septidi-7: Septidi (7)
+      label-octidi-8: Οκτίδιο (8)
+      label-nonidi-9: Πράγματι (9)
+      label-décadi-10: Δεκαδικά (10)
+      label-vertu-1: Αρετή (1)
+      label-génie-2: Ιδιοφυΐα (2)
+      label-travail-3: Εργασία (3)
+      label-opinion-4: Γνώμη (4)
+      label-récompenses-5: Ανταμοιβές (5)
+      label-révolution-6: Επανάσταση (6)
+      tab-gregorian: γρηγοριανός
+      label-date: Ημερομηνία
+      label-leap: "Πήδημα:"
+      label-time: "Φορά:"
+      label-weekday: "Καθημερινή:"
+      tab-julian-day: Τζούλιαν Ντέι
+      label-julian-day: "Τζούλιαν Ντέι:"
+      tab-modified-julian: Τροποποιημένος Ιουλιανός
+      label-modified-julian-day: "Τροποποιημένη Ημέρα Ιουλιανού:"
+      tab-julian-calendar: Ιουλιανό ημερολόγιο
+      tab-gregorian-serial: Γρηγοριανό Σειρά
+      label-gregorian-serial-day: "Ημέρα Γρηγοριανού Σειριακού:"
+      tab-hebrew: Εβραϊκά
+      tab-islamic: Ισλαμική
+      tab-persian: περσικός
+      tab-persian-algorithmic: Περσικός Αλγοριθμικός
+      tab-mayan: Μάγια
+      label-long-count: "Μεγάλη μέτρηση:"
+      label-haab: Ελπίδα
+      label-tzolkin: Tzolkin
+      tab-indian-civil: Ινδικό Πολιτικό
+      tab-french-republican: Γάλλος Ρεπουμπλικάνος
+      label-day: "Ημέρα:"
+      label-month: "Μήνας:"
+      label-décade: "Δεκαετία:"
+      label-year: "Ετος:"
+      tab-iso-8601: ISO‑8601
+      label-day-of-week: "Ημέρα της εβδομάδας:"
+      label-week: "Εβδομάδα:"
+      label-day-of-year: "Ημέρα του έτους:"
+      tab-unix-time: Ώρα Unix()
+      label-unix-time: "Ώρα Unix():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Ημέρα Σειράς Excel (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Ημέρα Σειράς Excel (1904):"
+      tag-this-is-a-port-of-wonderful: Αυτό είναι ένα υπέροχο λιμάνι
+      tag-fourmilab-ch-calendar-converter: Μετατροπέας ημερολογίου Fourmilab.ch
+      tag-by-john-walker: από τον Τζον Γουόκερ
+      tag-xa0-xa0: ​
+      tag-update-other-calendars: Ενημέρωση άλλων ημερολογίων
+      tag-today: Σήμερα
+  bech32:
+    title: Κωδικοποιητής/Αποκωδικοποιητής Bech32
+    description: Κωδικοποίηση/Αποκωδικοποίηση/Επικύρωση betch32(m)
+    externalAccess: άκυρος
+    texts:
+      label-bech32: Μπεχ32
+      label-bech32m: Μπιτς32μ
+      tab-decode: Αποκρυπτογραφώ
+      label-bech32-m-string: "Bech32(m) χορδή:"
+      placeholder-bech32-bech32m-string: Χορδή Bech32 / Bech32m
+      label-variant: "Παραλαγή:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "Φορτίο επί πληρωμή:"
+      placeholder-hex-payload: Εξαγωνικό ωφέλιμο φορτίο
+      placeholder-variant: Παραλαγή
+      tab-encode: Κωδικοποίηση
+      label-encoded-bech32-string: "Κωδικοποιημένη συμβολοσειρά bech32:"
+      placeholder-bech32-string: bech32 συμβολοσειρά
+      tab-batch: Σύνολο παραγωγής
+      label-bech32-strings-one-per-line: "Bech32 χορδές (μία ανά γραμμή):"
+      placeholder-one-bech32-string-per-line: Μία συμβολοσειρά Bech32 ανά γραμμή
+      title-results: Αποτελέσματα
+      tag-auto-detect: Αυτόματη ανίχνευση
+      tag-manual: Εγχειρίδιο
+      tag-checksum-only: Μόνο άθροισμα ελέγχου
+      tag-full-decode: Πλήρης αποκωδικοποίηση
+      tag-checksum-valid: Έγκυρο άθροισμα ελέγχου
+      tag-checksum-invalid: Μη έγκυρο άθροισμα ελέγχου
+      tag-encode: Κωδικοποίηση
+      tag-convert: Μετατρέπω
+      tag-export-csv: Εξαγωγή CSV
+      invalid-hex-payload: Μη έγκυρο εξαγωνικό ωφέλιμο φορτίο
+      input: Εισαγωγή
+      variant: Παραλαγή
+      status: Κατάσταση
+      hex: Γοητεύω
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Ετικέτες Docker Pangolin
+    description: Μετατρέψτε τις ετικέτες Docker Compose Pangolin σε σχέδια και αντίστροφα
+    externalAccess: άκυρος
+    texts:
+      tab-compose-blueprint: Σύνταξη → Σχέδιο
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: Επικολλήστε εδώ ολόκληρο το docker-compose.yml…
+      label-generated-blueprint: "Δημιουργημένο Σχέδιο:"
+      placeholder-blueprint-yaml-will-appear-here: Το Blueprint YAML θα εμφανιστεί εδώ…
+      tab-blueprint-labels: Σχέδιο → Ετικέτες
+      label-blueprint-yaml: "Σχέδιο YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Επικολλήστε το σχέδιο Pangolin YAML εδώ…
+      label-generated-docker-labels: "Δημιουργημένες ετικέτες Docker:"
+      placeholder-docker-labels-will-appear-here: Οι ετικέτες Docker θα εμφανίζονται εδώ...
+      tag-extract-pangolin-blueprint: Σχέδιο εκχυλίσματος παγκολίνου
+      tag-array-key-value: Πίνακας (- κλειδί=τιμή)
+      tag-object-key-value: "Αντικείμενο (κλειδί: τιμή)"
+      tag-convert-to-docker-labels: Μετατροπή σε ετικέτες Docker
+      invalid-blueprint-yaml: Μη έγκυρο σχέδιο YAML
+  fitness-computer:
+    title: Υπολογιστής γυμναστικής
+    description: "Υπολογισμός BMR (Βασικός Μεταβολικός Ρυθμός), TDEE / Θερμίδες
+      (Συνολική Ημερήσια Δαπάνη Ενέργειας), ΔΜΣ (Δείκτης Μάζας Σώματος), Ιδανικό
+      Βάρος (Ιδανικό Βάρος Σώματος), Σωματικό Λίπος (Ποσοστό Σωματικού Λίπους),
+      Μέγιστος Καρδιακός Ρυθμός (Μέγιστος Καρδιακός Ρυθμός): βασικές μετρήσεις
+      που χρησιμοποιούνται για την αξιολόγηση της συνολικής φυσικής κατάστασης
+      και της φυσιολογικής υγείας."
+    externalAccess: άκυρος
+    texts:
+      label-bmr: Βασικός Μετρητής Βάσης (BMR)
+      label-tdee-calories: TDEE/Θερμίδες
+      label-bmi: "ΔΜΣ:"
+      label-ideal-weight: "Ιδανικό βάρος:"
+      label-body-fat-us-navy: Σωματικό λίπος (Ναυτικό των ΗΠΑ)
+      label-body-fat-bmi: Σωματικό λίπος (ΔΜΣ)
+      label-max-heart-rate: Μέγιστος καρδιακός ρυθμός
+      label-sedentary-little-or-no-exercise: "Καθιστική ζωή: ελάχιστη ή καθόλου άσκηση"
+      label-light-exercise-1-3-times-week: "Ελαφριά άσκηση: 1-3 φορές/εβδομάδα"
+      label-moderate-exercise-4-5-times-week: "Μέτρια: άσκηση 4-5 φορές/εβδομάδα"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week: "Ενεργό: καθημερινή άσκηση ή έντονη άσκηση 3-4 φορές/εβδομάδα"
+      label-very-active-intense-exercise-6-7-times-week: "Πολύ δραστήριο: έντονη άσκηση 6-7 φορές/εβδομάδα"
+      label-extra-active-very-intense-exercise-daily-or-physical-job: "Έξτρα Ενεργό: πολύ έντονη άσκηση καθημερινά ή σωματική εργασία"
+      label-units: "Μονάδες:"
+      label-formula: "Τύπος:"
+      label-gender: "Γένος:"
+      label-age: "Ηλικία:"
+      title-body-measurements: Μετρήσεις σώματος
+      label-activity-level: "Επίπεδο Δραστηριότητας:"
+      title-results: Αποτελέσματα
+      label-bmr-kcal-day: "Βασικός Ρυθμός Μεταβολισμού (BMR) (kcal/ημέρα):"
+      label-tdee-calories-kcal-day: "TDEE/Θερμίδες (kcal/ημέρα):"
+      label-bmi-category: "Κατηγορία ΔΜΣ:"
+      label-healthy-range-min: "Υγιεινό εύρος (ελάχ.):"
+      label-healthy-range-max: "Υγιεινό εύρος (μέγιστο):"
+      label-devine-1974: "— (Γίνεται το 1974):"
+      label-hamwi-1964: "— (Χάμουι 1964):"
+      label-miller-1983: "— (Μίλερ 1983):"
+      label-robinson-1983: "— (Ρόμπινσον 1983):"
+      label-body-fat: "Σωματικό λίπος (%):"
+      label-fat-mass: "Λίπος Μάζα:"
+      label-lean-mass: "Άπαχη Μάζα:"
+      label-max-heart-rate-bpm: "Μέγιστος καρδιακός ρυθμός (bpm):"
+      tag-metric-kg-cm: Μετρικό (kg, cm)
+      tag-us-lbs-inches: ΗΠΑ (λίβρες, ίντσες)
+      tag-male: Αρσενικός
+      tag-female: Θηλυκός
+  food-energy-converter:
+    title: Μετατροπέας Ενέργειας Τροφίμων
+    description: Μετατροπή μεταξύ τροφίμων (τζάουλ, θερμίδες)
+    externalAccess: άκυρος
+  iso-639-searcher:
+    title: Αναζήτηση ISO 639
+    description: Αναζήτηση σε κωδικούς γλώσσας ISO 639-1/2T/2B/3
+    externalAccess: άκυρος
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name:
+        Αναζήτηση κωδικού γλώσσας iso-639 με βάση iso-1, iso-2T/2B, iso-3,
+        όνομα...
+      label-max-results: "Μέγιστο αποτέλεσμα:"
+      label-2b: "2Β:"
+      label-2t: "2T:"
+      label-eng: "ΑΓΓΛΙΚΟΣ:"
+      tag-no-results: Δεν υπάρχουν αποτελέσματα
+      tag-search-results: Αποτελέσματα αναζήτησης
+      tag-iso-639-1: ισο-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: ισο-639-3
+      tag-english-and-local-name: Αγγλική και τοπική ονομασία
+      loading-more-results: Φόρτωση περισσότερων αποτελεσμάτων...
+  jasypt-string-encryption:
+    title: Κρυπτογράφηση συμβολοσειρών Jasypt
+    description: Κρυπτογράφηση και αποκρυπτογράφηση συμβολοσειρών χρησιμοποιώντας το
+      πρότυπο Jasypt (Απλοποιημένη Κρυπτογράφηση Java).
+    externalAccess: άκυρος
+    texts:
+      label-mode: "Τρόπος:"
+      label-password-secret-key: "Κωδικός πρόσβασης (Μυστικό κλειδί):"
+      placeholder-enter-jasypt-password-salt-secret-key: Εισαγάγετε τον κωδικό πρόσβασης Jasypt (salt / μυστικό κλειδί)
+      title-results: Αποτελέσματα
+      label-decoded: "Αποκωδικοποιημένο:"
+      label-raw: "Ακατέργαστος:"
+      label-enc-form: "Έντυπο ENC:"
+      tag-encrypt: Κρυπτογράφηση
+      tag-decrypt: Αποκρυπτογράφηση
+      plain-text: "Απλό κείμενο:"
+      jasypt-encrypted-string: "Κρυπτογραφημένη συμβολοσειρά Jasypt:"
+      text-to-encrypt-e-g-db-password: Κείμενο προς κρυπτογράφηση (π.χ. κωδικός πρόσβασης βάσης δεδομένων)
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Κρυπτογραφημένη τιμή (π.χ. ENC(...)) ή ακατέργαστη συμβολοσειρά Jasypt
+  k8s-rbac-generator:
+    title: Γεννήτρια RBAC Kubernetes
+    description: Δημιουργία πολιτικής k8s RBAC YAML
+    externalAccess: άκυρος
+    texts:
+      label-user: Μεταχειριζόμενος
+      label-group: Ομάδα
+      label-serviceaccount: Λογαριασμός Υπηρεσίας
+      label-role-name: "Όνομα Ρόλου:"
+      label-role-type: Τύπος ρόλου
+      label-namespace: Χώρος ονομάτων
+      title-rules: Κανόνες
+      label-resources: Πόροι
+      placeholder-select-resources-supports: Επιλογή πόρων (υποστηρίζει *)
+      label-resource-names-optional: Ονόματα Πόρων (προαιρετικά)
+      placeholder-specific-resources-names: Ονόματα συγκεκριμένων πόρων
+      label-verbs: Ρήματα
+      placeholder-select-verbs-supports: Επιλογή ρημάτων (υποστηρίζει *)
+      title-subjects: Θέματα
+      label-kind: Είδος
+      label-name: Ονομα
+      title-output-yaml: Έξοδος YAML
+      tab-role-yaml: Ρόλος YAML
+      tab-rolebinding-yaml: RoleBinding YAML
+      tag-clusterrole-global: ClusterRole (Καθολικός)
+      tag-role-namespaced: Ρόλος (με ονοματοδιάστημα)
+      tag-add-rule: + Προσθήκη κανόνα
+      tag-remove-rule: Κατάργηση κανόνα
+      tag-add-subject: + Προσθήκη θέματος
+      tag-remove-subject: Αφαίρεση θέματος
+  objgen-html:
+    title: ObjGen σε HTML
+    description: Δημιουργία HTML xomplex από σύνταξη τύπου TOML
+    externalAccess: άκυρος
+    texts:
+      input-label-objgen-html-definition: Ορισμός HTML ObjGen
+      input-placeholder-put-your-objgen-html-definition-here: Βάλτε εδώ τον ορισμό HTML του ObjGen...
+      output-label-generated-html: Δημιουργήθηκε HTML
+      tag-documentation: Απόδειξη με έγγραφα
+  objgen-json:
+    title: ObjGen σε JSON
+    description: Δημιουργήστε xomplex JSON από σύνταξη τύπου TOML
+    externalAccess: άκυρος
+    texts:
+      input-label-objgen-json-definition: Ορισμός JSON ObjGen
+      input-placeholder-put-your-objgen-json-definition-here: Βάλτε εδώ τον ορισμό του JSON του ObjGen...
+      output-label-generated-json: Δημιουργημένο JSON
+      tag-documentation: Απόδειξη με έγγραφα
+  pgp-file-encryption:
+    title: Κρυπτογράφηση αρχείων PGP
+    description: Κρυπτογράφηση και αποκρυπτογράφηση αρχείων χρησιμοποιώντας PGP
+    externalAccess: άκυρος
+    texts:
+      title-1-select-a-file: 1. Επιλέξτε ένα αρχείο
+      title-drag-and-drop-a-file-or-click-to-select: Σύρετε και αποθέστε ένα αρχείο ή κάντε κλικ για να το επιλέξετε
+      title-2-public-key-for-encryption: 2. Δημόσιο κλειδί (για κρυπτογράφηση)
+      title-3-private-key-passphrase-for-decryption: 3. Ιδιωτικό κλειδί + φράση πρόσβασης (για αποκρυπτογράφηση)
+      label-passphrase: "Κωδικό πρόσβασης:"
+      placeholder-passphrase: Φράση πρόσβασης
+      tag-selected-file: "Επιλεγμένο αρχείο:"
+      tag-encrypt-stream: Κρυπτογράφηση (ροή)
+      tag-decrypt-stream: Αποκρυπτογράφηση (ροή)
+      tag-encrypting: Κρυπτογράφηση…
+      tag-decrypting: Αποκρυπτογράφηση…
+      tag-encrypted-file-ready: Κρυπτογραφημένο αρχείο έτοιμο.
+      tag-download-encrypted: Λήψη κρυπτογραφημένου
+      tag-decrypted-file-ready: Το αποκρυπτογραφημένο αρχείο είναι έτοιμο.
+      tag-download-decrypted: Λήψη αποκρυπτογραφημένου
+  remove-background:
+    title: Αφαίρεση φόντου εικόνας
+    description: Αφαίρεση φόντου από μια εικόνα χρησιμοποιώντας τεχνητή νοημοσύνη
+    externalAccess: Λήψεις Αφαίρεση μοντέλων φόντου από το HuggingFace. Η
+      επεξεργασία γίνεται στο πρόγραμμα περιήγησής σας.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Διαφανής
+      label-solid-color: Μονόχρωμο
+      label-pattern: "Πρότυπο:"
+      label-blurred-original: Θολό πρωτότυπο
+      label-adjust-contrast-brightness: Ρύθμιση αντίθεσης/φωτεινότητας
+      label-diagonal-stripes: Διαγώνιες ρίγες
+      label-dots: Αποσιωπητικά
+      label-checkerboard: Σκακιέρα
+      title-drag-and-drop-an-image-or-click-to-select: Σύρετε και αποθέστε μια εικόνα ή κάντε κλικ για να την επιλέξετε
+      label-model: "Μοντέλο:"
+      label-blur: "Θολούρα:"
+      label-contrast: "Αντίθεση:"
+      label-brightness: "Λάμψη:"
+      title-original: Πρωτότυπο
+      title-result: Αποτέλεσμα
+      tag-apply-background: Εφαρμογή φόντου
+      tag-download-result: Λήψη Αποτελέσματος
+  shell-formatter:
+    title: Μορφοποιητής εντολών κελύφους
+    description: Μορφοποίηση εντολών shell ως εντολές shell πολλαπλών γραμμών
+      χωρισμένες σε ορίσματα
+    externalAccess: άκυρος
+    texts:
+      input-label-shell-commands-to-format: Εντολές Shell για μορφοποίηση
+      input-placeholder-put-your-shell-commands-to-format-here: Τοποθετήστε τις εντολές shell για μορφοποίηση εδώ...
+      output-label-formatted-shell-commands: Μορφοποιημένες εντολές κελύφους
+  shell-linearizer:
+    title: Γραμμικοποιητής εντολών κελύφους
+    description: Γραμμικοποίηση εντολών κελύφους πολλαπλών γραμμών
+    externalAccess: άκυρος
+    texts:
+      input-label-shell-commands-to-linearize: Εντολές Shell για γραμμικοποίηση
+      input-placeholder-put-your-shell-commands-to-linearize-here: Βάλτε τις εντολές του κελύφους σας για γραμμικοποίηση εδώ...
+      output-label-linearized-shell-commands: Γραμμικοποιημένες εντολές κελύφους
+  ufw-generator:
+    title: Γεννήτρια εντολών UFW
+    description: Δημιουργία γραμμών εντολών UFW
+    externalAccess: άκυρος
+    texts:
+      label-allow: Επιτρέπω
+      label-deny: Αρνούμαι
+      label-reject: Απορρίπτω
+      label-limit: Οριο
+      label-incoming: Εισερχόμενος
+      label-outgoing: Εξερχόμενος
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: Κάθε
+      label-action: "Δράση:"
+      label-direction: "Κατεύθυνση:"
+      label-protocol: "Πρωτόκολλο:"
+      label-port: "Λιμάνι:"
+      placeholder-80: "80"
+      label-port-to-range: "Μεταφορά σε (εύρος):"
+      placeholder-443: "443"
+      label-from-ip: "Από IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "Προς IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Διεπαφή:"
+      placeholder-eth0: eth0
+      label-logging: "Ξύλευση:"
+      label-comment: "Σχόλιο:"
+      placeholder-optional-comment: Προαιρετικό σχόλιο
+      title-generated-command: Δημιουργημένη εντολή
+      missing-port: Λείπει η θύρα
+  visual-subnet-calculator:
+    title: Υπολογιστής οπτικού υποδικτύου
+    description: Ένα εργαλείο για γρήγορο σχεδιασμό δικτύων και συνεργασία σε αυτόν
+      τον σχεδιασμό με άλλους. Εστιάζει στην επιτάχυνση της εργασίας των
+      διαχειριστών δικτύων και όχι στα ακαδημαϊκά μαθηματικά υποδικτύων.
+    externalAccess: άκυρος
+  zalgo:
+    title: Γεννήτρια/Banner Zalgo
+    description: Δημιουργήστε κείμενο Zalgo και καθαρίστε κείμενο που δημιουργείται
+      από Zalgo
+    externalAccess: άκυρος
+    texts:
+      text-zalgo-text-copied: Το κείμενο του Zalgo αντιγράφηκε!
+      title-zalgo-text-generation: Δημιουργία κειμένου Zalgo
+      placeholder-put-your-string-here: Βάλε το κορδόνι σου εδώ...
+      label-text-to-decorate-with-zalgo: Κείμενο για διακόσμηση με Zalgo
+      label-intensity: "Ενταση:"
+      title-zalgo-text: Κείμενο Zalgo
+      title-zalgo-cleaner: Καθαριστικό Zalgo
+      placeholder-put-zalgo-text-to-clean-here: Βάλτε κείμενο zalgo για καθαρισμό εδώ...
+      label-zalgo-text-to-clean: Κείμενο Zalgo για καθαρισμό
+      label-cleaned-text: Καθαρισμένο κείμενο
+      placeholder-clean-zalgo-text-will-appear-here: Θα εμφανιστεί εδώ καθαρό κείμενο zalgo...
+      tag-generate: Παράγω
+      tag-copy: Αντίγραφο
+      tag-clean: Καθαρός
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Πρέπει να οριστεί ένα από τα μηνύματα | συνάρτηση
+        function-must-set-messages: Η συνάρτηση πρέπει να ορίζει μηνύματα
+  dead-pixel-tester:
+    title: Δοκιμαστής νεκρών εικονοστοιχείων
+  gif-to-mp4:
+    title: GIF σε MP4
+    description: Μετατροπή GIF σε MP4 χρησιμοποιώντας ffmpeg
+    externalAccess: άκυρος
+    texts:
+      label-stream-loop: "Βρόχος ροής:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Σύρετε και αποθέστε το GIF εδώ ή κάντε κλικ για να επιλέξετε ένα αρχείο.
+      title-logs: Αρχεία καταγραφής
+  html-to-pdf:
+    title: HTML σε PDF
+    description: Δημιουργήστε PDF από περιεχόμενο HTML ή URL με επιλογή μορφής και
+      αυτόματη απόκρυψη banner cookie
+    externalAccess: Αυτό το εργαλείο αποστέλλει URL και περιεχόμενο HTML στην
+      *αυτοφιλοξενούμενη* διαδικτυακή υπηρεσία Puppeteer που έχει ρυθμιστεί.
+    texts:
+      label-a2: Α2
+      label-a3: Α3
+      label-a4: Α4
+      label-a5: Α5
+      label-letter: Επιστολή
+      label-legal: Νομικός
+      label-html-to-pdf-service-url: "URL υπηρεσίας μετατροπής HTML σε PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Βασικός έλεγχος ταυτότητας:"
+      placeholder-username-password: όνομα χρήστη:κωδικός πρόσβασης
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "Περιεχόμενο HTML:"
+      tab-batch-url-pdf: URL παρτίδας → PDF
+      label-urls-one-per-line: "URL (μία ανά γραμμή):"
+      title-results: Αποτελέσματα
+      tab-custom-pdf-options: Προσαρμοσμένες επιλογές PDF
+      label-format: "Σχήμα και διάταξις βιβλίου:"
+      label-language: "Γλώσσα:"
+      placeholder-en-us: en-US
+      label-landscape: "Τοπίο:"
+      label-one-long-page: "Μία μεγάλη σελίδα:"
+      label-auto-hide-cookie-banners: "Αυτόματη απόκρυψη banner cookie:"
+      label-print-background: "Εκτύπωση φόντου:"
+      title-margins: Περιθώρια
+      label-top-mm: "Κορυφή (mm):"
+      label-bottom-mm: "Κάτω μέρος (mm):"
+      label-left-mm: "Αριστερά (mm):"
+      label-right-mm: "Δεξιά (mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: Διαμόρφωση υπηρεσίας HTML σε PDF (αυτοφιλοξενείται)
+      tag-you-must-self-host-html-to-pdf-service-see: "Πρέπει να φιλοξενήσετε μόνοι σας την υπηρεσία HTML σε PDF. Δείτε:"
+      tag-html-to-pdf-service-install: Εγκατάσταση υπηρεσίας HTML σε PDF
+      tag-generate-pdf: Δημιουργία PDF
+      tag-generate-pdfs: Δημιουργία PDF
+      tag-url: URL
+      tag-download: Λήψη
+      tag-download-pdf: Λήψη PDF
+      tag-failed: Αποτυχημένος
+  shutdown-command-generator:
+    title: Γεννήτρια εντολών τερματισμού λειτουργίας
+    description: Δημιουργήστε εντολή τερματισμού λειτουργίας για διάφορα λειτουργικά
+      συστήματα
+    externalAccess: άκυρος
+    texts:
+      label-windows: Παράθυρα
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Καθυστέρηση:"
+      label-specific-time: Συγκεκριμένη ώρα
+      label-platform: "Πλατφόρμα:"
+      label-shutdown-time: "Ώρα τερματισμού λειτουργίας:"
+      label-force: Δύναμη
+      label-reboot: Επανεκκίνηση
+      label-logoff: Αποσύνδεση
+      label-cancel: Ματαίωση
+      label-hibernate: Διαχειμάζω
+      title-generated-command: Δημιουργήθηκε εντολή
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: "&nbsp;μ&nbsp;"
+      tag-nbsp-s: "&nbsp;s"
+collapsibleToolMenu:
+  text:
+    expanding: Επέκταση...
+    collapsing: Κατάρρευση...
+    collapse-all-tools: Σύμπτυξη όλων των εργαλείων
+    expand-all-tools: Ανάπτυξη όλων των εργαλείων

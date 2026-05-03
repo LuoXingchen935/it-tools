@@ -3,6 +3,9 @@
   sorry: Извините, эта страница, похоже, не существует
   maybe: Возможно, кэш играет шутки, попробуйте принудительно обновить страницу?
   backHome: Вернуться на главную
+  page:
+    text:
+      page-not-found-it-tools: Страница не найдена - IT-инструменты
 home:
   categories:
     newestTools: Новейшие инструменты
@@ -33,6 +36,14 @@ home:
     lightMode: Светлый режим
     mode: Переключение темного/светлого режима
   loading-more-tools: Загрузка дополнительных инструментов...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Набор удобных онлайн-инструментов для разработчиков с отличным
+        пользовательским интерфейсом. IT Tools — это бесплатный набор удобных
+        онлайн-инструментов с открытым исходным кодом для разработчиков и
+        специалистов в сфере ИТ.
+      it-tools-handy-online-tools-for-developers: IT-инструменты — удобные онлайн-инструменты для разработчиков.
 about:
   alltools-title: Все {toolsCount} инструменты
   tools:
@@ -81,6 +92,13 @@ about:
     отправьте отчёт об ошибке в раздел
     [issues](https://github.com/sharevb/it-tools/issues/new/choose) репозитория
     GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Набор удобных онлайн-инструментов для разработчиков с отличным
+      пользовательским интерфейсом. IT Tools — это бесплатный набор удобных
+      онлайн-инструментов с открытым исходным кодом для разработчиков и
+      специалистов в сфере ИТ.
+    about-it-tools: О нас - IT-инструменты
 favoriteButton:
   remove: Удалить из избранного
   add: Добавить в избранное
@@ -118,6 +136,9 @@ tools:
     physics: Физика
     cheatsheets: Шпаргалки
     forensic: Судебная экспертиза
+    finance: Финансы
+    default: По умолчанию
+    toml: ТОМЛ
   password-strength-analyser:
     title: Анализатор надежности пароля
     description: Узнайте о надежности своего пароля с помощью этого анализатора
@@ -745,6 +766,7 @@ tools:
       tag-preview-image: Предварительный просмотр изображения
       tag-download-file: Загрузить файл
       tag-copy: Копировать
+      include-data-uri-prefix: "Включить данные: префикс URI"
   list-converter:
     title: Конвертер списков
     description: Этот инструмент может обрабатывать данные на основе столбцов и
@@ -1080,6 +1102,8 @@ tools:
       tag-refresh-key-pair: Обновить пару ключей
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Количество бит должно быть 256 <= бит <= 16384 и кратно 8.
   html-wysiwyg-editor:
     title: HTML WYSIWYG редактор
     description: Онлайн, многофункциональный WYSIWYG HTML редактор, который
@@ -1433,6 +1457,8 @@ tools:
       tag-quantity: Количество
       tag-copy: Копировать
       tag-refresh: Обновить
+      uppercase: Заглавные буквы
+      no-hyphen: Без дефиса
   ipv4-address-converter:
     title: Конвертер IPv4 адресов
     description: Конвертируйте IP-адрес в десятичное, двоичное, шестнадцатеричное
@@ -2187,6 +2213,8 @@ tools:
       tag-certificate-signing-request: Запрос на подпись сертификата
       tag-public-key: Открытый ключ
       tag-private-key: Закрытый ключ
+      label-rsa-bits: "RSA Bits:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Количество бит должно быть 256 <= бит <= 16384 и кратно 8.
   css-prettifier:
     title: Форматирование CSS
     description: Форматируйте CSS-код
@@ -2695,6 +2723,7 @@ tools:
       label-file-name: "Имя файла:"
       label-extension: "Расширение:"
       label-mime-type: "Тип MIME:"
+      an-error-occured-processing: Произошла ошибка при обработке.
   folder-structure-diagram:
     title: Диаграмма структуры папок
     description: Утилита для генерации ASCII-диаграмм структуры папок
@@ -2795,6 +2824,8 @@ tools:
       label-pib: ПиБ
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1МиБ = 1024КБ; 1МБ = 1000КБ; 1ГиБ = 1024МиБ; 1ГБ = 1000МБ;
       tag-see-here-for-details: подробности смотрите здесь
+      column-decimal: Десятичная дробь
+      column-binary: Двоичный
   heic-converter:
     title: Конвертер HEIC
     description: Конвертируйте HEIC в JPEG или PNG
@@ -2803,6 +2834,7 @@ tools:
       label-png: PNG
       label-output-format: Формат вывода
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Перетащите сюда файл HEIC или щелкните, чтобы выбрать файл.
+      an-error-occured-processing-heic-heif-is-invalid: "Произошла ошибка обработки: код HEIC/HEIF недействителен."
   hex-converter:
     title: Конвертер Hex
     description: Кодируйте и декодируйте Hex буферы в числа (биты, порядок байтов,
@@ -2992,6 +3024,9 @@ tools:
     description: Конвертируйте из PNG/JPEG в ICO и обратно
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: Перетащите сюда файл ICO или PNG/JPEG или щелкните, чтобы выбрать файл.
+      an-error-occured-processing: Произошла ошибка при обработке.
+      invalid-ico-file: Недействительный файл ICO!
+      invalid-png-file: Недействительный PNG-файл!
   ies-lighting-guidelines:
     title: Рекомендации по освещению IES
     description: Поиск в рекомендациях по освещению Illuminating Engineering Society (IES)
@@ -3027,6 +3062,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Затем перетащите изображения ниже, и они будут немедленно преобразованы
         и загружены:"
+      invalid-image-file: Недействительный файл изображения!
+      an-error-occured-processing: Произошла ошибка при обработке.
   image-exif-reader:
     title: Чтение EXIF/метаданных изображений
     description: Читайте EXIF, IPTC, XMP, GPS и другие метаданные, качество JPEG и
@@ -3228,6 +3265,7 @@ tools:
       tag-iso2-iso3: Изо2/Изо3
       tag-name-and-info: Имя и информация
       tag-gt-see-on-openstreetmap: "&gt; Посмотреть на OpenStreetMap"
+      loading-more-results: Загрузка дополнительных результатов...
   javascript-prettifier:
     title: Форматирование JavaScript
     description: Форматируйте JavaScript-код
@@ -3768,6 +3806,11 @@ tools:
       placeholder-passphrase: Парольная фраза...
       tag-copy: Копировать
       tag-refresh: Обновить
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Не удается сгенерировать парольную фразу из [{0} - {1}] символов с
+        текущими настройками, попробуйте изменить количество слов."
+      words-words: Слова ({0})
+      label-min-passphrase-len: "Минимальная длина кодовой фразы:"
   paste-as-markdown:
     title: Вставить как Markdown
     description: Вставляйте ячейки/таблицы и ссылки из содержимого буфера обмена как
@@ -3826,10 +3869,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Перетащите PDF-файл сюда или щелкните, чтобы выбрать файл.
       title-logs: Журналы
       label-qpdf: qpdf
-      label-password: 'Пароль:'
+      label-password: "Пароль:"
       placeholder-password: Пароль
       tag-decrypt-pdf: Расшифровать PDF
-      tag-output-file: 'Выходной файл:'
+      tag-output-file: "Выходной файл:"
   pgp-encryption:
     title: Шифрование PGP
     description: Шифруйте и дешифруйте текст с использованием PGP-ключей
@@ -5066,6 +5109,8 @@ tools:
       label-permanent: Постоянный
       title-generated-fw-command: "Сгенерированная команда fw:"
       tag-const-zone-ref: константная зона = ссылка
+    title: генератор командной строки firewalld
+    description: Сгенерировать командную строку firewalld
   fortune-wheel:
     title: Колесо фортуны
     description: Настраиваемое колесо фортуны
@@ -6261,6 +6306,9 @@ tools:
       label-django-secret-key: "Секретный ключ Django:"
       tag-copy: Копировать
       tag-regenerate: Регенерировать
+    service:
+      texts:
+        generating-range-is-too-large: Диапазон генерации слишком велик.
   dnsbl-checker:
     title: DNSBL-проверщик
     description: Проверьте, находится ли заданный IP-адрес в каком-либо из известных
@@ -6311,6 +6359,7 @@ tools:
       title-html-head-tags: 📄 HTML-теги заголовка
       tag-upload-png-image: Загрузить PNG-изображение
       tag-download-zip: 📦 Скачать ZIP-архив
+      invalid-png-file: Недействительный PNG-файл!
   font-compare:
     title: Сравнение шрифтов
     description: Сравните со шрифтами в данном тексте
@@ -6396,6 +6445,12 @@ tools:
       label-fallback: "Отступать:"
       placeholder-fallback-font: Резервный шрифт
       tag-defineprops: defineProps
+    text:
+      by-font-name: По названию шрифта
+      by-font-url: По URL-адресу шрифта
+      by-font-file: Файл шрифта
+      by-inline-css: С помощью встроенного CSS
+      by-css-url: По URL-адресу CSS
   gpt-token-encoder:
     title: Кодер/декодер токенов GPT
     description: Кодировать текст в токены GPT и декодировать токены GPT обратно в текст
@@ -6432,6 +6487,10 @@ tools:
       tag-original-image: Исходное изображение
       tag-inverted-image: Перевернутое изображение
       tag-clear-upload-new: Очистить и загрузить новый
+    service:
+      texts:
+        file-must-be-an-image: Файл должен быть изображением.
+        failed-to-process-image-err: "Не удалось обработать изображение:"
   image-comparer:
     title: Сравнение изображений
     description: Инструмент для визуального сравнения изображений
@@ -6446,6 +6505,9 @@ tools:
       tag-compare: Сравнивать
       tag-upload-left: Загрузить слева
       tag-upload-right: Загрузить справа
+    text:
+      compare-by-url: Сравнить по URL
+      compare-by-upload: Сравнить по загрузке
   logrotate-generator:
     title: Генератор Apache LogRotate
     description: Генерация конфигурации ротации Apache .log
@@ -6574,6 +6636,17 @@ tools:
       label-decimal: "Десятичная дробь:"
       label-octal: "Восьмеричный:"
       label-hexadecimal: "Шестнадцатеричный:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Неверный шестнадцатеричный ввод.
+          Допускаются только цифры от 0 до 9 и от A до F.
+        invalid-1: Неверный
+        invalid-0: Неверный
+        invalid: Неверный
+        unsupported-middle-endian-format: Неподдерживаемый формат с порядком байтов посередине.
+        failed-to-parse-bytes: Не удалось разобрать байты.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Входные данные
+          должны состоять из {0} шестнадцатеричных символов для {1}-бита.
   mttdl-calculator:
     title: Калькулятор надежности RAID
     description: Вычисляет надежность системы хранения данных с использованием
@@ -6716,6 +6789,11 @@ tools:
       tag-convert: Конвертировать
       tag-axial: Осевой
       tag-radial: Радиальный
+    text:
+      bands-notation: Полосы → Обозначение
+      notation-bands: Обозначения → Полосы
+      number-notation: Число → Обозначение
+      notation-number: Обозначение → Число
   sed-command-generator:
     title: Генератор команд Sed
     description: Генерация команд sed для Unix
@@ -7101,6 +7179,9 @@ tools:
       title-mw-to-dbm: мВт в дБм
       label-mw-value: "Значение мВт:"
       label-corresponding-dbm-value: "Соответствующее значение дБм:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Мощность в милливаттах должна быть больше 0.
   diceware-generator:
     title: Генератор паролей Diceware
     description: Генерация случайного пароля с помощью метода Diceware
@@ -7335,6 +7416,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} или необработанный 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Данные транзакции должны начинаться с 0x.
   file-splitter:
     title: Разделитель файлов
     description: Разделить JSON, XML или текстовый файл по группе узлов или по группе строк
@@ -7350,6 +7434,9 @@ tools:
       tag-process-chunks: Процессные фрагменты
       tag-download-all: Скачать все
       tag-download: Скачать
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Неподдерживаемый формат или недопустимое содержимое
   gitignore-generator:
     title: Генератор GitIgnore
     description: Сгенерировать .gitignore для набора общих шаблонов
@@ -7461,6 +7548,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Перетащите PDF-файл сюда или щелкните, чтобы выбрать файл.
       title-logs: Журналы
       label-ghostscript: Ghostscript
+      process-run-failed: Запуск процесса завершился с ошибкой.
+      an-error-occured-processing: Произошла ошибка при обработке.
   serial-console:
     title: Консоль последовательного порта
     description: Подключение, чтение и отправка сообщения через последовательный порт
@@ -7720,6 +7809,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: Выход из режима битых пикселей
       tag-start-dead-pixel: Начало работы над мертвым пикселем
+    title: Тестер битых пикселей
+    description: Инструмент для проверки работоспособности пикселя на вашем экране.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Исключить префиксы СИ
@@ -7749,6 +7840,13 @@ tools:
       tag-longitude-east-is-positive-west-is-negative: "Долгота: Восток – положительное значение, Запад – отрицательное."
       tag-latitude-north-is-positive-south-is-negative: "Широта: Северная широта —
         положительное значение, южная — отрицательное."
+    text:
+      coordinate-system: Система координат
+      decimal-format-lng-lat: Десятичный формат (долгота, широта)
+      dms-format-lng-lat: Формат DMS (долгота, широта)
+      download-results-csv: Скачать результаты в формате CSV
+      batch-lat-lng-converter: Пакетный конвертер широты/долготы
+      single-lat-lng-converter: Конвертер широты/долготы в одном направлении
   si-prefixes-converter:
     title: Конвертер префиксов СИ
     description: Преобразование между метрическими префиксами
@@ -7791,6 +7889,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: Сделано с помощью {0}
+        runs-entirely-in-your-browser-no-external-requests: Работает полностью в вашем браузере. Никаких внешних запросов.
   acceleration-converter:
     title: Ускорительный преобразователь
     description: Преобразование значений между единицами измерения ускорения.
@@ -7910,7 +8009,6 @@ tools:
       tag-back: Назад (←)
       tag-next: Далее (→)
       tag-reset: Перезагрузить
-      tag-: ↓
       tag-or: "- ИЛИ -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Управляйте воспроизведением и навигацией без использования мыши.
       tag-shortcut: Быстрый доступ
@@ -7929,6 +8027,16 @@ tools:
       tag-jump-to-start: Перейти к началу
       tag-end: Конец
       tag-jump-to-end: Перейти к концу
+    text:
+      please-provide-some-text-first: Пожалуйста, сначала предоставьте какой-нибудь текст.
+      unsupported-file-type: Неподдерживаемый тип файла.
+      display: Отображать
+      text: Текст
+      settings: Настройки
+      keyboard-shortcuts: Клавиатурные сочетания
+      ready: Готовый
+      words: слова
+      wpm: слов в минуту
   speed-converter:
     title: Преобразователь скорости
     description: Преобразование значений между единицами измерения скорости.
@@ -7979,10 +8087,615 @@ tools:
       tag-apply-configuration: Применить конфигурацию
       tag-clear-logs: Очистить журналы
       tag-send: Отправлять
+      already-connected: ⚠️ Уже подключено
+      connected-to-websocket-bridge: ✅ Подключено к мосту WebSocket
+      disconnected: 🔌 Отключено
+      no-active-connection: ⚠️ Нет активного соединения
+      sent-text: "➡️ Отправлено сообщение:"
+      configured: ⚙️ Настроено
+      sent-hex: "➡️ Отправлен шестнадцатеричный код:"
+      disconnecting: 🔻 Отключение...
+      error: "❌ Ошибка:"
+      end: "🛑 Конец:"
+      text: "📩 Текст:"
+      binary: "📩 Двоичный код:"
+    text:
+      connected: Подключено
+      disconnected: Отключено
   volume-flow-rate-converter:
     title: Преобразователь объемного расхода
     description: Преобразование значений между единицами измерения объемного расхода
     externalAccess: нулевой
+  tip-calculator:
+    title: калькулятор чаевых
+    description: Рассчитайте сумму чаевых и разделите ее между несколькими людьми.
+    texts:
+      title-bill-details: Детали счета
+      label-bill-amount: "Сумма счета:"
+      placeholder-total-bill: Общая сумма счета
+      label-tip-percentage: "Процент чаевых:"
+      placeholder-tip: Кончик %
+      label-number-of-person: "Количество человек:"
+      placeholder-people: Люди
+      title-results: Результаты
+      label-tip-amount: "Сумма чаевых:"
+      label-total-bill: "Общая сумма счета:"
+      label-amount-per-person: "Сумма на человека:"
+      title-quick-tip: Быстрый совет %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON в .env
+    description: Преобразует плоский JSON-объект в файл .env. Ключи записываются в
+      верхнем регистре, а значения, содержащие пробелы, кавычки или специальные
+      символы окружения, безопасно заключаются в кавычки.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: Представленный JSON не является допустимым плоским объектом.
+      input-label-your-json: Ваш JSON
+      input-placeholder-paste-your-json-here: Вставьте сюда свой JSON-код...
+      output-label-env-from-your-json: .env из вашего JSON
+  calendar-converter:
+    service:
+      text:
+        sunday: Воскресенье
+        wednesday: Среда
+        tuesday: Вторник
+        monday: Понедельник
+        thursday: Четверг
+        friday: Пятница
+        saturday: Суббота
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Недопустимая продолжительность года: {0} дней."
+        common-deficient-353-days: Обычный дефицит (353 дня)
+        common-regular-354-days: Обычный регулярный (354 дня)
+        common-complete-355-days: Полный рабочий день (355 дней)
+        embolismic-deficient-383-days: Эмболический дефицит (383 дня)
+        embolismic-regular-384-days: Эмболический регулярный (384 дня)
+        embolismic-complete-385-days: Эмболическая реакция завершена (385 дней)
+        normal-year: Нормальный год
+        leap-year: високосный год
+    title: Конвертер календарей
+    description: Преобразование дат и времени между григорианским, юлианским,
+      еврейским, исламским, персидским, майянским, индийским, французским
+      республиканским, ISO-8601, Unix-форматом и форматом серийных чисел Excel.
+    externalAccess: нулевой
+    texts:
+      label-january: Январь
+      label-february: Февраль
+      label-march: Маршировать
+      label-april: Апрель
+      label-may: Может
+      label-june: Июнь
+      label-july: Июль
+      label-august: Август
+      label-september: Сентябрь
+      label-october: Октябрь
+      label-november: Ноябрь
+      label-december: Декабрь
+      label-nisan-נִיסָן: Нисан
+      label-iyyar-אִיָּר: Ийяр (Ийяр)
+      label-sivan-סִיוָן: Сиван
+      label-tammuz-תַּמּוּז: Таммуз
+      label-av-אָב: Ав (Ав)
+      label-elul-אֱלוּל: Элул
+      label-tishri-תִּשְׁרֵי: Тишри
+      label-heshvan-חֶשְׁוָן: Хешван (Хешван)
+      label-kislev-כִּסְלֵו: Кислев
+      label-teveth-טֵבֵת: Тевет
+      label-shevat-שְׁבָט: Шеват (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Адар/Адар I (Адар)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Веадар/Адар II (Второй Адар)
+      label-muharram-مُحَرَّم: Мухаррам (مُحَرَّم)
+      label-safar-صَفَر: Сафар (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Раби аль-Авваль (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Раби ас-Сани (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Джумада аль-Ула (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Джумада ат-Сания (جُمادى الآخرة)
+      label-rajab-رَجَب: Раджаб (رَجَب)
+      label-shaʿban-شَعْبان: Шабан (شَعْبان)
+      label-ramadan-رَمَضان: Рамадан
+      label-shawwal-شَوّال: Шавваль
+      label-dhu-al-qaʿda-ذو-القَعْدة: Зу аль-Када (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Зу аль-Хиджа (ذو الحِجّة)
+      label-farvardin-فروردین: Фарвардин (Фарвардин)
+      label-ordibehesht-اردیبهشت: Ордибехешт (Ordibehesht)
+      label-khordad-خرداد: Хордад (Khordad)
+      label-tir-تیر: Тир (Тир)
+      label-mordad-مرداد: Мордад (Мордад)
+      label-shahrivar-شهریور: Шахривар (Шахривар)
+      label-mehr-مهر: Мехр (Мехр)
+      label-aban-آبان: Абан (ноябрь)
+      label-azar-آذر: Азар (Азар)
+      label-dey-دی: Дей (The)
+      label-bahman-بهمن: Бахман (Бахман)
+      label-esfand-اسفند: Эсфанд (март)
+      label-caitra-चैत्र: Чайтра (Чайтра)
+      label-vaisakha-वैशाख: Вайшакха (Вайшакх)
+      label-jyaistha-ज्येष्ठ: Джайштха (старший)
+      label-asadha-आषाढ़: Асадха
+      label-sravana-श्रावण: Шравана
+      label-bhadra-भाद्रपद: Бхадра (Бхадрапада)
+      label-asvina-आश्विन: Асвина (Ашвин)
+      label-kartika-कार्तिक: Картика
+      label-agrahayana-अग्रहायण: Аграхаяна (Agrahayana)
+      label-pausa-पौष: Пауза
+      label-magha-माघ: Магха
+      label-phalguna-फाल्गुन: Фалгуна
+      label-vendémiaire: Вандемьер
+      label-brumaire: Брюмер
+      label-frimaire: Фример
+      label-nivôse: Нивозе
+      label-pluviôse: Плювиоз
+      label-ventôse: Вентозе
+      label-germinal: Зародышевый
+      label-floréal: Флореаль
+      label-prairial: Прерийный
+      label-messidor: Мессидор
+      label-thermidor: Термидор
+      label-fructidor: Фруктидор
+      label-sans-culottides: Санкюлоты
+      label-i: я
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Примиди (1)
+      label-duodi-2: Дайте (2)
+      label-tridi-3: Три (3)
+      label-quartidi-4: Кварталы (4)
+      label-quintidi-5: Квинтидий (5)
+      label-sextidi-6: Секстиди (6)
+      label-septidi-7: Септиди (7)
+      label-octidi-8: Октиди (8)
+      label-nonidi-9: Действительно (9)
+      label-décadi-10: Декади (10)
+      label-vertu-1: Добродетель (1)
+      label-génie-2: Гений (2)
+      label-travail-3: Работа (3)
+      label-opinion-4: Мнение (4)
+      label-récompenses-5: Награды (5)
+      label-révolution-6: Революция (6)
+      tab-gregorian: григорианский
+      label-date: Дата
+      label-leap: "Прыгнуть:"
+      label-time: "Время:"
+      label-weekday: "Будний день:"
+      tab-julian-day: Джулиан Дэй
+      label-julian-day: "Джулиан Дэй:"
+      tab-modified-julian: Модифицированный Юлиан
+      label-modified-julian-day: "Модифицированный юлианский день:"
+      tab-julian-calendar: Юлианский календарь
+      tab-gregorian-serial: Григорианский сериал
+      label-gregorian-serial-day: "День Григорианского сериала:"
+      tab-hebrew: иврит
+      tab-islamic: исламский
+      tab-persian: персидский
+      tab-persian-algorithmic: Персидский алгоритмический
+      tab-mayan: майя
+      label-long-count: "Длинный счёт:"
+      label-haab: Надеяться
+      label-tzolkin: Цолькин
+      tab-indian-civil: Индийская гражданская
+      tab-french-republican: Французская республиканская
+      label-day: "День:"
+      label-month: "Месяц:"
+      label-décade: "Десятилетие:"
+      label-year: "Год:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "День недели:"
+      label-week: "Неделя:"
+      label-day-of-year: "День года:"
+      tab-unix-time: Время Unix()
+      label-unix-time: "Функция времени Unix (Time()):"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Порядковый номер в Excel (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Серия Excel, день (1904):"
+      tag-this-is-a-port-of-wonderful: Это замечательный порт
+      tag-fourmilab-ch-calendar-converter: Конвертер календарей Fourmilab.ch
+      tag-by-john-walker: Джон Уокер
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Обновить другие календари
+      tag-today: Сегодня
+  bech32:
+    title: Кодировщик/декодер Bech32
+    description: Кодирование/декодирование/проверка betch32(m)
+    externalAccess: нулевой
+    texts:
+      label-bech32: Бех32
+      label-bech32m: Bech32m
+      tab-decode: Расшифровка
+      label-bech32-m-string: "Строка Bech32(m):"
+      placeholder-bech32-bech32m-string: Bech32 / Bech32m string
+      label-variant: "Вариант:"
+      label-hrp: "HRP:"
+      placeholder-hrp: ХРП
+      label-payload: "Полезная нагрузка:"
+      placeholder-hex-payload: Шестигранная полезная нагрузка
+      placeholder-variant: Вариант
+      tab-encode: Кодировать
+      label-encoded-bech32-string: "Закодированная строка bech32:"
+      placeholder-bech32-string: bech32 string
+      tab-batch: Партия
+      label-bech32-strings-one-per-line: "Строки Bech32 (по одной на строку):"
+      placeholder-one-bech32-string-per-line: Одна строка Bech32 на каждой строке
+      title-results: Результаты
+      tag-auto-detect: Автоматическое определение
+      tag-manual: Руководство
+      tag-checksum-only: Только контрольная сумма
+      tag-full-decode: Полное расшифровка
+      tag-checksum-valid: Контрольная сумма действительна
+      tag-checksum-invalid: Контрольная сумма неверна
+      tag-encode: Кодировать
+      tag-convert: Преобразовать
+      tag-export-csv: Экспорт CSV
+      invalid-hex-payload: Недопустимая шестнадцатеричная полезная нагрузка
+      input: Вход
+      variant: Вариант
+      status: Статус
+      hex: Шестиугольник
+      hrp: ХРП
+  docker-pangolin-labels:
+    title: Метки Docker Pangolin
+    description: Преобразование меток Docker Compose Pangolin в шаблоны и наоборот.
+    externalAccess: нулевой
+    texts:
+      tab-compose-blueprint: Создать → Чертеж
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: Вставьте сюда полный файл docker-compose.yml…
+      label-generated-blueprint: "Сгенерированный план:"
+      placeholder-blueprint-yaml-will-appear-here: Здесь появится шаблон в формате YAML…
+      tab-blueprint-labels: Чертеж → Метки
+      label-blueprint-yaml: "Шаблон YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Вставьте сюда YAML-файл с описанием проекта Pangolin…
+      label-generated-docker-labels: "Сгенерированные метки Docker:"
+      placeholder-docker-labels-will-appear-here: Здесь появятся метки Docker...
+      tag-extract-pangolin-blueprint: Извлечь чертеж панголина
+      tag-array-key-value: Массив (- ключ=значение)
+      tag-object-key-value: "Объект (ключ: значение)"
+      tag-convert-to-docker-labels: Преобразовать в метки Docker
+      invalid-blueprint-yaml: Неверный шаблон YAML
+  fitness-computer:
+    title: Фитнес-компьютер
+    description: "Вычислите BMR (базальный метаболизм), TDEE / калории (общие
+      суточные затраты энергии), BMI (индекс массы тела), идеальный вес
+      (идеальный вес тела), процент жира в организме (процент жира в организме),
+      максимальную частоту сердечных сокращений (Max HR): ключевые показатели,
+      используемые для оценки общей физической формы и физиологического
+      здоровья."
+    externalAccess: нулевой
+    texts:
+      label-bmr: БМР
+      label-tdee-calories: TDEE/Калории
+      label-bmi: "ИМТ:"
+      label-ideal-weight: "Идеальный вес:"
+      label-body-fat-us-navy: Жировая масса тела (ВМС США)
+      label-body-fat-bmi: Жировая масса тела (ИМТ)
+      label-max-heart-rate: Максимальная частота сердечных сокращений
+      label-sedentary-little-or-no-exercise: "Сидячий образ жизни: мало или совсем нет физических упражнений"
+      label-light-exercise-1-3-times-week: "Легкая нагрузка: упражнения 1-3 раза в неделю"
+      label-moderate-exercise-4-5-times-week: "Умеренный уровень: заниматься спортом 4-5 раз в неделю."
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week:
+        "Активный образ жизни: ежедневные упражнения или интенсивные физические
+        упражнения 3-4 раза в неделю."
+      label-very-active-intense-exercise-6-7-times-week: "Очень активный образ жизни: интенсивные тренировки 6-7 раз в неделю."
+      label-extra-active-very-intense-exercise-daily-or-physical-job:
+        "Сверхактивный образ жизни: очень интенсивные ежедневные физические
+        упражнения или работа, требующая физического труда."
+      label-units: "Единицы измерения:"
+      label-formula: "Формула:"
+      label-gender: "Пол:"
+      label-age: "Возраст:"
+      title-body-measurements: Параметры тела
+      label-activity-level: "Уровень активности:"
+      title-results: Результаты
+      label-bmr-kcal-day: "Базальный метаболизм (ккал/день):"
+      label-tdee-calories-kcal-day: "TDEE/Калории (ккал/день):"
+      label-bmi-category: "Категория ИМТ:"
+      label-healthy-range-min: "Здоровый диапазон (мин):"
+      label-healthy-range-max: "Нормальный диапазон (макс.):"
+      label-devine-1974: "— (Наступает 1974 год):"
+      label-hamwi-1964: "— (Хамви 1964):"
+      label-miller-1983: "— (Миллер 1983):"
+      label-robinson-1983: "— (Робинсон 1983):"
+      label-body-fat: "Процент жира в организме:"
+      label-fat-mass: "Жировая масса:"
+      label-lean-mass: "Мышечная масса:"
+      label-max-heart-rate-bpm: "Максимальная частота сердечных сокращений (уд/мин):"
+      tag-metric-kg-cm: Метрическая система (кг, см)
+      tag-us-lbs-inches: США (фунты, дюймы)
+      tag-male: Мужской
+      tag-female: Женский
+  food-energy-converter:
+    title: Преобразователь пищевой энергии
+    description: Перевод единиц измерения (джоули, калории) между продуктами питания.
+    externalAccess: нулевой
+  iso-639-searcher:
+    title: Поисковик ISO 639
+    description: Поиск по языковым кодам ISO 639-1/2T/2B/3
+    externalAccess: нулевой
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Поиск по коду языка ISO-639 по ISO-1, ISO-2T/2B, ISO-3, названию...
+      label-max-results: "Максимальное количество результатов:"
+      label-2b: "2B:"
+      label-2t: "2Т:"
+      label-eng: "АНГЛИЙСКИЙ:"
+      tag-no-results: Результаты отсутствуют
+      tag-search-results: Результаты поиска
+      tag-iso-639-1: изо-639-1
+      tag-iso-639-2t-2b: изо-639-2Т/2Б
+      tag-iso-639-3: изо-639-3
+      tag-english-and-local-name: Английское и местное название
+      loading-more-results: Загрузка дополнительных результатов...
+  jasypt-string-encryption:
+    title: Шифрование строк Jasypt
+    description: Шифрование и расшифровка строк с использованием стандарта Jasypt
+      (Java Simplified Encryption).
+    externalAccess: нулевой
+    texts:
+      label-mode: "Режим:"
+      label-password-secret-key: "Пароль (секретный ключ):"
+      placeholder-enter-jasypt-password-salt-secret-key: Введите пароль Jasypt (соль / секретный ключ).
+      title-results: Результаты
+      label-decoded: "Расшифровано:"
+      label-raw: "Сырой:"
+      label-enc-form: "Форма ENC:"
+      tag-encrypt: Шифрование
+      tag-decrypt: Расшифровка
+      plain-text: "Простой текст:"
+      jasypt-encrypted-string: "Зашифрованная строка Jasypt:"
+      text-to-encrypt-e-g-db-password: Текст для шифрования (например, пароль к базе данных)
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Зашифрованное значение (например,
+        ENC(...)) или необработанная строка Jasypt
+  k8s-rbac-generator:
+    title: Генератор RBAC для Kubernetes
+    description: Сгенерировать YAML-файл политики RBAC для Kubernetes
+    externalAccess: нулевой
+    texts:
+      label-user: Пользователь
+      label-group: Группа
+      label-serviceaccount: Учетная запись службы
+      label-role-name: "Название должности:"
+      label-role-type: Тип роли
+      label-namespace: Пространство имен
+      title-rules: Правила
+      label-resources: Ресурсы
+      placeholder-select-resources-supports: Выберите ресурсы (поддерживают *)
+      label-resource-names-optional: Названия ресурсов (необязательно)
+      placeholder-specific-resources-names: Названия конкретных ресурсов
+      label-verbs: Глаголы
+      placeholder-select-verbs-supports: Выберите глаголы (поддерживает *)
+      title-subjects: Темы
+      label-kind: Добрый
+      label-name: Имя
+      title-output-yaml: Вывод в формате YAML
+      tab-role-yaml: Роль YAML
+      tab-rolebinding-yaml: RoleBinding YAML
+      tag-clusterrole-global: ClusterRole (Global)
+      tag-role-namespaced: Роль (с пространством имен)
+      tag-add-rule: + Добавить правило
+      tag-remove-rule: Удалить правило
+      tag-add-subject: + Добавить тему
+      tag-remove-subject: Удалить тему
+  objgen-html:
+    title: ObjGen в HTML
+    description: Генерация сложного HTML из TOML-подобного синтаксиса.
+    externalAccess: нулевой
+    texts:
+      input-label-objgen-html-definition: Определение ObjGen HTML
+      input-placeholder-put-your-objgen-html-definition-here: Вставьте сюда определение вашего объекта ObjGen HTML...
+      output-label-generated-html: Сгенерированный HTML
+      tag-documentation: Документация
+  objgen-json:
+    title: ObjGen в JSON
+    description: Генерация многослойного JSON из TOML-подобного синтаксиса.
+    externalAccess: нулевой
+    texts:
+      input-label-objgen-json-definition: Определение ObjGen в формате JSON
+      input-placeholder-put-your-objgen-json-definition-here: Вставьте сюда определение вашего объекта ObjGen в формате JSON...
+      output-label-generated-json: Сгенерированный JSON
+      tag-documentation: Документация
+  pgp-file-encryption:
+    title: Шифрование файлов PGP
+    description: Шифрование и расшифровка файлов с помощью PGP
+    externalAccess: нулевой
+    texts:
+      title-1-select-a-file: 1. Выберите файл
+      title-drag-and-drop-a-file-or-click-to-select: Перетащите файл или выберите его щелчком мыши.
+      title-2-public-key-for-encryption: 2. Открытый ключ (для шифрования)
+      title-3-private-key-passphrase-for-decryption: 3. Закрытый ключ + парольная фраза (для расшифровки)
+      label-passphrase: "Кодовая фраза:"
+      placeholder-passphrase: Кодовая фраза
+      tag-selected-file: "Выбранный файл:"
+      tag-encrypt-stream: Шифрование (потока)
+      tag-decrypt-stream: Расшифровка (потока)
+      tag-encrypting: Шифрование…
+      tag-decrypting: Расшифровка…
+      tag-encrypted-file-ready: Зашифрованный файл готов.
+      tag-download-encrypted: Скачать в зашифрованном виде
+      tag-decrypted-file-ready: Расшифрованный файл готов.
+      tag-download-decrypted: Скачать расшифрованный
+  remove-background:
+    title: Удалить фоновое изображение
+    description: Удаление фона с изображения с помощью ИИ
+    externalAccess: Загрузка моделей, удаляющих фон из HuggingFace. Обработка
+      выполняется в вашем браузере.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Прозрачный
+      label-solid-color: Однотонный цвет
+      label-pattern: "Шаблон:"
+      label-blurred-original: Размытое оригинальное изображение
+      label-adjust-contrast-brightness: Настройте контрастность/яркость
+      label-diagonal-stripes: Диагональные полосы
+      label-dots: Точки
+      label-checkerboard: Шахматная доска
+      title-drag-and-drop-an-image-or-click-to-select: Перетащите изображение или выберите его щелчком мыши.
+      label-model: "Модель:"
+      label-blur: "Размытие:"
+      label-contrast: "Контраст:"
+      label-brightness: "Яркость:"
+      title-original: Оригинал
+      title-result: Результат
+      tag-apply-background: Применить фон
+      tag-download-result: Скачать результат
+  shell-formatter:
+    title: Форматировщик команд оболочки
+    description: Форматировать команды оболочки как многострочные команды,
+      разделенные по аргументам.
+    externalAccess: нулевой
+    texts:
+      input-label-shell-commands-to-format: Команды оболочки для форматирования
+      input-placeholder-put-your-shell-commands-to-format-here: Здесь вы можете отформатировать ваши команды оболочки...
+      output-label-formatted-shell-commands: Отформатированные команды оболочки
+  shell-linearizer:
+    title: Линеаризатор команд оболочки
+    description: Линеаризация многострочных команд оболочки
+    externalAccess: нулевой
+    texts:
+      input-label-shell-commands-to-linearize: Команды оболочки для линеаризации
+      input-placeholder-put-your-shell-commands-to-linearize-here: Здесь укажите команды оболочки для линеаризации...
+      output-label-linearized-shell-commands: Линеаризованные команды оболочки
+  ufw-generator:
+    title: Генератор команд UFW
+    description: Генерация командных строк UFW
+    externalAccess: нулевой
+    texts:
+      label-allow: Позволять
+      label-deny: Отрицать
+      label-reject: Отклонять
+      label-limit: Лимит
+      label-incoming: Входящие
+      label-outgoing: Исходящий
+      label-tcp: TCP
+      label-udp: УДП
+      label-any: Любой
+      label-action: "Действие:"
+      label-direction: "Направление:"
+      label-protocol: "Протокол:"
+      label-port: "Порт:"
+      placeholder-80: "80"
+      label-port-to-range: "Порт в (диапазон):"
+      placeholder-443: "443"
+      label-from-ip: "С IP-адреса:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "К IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Интерфейс:"
+      placeholder-eth0: eth0
+      label-logging: "Ведение журнала:"
+      label-comment: "Комментарий:"
+      placeholder-optional-comment: Необязательный комментарий
+      title-generated-command: Сгенерированная команда
+      missing-port: Отсутствует порт
+  visual-subnet-calculator:
+    title: Визуальный калькулятор подсетей
+    description: Инструмент для быстрого проектирования сетей и совместной работы
+      над этим проектом с другими. Он ориентирован на ускорение работы сетевых
+      администраторов, а не на академическую математику подсетей.
+    externalAccess: нулевой
+  zalgo:
+    title: Генератор/баннер Zalgo
+    description: Сгенерировать текст Zalgo и очистить сгенерированный текст Zalgo.
+    externalAccess: нулевой
+    texts:
+      text-zalgo-text-copied: Текст Zalgo скопирован!
+      title-zalgo-text-generation: Генерация текста Zalgo
+      placeholder-put-your-string-here: Прикрепите сюда свою нить...
+      label-text-to-decorate-with-zalgo: Текст для оформления с помощью Zalgo
+      label-intensity: "Интенсивность:"
+      title-zalgo-text: Залго Текст
+      title-zalgo-cleaner: Очиститель Залго
+      placeholder-put-zalgo-text-to-clean-here: Вставьте сюда текст Zalgo для очистки...
+      label-zalgo-text-to-clean: Текст Залго для очистки
+      label-cleaned-text: Очищенный текст
+      placeholder-clean-zalgo-text-will-appear-here: Здесь появится чистый текст на языке Zalgo...
+      tag-generate: Сгенерировать
+      tag-copy: Копия
+      tag-clean: Чистый
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Необходимо установить одно из сообщений | функцию
+        function-must-set-messages: Функция должна устанавливать сообщения.
+  dead-pixel-tester:
+    title: Тестер битых пикселей
+  gif-to-mp4:
+    title: GIF в MP4
+    description: Преобразуйте GIF в MP4 с помощью ffmpeg
+    externalAccess: нулевой
+    texts:
+      label-stream-loop: "Циклическая запись потока:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Перетащите GIF-файл сюда или выберите его, щелкнув мышью.
+      title-logs: Журналы
+  html-to-pdf:
+    title: HTML в PDF
+    description: Создавайте PDF-файлы из HTML-контента или URL-адреса с выбором
+      формата и автоматическим скрытием баннеров о файлах cookie.
+    externalAccess: Этот инструмент отправляет URL-адреса и HTML-контент в
+      *самостоятельно размещенный* веб-сервис Puppeteer, который был настроен
+      соответствующим образом.
+    texts:
+      label-a2: А2
+      label-a3: А3
+      label-a4: А4
+      label-a5: А5
+      label-letter: Письмо
+      label-legal: Юридические
+      label-html-to-pdf-service-url: "URL-адрес сервиса преобразования HTML в PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Базовая аутентификация:"
+      placeholder-username-password: имя пользователя:пароль
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "HTML-контент:"
+      tab-batch-url-pdf: Пакетный URL → PDF
+      label-urls-one-per-line: "URL-адреса (по одному на строку):"
+      title-results: Результаты
+      tab-custom-pdf-options: Настраиваемые параметры PDF
+      label-format: "Формат:"
+      label-language: "Язык:"
+      placeholder-en-us: en-US
+      label-landscape: "Пейзаж:"
+      label-one-long-page: "Одна длинная страница:"
+      label-auto-hide-cookie-banners: "Автоматическое скрытие баннеров cookie:"
+      label-print-background: "Фон для печати:"
+      title-margins: Поля
+      label-top-mm: "Верхняя граница (мм):"
+      label-bottom-mm: "Дно (мм):"
+      label-left-mm: "Слева (мм):"
+      label-right-mm: "Справа (мм):"
+      tag-html-to-pdf-service-configuration-self-hosted: Настройка сервиса преобразования HTML в PDF (собственное размещение)
+      tag-you-must-self-host-html-to-pdf-service-see: "Вам необходимо самостоятельно
+        разместить службу преобразования HTML в PDF. См.:"
+      tag-html-to-pdf-service-install: Установка сервиса преобразования HTML в PDF.
+      tag-generate-pdf: Сгенерировать PDF
+      tag-generate-pdfs: Создать PDF-файлы
+      tag-url: URL
+      tag-download: Скачать
+      tag-download-pdf: Скачать PDF
+      tag-failed: Неуспешный
+  shutdown-command-generator:
+    title: Генератор команд завершения работы
+    description: Генерация команд завершения работы для различных операционных систем.
+    externalAccess: нулевой
+    texts:
+      label-windows: Windows
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Задерживать:"
+      label-specific-time: конкретное время
+      label-platform: "Платформа:"
+      label-shutdown-time: "Время отключения:"
+      label-force: Сила
+      label-reboot: Перезагрузить
+      label-logoff: Выйти
+      label-cancel: Отмена
+      label-hibernate: Впасть в спячку
+      title-generated-command: Сгенерированная команда
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: м
+      tag-nbsp-s: с
 spanCopyable:
   copy: Копировать в буфер обмена
   copied: Скопировано!
@@ -8000,3 +8713,9 @@ textareaCopyable:
   download: Скачать
 locale-selector:
   select-a-language: Выберите язык
+collapsibleToolMenu:
+  text:
+    expanding: Расширение...
+    collapsing: Обрушение...
+    collapse-all-tools: Свернуть все инструменты
+    expand-all-tools: Развернуть все инструменты

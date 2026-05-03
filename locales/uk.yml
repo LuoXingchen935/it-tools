@@ -3,6 +3,9 @@
   sorry: Вибачте, ця сторінка, схоже, не існує
   maybe: Можливо, кеш робить хитрощі, спробуйте примусово оновити сторінку?
   backHome: Повернутися на головну
+  page:
+    text:
+      page-not-found-it-tools: Сторінку не знайдено – ІТ-інструменти
 home:
   categories:
     newestTools: Найновіші інструменти
@@ -33,6 +36,13 @@ home:
     lightMode: Світлий режим
     mode: Перемикання темного/світлого режиму
   loading-more-tools: Завантаження додаткових інструментів...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Колекція зручних онлайн-інструментів для розробників із чудовим UX. IT
+        Tools — це безкоштовна колекція зручних онлайн-інструментів з відкритим
+        кодом для розробників та людей, які працюють у сфері ІТ.
+      it-tools-handy-online-tools-for-developers: ІТ-інструменти – зручні онлайн-інструменти для розробників
 about:
   alltools-title: Усі інструменти ({toolsCount})
   tools:
@@ -82,6 +92,12 @@ about:
     ласка, надішліть звіт про помилку в розділі
     [issues](https://github.com/sharevb/it-tools/issues/new/choose) у
     репозиторії GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Колекція зручних онлайн-інструментів для розробників із чудовим UX. IT
+      Tools — це безкоштовна колекція зручних онлайн-інструментів з відкритим
+      кодом для розробників та людей, які працюють у сфері ІТ.
+    about-it-tools: Про нас - ІТ-інструменти
 favoriteButton:
   remove: Вилучити з обраних
   add: Додати до обраних
@@ -119,6 +135,9 @@ tools:
     physics: Фізика
     cheatsheets: Шпаргалки
     forensic: Судово-медична експертиза
+    finance: Фінанси
+    default: За замовчуванням
+    toml: TOML
   password-strength-analyser:
     title: Аналізатор надійності пароля
     description: Дізнайтеся про надійність свого пароля за допомогою цього
@@ -736,6 +755,7 @@ tools:
       tag-preview-image: Попередній перегляд зображення
       tag-download-file: Завантажити файл
       tag-copy: Копіювати
+      include-data-uri-prefix: "Включити дані: префікс URI"
   list-converter:
     title: Конвертер списків
     description: Цей інструмент може обробляти дані на основі стовпців і
@@ -1068,6 +1088,8 @@ tools:
       tag-refresh-key-pair: Оновити пару ключів
       tag-public-key: Відкритий ключ
       tag-private-key: Закритий ключ
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Біти повинні бути 256 <= біти <= 16384 та кратними 8
   html-wysiwyg-editor:
     title: HTML WYSIWYG редактор
     description: Онлайн, багатофункціональний WYSIWYG HTML редактор, який генерує
@@ -1417,6 +1439,8 @@ tools:
       tag-quantity: Кількість
       tag-copy: Копіювати
       tag-refresh: Оновити
+      uppercase: Великі літери
+      no-hyphen: Без дефісу
   ipv4-address-converter:
     title: Конвертер IPv4 адрес
     description: Конвертуйте IP-адресу у десяткове, двійкове, шістнадцяткове або
@@ -2176,6 +2200,8 @@ tools:
       tag-certificate-signing-request: Запит на підпис сертифіката
       tag-public-key: Відкритий ключ
       tag-private-key: Закритий ключ
+      label-rsa-bits: "Біти RSA:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Біти повинні бути 256 <= біти <= 16384 та кратними 8
   css-prettifier:
     title: Форматувач CSS
     description: Форматування CSS
@@ -2682,6 +2708,7 @@ tools:
       label-file-name: "Ім&#39;я файлу:"
       label-extension: "Розширення:"
       label-mime-type: "Тип MIME:"
+      an-error-occured-processing: Сталася помилка під час обробки
   folder-structure-diagram:
     title: Діаграма структури папок
     description: Утиліта для створення діаграм структури папок у вигляді ASCII
@@ -2780,6 +2807,8 @@ tools:
       label-pib: PiB
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1 МіБ = 1024 КіБ; 1 МБ = 1000 КБ; 1 ГіБ = 1024 МіБ; 1 ГБ = 1000 МБ;
       tag-see-here-for-details: див. тут для деталей
+      column-decimal: Десятковий
+      column-binary: Бінарний
   heic-converter:
     title: Конвертер HEIC
     description: Конвертуйте HEIC у JPEG або PNG
@@ -2788,6 +2817,7 @@ tools:
       label-png: PNG
       label-output-format: Вихідний формат
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Перетягніть сюди файл HEIC або клацніть, щоб вибрати файл
+      an-error-occured-processing-heic-heif-is-invalid: "Сталася помилка під час обробки: HEIC/HEIF недійсний."
   hex-converter:
     title: Конвертер Hex
     description: Кодуйте та декодуйте Hex буфери у числа (біти, порядок байтів, знак
@@ -2975,6 +3005,9 @@ tools:
     description: Конвертуйте між PNG/JPEG та ICO
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: Перетягніть сюди файл ICO або PNG/JPEG або клацніть, щоб вибрати файл
+      an-error-occured-processing: Сталася помилка під час обробки
+      invalid-ico-file: Недійсний ICO-файл!
+      invalid-png-file: Недійсний PNG-файл!
   ies-lighting-guidelines:
     title: Рекомендації IES з освітлення
     description: Шукайте рекомендації з освітлення від Illuminating Engineering
@@ -3008,6 +3041,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Потім перетягніть зображення нижче, і вони будуть конвертовані та
         завантажені негайно:"
+      invalid-image-file: Недійсний файл зображення!
+      an-error-occured-processing: Сталася помилка під час обробки
   image-exif-reader:
     title: Читач EXIF/метаданих зображень
     description: Читайте EXIF, IPTC, XMP, GPS та інші метадані, якість JPEG та іншу
@@ -3210,6 +3245,7 @@ tools:
       tag-iso2-iso3: Ізо2/Ізо3
       tag-name-and-info: Ім&#39;я та інформація
       tag-gt-see-on-openstreetmap: "&gt; Див. на OpenStreetMap"
+      loading-more-results: Завантаження додаткових результатів...
   javascript-prettifier:
     title: Форматувач Javascript
     description: Форматування та прикрашання коду Javascript
@@ -3747,6 +3783,11 @@ tools:
       placeholder-passphrase: Пароль...
       tag-copy: Копіювати
       tag-refresh: Оновити
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Не вдається згенерувати парольну фразу з [{0} - {1}] символів з
+        поточними налаштуваннями, спробуйте змінити кількість слів"
+      words-words: Слова ({0})
+      label-min-passphrase-len: "Мінімальна довжина парольної фрази:"
   paste-as-markdown:
     title: Вставка як Markdown
     description: Вставляйте клітинки/таблиці та посилання з буфера обміну у форматі Markdown
@@ -3810,10 +3851,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Перетягніть PDF-файл сюди або клацніть, щоб вибрати файл
       title-logs: Журнали
       label-qpdf: qpdf
-      label-password: 'Пароль:'
+      label-password: "Пароль:"
       placeholder-password: Пароль
       tag-decrypt-pdf: Розшифрувати PDF
-      tag-output-file: 'Вихідний файл:'
+      tag-output-file: "Вихідний файл:"
   pgp-encryption:
     title: PGP шифрування
     description: Шифруйте та дешифруйте текст за допомогою PGP ключів
@@ -5038,6 +5079,8 @@ tools:
       label-permanent: Постійний
       title-generated-fw-command: "Згенерована команда fw:"
       tag-const-zone-ref: константна зона = посилання
+    title: Генератор командного рядка firewalld
+    description: Генерація командних рядків firewalld
   fortune-wheel:
     title: Колесо фортуни
     description: Налаштоване колесо фортуни
@@ -6237,6 +6280,9 @@ tools:
       label-django-secret-key: "Секретний ключ Django:"
       tag-copy: Копіювати
       tag-regenerate: Регенерувати
+    service:
+      texts:
+        generating-range-is-too-large: Діапазон генерації занадто великий
   dnsbl-checker:
     title: Перевірка DNSBL
     description: Перевірити, чи входить задана IP-адреса до будь-якого з відомих
@@ -6287,6 +6333,7 @@ tools:
       title-html-head-tags: 📄 Теги заголовків HTML
       tag-upload-png-image: Завантажити зображення PNG
       tag-download-zip: 📦 Завантажити ZIP-архів
+      invalid-png-file: Недійсний PNG-файл!
   font-compare:
     title: Порівняння шрифтів
     description: Порівняти зі шрифтами у заданому тексті
@@ -6372,6 +6419,12 @@ tools:
       label-fallback: "Резервний варіант:"
       placeholder-fallback-font: Резервний шрифт
       tag-defineprops: defineProps
+    text:
+      by-font-name: За назвою шрифту
+      by-font-url: За URL-адресою шрифту
+      by-font-file: За файлом шрифту
+      by-inline-css: За допомогою вбудованого CSS
+      by-css-url: За URL-адресою CSS
   gpt-token-encoder:
     title: Кодер/декодер токенів GPT
     description: Кодувати текст у токени GPT та декодувати токени GPT назад у текст
@@ -6408,6 +6461,10 @@ tools:
       tag-original-image: Оригінальне зображення
       tag-inverted-image: Інвертоване зображення
       tag-clear-upload-new: Очистити та завантажити нове
+    service:
+      texts:
+        file-must-be-an-image: Файл має бути зображенням
+        failed-to-process-image-err: "Не вдалося обробити зображення:"
   image-comparer:
     title: Порівняння зображень
     description: Інструмент для візуального порівняння зображень
@@ -6422,6 +6479,9 @@ tools:
       tag-compare: Порівняти
       tag-upload-left: Завантажити ліворуч
       tag-upload-right: Право на завантаження
+    text:
+      compare-by-url: Порівняти за URL-адресою
+      compare-by-upload: Порівняти за завантаженням
   logrotate-generator:
     title: Генератор Apache LogRotate
     description: Згенерувати конфігурацію ротації Apache .log
@@ -6549,6 +6609,15 @@ tools:
       label-decimal: "Десятковий:"
       label-octal: "Вісімкове:"
       label-hexadecimal: "Шістнадцяткове:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Недійсний шістнадцятковий код. Дозволено лише 0-9 та A-F.
+        invalid-1: Недійсний
+        invalid-0: Недійсний
+        invalid: Недійсний
+        unsupported-middle-endian-format: Непідтримуваний формат middle-endian.
+        failed-to-parse-bytes: Не вдалося проаналізувати байти.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Вхідні дані мають містити {0} шістнадцяткових символів для {1}-біт.
   mttdl-calculator:
     title: Калькулятор надійності RAID
     description: Обчислює надійність системи зберігання даних, використовуючи відому
@@ -6691,6 +6760,11 @@ tools:
       tag-convert: Конвертувати
       tag-axial: Осьовий
       tag-radial: Радіальний
+    text:
+      bands-notation: Смуги → Нотація
+      notation-bands: Нотація → Смуги
+      number-notation: Число → Позначення
+      notation-number: Нотація → Число
   sed-command-generator:
     title: Генератор команд Sed
     description: Генерація команд sed для Unix
@@ -7076,6 +7150,9 @@ tools:
       title-mw-to-dbm: мВт до дБм
       label-mw-value: "Значення мВт:"
       label-corresponding-dbm-value: "Відповідне значення дБм:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Потужність у міліватах має бути більшою за 0
   diceware-generator:
     title: Генератор паролів Diceware
     description: Генерація випадкового пароля за допомогою методу Diceware
@@ -7306,6 +7383,9 @@ tools:
       label-arguments: Аргументи
       title-structured-output-json: Структурований вихідний JSON
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x: "{'{'}\"до\":\"0x...\",\"дані\":\"0x...\"{'}'} або необроблені 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Дані транзакції повинні починатися з 0x
   file-splitter:
     title: Роздільник файлів
     description: Розділити JSON, XML або текстовий файл або за групою вузлів, або за
@@ -7322,6 +7402,9 @@ tools:
       tag-process-chunks: Частини процесу
       tag-download-all: Завантажити все
       tag-download: Завантажити
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Непідтримуваний формат або недійсний вміст
   gitignore-generator:
     title: Генератор GitIgnore
     description: Згенерувати .gitignore для набору поширених шаблонів
@@ -7433,6 +7516,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Перетягніть PDF-файл сюди або клацніть, щоб вибрати файл
       title-logs: Журнали
       label-ghostscript: Госкрипт
+      process-run-failed: Не вдалося виконати процес
+      an-error-occured-processing: Сталася помилка під час обробки
   serial-console:
     title: Консоль послідовного порту
     description: Підключення, читання та надсилання повідомлень до послідовного порту
@@ -7693,6 +7778,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: Вихід з режиму мертвих пікселів
       tag-start-dead-pixel: Початок роботи з мертвими пікселями
+    title: Тестер мертвих пікселів
+    description: Інструмент для перевірки, чи піксель на вашому екрані мертвий.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Виключити префікси СІ
@@ -7720,6 +7807,13 @@ tools:
       tag-convert-batch: Пакетне перетворення
       tag-longitude-east-is-positive-west-is-negative: "Довгота: схід – додатна, захід – від’ємна."
       tag-latitude-north-is-positive-south-is-negative: "Широта: Північ – додатна, Південь – від’ємна."
+    text:
+      coordinate-system: Система координат
+      decimal-format-lng-lat: Десятковий формат (мовний, лат.)
+      dms-format-lng-lat: Формат DMS (мовний, лат.)
+      download-results-csv: Завантажити результати у форматі CSV
+      batch-lat-lng-converter: Пакетний конвертер широти/мовлення
+      single-lat-lng-converter: Одинарний конвертер Lat/Lng
   si-prefixes-converter:
     title: Конвертер префіксів СІ
     description: Конвертувати між метричними префіксами
@@ -7762,6 +7856,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: Зроблено з {0}
+        runs-entirely-in-your-browser-no-external-requests: Працює повністю у вашому браузері. Без зовнішніх запитів.
   acceleration-converter:
     title: Конвертер прискорення
     description: Перетворення значень між одиницями прискорення
@@ -7877,7 +7972,6 @@ tools:
       tag-back: Назад (←)
       tag-next: Далі (→)
       tag-reset: Скинути
-      tag-: ↓
       tag-or: "- АБО -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Керуйте відтворенням та навігацією, не торкаючись миші.
       tag-shortcut: Скорочення
@@ -7896,6 +7990,16 @@ tools:
       tag-jump-to-start: Перейти до початку
       tag-end: Кінець
       tag-jump-to-end: Перейти до кінця
+    text:
+      please-provide-some-text-first: Будь ласка, спочатку надайте якийсь текст.
+      unsupported-file-type: Непідтримуваний тип файлу.
+      display: Дисплей
+      text: Текст
+      settings: Налаштування
+      keyboard-shortcuts: Комбінації клавіш
+      ready: Готовий
+      words: слова
+      wpm: WPM
   speed-converter:
     title: Конвертер швидкості
     description: Перетворення значень між одиницями швидкості
@@ -7946,10 +8050,612 @@ tools:
       tag-apply-configuration: Застосувати конфігурацію
       tag-clear-logs: Очистити журнали
       tag-send: Надіслати
+      already-connected: ⚠️ Вже підключено
+      connected-to-websocket-bridge: ✅ Підключено до мосту WebSocket
+      disconnected: 🔌 Відключено
+      no-active-connection: ⚠️ Немає активного з'єднання
+      sent-text: "➡️ Надіслано текст:"
+      configured: ⚙️ Налаштовано
+      sent-hex: "➡️ Надіслано шістнадцятковий код:"
+      disconnecting: 🔻 Відключення...
+      error: "❌ Помилка:"
+      end: "🛑 Кінець:"
+      text: "📩 Текст:"
+      binary: "📩 Бінарний файл:"
+    text:
+      connected: Підключено
+      disconnected: Відключено
   volume-flow-rate-converter:
     title: Конвертер об'ємної витрати
     description: Перетворення значень між одиницями об'ємної витрати
     externalAccess: нульовий
+  tip-calculator:
+    title: Калькулятор чайових
+    description: Розрахуйте чайові для рахунку та розділіть їх між кількома людьми.
+    texts:
+      title-bill-details: Деталі рахунку
+      label-bill-amount: "Сума рахунку:"
+      placeholder-total-bill: Загальний рахунок
+      label-tip-percentage: "Відсоток чайових:"
+      placeholder-tip: Відсоток чайових
+      label-number-of-person: "Кількість осіб:"
+      placeholder-people: Люди
+      title-results: Результати
+      label-tip-amount: "Сума чайових:"
+      label-total-bill: "Загальний рахунок:"
+      label-amount-per-person: "Сума на особу:"
+      title-quick-tip: Швидка порада %
+      tag-const-billamount-ref: const Сума_рахунку = посилання
+      tag-: "%"
+  json-to-env:
+    title: JSON у .env
+    description: Конвертувати плоский об'єкт JSON у файл .env. Ключі пишуться у
+      верхньому регістрі, а значення безпечно взяті в лапки, якщо вони містять
+      пробіли, лапки або спеціальні символи env.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: Наданий JSON не є коректним плоским об'єктом.
+      input-label-your-json: Ваш JSON
+      input-placeholder-paste-your-json-here: Вставте сюди свій JSON...
+      output-label-env-from-your-json: .env з вашого JSON
+  calendar-converter:
+    service:
+      text:
+        sunday: Неділя
+        wednesday: Середа
+        tuesday: Вівторок
+        monday: Понеділок
+        thursday: Четвер
+        friday: П'ятниця
+        saturday: Субота
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Недійсна тривалість року: {0} днів."
+        common-deficient-353-days: Звичайний дефіцит (353 дні)
+        common-regular-354-days: Звичайний регулярний (354 дні)
+        common-complete-355-days: Звичайний повний (355 днів)
+        embolismic-deficient-383-days: Емболічна недостатність (383 дні)
+        embolismic-regular-384-days: Емболічний регулярний (384 дні)
+        embolismic-complete-385-days: Емболічна повна (385 днів)
+        normal-year: Звичайний рік
+        leap-year: Високосний рік
+    title: Конвертер календарів
+    description: Конвертувати дати та час між григоріанським, юліанським,
+      івритським, ісламським, перським, майяським, індійським, французьким
+      республіканським, ISO‑8601, часом Unix та серійним форматом Excel
+    externalAccess: нульовий
+    texts:
+      label-january: Січень
+      label-february: Лютий
+      label-march: Березень
+      label-april: Квітень
+      label-may: Травень
+      label-june: Червень
+      label-july: Липень
+      label-august: Серпень
+      label-september: Вересень
+      label-october: Жовтень
+      label-november: Листопад
+      label-december: Грудень
+      label-nisan-נִיסָן: Нісан
+      label-iyyar-אִיָּר: Ійяр (Ійяр)
+      label-sivan-סִיוָן: Сіван
+      label-tammuz-תַּמּוּז: Таммуз
+      label-av-אָב: Середній (Середній)
+      label-elul-אֱלוּל: Елул
+      label-tishri-תִּשְׁרֵי: Тішрі
+      label-heshvan-חֶשְׁוָן: Хешван (Хешван)
+      label-kislev-כִּסְלֵו: Кіслев
+      label-teveth-טֵבֵת: Тевет
+      label-shevat-שְׁבָט: Шеват (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Адар/Адар I (Адар)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Веадар/Адар II (Другий Адар)
+      label-muharram-مُحَرَّم: Мухаррам (مُحَرَّم)
+      label-safar-صَفَر: Сафар (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Рабі аль-Авваль (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Рабі ат-Тані (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Джумада аль-Ула (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Джумада ат-Танія (جُمادى الآخرة)
+      label-rajab-رَجَب: Раджаб (رَجَب)
+      label-shaʿban-شَعْبان: Шабан (شَعْبان)
+      label-ramadan-رَمَضان: Рамадан
+      label-shawwal-شَوّال: Шавваль
+      label-dhu-al-qaʿda-ذو-القَعْدة: Зу аль-Ка'да (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Зу аль-Хіджа (ذو الحِجّة)
+      label-farvardin-فروردین: Фарвардін (Фарвардін)
+      label-ordibehesht-اردیبهشت: Ордібехешт (Ордібехешт)
+      label-khordad-خرداد: Хордад (Хордад)
+      label-tir-تیر: Тір (Тір)
+      label-mordad-مرداد: Мордад (Мордад)
+      label-shahrivar-شهریور: Шахрівар (Шахрівар)
+      label-mehr-مهر: Мехр (Мехр)
+      label-aban-آبان: Абан (листопад)
+      label-azar-آذر: Азар (Азар)
+      label-dey-دی: Дей (The)
+      label-bahman-بهمن: Бахман (Бахман)
+      label-esfand-اسفند: Есфанд (березень)
+      label-caitra-चैत्र: Чайтра (Чайтра)
+      label-vaisakha-वैशाख: Вайсакха (Вайшакх)
+      label-jyaistha-ज्येष्ठ: Джяйштха (старший)
+      label-asadha-आषाढ़: Асадха
+      label-sravana-श्रावण: Шравана
+      label-bhadra-भाद्रपद: Бхадра (Бхадрапада)
+      label-asvina-आश्विन: Асвіна (Ашвін)
+      label-kartika-कार्तिक: Картіка
+      label-agrahayana-अग्रहायण: Аграхаяна (Аграхаяна)
+      label-pausa-पौष: Пауза
+      label-magha-माघ: Магха
+      label-phalguna-फाल्गुन: Пхалгуна
+      label-vendémiaire: Вандем'єр
+      label-brumaire: Брюмер
+      label-frimaire: Фрімер
+      label-nivôse: Нівос
+      label-pluviôse: Плювіоз
+      label-ventôse: Вентоз
+      label-germinal: Герміналь
+      label-floréal: Флореаль
+      label-prairial: Преріал
+      label-messidor: Мессідор
+      label-thermidor: Термідор
+      label-fructidor: Фруктідор
+      label-sans-culottides: Санкюлотиди
+      label-i: Я
+      label-ii: ІІ
+      label-iii: III
+      label-primidi-1: Приміди (1)
+      label-duodi-2: Дати (2)
+      label-tridi-3: Три (3)
+      label-quartidi-4: Чвертьфінали (4)
+      label-quintidi-5: Квінтідій (5)
+      label-sextidi-6: Секстиді (6)
+      label-septidi-7: Септіді (7)
+      label-octidi-8: Октиді (8)
+      label-nonidi-9: Дійсно (9)
+      label-décadi-10: Декаді (10)
+      label-vertu-1: Чеснота (1)
+      label-génie-2: Геній (2)
+      label-travail-3: Робота (3)
+      label-opinion-4: Думка (4)
+      label-récompenses-5: Нагороди (5)
+      label-révolution-6: Революція (6)
+      tab-gregorian: григоріанський
+      label-date: Дата
+      label-leap: "Стрибок:"
+      label-time: "Час:"
+      label-weekday: "День тижня:"
+      tab-julian-day: Джуліанський день
+      label-julian-day: "Джуліанський день:"
+      tab-modified-julian: Модифікований Джуліан
+      label-modified-julian-day: "Модифікований юліанський день:"
+      tab-julian-calendar: Юліанський календар
+      tab-gregorian-serial: Григоріанський серіал
+      label-gregorian-serial-day: "День григоріанського серіалу:"
+      tab-hebrew: Іврит
+      tab-islamic: Ісламський
+      tab-persian: Перська
+      tab-persian-algorithmic: Перська алгоритмічна
+      tab-mayan: Майя
+      label-long-count: "Довгий підрахунок:"
+      label-haab: Надія
+      label-tzolkin: Цолькін
+      tab-indian-civil: Індійський цивільний
+      tab-french-republican: Французький республіканець
+      label-day: "День:"
+      label-month: "Місяць:"
+      label-décade: "Десятиліття:"
+      label-year: "Рік:"
+      tab-iso-8601: ISO‑8601
+      label-day-of-week: "День тижня:"
+      label-week: "Тиждень:"
+      label-day-of-year: "День року:"
+      tab-unix-time: Час Unix()
+      label-unix-time: "Час Unix():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "День серійного випуску Excel (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "День серійного випуску Excel (1904):"
+      tag-this-is-a-port-of-wonderful: Це чудовий порт
+      tag-fourmilab-ch-calendar-converter: Fourmilab.ch Конвертер календарів
+      tag-by-john-walker: Джон Вокер
+      tag-xa0-xa0: «.»
+      tag-update-other-calendars: Оновити інші календарі
+      tag-today: Сьогодні
+  bech32:
+    title: Енкодер/декодер Bech32
+    description: Кодування/Декодування/Перевірка betch32(m)
+    externalAccess: нульовий
+    texts:
+      label-bech32: Беч32
+      label-bech32m: Беч32м
+      tab-decode: Розшифрувати
+      label-bech32-m-string: "Рядок Bech32(m):"
+      placeholder-bech32-bech32m-string: Струна Bech32 / Bech32m
+      label-variant: "Варіант:"
+      label-hrp: "ПХП:"
+      placeholder-hrp: ПХП
+      label-payload: "Корисне навантаження:"
+      placeholder-hex-payload: Шістнадцяткове корисне навантаження
+      placeholder-variant: Варіант
+      tab-encode: Кодувати
+      label-encoded-bech32-string: "Закодований рядок bech32:"
+      placeholder-bech32-string: рядок bech32
+      tab-batch: Пакет
+      label-bech32-strings-one-per-line: "Струни Bech32 (по одній на рядок):"
+      placeholder-one-bech32-string-per-line: Одна струна Bech32 на рядок
+      title-results: Результати
+      tag-auto-detect: Автоматичне визначення
+      tag-manual: Ручний
+      tag-checksum-only: Тільки контрольна сума
+      tag-full-decode: Повне декодування
+      tag-checksum-valid: Контрольна сума дійсна
+      tag-checksum-invalid: Контрольна сума недійсна
+      tag-encode: Кодувати
+      tag-convert: Конвертувати
+      tag-export-csv: Експорт CSV-файлу
+      invalid-hex-payload: Недійсне шістнадцяткове корисне навантаження
+      input: Вхід
+      variant: Варіант
+      status: Статус
+      hex: Шістнадцятковий
+      hrp: ПХП
+  docker-pangolin-labels:
+    title: Мітки Docker Pangolin
+    description: Конвертувати етикетки Docker Compose Pangolin у креслення та навпаки
+    externalAccess: нульовий
+    texts:
+      tab-compose-blueprint: Написати → План
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: Вставте сюди повний docker-compose.yml…
+      label-generated-blueprint: "Згенерований креслення:"
+      placeholder-blueprint-yaml-will-appear-here: Тут з’явиться YAML-файл Blueprint…
+      tab-blueprint-labels: План → Мітки
+      label-blueprint-yaml: "YAML-файл креслення:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Вставте сюди YAML-файл креслення Pangolin…
+      label-generated-docker-labels: "Згенеровані мітки Docker:"
+      placeholder-docker-labels-will-appear-here: Мітки Docker з'являться тут...
+      tag-extract-pangolin-blueprint: Витяг креслення панголіна
+      tag-array-key-value: Масив (- ключ=значення)
+      tag-object-key-value: "Об'єкт (ключ: значення)"
+      tag-convert-to-docker-labels: Конвертувати в Docker Labels
+      invalid-blueprint-yaml: Недійсний YAML-файл креслення
+  fitness-computer:
+    title: Фітнес-комп'ютер
+    description: "Обчисліть BMR (базальний рівень метаболізму), TDEE / калорії
+      (загальні добові витрати енергії), BMI (індекс маси тіла), ідеальну вагу
+      (ідеальна маса тіла), вміст жиру в організмі (відсоток жиру в організмі),
+      максимальну частоту серцевих скорочень (максимальна частота серцевих
+      скорочень): ключові показники, що використовуються для оцінки загальної
+      фізичної підготовки та фізіологічного здоров'я."
+    externalAccess: нульовий
+    texts:
+      label-bmr: Базовий рівень метаболізму (БМ)
+      label-tdee-calories: Калорії
+      label-bmi: "ІМТ:"
+      label-ideal-weight: "Ідеальна вага:"
+      label-body-fat-us-navy: Жир у тілі (ВМС США)
+      label-body-fat-bmi: Жир у тілі (ІМТ)
+      label-max-heart-rate: Максимальна частота серцевих скорочень
+      label-sedentary-little-or-no-exercise: "Малорухливий спосіб життя: мало або взагалі немає фізичних вправ"
+      label-light-exercise-1-3-times-week: "Легкі фізичні навантаження: 1-3 рази на тиждень"
+      label-moderate-exercise-4-5-times-week: "Помірний: фізичні вправи 4-5 разів на тиждень"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week:
+        "Активність: щоденні фізичні вправи або інтенсивні фізичні вправи 3-4
+        рази на тиждень"
+      label-very-active-intense-exercise-6-7-times-week: "Дуже активний: інтенсивні фізичні вправи 6-7 разів на тиждень"
+      label-extra-active-very-intense-exercise-daily-or-physical-job:
+        "Надмірна активність: дуже інтенсивні щоденні фізичні вправи або фізична
+        робота"
+      label-units: "Одиниці:"
+      label-formula: "Формула:"
+      label-gender: "Стать:"
+      label-age: "Вік:"
+      title-body-measurements: Виміри тіла
+      label-activity-level: "Рівень активності:"
+      title-results: Результати
+      label-bmr-kcal-day: "Базова норма споживання (ккал/день):"
+      label-tdee-calories-kcal-day: "TDEE/Калорії (ккал/день):"
+      label-bmi-category: "Категорія ІМТ:"
+      label-healthy-range-min: "Здоровий діапазон (мін):"
+      label-healthy-range-max: "Здоровий діапазон (макс.):"
+      label-devine-1974: "— (Це стає 1974 рік):"
+      label-hamwi-1964: "— (Хамві 1964):"
+      label-miller-1983: "— (Міллер, 1983):"
+      label-robinson-1983: "— (Робінсон, 1983):"
+      label-body-fat: "Жир у тілі (%):"
+      label-fat-mass: "Жирова маса:"
+      label-lean-mass: "М'язова маса:"
+      label-max-heart-rate-bpm: "Максимальна частота серцевих скорочень (уд/хв):"
+      tag-metric-kg-cm: Метрична система (кг, см)
+      tag-us-lbs-inches: США (фунти, дюйми)
+      tag-male: Чоловік
+      tag-female: Жінка
+  food-energy-converter:
+    title: Конвертер енергії їжі
+    description: Конвертувати між продуктами харчування (джоулі, калорії)
+    externalAccess: нульовий
+  iso-639-searcher:
+    title: Пошуковий інструмент ISO 639
+    description: Пошук за кодами мов ISO 639-1/2T/2B/3
+    externalAccess: нульовий
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Пошук мовного коду iso-639 за iso-1, iso-2T/2B, iso-3, назвою...
+      label-max-results: "Максимальні результати:"
+      label-2b: "2Б:"
+      label-2t: "2Т:"
+      label-eng: "АНГЛІЙСЬКА:"
+      tag-no-results: Немає результатів
+      tag-search-results: Результати пошуку
+      tag-iso-639-1: ізо-639-1
+      tag-iso-639-2t-2b: ізо-639-2Т/2Б
+      tag-iso-639-3: ізо-639-3
+      tag-english-and-local-name: Англійська та місцева назва
+      loading-more-results: Завантаження додаткових результатів...
+  jasypt-string-encryption:
+    title: Шифрування рядків Jasypt
+    description: Шифруйте та розшифровуйте рядки за допомогою стандарту Jasypt
+      (спрощене шифрування Java).
+    externalAccess: нульовий
+    texts:
+      label-mode: "Режим:"
+      label-password-secret-key: "Пароль (секретний ключ):"
+      placeholder-enter-jasypt-password-salt-secret-key: Введіть пароль Jasypt (salt / секретний ключ)
+      title-results: Результати
+      label-decoded: "Розшифровано:"
+      label-raw: "Сире:"
+      label-enc-form: "Форма ENC:"
+      tag-encrypt: Шифрувати
+      tag-decrypt: Розшифрувати
+      plain-text: "Звичайний текст:"
+      jasypt-encrypted-string: "Зашифрований рядок Jasypt:"
+      text-to-encrypt-e-g-db-password: Текст для шифрування (наприклад, пароль бази даних)
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Зашифроване значення (наприклад, ENC(...)) або необроблений рядок Jasypt
+  k8s-rbac-generator:
+    title: Генератор RBAC Kubernetes
+    description: Генерація YAML політики RBAC k8s
+    externalAccess: нульовий
+    texts:
+      label-user: Користувач
+      label-group: Група
+      label-serviceaccount: Обліковий запис служби
+      label-role-name: "Назва ролі:"
+      label-role-type: Тип ролі
+      label-namespace: Простір імен
+      title-rules: Правила
+      label-resources: Ресурси
+      placeholder-select-resources-supports: Виберіть ресурси (підтримує *)
+      label-resource-names-optional: Назви ресурсів (необов'язково)
+      placeholder-specific-resources-names: Назви конкретних ресурсів
+      label-verbs: Дієслова
+      placeholder-select-verbs-supports: Виберіть дієслова (підтримує *)
+      title-subjects: Суб'єкти
+      label-kind: Вид
+      label-name: Ім'я
+      title-output-yaml: Вихідний YAML
+      tab-role-yaml: Роль YAML
+      tab-rolebinding-yaml: Прив'язка ролей у YAML
+      tag-clusterrole-global: Кластерна роль (глобальна)
+      tag-role-namespaced: Роль (простор імен)
+      tag-add-rule: + Додати правило
+      tag-remove-rule: Видалити правило
+      tag-add-subject: + Додати тему
+      tag-remove-subject: Видалити тему
+  objgen-html:
+    title: ObjGen у HTML
+    description: Генерація xomplex HTML з синтаксису TOML
+    externalAccess: нульовий
+    texts:
+      input-label-objgen-html-definition: Визначення ObjGen у форматі HTML
+      input-placeholder-put-your-objgen-html-definition-here: Вставте тут своє HTML-визначення ObjGen...
+      output-label-generated-html: Згенерований HTML-код
+      tag-documentation: Документація
+  objgen-json:
+    title: ObjGen у JSON
+    description: Згенерувати xomplex JSON з синтаксису TOML
+    externalAccess: нульовий
+    texts:
+      input-label-objgen-json-definition: Визначення ObjGen JSON
+      input-placeholder-put-your-objgen-json-definition-here: Вставте сюди своє визначення ObjGen JSON...
+      output-label-generated-json: Згенерований JSON
+      tag-documentation: Документація
+  pgp-file-encryption:
+    title: Шифрування файлів PGP
+    description: Шифрування та розшифрування файлів за допомогою PGP
+    externalAccess: нульовий
+    texts:
+      title-1-select-a-file: 1. Виберіть файл
+      title-drag-and-drop-a-file-or-click-to-select: Перетягніть файл або клацніть, щоб вибрати
+      title-2-public-key-for-encryption: 2. Відкритий ключ (для шифрування)
+      title-3-private-key-passphrase-for-decryption: 3. Закритий ключ + пароль (для розшифрування)
+      label-passphrase: "Пароль:"
+      placeholder-passphrase: Парольна фраза
+      tag-selected-file: "Вибраний файл:"
+      tag-encrypt-stream: Шифрування (потік)
+      tag-decrypt-stream: Розшифрувати (потік)
+      tag-encrypting: Шифрування…
+      tag-decrypting: Розшифрування…
+      tag-encrypted-file-ready: Зашифрований файл готовий.
+      tag-download-encrypted: Завантажити зашифровано
+      tag-decrypted-file-ready: Розшифрований файл готовий.
+      tag-download-decrypted: Завантажити розшифровано
+  remove-background:
+    title: Видалити фон зображення
+    description: Видалення фону з зображення за допомогою штучного інтелекту
+    externalAccess: Завантаження Видалення фонових моделей з HuggingFace. Обробка
+      виконується у вашому браузері.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (ЦП/WASM)
+      label-modnet-webgpu: MODNet (веб-графічний процесор)
+      label-transparent: Прозорий
+      label-solid-color: Суцільний колір
+      label-pattern: "Візерунок:"
+      label-blurred-original: Розмитий оригінал
+      label-adjust-contrast-brightness: Налаштування контрастності/яскравості
+      label-diagonal-stripes: Діагональні смуги
+      label-dots: Крапки
+      label-checkerboard: Шахова дошка
+      title-drag-and-drop-an-image-or-click-to-select: Перетягніть зображення або клацніть, щоб вибрати
+      label-model: "Модель:"
+      label-blur: "Розмиття:"
+      label-contrast: "Контраст:"
+      label-brightness: "Яскравість:"
+      title-original: Оригінал
+      title-result: Результат
+      tag-apply-background: Застосувати фон
+      tag-download-result: Завантажити результат
+  shell-formatter:
+    title: Форматування команд оболонки
+    description: Форматування команд оболонки як багаторядкових команд оболонки,
+      розділених за аргументами
+    externalAccess: нульовий
+    texts:
+      input-label-shell-commands-to-format: Команди оболонки для форматування
+      input-placeholder-put-your-shell-commands-to-format-here: Введіть тут свої команди оболонки для форматування...
+      output-label-formatted-shell-commands: Форматовані команди оболонки
+  shell-linearizer:
+    title: Команди оболонки Лінеаризатор
+    description: Лінеаризація команд багаторядкової оболонки
+    externalAccess: нульовий
+    texts:
+      input-label-shell-commands-to-linearize: Команди оболонки для лінеаризації
+      input-placeholder-put-your-shell-commands-to-linearize-here: Введіть тут свої команди оболонки для лінеаризації...
+      output-label-linearized-shell-commands: Лінеаризовані команди оболонки
+  ufw-generator:
+    title: Генератор команд UFW
+    description: Генерація командних рядків UFW
+    externalAccess: нульовий
+    texts:
+      label-allow: Дозволити
+      label-deny: Заперечити
+      label-reject: Відхилити
+      label-limit: Ліміт
+      label-incoming: Вхідні
+      label-outgoing: Вихідні
+      label-tcp: ТСР
+      label-udp: Уніфікований діловий процес (UDP)
+      label-any: Будь-який
+      label-action: "Дія:"
+      label-direction: "Напрямок:"
+      label-protocol: "Протокол:"
+      label-port: "Порт:"
+      placeholder-80: "80"
+      label-port-to-range: "Порт до (діапазон):"
+      placeholder-443: "443"
+      label-from-ip: "З IP-адреси:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "До IP-адреси:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Інтерфейс:"
+      placeholder-eth0: eth0
+      label-logging: "Ведення журналу:"
+      label-comment: "Коментар:"
+      placeholder-optional-comment: Додатковий коментар
+      title-generated-command: Згенерована команда
+      missing-port: Відсутній порт
+  visual-subnet-calculator:
+    title: Візуальний калькулятор підмережі
+    description: Інструмент для швидкого проектування мереж та співпраці над цим
+      проектуванням з іншими. Він зосереджений на пришвидшенні роботи мережевих
+      адміністраторів, а не на академічній математиці підмереж.
+    externalAccess: нульовий
+  zalgo:
+    title: Генератор/Банер Zalgo
+    description: Генерація тексту Zalgo та очищення згенерованого Zalgo тексту
+    externalAccess: нульовий
+    texts:
+      text-zalgo-text-copied: Текст Zalgo скопійовано!
+      title-zalgo-text-generation: Генерація тексту Zalgo
+      placeholder-put-your-string-here: Поклади сюди свою нитку...
+      label-text-to-decorate-with-zalgo: Текст для прикрашання за допомогою Zalgo
+      label-intensity: "Інтенсивність:"
+      title-zalgo-text: Текст Залго
+      title-zalgo-cleaner: Засіб для чищення Zalgo
+      placeholder-put-zalgo-text-to-clean-here: Вставте тут текст zalgo для очищення...
+      label-zalgo-text-to-clean: Текст Zalgo для очищення
+      label-cleaned-text: Очищений текст
+      placeholder-clean-zalgo-text-will-appear-here: Тут з'явиться чистий текст zalgo...
+      tag-generate: Згенерувати
+      tag-copy: Копіювати
+      tag-clean: Чистий
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Потрібно встановити одне з повідомлень | функція
+        function-must-set-messages: Функція повинна встановлювати повідомлення
+  dead-pixel-tester:
+    title: Тестер мертвих пікселів
+  gif-to-mp4:
+    title: GIF у MP4
+    description: Конвертувати GIF в MP4 за допомогою ffmpeg
+    externalAccess: нульовий
+    texts:
+      label-stream-loop: "Цикл потоку:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Перетягніть GIF-файл сюди або клацніть, щоб вибрати файл
+      title-logs: Журнали
+  html-to-pdf:
+    title: З HTML у PDF
+    description: Створення PDF-файлів з HTML-контенту або URL-адреси з вибором
+      формату та автоматичним приховуванням банерів cookie
+    externalAccess: Цей інструмент надсилає URL-адреси та HTML-контент до
+      налаштованого веб-сервісу Puppeteer, що має *власний хостинг*.
+    texts:
+      label-a2: А2
+      label-a3: А3
+      label-a4: А4
+      label-a5: А5
+      label-letter: Лист
+      label-legal: Юридичні
+      label-html-to-pdf-service-url: "URL-адреса сервісу HTML у PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Базова автентифікація:"
+      placeholder-username-password: "ім'я користувача: пароль"
+      tab-url-pdf: URL-адреса → PDF
+      label-url: "URL-адреса:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "HTML-контент:"
+      tab-batch-url-pdf: URL-адреса пакета → PDF
+      label-urls-one-per-line: "URL-адреси (по одній на рядок):"
+      title-results: Результати
+      tab-custom-pdf-options: Параметри користувацького PDF-файлу
+      label-format: "Формат:"
+      label-language: "Мова:"
+      placeholder-en-us: en-US
+      label-landscape: "Пейзаж:"
+      label-one-long-page: "Одна довга сторінка:"
+      label-auto-hide-cookie-banners: "Автоматичне приховування банерів файлів cookie:"
+      label-print-background: "Друк фону:"
+      title-margins: Поля
+      label-top-mm: "Верхня частина (мм):"
+      label-bottom-mm: "Нижня частина (мм):"
+      label-left-mm: "Ліворуч (мм):"
+      label-right-mm: "Правий (мм):"
+      tag-html-to-pdf-service-configuration-self-hosted: Конфігурація служби HTML у PDF (власне розміщення)
+      tag-you-must-self-host-html-to-pdf-service-see: "Ви повинні самостійно розміщувати сервіс HTML у PDF. Див.:"
+      tag-html-to-pdf-service-install: Встановлення сервісу HTML у PDF
+      tag-generate-pdf: Згенерувати PDF
+      tag-generate-pdfs: Генерування PDF-файлів
+      tag-url: URL-адреса
+      tag-download: Завантажити
+      tag-download-pdf: Завантажити PDF-файл
+      tag-failed: Не вдалося
+  shutdown-command-generator:
+    title: Генератор команд вимкнення
+    description: Генерація команди вимкнення для різних ОС
+    externalAccess: нульовий
+    texts:
+      label-windows: Вікна
+      label-linux: Лінукс
+      label-macos: macOS
+      label-delay: "Затримка:"
+      label-specific-time: Конкретний час
+      label-platform: "Платформа:"
+      label-shutdown-time: "Час вимкнення:"
+      label-force: Сила
+      label-reboot: Перезавантаження
+      label-logoff: Вихід
+      label-cancel: Скасувати
+      label-hibernate: Гібернація
+      title-generated-command: Згенерована команда
+      tag-nbsp-h-nbsp: год
+      tag-nbsp-m-nbsp: м
+      tag-nbsp-s: с
 spanCopyable:
   copy: Копіювати в буфер обміну
   copied: Скопійовано!
@@ -7967,3 +8673,9 @@ textareaCopyable:
   download: Завантажити
 locale-selector:
   select-a-language: Виберіть мову
+collapsibleToolMenu:
+  text:
+    expanding: Розгортання...
+    collapsing: Згортання...
+    collapse-all-tools: Згорнути всі інструменти
+    expand-all-tools: Розгорнути всі інструменти

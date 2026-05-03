@@ -8046,7 +8046,7 @@ tools:
     description: Convert dates and times between Gregorian, Julian, Hebrew, Islamic,
       Persian, Mayan, Indian, French Republican, ISO‑8601, Unix time, and Excel
       serial formats
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-january: January
       label-february: February
@@ -8186,7 +8186,7 @@ tools:
   bech32:
     title: Bech32 Encoder/Decoder
     description: Encode/Decode/Validate betch32(m)
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-bech32: Bech32
       label-bech32m: Bech32m
@@ -8224,7 +8224,7 @@ tools:
   docker-pangolin-labels:
     title: Docker Pangolin Labels
     description: Convert Docker Compose Pangolin labels to blueprints and vice versa
-    externalAccess: null
+    externalAccess: "null"
     texts:
       tab-compose-blueprint: Compose → Blueprint
       label-docker-compose-yaml: "Docker Compose YAML:"
@@ -8247,7 +8247,7 @@ tools:
       Energy Expenditure), BMI (Body Mass Index), Ideal Weight (Ideal Body
       Weight), Body Fat (Body Fat Percentage), Max HR (Maximum Heart Rate): key
       metrics used to assess overall fitness and physiological health."
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-bmr: BMR
       label-tdee-calories: TDEE/Calories
@@ -8289,11 +8289,11 @@ tools:
   food-energy-converter:
     title: Food Energy Converter
     description: Convert between food (joule, calories)
-    externalAccess: null
+    externalAccess: "null"
   iso-639-searcher:
     title: ISO 639 Searcher
     description: Search in ISO 639-1/2T/2B/3 language codes
-    externalAccess: null
+    externalAccess: "null"
     texts:
       placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Search iso-639 language code by iso-1, iso-2T/2B, iso-3, name...
       label-max-results: "Max results:"
@@ -8311,7 +8311,7 @@ tools:
     title: Jasypt String Encryption
     description: Encrypt and decrypt strings using the Jasypt (Java Simplified
       Encryption) standard.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-mode: "Mode:"
       label-password-secret-key: "Password (Secret Key):"
@@ -8329,7 +8329,7 @@ tools:
   k8s-rbac-generator:
     title: Kubernetes RBAC Generator
     description: Generate k8s RBAC policy YAML
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-user: User
       label-group: Group
@@ -8359,7 +8359,7 @@ tools:
   objgen-html:
     title: ObjGen to HTML
     description: Generate xomplex HTML from TOML like syntax
-    externalAccess: null
+    externalAccess: "null"
     texts:
       input-label-objgen-html-definition: ObjGen HTML definition
       input-placeholder-put-your-objgen-html-definition-here: Put your ObjGen HTML definition here...
@@ -8368,7 +8368,7 @@ tools:
   objgen-json:
     title: ObjGen to JSON
     description: Generate xomplex JSON from TOML like syntax
-    externalAccess: null
+    externalAccess: "null"
     texts:
       input-label-objgen-json-definition: ObjGen JSON definition
       input-placeholder-put-your-objgen-json-definition-here: Put your ObjGen JSON definition here...
@@ -8377,7 +8377,7 @@ tools:
   pgp-file-encryption:
     title: PGP File Encryption
     description: Encrypt and decrypt files using PGP
-    externalAccess: null
+    externalAccess: "null"
     texts:
       title-1-select-a-file: 1. Select a file
       title-drag-and-drop-a-file-or-click-to-select: Drag and drop a file or click to select
@@ -8422,7 +8422,7 @@ tools:
   shell-formatter:
     title: Shell Commands Formatter
     description: Format shell commands as multiline shell commands split on arguments
-    externalAccess: null
+    externalAccess: "null"
     texts:
       input-label-shell-commands-to-format: Shell commands to format
       input-placeholder-put-your-shell-commands-to-format-here: Put your shell commands to format here...
@@ -8430,7 +8430,7 @@ tools:
   shell-linearizer:
     title: Shell Commands Linearizer
     description: Linearize multiline shell commands
-    externalAccess: null
+    externalAccess: "null"
     texts:
       input-label-shell-commands-to-linearize: Shell commands to linearize
       input-placeholder-put-your-shell-commands-to-linearize-here: Put your shell commands to linearize here...
@@ -8438,7 +8438,7 @@ tools:
   ufw-generator:
     title: UFW Command Generator
     description: Generate UFW command lines
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-allow: Allow
       label-deny: Deny
@@ -8472,11 +8472,11 @@ tools:
     description: A tool for quickly designing networks and collaborating on that
       design with others. It focuses on expediting the work of network
       administrators, not academic subnetting math.
-    externalAccess: null
+    externalAccess: "null"
   zalgo:
     title: Zalgo Generator/Banner
     description: Generate Zalgo text and clean zalgo generated text
-    externalAccess: null
+    externalAccess: "null"
     texts:
       text-zalgo-text-copied: Zalgo text copied!
       title-zalgo-text-generation: Zalgo Text Generation
@@ -8502,7 +8502,7 @@ tools:
   gif-to-mp4:
     title: GIF to MP4
     description: Convert GIF to MP4 using ffmpeg
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-stream-loop: "Stream Loop:"
       title-drag-and-drop-gif-here-or-click-to-select-a-file: Drag and drop GIF here or click to select a file
@@ -8557,7 +8557,7 @@ tools:
   shutdown-command-generator:
     title: Shutdown Command Generator
     description: Generate shutdown command for various OS
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-windows: Windows
       label-linux: Linux

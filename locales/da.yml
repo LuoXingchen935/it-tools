@@ -3,6 +3,9 @@
   sorry: Undskyld, dette side ser ikke ud til at eksistere
   maybe: Måske chachen laver nogle finurlige ting, prøv at lave et force-refresh?
   backHome: Tilbage hjem
+  page:
+    text:
+      page-not-found-it-tools: Siden blev ikke fundet - IT-værktøjer
 home:
   categories:
     newestTools: Nyeste værktøjer
@@ -33,6 +36,14 @@ home:
     twitterX: X-konto
     twitterXAccount: IT Tools X-konto
   loading-more-tools: Indlæser flere værktøjer...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Samling af praktiske onlineværktøjer til udviklere med god
+        brugeroplevelse. IT Tools er en gratis og open source-samling af
+        praktiske onlineværktøjer til udviklere og folk, der arbejder inden for
+        IT.
+      it-tools-handy-online-tools-for-developers: IT-værktøjer - Praktiske onlineværktøjer til udviklere
 favoriteButton:
   remove: Fjern fra favoritter
   add: Tilføj til favoritter
@@ -70,6 +81,9 @@ tools:
     physics: Fysik
     cheatsheets: Snydeark
     forensic: Retsmedicinsk
+    finance: Finansiere
+    default: Misligholdelse
+    toml: TOML
   password-strength-analyser:
     title: Kodeords styrke analysator
     description: Afslør styrken af dit kodeord med denne client-side-only kodeords
@@ -705,6 +719,7 @@ tools:
       tag-preview-image: Forhåndsvisningsbillede
       tag-download-file: Download fil
       tag-copy: Kopi
+      include-data-uri-prefix: "Inkluder data: URI-præfiks"
   list-converter:
     title: Liste konverter
     description: Dette værktøj kan behandle kolonnebaserede data og anvende
@@ -1036,6 +1051,8 @@ tools:
       tag-refresh-key-pair: Opdater nøglepar
       tag-public-key: Offentlig nøgle
       tag-private-key: Privat nøgle
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Bits skal være 256 <= bits <= 16384 og være et multiplum af 8
   html-wysiwyg-editor:
     title: HTML WYSIWYG editor
     description: Online, funktionsrig WYSIWYG HTML editor som genererer kildeteksten
@@ -1363,6 +1380,8 @@ tools:
       tag-quantity: Mængde
       tag-copy: Kopi
       tag-refresh: Opfriske
+      uppercase: Store bogstaver
+      no-hyphen: Ingen bindestreg
   ipv4-address-converter:
     title: IPv4 adressekonverter
     description: Konverter en IP-adresse til decimal, binær, hexadecimal eller endda
@@ -1978,6 +1997,8 @@ tools:
       tag-certificate-signing-request: Anmodning om certifikatsignering
       tag-public-key: Offentlig nøgle
       tag-private-key: Privat nøgle
+      label-rsa-bits: "RSA-bits:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Bits skal være 256 <= bits <= 16384 og være et multiplum af 8
   css-prettifier:
     title: CSS-pænere
     description: CSS Forskøn
@@ -2436,6 +2457,7 @@ tools:
       label-file-name: "Filnavn:"
       label-extension: "Udvidelse:"
       label-mime-type: "MIME-type:"
+      an-error-occured-processing: Der opstod en fejl under behandlingen
   folder-structure-diagram:
     title: Mappestrukturdiagram
     description: trælignende værktøj til at generere ASCII-mappestrukturdiagrammer
@@ -2536,6 +2558,8 @@ tools:
       label-pib: PiB
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1 MiB = 1024 KiB; 1 MB = 1000 kB; 1 GiB = 1024 MiB; 1 GB = 1000 MB;
       tag-see-here-for-details: se her for detaljer
+      column-decimal: Decimaltal
+      column-binary: Binær
   heic-converter:
     title: HEIC-konverter
     description: HEIC-konverter til JPEG eller PNG
@@ -2544,6 +2568,7 @@ tools:
       label-png: PNG
       label-output-format: Outputformat
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Træk og slip en HEIC-fil hertil, eller klik for at vælge en fil
+      an-error-occured-processing-heic-heif-is-invalid: "Der opstod en fejl under behandlingen: HEIC/HEIF er ugyldig."
   hex-file-converter:
     title: HEX-filkonverter
     description: Konverter mellem fil- og hexadecimal repræsentation
@@ -2612,6 +2637,9 @@ tools:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file:
         Træk og slip en ICO- eller PNG/JPEG-fil hertil, eller klik for at vælge
         en fil
+      an-error-occured-processing: Der opstod en fejl under behandlingen
+      invalid-ico-file: Ugyldig ICO-fil!
+      invalid-png-file: Ugyldig PNG-fil!
   illuminance-converter:
     title: Illuminanskonverter
     description: Konverter til lysstyrkeenheder (Lux, Foot Candles, Nox, Phot, Flame)
@@ -2628,6 +2656,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Træk og slip derefter dine billeder nedenfor, så konverteres og
         downloades de med det samme:"
+      invalid-image-file: Ugyldig billedfil!
+      an-error-occured-processing: Der opstod en fejl under behandlingen
   image-exif-reader:
     title: EXIF/Metadata/GPS/JPEG-kvalitetslæser for billeder
     description: Læs EXIF, IPTC, XMP, GPS og andre metadata, JPEG-kvalitet og andre
@@ -2828,6 +2858,7 @@ tools:
       tag-iso2-iso3: Iso2/Iso3
       tag-name-and-info: Navn og information
       tag-gt-see-on-openstreetmap: "> Se på OpenStreetMap"
+      loading-more-results: Indlæser flere resultater...
   javascript-prettifier:
     title: Javascript Prettifier
     description: JS/Javascript Prettifier
@@ -3342,6 +3373,11 @@ tools:
       placeholder-passphrase: Adgangskode...
       tag-copy: Kopi
       tag-refresh: Opfriske
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Kan ikke generere en adgangskode på [{0} - {1}] tegn med de nuværende
+        indstillinger. Prøv at ændre antallet af ord."
+      words-words: Ord ({0})
+      label-min-passphrase-len: "Min. adgangskodelængde:"
   paste-as-markdown:
     title: Indsæt som Markdown
     description: Indsæt celler/tabeller og links fra udklipsholderens indhold som Markdown
@@ -3401,10 +3437,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Træk og slip en PDF-fil hertil, eller klik for at vælge en fil
       title-logs: Logfiler
       label-qpdf: qpdf
-      label-password: 'Adgangskode:'
+      label-password: "Adgangskode:"
       placeholder-password: Adgangskode
       tag-decrypt-pdf: Dekrypter PDF
-      tag-output-file: 'Outputfil:'
+      tag-output-file: "Outputfil:"
   pgp-encryption:
     title: PGP-kryptering
     description: Krypter og dekrypter tekst i klar tekst ved hjælp af PGP-nøgler.
@@ -4333,6 +4369,8 @@ tools:
       label-permanent: Permanent
       title-generated-fw-command: "Genereret fw-kommando:"
       tag-const-zone-ref: konstant zone = ref
+    title: firewalld kommandolinjegenerator
+    description: Generer firewalld-kommandolinjer
   fortune-wheel:
     title: Lykkehjul
     description: Et konfigurerbart lykkehjul
@@ -6170,6 +6208,9 @@ tools:
       label-django-secret-key: "Djangos hemmelige nøgle:"
       tag-copy: Kopi
       tag-regenerate: Regenerer
+    service:
+      texts:
+        generating-range-is-too-large: Genereringsområdet er for stort
   dnsbl-checker:
     title: DNSBL-tjekker
     description: Tjek om en given IP-adresse er på en af de kendte
@@ -6218,6 +6259,7 @@ tools:
       title-html-head-tags: 📄 HTML-hovedtags
       tag-upload-png-image: Upload PNG-billede
       tag-download-zip: 📦 Download ZIP-fil
+      invalid-png-file: Ugyldig PNG-fil!
   font-compare:
     title: Sammenlign skrifttyper
     description: Sammenlign med skrifttyper i en given tekst
@@ -6303,6 +6345,12 @@ tools:
       label-fallback: "Reserve:"
       placeholder-fallback-font: Reserveskrifttype
       tag-defineprops: defineProps
+    text:
+      by-font-name: Efter skrifttypenavn
+      by-font-url: Efter skrifttype-URL
+      by-font-file: Efter skrifttypefil
+      by-inline-css: Af Inline CSS
+      by-css-url: Via CSS-URL
   gpt-token-encoder:
     title: GPT-token-encoder/dekoder
     description: Kod tekst til GPT-tokens og afkod GPT-tokens tilbage til tekst
@@ -6339,6 +6387,10 @@ tools:
       tag-original-image: Originalt billede
       tag-inverted-image: Omvendt billede
       tag-clear-upload-new: Ryd og upload ny
+    service:
+      texts:
+        file-must-be-an-image: Filen skal være et billede
+        failed-to-process-image-err: "Kunne ikke behandle billedet:"
   image-comparer:
     title: Billedsammenligning
     description: Et værktøj til visuel sammenligning af billeder
@@ -6353,6 +6405,9 @@ tools:
       tag-compare: Sammenligne
       tag-upload-left: Upload til venstre
       tag-upload-right: Upload højre
+    text:
+      compare-by-url: Sammenlign efter URL
+      compare-by-upload: Sammenlign efter upload
   logrotate-generator:
     title: Apache LogRotate Generator
     description: Generer Apache .log rotationskonfiguration
@@ -6480,6 +6535,15 @@ tools:
       label-decimal: "Decimaltal:"
       label-octal: "Oktal:"
       label-hexadecimal: "Hexadecimal:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Ugyldig hex-input. Kun 0-9 og A-F er tilladt.
+        invalid-1: Ugyldig
+        invalid-0: Ugyldig
+        invalid: Ugyldig
+        unsupported-middle-endian-format: Ikke-understøttet middle-endian-format.
+        failed-to-parse-bytes: Kunne ikke parse bytes.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Inputtet skal være {0} hex-tegn for {1}-bit.
   mttdl-calculator:
     title: RAID-pålidelighedsberegner
     description: Beregner lagringssystemets pålidelighed ved hjælp af den velkendte
@@ -6619,6 +6683,11 @@ tools:
       tag-convert: Konvertere
       tag-axial: Aksial
       tag-radial: Radial
+    text:
+      bands-notation: Bånd → Notation
+      notation-bands: Notation → Bånd
+      number-notation: Tal → Notation
+      notation-number: Notation → Tal
   sed-command-generator:
     title: Sed-kommandogenerator
     description: Generer unix sed-kommandoer
@@ -7003,6 +7072,9 @@ tools:
       title-mw-to-dbm: mW til dBm
       label-mw-value: "mW-værdi:"
       label-corresponding-dbm-value: "Tilsvarende dBm-værdi:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Effekt i milliwatt skal være større end 0
   diceware-generator:
     title: Diceware adgangskodegenerator
     description: Generer tilfældig adgangskode ved hjælp af Diceware-metoden
@@ -7233,6 +7305,9 @@ tools:
       label-arguments: Argumenter
       title-structured-output-json: Struktureret output JSON
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x: "{'{'}\"til\":\"0x...\",\"data\":\"0x...\"{'}'} eller rå 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Transaktionsdata skal starte med 0x
   file-splitter:
     title: Fildeler
     description: Opdel JSON-, XML- eller tekstfil enten efter gruppe af noder eller
@@ -7251,6 +7326,9 @@ tools:
       tag-process-chunks: Processtykker
       tag-download-all: Download alle
       tag-download: Download
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Ikke-understøttet format eller ugyldigt indhold
   gitignore-generator:
     title: GitIgnore-generator
     description: Generer .gitignore til et sæt almindelige skabeloner
@@ -7362,6 +7440,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Træk og slip en PDF-fil hertil, eller klik for at vælge en fil
       title-logs: Logfiler
       label-ghostscript: Ghostscript
+      process-run-failed: Processkørslen mislykkedes
+      an-error-occured-processing: Der opstod en fejl under behandlingen
   serial-console:
     title: Seriel portkonsol
     description: Tilslut, læs og send besked til seriel port
@@ -7619,6 +7699,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: ": Afslut død pixel-tilstand"
       tag-start-dead-pixel: Start død pixel
+    title: Død pixel-tester
+    description: Værktøj til at kontrollere, om en pixel på din skærm er død eller ej.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Udeluk SI-præfikser
@@ -7646,6 +7728,13 @@ tools:
       tag-convert-batch: Konvertér batch
       tag-longitude-east-is-positive-west-is-negative: "Længdegrad: Øst er positiv, vest er negativ."
       tag-latitude-north-is-positive-south-is-negative: "Breddegrad: Nord er positiv, syd er negativ."
+    text:
+      coordinate-system: Koordinatsystem
+      decimal-format-lng-lat: Decimalformat (lng, lat)
+      dms-format-lng-lat: DMS-format (lng, lat)
+      download-results-csv: Download resultater i CSV-format
+      batch-lat-lng-converter: Batch Lat/Lng-konverter
+      single-lat-lng-converter: Enkelt breddegrad/længdegradskonverter
   si-prefixes-converter:
     title: SI-præfikser konverter
     description: Konverter mellem metriske præfikser
@@ -7688,6 +7777,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: Lavet med {0}
+        runs-entirely-in-your-browser-no-external-requests: Kører udelukkende i din browser. Ingen eksterne anmodninger.
   acceleration-converter:
     title: Accelerationskonverter
     description: Konverter værdier mellem accelerationsenheder
@@ -7801,7 +7891,6 @@ tools:
       tag-back: Tilbage (←)
       tag-next: Næste (→)
       tag-reset: Nulstil
-      tag-: ↓
       tag-or: "- ELLER -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Styr afspilning og navigation uden at røre musen.
       tag-shortcut: Genvej
@@ -7820,6 +7909,16 @@ tools:
       tag-jump-to-start: Gå til start
       tag-end: Ende
       tag-jump-to-end: Spring til slutningen
+    text:
+      please-provide-some-text-first: Angiv venligst noget tekst først.
+      unsupported-file-type: Ikke-understøttet filtype.
+      display: Vise
+      text: Tekst
+      settings: Indstillinger
+      keyboard-shortcuts: Tastaturgenveje
+      ready: Parat
+      words: ord
+      wpm: WPM
   speed-converter:
     title: Hastighedskonverter
     description: Konverter værdier mellem hastighedsenheder
@@ -7869,10 +7968,606 @@ tools:
       tag-apply-configuration: Anvend konfiguration
       tag-clear-logs: Ryd logfiler
       tag-send: Sende
+      already-connected: ⚠️ Allerede forbundet
+      connected-to-websocket-bridge: ✅ Forbundet til WebSocket-broen
+      disconnected: 🔌 Afbrudt
+      no-active-connection: ⚠️ Ingen aktiv forbindelse
+      sent-text: "➡️ Sendt sms:"
+      configured: ⚙️ Konfigureret
+      sent-hex: "➡️ Sendt hex:"
+      disconnecting: 🔻 Afbryder forbindelsen...
+      error: "❌ Fejl:"
+      end: "🛑 Slut:"
+      text: "📩 Tekst:"
+      binary: "📩 Binær:"
+    text:
+      connected: Forbundet
+      disconnected: Afbrudt
   volume-flow-rate-converter:
     title: Volumenstrømningshastighedskonverter
     description: Konverter værdier mellem volumenstrømningsenheder
     externalAccess: nul
+  tip-calculator:
+    title: Drikkepengeberegner
+    description: Beregn drikkepenge for en regning og fordel den mellem flere personer.
+    texts:
+      title-bill-details: Fakturaoplysninger
+      label-bill-amount: "Fakturabeløb:"
+      placeholder-total-bill: Samlet regning
+      label-tip-percentage: "Drikkepengeprocent:"
+      placeholder-tip: Drikkepenge %
+      label-number-of-person: "Antal personer:"
+      placeholder-people: Mennesker
+      title-results: Resultater
+      label-tip-amount: "Drikkepengebeløb:"
+      label-total-bill: "Samlet regning:"
+      label-amount-per-person: "Beløb pr. person:"
+      title-quick-tip: Hurtigt tip %
+      tag-const-billamount-ref: konstant fakturaBeløb = ref.
+      tag-: "%"
+  json-to-env:
+    title: JSON til .env
+    description: Konverter et fladt JSON-objekt til en .env-fil. Nøgler skrives med
+      store bogstaver, og værdier sættes sikkert i anførselstegn, når de
+      indeholder mellemrum, anførselstegn eller env-specialtegn.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: Forudsat at JSON ikke er et gyldigt fladt objekt.
+      input-label-your-json: Din JSON
+      input-placeholder-paste-your-json-here: Indsæt din JSON her...
+      output-label-env-from-your-json: .env fra din JSON
+  calendar-converter:
+    service:
+      text:
+        sunday: søndag
+        wednesday: onsdag
+        tuesday: tirsdag
+        monday: mandag
+        thursday: torsdag
+        friday: fredag
+        saturday: lørdag
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Ugyldig årslængde: {0} dage."
+        common-deficient-353-days: Almindelig mangel (353 dage)
+        common-regular-354-days: Almindelig regelmæssig (354 dage)
+        common-complete-355-days: Fælles komplet (355 dage)
+        embolismic-deficient-383-days: Embolisk defekt (383 dage)
+        embolismic-regular-384-days: Embolisk regelmæssig (384 dage)
+        embolismic-complete-385-days: Fuldstændig embolisme (385 dage)
+        normal-year: Normalår
+        leap-year: Skudår
+    title: Kalenderkonverter
+    description: Konverter datoer og klokkeslæt mellem gregorianske, julianske,
+      hebraiske, islamiske, persiske, maya-, indiske, franske republikanske,
+      ISO-8601-, Unix-tid og Excel-serieformater
+    externalAccess: nul
+    texts:
+      label-january: januar
+      label-february: februar
+      label-march: marts
+      label-april: april
+      label-may: maj
+      label-june: juni
+      label-july: juli
+      label-august: august
+      label-september: september
+      label-october: oktober
+      label-november: november
+      label-december: december
+      label-nisan-נִיסָן: Nisan
+      label-iyyar-אִיָּר: Iyyar (Iyyar)
+      label-sivan-סִיוָן: Sivan
+      label-tammuz-תַּמּוּז: Tammuz
+      label-av-אָב: Gennemsnit (Gennemsnit)
+      label-elul-אֱלוּל: Elul
+      label-tishri-תִּשְׁרֵי: Tishri
+      label-heshvan-חֶשְׁוָן: Heshvan (Heshvan)
+      label-kislev-כִּסְלֵו: Kislev
+      label-teveth-טֵבֵת: Teveth
+      label-shevat-שְׁבָט: Shevat (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Adar/Adar I (Adar)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Veadar/Adar II (Anden Adar)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath-Thani (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al-Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Rajab (Rajab)
+      label-shaʿban-شَعْبان: Shaʿban (شَعْبان)
+      label-ramadan-رَمَضان: Ramadanen
+      label-shawwal-شَوّال: Shawwal
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al-Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al-Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: Farvardin (Farvardin)
+      label-ordibehesht-اردیبهشت: Ordibehesht (Ordibehesht)
+      label-khordad-خرداد: Khordad (Khordad)
+      label-tir-تیر: Tir (Tir)
+      label-mordad-مرداد: Mordad (Mordad)
+      label-shahrivar-شهریور: Shahrivar (Shahrivar)
+      label-mehr-مهر: Mere (Mere)
+      label-aban-آبان: Aban (november)
+      label-azar-آذر: Azar (Azar)
+      label-dey-دی: Dej (Den)
+      label-bahman-بهمن: Bahman (Bahman)
+      label-esfand-اسفند: Esfand (marts)
+      label-caitra-चैत्र: Caitra (Chaitra)
+      label-vaisakha-वैशाख: Vaisakha (Vaishakh)
+      label-jyaistha-ज्येष्ठ: Jyaistha (senior)
+      label-asadha-आषाढ़: Asadha
+      label-sravana-श्रावण: Sravana
+      label-bhadra-भाद्रपद: Bhadra (Bhadrapada)
+      label-asvina-आश्विन: Asvina (Ashwin)
+      label-kartika-कार्तिक: Kartika
+      label-agrahayana-अग्रहायण: Agrahayana (Agrahayana)
+      label-pausa-पौष: Pause
+      label-magha-माघ: Magha
+      label-phalguna-फाल्गुन: Phalguna
+      label-vendémiaire: Vendémiaire
+      label-brumaire: Brumaire
+      label-frimaire: Frimaire
+      label-nivôse: Nivôse
+      label-pluviôse: Pluviôse
+      label-ventôse: Ventôse
+      label-germinal: Germinal
+      label-floréal: Floréal
+      label-prairial: Prærie
+      label-messidor: Messidor
+      label-thermidor: Thermidor
+      label-fructidor: Fruktidor
+      label-sans-culottides: Sans-culottides
+      label-i: jeg
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Primidi (1)
+      label-duodi-2: Giv (2)
+      label-tridi-3: Tre (3)
+      label-quartidi-4: Kvarterer (4)
+      label-quintidi-5: Quintidius (5)
+      label-sextidi-6: Sextidi (6)
+      label-septidi-7: Septi (7)
+      label-octidi-8: Octidi (8)
+      label-nonidi-9: Ja, faktisk (9)
+      label-décadi-10: Decadi (10)
+      label-vertu-1: Dyd (1)
+      label-génie-2: Genialt (2)
+      label-travail-3: Arbejde (3)
+      label-opinion-4: Mening (4)
+      label-récompenses-5: Belønninger (5)
+      label-révolution-6: Revolution (6)
+      tab-gregorian: Gregoriansk
+      label-date: Dato
+      label-leap: "Springe:"
+      label-time: "Tid:"
+      label-weekday: "Hverdag:"
+      tab-julian-day: Julian Day
+      label-julian-day: "Julian Day:"
+      tab-modified-julian: Modificeret Julian
+      label-modified-julian-day: "Modificeret Julian Day:"
+      tab-julian-calendar: den julianske kalender
+      tab-gregorian-serial: Gregoriansk seriel
+      label-gregorian-serial-day: "Gregoriansk seriel dag:"
+      tab-hebrew: Hebraisk
+      tab-islamic: islamisk
+      tab-persian: Persisk
+      tab-persian-algorithmic: Persisk algoritmisk
+      tab-mayan: Mayaerne
+      label-long-count: "Lang optælling:"
+      label-haab: Haab
+      label-tzolkin: Tzolkin
+      tab-indian-civil: Indisk civil
+      tab-french-republican: Fransk republikaner
+      label-day: "Dag:"
+      label-month: "Måned:"
+      label-décade: "Årti:"
+      label-year: "År:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "Ugedag:"
+      label-week: "Uge:"
+      label-day-of-year: "Årets dag:"
+      tab-unix-time: Unix-tid()
+      label-unix-time: "Unix-tid():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Excel-seriedag (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Excel-seriedag (1904):"
+      tag-this-is-a-port-of-wonderful: Dette er en vidunderlig havn
+      tag-fourmilab-ch-calendar-converter: Fourmilab.ch Kalenderkonverter
+      tag-by-john-walker: af John Walker
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Opdater andre kalendere
+      tag-today: I dag
+  bech32:
+    title: Bech32-encoder/dekoder
+    description: Kod/afkod/valider betch32(m)
+    externalAccess: nul
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Bech32m
+      tab-decode: Afkod
+      label-bech32-m-string: "Bech32(m) streng:"
+      placeholder-bech32-bech32m-string: Bech32 / Bech32m streng
+      label-variant: "Variant:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "Nyttelast:"
+      placeholder-hex-payload: Hex nyttelast
+      placeholder-variant: Variant
+      tab-encode: Encode
+      label-encoded-bech32-string: "Kodet bech32-streng:"
+      placeholder-bech32-string: bech32 streng
+      tab-batch: Parti
+      label-bech32-strings-one-per-line: "Bech32 strenge (én pr. linje):"
+      placeholder-one-bech32-string-per-line: En Bech32-streng pr. linje
+      title-results: Resultater
+      tag-auto-detect: Automatisk registrering
+      tag-manual: Manuel
+      tag-checksum-only: Kun checksum
+      tag-full-decode: Fuld afkodning
+      tag-checksum-valid: Gyldig kontrolsum
+      tag-checksum-invalid: Ugyldig kontrolsum
+      tag-encode: Encode
+      tag-convert: Konvertere
+      tag-export-csv: Eksportér CSV
+      invalid-hex-payload: Ugyldig hex-nyttelast
+      input: Input
+      variant: Variant
+      status: Status
+      hex: Hex
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Docker Pangolin-etiketter
+    description: Konverter Docker Compose Pangolin-etiketter til tegninger og omvendt
+    externalAccess: nul
+    texts:
+      tab-compose-blueprint: Komponér → Plan
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: Indsæt hele docker-compose.yml her…
+      label-generated-blueprint: "Genereret plan:"
+      placeholder-blueprint-yaml-will-appear-here: Blueprint YAML vises her…
+      tab-blueprint-labels: Plan → Etiketter
+      label-blueprint-yaml: "YAML-plan:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Indsæt Pangolin-plan YAML her…
+      label-generated-docker-labels: "Genererede Docker-etiketter:"
+      placeholder-docker-labels-will-appear-here: Docker-etiketter vil blive vist her...
+      tag-extract-pangolin-blueprint: Uddrag af pangolin-plan
+      tag-array-key-value: Array (- nøgle=værdi)
+      tag-object-key-value: "Objekt (nøgle: værdi)"
+      tag-convert-to-docker-labels: Konverter til Docker-etiketter
+      invalid-blueprint-yaml: Ugyldig YAML-plan
+  fitness-computer:
+    title: Fitnesscomputer
+    description: "Beregn BMR (basalstofskifte), TDEE / kalorier (totalt dagligt
+      energiforbrug), BMI (kropsmasseindeks), idealvægt (ideel kropsvægt),
+      kropsfedt (kropsfedtprocent), max HR (maksimal puls): nøgleparametre, der
+      bruges til at vurdere den generelle kondition og fysiologiske sundhed."
+    externalAccess: nul
+    texts:
+      label-bmr: BMR
+      label-tdee-calories: TDEE/Kalorier
+      label-bmi: "BMI:"
+      label-ideal-weight: "Idealvægt:"
+      label-body-fat-us-navy: Kropsfedt (amerikansk flåde)
+      label-body-fat-bmi: Kropsfedt (BMI)
+      label-max-heart-rate: Maksimal puls
+      label-sedentary-little-or-no-exercise: "Stillesiddende: lidt eller ingen motion"
+      label-light-exercise-1-3-times-week: "Let: motion 1-3 gange/uge"
+      label-moderate-exercise-4-5-times-week: "Moderat: Træn 4-5 gange/uge"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week: "Aktiv: daglig motion eller intens motion 3-4 gange/uge"
+      label-very-active-intense-exercise-6-7-times-week: "Meget aktiv: intensiv træning 6-7 gange/uge"
+      label-extra-active-very-intense-exercise-daily-or-physical-job: "Ekstra aktiv: meget intens daglig træning eller fysisk arbejde"
+      label-units: "Enheder:"
+      label-formula: "Formel:"
+      label-gender: "Køn:"
+      label-age: "Alder:"
+      title-body-measurements: Kropsmål
+      label-activity-level: "Aktivitetsniveau:"
+      title-results: Resultater
+      label-bmr-kcal-day: "BMR (kcal/dag):"
+      label-tdee-calories-kcal-day: "TDEE/Kalorier (kcal/dag):"
+      label-bmi-category: "BMI-kategori:"
+      label-healthy-range-min: "Sundt interval (min):"
+      label-healthy-range-max: "Sundt interval (maks):"
+      label-devine-1974: "— (Det bliver 1974):"
+      label-hamwi-1964: "— (Hamwi 1964):"
+      label-miller-1983: "— (Miller 1983):"
+      label-robinson-1983: "— (Robinson 1983):"
+      label-body-fat: "Kropsfedt (%):"
+      label-fat-mass: "Fedtmasse:"
+      label-lean-mass: "Mager masse:"
+      label-max-heart-rate-bpm: "Maksimal puls (slag i minuttet):"
+      tag-metric-kg-cm: Metrisk (kg, cm)
+      tag-us-lbs-inches: Amerikansk (lbs, tommer)
+      tag-male: Han
+      tag-female: Kvinde
+  food-energy-converter:
+    title: Madenergikonverter
+    description: Konverter mellem fødevarer (joule, kalorier)
+    externalAccess: nul
+  iso-639-searcher:
+    title: ISO 639-søger
+    description: Søg i ISO 639-1/2T/2B/3 sprogkoder
+    externalAccess: nul
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Søg iso-639 sprogkode efter iso-1, iso-2T/2B, iso-3, navn...
+      label-max-results: "Maks. resultater:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "ENGELSK:"
+      tag-no-results: Ingen resultater
+      tag-search-results: Søgeresultater
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: Engelsk og lokalt navn
+      loading-more-results: Indlæser flere resultater...
+  jasypt-string-encryption:
+    title: Jasypt-strengkryptering
+    description: Krypter og dekrypter strenge ved hjælp af Jasypt-standarden (Java
+      Simplified Encryption).
+    externalAccess: nul
+    texts:
+      label-mode: "Mode:"
+      label-password-secret-key: "Adgangskode (hemmelig nøgle):"
+      placeholder-enter-jasypt-password-salt-secret-key: Indtast Jasypt-adgangskoden (salt/hemmelig nøgle)
+      title-results: Resultater
+      label-decoded: "Afkodet:"
+      label-raw: "Rå:"
+      label-enc-form: "ENC-formular:"
+      tag-encrypt: Krypter
+      tag-decrypt: Dekryptér
+      plain-text: "Almindelig tekst:"
+      jasypt-encrypted-string: "Jasypt-krypteret streng:"
+      text-to-encrypt-e-g-db-password: Tekst der skal krypteres (f.eks. databaseadgangskode)
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Krypteret værdi (f.eks. ENC(...)) eller rå Jasypt-streng
+  k8s-rbac-generator:
+    title: Kubernetes RBAC-generator
+    description: Generer k8s RBAC-politik YAML
+    externalAccess: nul
+    texts:
+      label-user: Bruger
+      label-group: Gruppe
+      label-serviceaccount: Servicekonto
+      label-role-name: "Rollenavn:"
+      label-role-type: Rolletype
+      label-namespace: Navnerum
+      title-rules: Regler
+      label-resources: Ressourcer
+      placeholder-select-resources-supports: Vælg ressourcer (understøtter *)
+      label-resource-names-optional: Ressourcenavne (valgfrit)
+      placeholder-specific-resources-names: Navne på specifikke ressourcer
+      label-verbs: Verber
+      placeholder-select-verbs-supports: Vælg verber (understøtter *)
+      title-subjects: Emner
+      label-kind: Slags
+      label-name: Navn
+      title-output-yaml: YAML-output
+      tab-role-yaml: Rolle YAML
+      tab-rolebinding-yaml: Rollebinding YAML
+      tag-clusterrole-global: Klyngerolle (Global)
+      tag-role-namespaced: Rolle (navneområde)
+      tag-add-rule: + Tilføj regel
+      tag-remove-rule: Fjern regel
+      tag-add-subject: + Tilføj emne
+      tag-remove-subject: Fjern emne
+  objgen-html:
+    title: ObjGen til HTML
+    description: Generer xomplex HTML fra TOML-lignende syntaks
+    externalAccess: nul
+    texts:
+      input-label-objgen-html-definition: ObjGen HTML-definition
+      input-placeholder-put-your-objgen-html-definition-here: Indsæt din ObjGen HTML-definition her...
+      output-label-generated-html: Genereret HTML
+      tag-documentation: Dokumentation
+  objgen-json:
+    title: ObjGen til JSON
+    description: Generer xomplex JSON fra TOML-lignende syntaks
+    externalAccess: nul
+    texts:
+      input-label-objgen-json-definition: ObjGen JSON-definition
+      input-placeholder-put-your-objgen-json-definition-here: Sæt din ObjGen JSON-definition her...
+      output-label-generated-json: Genereret JSON
+      tag-documentation: Dokumentation
+  pgp-file-encryption:
+    title: PGP-filkryptering
+    description: Krypter og dekrypter filer ved hjælp af PGP
+    externalAccess: nul
+    texts:
+      title-1-select-a-file: 1. Vælg en fil
+      title-drag-and-drop-a-file-or-click-to-select: Træk og slip en fil, eller klik for at vælge
+      title-2-public-key-for-encryption: 2. Offentlig nøgle (til kryptering)
+      title-3-private-key-passphrase-for-decryption: 3. Privat nøgle + adgangskode (til dekryptering)
+      label-passphrase: "Adgangskode:"
+      placeholder-passphrase: Adgangskode
+      tag-selected-file: "Valgt fil:"
+      tag-encrypt-stream: Krypter (stream)
+      tag-decrypt-stream: Dekrypter (stream)
+      tag-encrypting: Krypterer…
+      tag-decrypting: Dekrypterer…
+      tag-encrypted-file-ready: Krypteret fil klar.
+      tag-download-encrypted: Download krypteret
+      tag-decrypted-file-ready: Dekrypteret fil klar.
+      tag-download-decrypted: Download dekrypteret
+  remove-background:
+    title: Fjern billedets baggrund
+    description: Fjern baggrund fra et billede ved hjælp af AI
+    externalAccess: Downloads Fjern baggrundsmodeller fra HuggingFace. Behandlingen
+      udføres i din browser.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG-1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Gennemsigtig
+      label-solid-color: Ensfarvet
+      label-pattern: "Mønster:"
+      label-blurred-original: Sløret original
+      label-adjust-contrast-brightness: Juster kontrast/lysstyrke
+      label-diagonal-stripes: Diagonale striber
+      label-dots: Prikker
+      label-checkerboard: Skakbræt
+      title-drag-and-drop-an-image-or-click-to-select: Træk og slip et billede, eller klik for at vælge
+      label-model: "Model:"
+      label-blur: "Sløring:"
+      label-contrast: "Kontrast:"
+      label-brightness: "Lysstyrke:"
+      title-original: Original
+      title-result: Resultat
+      tag-apply-background: Anvend baggrund
+      tag-download-result: Download resultat
+  shell-formatter:
+    title: Shell-kommandoformatering
+    description: Formatér shell-kommandoer som flerlinjede shell-kommandoer opdelt
+      efter argumenter
+    externalAccess: nul
+    texts:
+      input-label-shell-commands-to-format: Shell-kommandoer til formatering
+      input-placeholder-put-your-shell-commands-to-format-here: Indsæt dine shell-kommandoer til formatering her...
+      output-label-formatted-shell-commands: Formaterede shell-kommandoer
+  shell-linearizer:
+    title: Linearisering af Shell-kommandoer
+    description: Lineariser flerlinjede shell-kommandoer
+    externalAccess: nul
+    texts:
+      input-label-shell-commands-to-linearize: Shell-kommandoer til linearisering
+      input-placeholder-put-your-shell-commands-to-linearize-here: Indsæt dine shell-kommandoer for at linearisere her...
+      output-label-linearized-shell-commands: Lineariserede shell-kommandoer
+  ufw-generator:
+    title: UFW-kommandogenerator
+    description: Generer UFW-kommandolinjer
+    externalAccess: nul
+    texts:
+      label-allow: Tillade
+      label-deny: Nægte
+      label-reject: Afvise
+      label-limit: Begrænse
+      label-incoming: Indgående
+      label-outgoing: Udgående
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: Enhver
+      label-action: "Handling:"
+      label-direction: "Retning:"
+      label-protocol: "Protokol:"
+      label-port: "Havn:"
+      placeholder-80: "80"
+      label-port-to-range: "Port til (interval):"
+      placeholder-443: "443"
+      label-from-ip: "Fra IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "Til IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Grænseflade:"
+      placeholder-eth0: eth0
+      label-logging: "Logføring:"
+      label-comment: "Kommentar:"
+      placeholder-optional-comment: Valgfri kommentar
+      title-generated-command: Genereret kommando
+      missing-port: Manglende port
+  visual-subnet-calculator:
+    title: Visuel subnetberegner
+    description: Et værktøj til hurtigt at designe netværk og samarbejde med andre
+      om designet. Det fokuserer på at fremskynde netværksadministratorers
+      arbejde, ikke akademisk subnetmatematik.
+    externalAccess: nul
+  zalgo:
+    title: Zalgo Generator/Banner
+    description: Generer Zalgo-tekst og rens Zalgo-genereret tekst
+    externalAccess: nul
+    texts:
+      text-zalgo-text-copied: Zalgo-tekst kopieret!
+      title-zalgo-text-generation: Zalgo Tekstgenerering
+      placeholder-put-your-string-here: Sæt din streng her...
+      label-text-to-decorate-with-zalgo: Tekst til at dekorere med Zalgo
+      label-intensity: "Intensitet:"
+      title-zalgo-text: Zalgo-tekst
+      title-zalgo-cleaner: Zalgo-rengøringsmiddel
+      placeholder-put-zalgo-text-to-clean-here: Sæt zalgo-tekst til rensning her...
+      label-zalgo-text-to-clean: Zalgo-tekst, der skal renses
+      label-cleaned-text: Rensede tekster
+      placeholder-clean-zalgo-text-will-appear-here: Ren zalgo-tekst vil blive vist her...
+      tag-generate: Frembringe
+      tag-copy: Kopi
+      tag-clean: Ren
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Skal indstille en af meddelelserne | funktionen
+        function-must-set-messages: Funktionen skal angive beskeder
+  dead-pixel-tester:
+    title: Død pixel-tester
+  gif-to-mp4:
+    title: GIF til MP4
+    description: Konverter GIF til MP4 ved hjælp af ffmpeg
+    externalAccess: nul
+    texts:
+      label-stream-loop: "Stream-løkke:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Træk og slip GIF her, eller klik for at vælge en fil
+      title-logs: Logfiler
+  html-to-pdf:
+    title: HTML til PDF
+    description: Generer PDF fra HTML-indhold eller URL med formatvalg og automatisk
+      skjulning af cookiebannere
+    externalAccess: Dette værktøj sender URL'er og HTML-indhold til den
+      *selvhostede* Puppeteer-webtjeneste, der er konfigureret.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: Bogstav
+      label-legal: Legal
+      label-html-to-pdf-service-url: "URL til HTML til PDF-tjeneste:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Grundlæggende godkendelse:"
+      placeholder-username-password: brugernavn:adgangskode
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://eksempel.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "HTML-indhold:"
+      tab-batch-url-pdf: Batch-URL → PDF
+      label-urls-one-per-line: "URL'er (én pr. linje):"
+      title-results: Resultater
+      tab-custom-pdf-options: Brugerdefinerede PDF-indstillinger
+      label-format: "Format:"
+      label-language: "Sprog:"
+      placeholder-en-us: en-US
+      label-landscape: "Landskab:"
+      label-one-long-page: "En lang side:"
+      label-auto-hide-cookie-banners: "Skjul automatisk cookiebannere:"
+      label-print-background: "Udskriftsbaggrund:"
+      title-margins: Marginer
+      label-top-mm: "Top (mm):"
+      label-bottom-mm: "Bund (mm):"
+      label-left-mm: "Venstre (mm):"
+      label-right-mm: "Højre (mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: HTML til PDF-tjenestekonfiguration (selvhostet)
+      tag-you-must-self-host-html-to-pdf-service-see: "Du skal selv hoste HTML til PDF-tjenesten. Se:"
+      tag-html-to-pdf-service-install: Installation af HTML til PDF-tjeneste
+      tag-generate-pdf: Generer PDF
+      tag-generate-pdfs: Generer PDF'er
+      tag-url: URL
+      tag-download: Download
+      tag-download-pdf: Download PDF
+      tag-failed: Mislykkedes
+  shutdown-command-generator:
+    title: Generator for nedlukningskommandoer
+    description: Generer shutdown-kommandoer til forskellige operativsystemer
+    externalAccess: nul
+    texts:
+      label-windows: Vinduer
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Forsinke:"
+      label-specific-time: Specifik tid
+      label-platform: "Platform:"
+      label-shutdown-time: "Nedlukningstid:"
+      label-force: Kraft
+      label-reboot: Genstart
+      label-logoff: Log af
+      label-cancel: Ophæve
+      label-hibernate: Dvale
+      title-generated-command: Genereret kommando
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: m
+      tag-nbsp-s: s
 about:
   alltools-title: Alle {toolsCount} værktøjer
   tools:
@@ -7921,6 +8616,12 @@ about:
   import-button: Importere
   favorites-imported-successfully: Favoritter importeret!
   error-importing-favorites-e: "Fejl ved import af favoritter: {0}"
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Samling af praktiske onlineværktøjer til udviklere med god
+      brugeroplevelse. IT Tools er en gratis og open source-samling af praktiske
+      onlineværktøjer til udviklere og folk, der arbejder inden for IT.
+    about-it-tools: Om - IT-værktøjer
 spanCopyable:
   copy: Kopiér til udklipsholder
   copied: Kopieret!
@@ -7938,3 +8639,9 @@ textareaCopyable:
   download: Download
 locale-selector:
   select-a-language: Vælg et sprog
+collapsibleToolMenu:
+  text:
+    expanding: Udvider...
+    collapsing: Kollapser...
+    collapse-all-tools: Skjul alle værktøjer
+    expand-all-tools: Udvid alle værktøjer

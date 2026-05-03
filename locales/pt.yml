@@ -3,6 +3,9 @@
   sorry: Desculpe, parece que essa página não existe
   maybe: Talvez o cache esteja fazendo bobagem, que tal tentar forçar a atualização?
   backHome: Voltar para o início
+  page:
+    text:
+      page-not-found-it-tools: Página não encontrada - Ferramentas de TI
 home:
   categories:
     newestTools: Novas ferramentas
@@ -33,6 +36,14 @@ home:
     lightMode: Modo Claro
     mode: Trocar modo escuro/claro
   loading-more-tools: Carregando mais ferramentas...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Coleção de ferramentas online práticas para desenvolvedores, com ótima
+        experiência do usuário. O IT Tools é uma coleção gratuita e de código
+        aberto de ferramentas online úteis para desenvolvedores e profissionais
+        de TI.
+      it-tools-handy-online-tools-for-developers: Ferramentas de TI - Ferramentas online úteis para desenvolvedores
 about:
   alltools-title: Todas as ferramentas {toolsCount}
   tools:
@@ -80,6 +91,13 @@ about:
     relatório de bug na [seção de
     problemas](https://github.com/sharevb/it-tools/issues/new/choose) do
     repositório GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Coleção de ferramentas online práticas para desenvolvedores, com ótima
+      experiência do usuário. O IT Tools é uma coleção gratuita e de código
+      aberto de ferramentas online úteis para desenvolvedores e profissionais de
+      TI.
+    about-it-tools: Sobre - Ferramentas de TI
 favoriteButton:
   remove: Remover dos favoritos
   add: Adicionar aos favoritos
@@ -117,6 +135,9 @@ tools:
     physics: Física
     cheatsheets: Folhas de dicas
     forensic: Forense
+    finance: Financiar
+    default: Padrão
+    toml: TOML
   csv-to-json:
     title: CSV para JSON
     description: Converte CSV para JSON com detecção automática de cabeçalhos.
@@ -481,6 +502,7 @@ tools:
       tag-preview-image: Imagem de pré-visualização
       tag-download-file: Baixar arquivo
       tag-copy: Cópia
+      include-data-uri-prefix: "Incluir dados: prefixo URI"
   list-converter:
     title: Conversor de lista
     description: Esta ferramenta pode processar dados baseados em colunas e aplicar
@@ -762,6 +784,8 @@ tools:
       tag-refresh-key-pair: Atualizar par de chaves
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: O número de bits deve ser entre 256 e 16384, e ser um múltiplo de 8.
   html-wysiwyg-editor:
     title: Editor HTML WYSIWYG
     description: Editor HTML WYSIWYG on-line e rico em recursos que gera o
@@ -977,6 +1001,8 @@ tools:
       tag-quantity: Quantidade
       tag-copy: Cópia
       tag-refresh: Atualizar
+      uppercase: Maiúsculas
+      no-hyphen: Sem hífen
   nanoid-generator:
     title: Gerador de NanoIDs
     description: Gere IDs aleatórios, exclusivos e amigáveis a URL para seus aplicativos.
@@ -1503,6 +1529,8 @@ tools:
       tag-certificate-signing-request: Solicitação de assinatura de certificado
       tag-public-key: Chave pública
       tag-private-key: Chave privada
+      label-rsa-bits: "Bits RSA:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: O número de bits deve ser entre 256 e 16384, e ser um múltiplo de 8.
   css-prettifier:
     title: Embelezador CSS
     description: CSS Embelezar
@@ -1961,6 +1989,7 @@ tools:
       label-file-name: "Nome do arquivo:"
       label-extension: "Extensão:"
       label-mime-type: "Tipo MIME:"
+      an-error-occured-processing: Ocorreu um erro ao processar
   folder-structure-diagram:
     title: Diagrama de estrutura de pastas
     description: utilitário em forma de árvore para gerar diagramas de estrutura de
@@ -2063,6 +2092,8 @@ tools:
       label-pib: PiB
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1 MiB = 1024 KiB; 1 MB = 1000 kB; 1 GiB = 1024 MiB; 1 GB = 1000 MB;
       tag-see-here-for-details: veja aqui para detalhes
+      column-decimal: Decimal
+      column-binary: Binário
   heic-converter:
     title: Conversor HEIC
     description: Conversor HEIC para JPEG ou PNG
@@ -2071,6 +2102,7 @@ tools:
       label-png: PNG
       label-output-format: Formato de saída
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Arraste e solte um arquivo HEIC aqui ou clique para selecionar um arquivo
+      an-error-occured-processing-heic-heif-is-invalid: "Ocorreu um erro ao processar: HEIC/HEIF é inválido."
   hex-file-converter:
     title: Conversor de arquivos HEX
     description: Converter entre representação de arquivo e hexadecimal
@@ -2139,6 +2171,9 @@ tools:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file:
         Arraste e solte um arquivo ICO ou PNG/JPEG aqui ou clique para
         selecionar um arquivo
+      an-error-occured-processing: Ocorreu um erro no processamento.
+      invalid-ico-file: Arquivo ICO inválido!
+      invalid-png-file: Arquivo PNG inválido!
   illuminance-converter:
     title: Conversor de iluminância
     description: Conversor de unidades de iluminância (Lux, Foot Candles, Nox, Phot, Flame)
@@ -2157,6 +2192,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Em seguida, arraste e solte suas imagens abaixo e elas serão
         convertidas e baixadas imediatamente:"
+      invalid-image-file: Arquivo de imagem inválido!
+      an-error-occured-processing: Ocorreu um erro ao processar
   image-exif-reader:
     title: Leitor de qualidade de imagem EXIF/Metadados/GPS/JPEG
     description: Leia EXIF, IPTC, XMP, GPS e outros metadados, qualidade JPEG e
@@ -2362,6 +2399,7 @@ tools:
       tag-iso2-iso3: Iso2/Iso3
       tag-name-and-info: Nome e informações
       tag-gt-see-on-openstreetmap: "&gt; Veja no OpenStreetMap"
+      loading-more-results: Carregando mais resultados...
   javascript-prettifier:
     title: Embelezador Javascript
     description: Embelezador JS/Javascript
@@ -2876,6 +2914,11 @@ tools:
       placeholder-passphrase: Senha...
       tag-copy: Cópia
       tag-refresh: Atualizar
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Não é possível gerar uma senha de [{0} - {1}] caracteres com as
+        configurações atuais. Tente alterar a contagem de palavras."
+      words-words: Palavras ({0})
+      label-min-passphrase-len: "Comprimento mínimo da senha:"
   paste-as-markdown:
     title: Colar como Markdown
     description: Colar células/tabelas e links do conteúdo da área de transferência
@@ -2936,10 +2979,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Arraste e solte um arquivo PDF aqui ou clique para selecionar um arquivo
       title-logs: Registros
       label-qpdf: qpdf
-      label-password: 'Senha:'
+      label-password: "Senha:"
       placeholder-password: Senha
       tag-decrypt-pdf: Descriptografar PDF
-      tag-output-file: 'Arquivo de saída:'
+      tag-output-file: "Arquivo de saída:"
   pgp-encryption:
     title: Criptografia PGP
     description: Criptografe e descriptografe texto não criptografado usando chaves PGP.
@@ -3877,6 +3920,8 @@ tools:
       label-permanent: Permanente
       title-generated-fw-command: "Comando fw gerado:"
       tag-const-zone-ref: zona constante = ref
+    title: gerador de linha de comando firewalld
+    description: Gerar linhas de comando do firewalld
   fortune-wheel:
     title: Roda da fortuna
     description: Uma roda da fortuna configurável
@@ -6285,6 +6330,9 @@ tools:
       label-django-secret-key: "Chave secreta do Django:"
       tag-copy: Cópia
       tag-regenerate: Regenerado
+    service:
+      texts:
+        generating-range-is-too-large: O alcance de geração é muito grande.
   dnsbl-checker:
     title: Verificador DNSBL
     description: Verifique se um determinado IP está em algum dos servidores
@@ -6333,6 +6381,7 @@ tools:
       title-html-head-tags: 📄 Tags de cabeçalho HTML
       tag-upload-png-image: Carregar imagem PNG
       tag-download-zip: 📦 Baixar ZIP
+      invalid-png-file: Arquivo PNG inválido!
   font-compare:
     title: Comparar fontes
     description: Comparar com fontes em um determinado texto
@@ -6418,6 +6467,12 @@ tools:
       label-fallback: "Cair pra trás:"
       placeholder-fallback-font: Fonte de reserva
       tag-defineprops: defineProps
+    text:
+      by-font-name: Por nome da fonte
+      by-font-url: Por URL da fonte
+      by-font-file: Por arquivo de fonte
+      by-inline-css: Por CSS embutido
+      by-css-url: Por URL CSS
   gpt-token-encoder:
     title: Codificador/Decodificador de Token GPT
     description: Codificar texto em tokens GPT e decodificar tokens GPT de volta para texto
@@ -6454,6 +6509,10 @@ tools:
       tag-original-image: Imagem original
       tag-inverted-image: Imagem Invertida
       tag-clear-upload-new: Limpar e carregar novo
+    service:
+      texts:
+        file-must-be-an-image: O arquivo deve ser uma imagem.
+        failed-to-process-image-err: "Falha ao processar a imagem:"
   image-comparer:
     title: Comparação de imagens
     description: Uma ferramenta para comparar imagens visualmente
@@ -6468,6 +6527,9 @@ tools:
       tag-compare: Comparar
       tag-upload-left: Carregar à esquerda
       tag-upload-right: Carregar direito
+    text:
+      compare-by-url: Comparar por URL
+      compare-by-upload: Comparar por Upload
   logrotate-generator:
     title: Gerador Apache LogRotate
     description: Gerar configuração de rotação do Apache .log
@@ -6595,6 +6657,16 @@ tools:
       label-decimal: "Decimal:"
       label-octal: "Octal:"
       label-hexadecimal: "Hexadecimal:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Entrada hexadecimal inválida.
+          Somente números de 0 a 9 e de A a F são permitidos.
+        invalid-1: Inválido
+        invalid-0: Inválido
+        invalid: Inválido
+        unsupported-middle-endian-format: Formato middle-endian não suportado.
+        failed-to-parse-bytes: Falha ao analisar os bytes.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: A entrada deve ser {0} caracteres hexadecimais para {1} bit.
   mttdl-calculator:
     title: Calculadora de confiabilidade RAID
     description: Calcula a confiabilidade do sistema de armazenamento usando a
@@ -6736,6 +6808,11 @@ tools:
       tag-convert: Converter
       tag-axial: Axial
       tag-radial: Radial
+    text:
+      bands-notation: Bandas → Notação
+      notation-bands: Notação → Bandas
+      number-notation: Número → Notação
+      notation-number: Notação → Número
   sed-command-generator:
     title: Gerador de comandos Sed
     description: Gerar comandos sed unix
@@ -7120,6 +7197,9 @@ tools:
       title-mw-to-dbm: mW para dBm
       label-mw-value: "Valor mW:"
       label-corresponding-dbm-value: "Valor dBm correspondente:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: A potência em miliwatts deve ser maior que 0.
   diceware-generator:
     title: Gerador de senhas Diceware
     description: Gerar senha aleatória usando o método Diceware
@@ -7354,6 +7434,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} ou raw 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Os dados da transação devem começar com 0x.
   file-splitter:
     title: Divisor de Arquivos
     description: Dividir arquivos JSON, XML ou de texto por grupo de nós ou por
@@ -7372,6 +7455,9 @@ tools:
       tag-process-chunks: Processar partes
       tag-download-all: Baixar tudo
       tag-download: Download
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Formato não suportado ou conteúdo inválido
   gitignore-generator:
     title: Gerador de GitIgnore
     description: Gere um arquivo .gitignore para um conjunto de modelos comuns.
@@ -7485,6 +7571,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Arraste e solte um arquivo PDF aqui ou clique para selecionar um arquivo.
       title-logs: Registros
       label-ghostscript: Script fantasma
+      process-run-failed: A execução do processo falhou
+      an-error-occured-processing: Ocorreu um erro no processamento.
   serial-console:
     title: Console de porta serial
     description: Conectar, ler e enviar mensagens para a porta serial
@@ -7745,6 +7833,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: ": Sair do Modo de Pixel Morto"
       tag-start-dead-pixel: Início Pixel morto
+    title: Testador de Pixel Morto
+    description: Ferramenta para verificar se um pixel na sua tela está morto ou não.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Excluir prefixos SI
@@ -7772,6 +7862,13 @@ tools:
       tag-convert-batch: Converter em lote
       tag-longitude-east-is-positive-west-is-negative: "Longitude: Leste é positivo, Oeste é negativo."
       tag-latitude-north-is-positive-south-is-negative: "Latitude: Norte é positivo, Sul é negativo."
+    text:
+      coordinate-system: Sistema de coordenadas
+      decimal-format-lng-lat: Formato decimal (longitude, latitude)
+      dms-format-lng-lat: Formato DMS (longitude, latitude)
+      download-results-csv: Baixar resultados em CSV
+      batch-lat-lng-converter: Conversor de Latitude/Longitude em Lote
+      single-lat-lng-converter: Conversor único de latitude/longitude
   si-prefixes-converter:
     title: Conversor de prefixos SI
     description: Converter entre prefixos métricos
@@ -7814,6 +7911,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: Feito com {0}
+        runs-entirely-in-your-browser-no-external-requests: Funciona inteiramente no seu navegador. Sem requisições externas.
   acceleration-converter:
     title: Conversor de aceleração
     description: Converter valores entre unidades de aceleração
@@ -7934,7 +8032,6 @@ tools:
       tag-back: Voltar (←)
       tag-next: Próximo (→)
       tag-reset: Reiniciar
-      tag-: ↓
       tag-or: "- OU -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Controle a reprodução e a navegação sem tocar no mouse.
       tag-shortcut: Atalho
@@ -7953,6 +8050,16 @@ tools:
       tag-jump-to-start: Ir para o início
       tag-end: Fim
       tag-jump-to-end: Ir para o fim
+    text:
+      please-provide-some-text-first: Por favor, forneça algum texto primeiro.
+      unsupported-file-type: Tipo de arquivo não suportado.
+      display: Mostrar
+      text: Texto
+      settings: Configurações
+      keyboard-shortcuts: Atalhos de teclado
+      ready: Preparar
+      words: palavras
+      wpm: Palavras por minuto
   speed-converter:
     title: Conversor de velocidade
     description: Converter valores entre unidades de velocidade
@@ -8002,10 +8109,612 @@ tools:
       tag-apply-configuration: Aplicar configuração
       tag-clear-logs: Limpar registros
       tag-send: Enviar
+      already-connected: ⚠️ Já está conectado
+      connected-to-websocket-bridge: ✅ Conectado à ponte WebSocket
+      disconnected: 🔌 Desconectado
+      no-active-connection: ⚠️ Sem conexão ativa
+      sent-text: "➡️ Mensagem enviada:"
+      configured: ⚙️ Configurado
+      sent-hex: "➡️ Enviou hexadecimal:"
+      disconnecting: 🔻 Desconectando...
+      error: "❌ Erro:"
+      end: "🛑 Fim:"
+      text: "📩 Texto:"
+      binary: "📩 Binário:"
+    text:
+      connected: Conectado
+      disconnected: Desconectado
   volume-flow-rate-converter:
     title: Conversor de taxa de fluxo de volume
     description: Converter valores entre unidades de vazão volumétrica
     externalAccess: nulo
+  tip-calculator:
+    title: Calculadora de gorjetas
+    description: Calcule a gorjeta da conta e divida-a entre várias pessoas.
+    texts:
+      title-bill-details: Detalhes da fatura
+      label-bill-amount: "Valor da fatura:"
+      placeholder-total-bill: Valor total da fatura
+      label-tip-percentage: "Percentagem da gorjeta:"
+      placeholder-tip: Dica %
+      label-number-of-person: "Número de pessoas:"
+      placeholder-people: Pessoas
+      title-results: Resultados
+      label-tip-amount: "Valor da gorjeta:"
+      label-total-bill: "Valor total da conta:"
+      label-amount-per-person: "Valor por pessoa:"
+      title-quick-tip: Dica rápida %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON para .env
+    description: Converta um objeto JSON simples em um arquivo .env. As chaves são
+      escritas em maiúsculas e os valores são colocados entre aspas com
+      segurança quando contêm espaços em branco, aspas ou caracteres especiais
+      do ambiente.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: O JSON fornecido não é um objeto plano válido.
+      input-label-your-json: Seu JSON
+      input-placeholder-paste-your-json-here: Cole seu JSON aqui...
+      output-label-env-from-your-json: .env do seu JSON
+  calendar-converter:
+    service:
+      text:
+        sunday: Domingo
+        wednesday: Quarta-feira
+        tuesday: Terça-feira
+        monday: Segunda-feira
+        thursday: Quinta-feira
+        friday: Sexta-feira
+        saturday: Sábado
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Duração do ano inválida: {0} dias."
+        common-deficient-353-days: Deficiência comum (353 dias)
+        common-regular-354-days: Comum regular (354 dias)
+        common-complete-355-days: Comum completo (355 dias)
+        embolismic-deficient-383-days: Deficiência embólica (383 dias)
+        embolismic-regular-384-days: Embolismo regular (384 dias)
+        embolismic-complete-385-days: Embolia completa (385 dias)
+        normal-year: Ano normal
+        leap-year: Ano bissexto
+    title: Conversor de calendário
+    description: Converter datas e horas entre os formatos gregoriano, juliano,
+      hebraico, islâmico, persa, maia, indiano, francês republicano, ISO-8601,
+      Unix e serial do Excel.
+    externalAccess: nulo
+    texts:
+      label-january: Janeiro
+      label-february: Fevereiro
+      label-march: Marchar
+      label-april: abril
+      label-may: Poderia
+      label-june: Junho
+      label-july: Julho
+      label-august: Agosto
+      label-september: Setembro
+      label-october: outubro
+      label-november: novembro
+      label-december: dezembro
+      label-nisan-נִיסָן: Nisan
+      label-iyyar-אִיָּר: Iyyar (Iyyar)
+      label-sivan-סִיוָן: Sivan
+      label-tammuz-תַּמּוּז: Tamuz
+      label-av-אָב: Av (Av)
+      label-elul-אֱלוּל: Elul
+      label-tishri-תִּשְׁרֵי: Tishri
+      label-heshvan-חֶשְׁוָן: Heshvan (Heshvan)
+      label-kislev-כִּסְלֵו: Kislev
+      label-teveth-טֵבֵת: Teveth
+      label-shevat-שְׁבָט: Shevat (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Adar/Adar I (Adar)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Veadar/Adar II (Segundo Adar)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath-Thani (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al-Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Rajab (رَجَب)
+      label-shaʿban-شَعْبان: Shaʿban (شَعْبان)
+      label-ramadan-رَمَضان: Ramadã
+      label-shawwal-شَوّال: Shawwal
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al-Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al-Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: Farvardin (Farvardin)
+      label-ordibehesht-اردیبهشت: Ordibehesht (Ordibehesht)
+      label-khordad-خرداد: Khordad (Khordad)
+      label-tir-تیر: Tir (Tir)
+      label-mordad-مرداد: Mordad (Mordad)
+      label-shahrivar-شهریور: Shahrivar (Shahrivar)
+      label-mehr-مهر: Mais (Mais)
+      label-aban-آبان: Aban (novembro)
+      label-azar-آذر: Azar (Azar)
+      label-dey-دی: Dey (O)
+      label-bahman-بهمن: Bahman (Bahman)
+      label-esfand-اسفند: Esfand (março)
+      label-caitra-चैत्र: Caitra (Chaitra)
+      label-vaisakha-वैशाख: Vaisakha (Vaishakh)
+      label-jyaistha-ज्येष्ठ: Jyaistha (Sênior)
+      label-asadha-आषाढ़: Asadha
+      label-sravana-श्रावण: Sravaná
+      label-bhadra-भाद्रपद: Bhadra (Bhadrapada)
+      label-asvina-आश्विन: Asvina (Ashwin)
+      label-kartika-कार्तिक: Kartika
+      label-agrahayana-अग्रहायण: Agrahayana (Agrahayana)
+      label-pausa-पौष: Pausa
+      label-magha-माघ: Magha
+      label-phalguna-फाल्गुन: Phalguna
+      label-vendémiaire: Vendémiaire
+      label-brumaire: Brumário
+      label-frimaire: Frimaire
+      label-nivôse: Nivôse
+      label-pluviôse: Pluviôse
+      label-ventôse: Ventôse
+      label-germinal: Germinal
+      label-floréal: Floral
+      label-prairial: Pradaria
+      label-messidor: Messidor
+      label-thermidor: Termidor
+      label-fructidor: Frutífero
+      label-sans-culottides: Sans-culottides
+      label-i: EU
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Primidi (1)
+      label-duodi-2: Dê (2)
+      label-tridi-3: Três (3)
+      label-quartidi-4: Quartos (4)
+      label-quintidi-5: Quintídio (5)
+      label-sextidi-6: Sextidi (6)
+      label-septidi-7: Septidi (7)
+      label-octidi-8: Octidi (8)
+      label-nonidi-9: De fato (9)
+      label-décadi-10: Décadi (10)
+      label-vertu-1: Virtude (1)
+      label-génie-2: Gênio (2)
+      label-travail-3: Trabalho (3)
+      label-opinion-4: Opinião (4)
+      label-récompenses-5: Recompensas (5)
+      label-révolution-6: Revolução (6)
+      tab-gregorian: gregoriano
+      label-date: Data
+      label-leap: "Salto:"
+      label-time: "Tempo:"
+      label-weekday: "Dias de semana:"
+      tab-julian-day: Dia de Julian
+      label-julian-day: "Dia de Julian:"
+      tab-modified-julian: Juliano modificado
+      label-modified-julian-day: "Dia Juliano Modificado:"
+      tab-julian-calendar: Calendário juliano
+      tab-gregorian-serial: Serial Gregoriano
+      label-gregorian-serial-day: "Dia da Serialização Gregoriana:"
+      tab-hebrew: hebraico
+      tab-islamic: islâmico
+      tab-persian: persa
+      tab-persian-algorithmic: Algoritmo Persa
+      tab-mayan: Maia
+      label-long-count: "Contagem longa:"
+      label-haab: Ter esperança
+      label-tzolkin: Tzolkin
+      tab-indian-civil: Civil indiano
+      tab-french-republican: Republicanos franceses
+      label-day: "Dia:"
+      label-month: "Mês:"
+      label-décade: "Década:"
+      label-year: "Ano:"
+      tab-iso-8601: ISO‑8601
+      label-day-of-week: "Dia da semana:"
+      label-week: "Semana:"
+      label-day-of-year: "Dia do ano:"
+      tab-unix-time: Tempo Unix()
+      label-unix-time: "Tempo Unix():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Dia da Série Excel (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Dia da Série Excel (1904):"
+      tag-this-is-a-port-of-wonderful: Este é um porto maravilhoso.
+      tag-fourmilab-ch-calendar-converter: Conversor de calendário Fourmilab.ch
+      tag-by-john-walker: Por John Walker
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Atualizar outros calendários
+      tag-today: Hoje
+  bech32:
+    title: Codificador/Decodificador Bech32
+    description: Codificar/Decodificar/Validar betch32(m)
+    externalAccess: nulo
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Praia 32m
+      tab-decode: Decodificar
+      label-bech32-m-string: "Cadeia Bech32(m):"
+      placeholder-bech32-bech32m-string: Corda Bech32 / Bech32m
+      label-variant: "Variante:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "Carga útil:"
+      placeholder-hex-payload: Carga útil hexadecimal
+      placeholder-variant: Variante
+      tab-encode: Codificar
+      label-encoded-bech32-string: "String bech32 codificada:"
+      placeholder-bech32-string: corda bech32
+      tab-batch: Lote
+      label-bech32-strings-one-per-line: "Cadeias Bech32 (uma por linha):"
+      placeholder-one-bech32-string-per-line: Uma corda Bech32 por linha
+      title-results: Resultados
+      tag-auto-detect: Detecção automática
+      tag-manual: Manual
+      tag-checksum-only: apenas a soma de verificação
+      tag-full-decode: Decodificação completa
+      tag-checksum-valid: Soma de verificação válida
+      tag-checksum-invalid: Soma de verificação inválida
+      tag-encode: Codificar
+      tag-convert: Converter
+      tag-export-csv: Exportar CSV
+      invalid-hex-payload: Carga útil hexadecimal inválida
+      input: Entrada
+      variant: Variante
+      status: Status
+      hex: Hex
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Etiquetas Docker Pangolin
+    description: Converter rótulos do Docker Compose Pangolin em blueprints e vice-versa
+    externalAccess: nulo
+    texts:
+      tab-compose-blueprint: Compor → Projeto
+      label-docker-compose-yaml: "YAML do Docker Compose:"
+      placeholder-paste-full-docker-compose-yml-here: Cole o arquivo docker-compose.yml completo aqui…
+      label-generated-blueprint: "Projeto gerado:"
+      placeholder-blueprint-yaml-will-appear-here: O arquivo YAML do projeto aparecerá aqui…
+      tab-blueprint-labels: Projeto → Etiquetas
+      label-blueprint-yaml: "YAML do projeto:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Cole aqui o arquivo YAML do projeto Pangolin…
+      label-generated-docker-labels: "Rótulos Docker gerados:"
+      placeholder-docker-labels-will-appear-here: Os rótulos do Docker aparecerão aqui...
+      tag-extract-pangolin-blueprint: Extrair o projeto do pangolim
+      tag-array-key-value: Array (- chave=valor)
+      tag-object-key-value: "Objeto (chave: valor)"
+      tag-convert-to-docker-labels: Converter para rótulos do Docker
+      invalid-blueprint-yaml: YAML de projeto inválido
+  fitness-computer:
+    title: Computador de fitness
+    description: "Calcula a Taxa Metabólica Basal (TMB), o Gasto Energético Diário
+      Total (GET) / Calorias (Gasto Energético Diário Total), o Índice de Massa
+      Corporal (IMC), o Peso Ideal (Peso Corporal Ideal), a Gordura Corporal
+      (Percentual de Gordura Corporal) e a Frequência Cardíaca Máxima (FC
+      Máxima): métricas essenciais utilizadas para avaliar o condicionamento
+      físico geral e a saúde fisiológica."
+    externalAccess: nulo
+    texts:
+      label-bmr: BMR
+      label-tdee-calories: TDEE/Calorias
+      label-bmi: "IMC:"
+      label-ideal-weight: "Peso ideal:"
+      label-body-fat-us-navy: Gordura Corporal (Marinha dos EUA)
+      label-body-fat-bmi: Gordura Corporal (IMC)
+      label-max-heart-rate: Frequência cardíaca máxima
+      label-sedentary-little-or-no-exercise: "Sedentário: pouco ou nenhum exercício"
+      label-light-exercise-1-3-times-week: "Leve: exercite-se de 1 a 3 vezes por semana."
+      label-moderate-exercise-4-5-times-week: "Moderado: exercite-se de 4 a 5 vezes por semana."
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week: "Ativo: exercício diário ou exercício intenso 3 a 4 vezes por semana."
+      label-very-active-intense-exercise-6-7-times-week: "Muito ativo: exercícios intensos de 6 a 7 vezes por semana."
+      label-extra-active-very-intense-exercise-daily-or-physical-job:
+        "Extra Ativo: exercício físico muito intenso diariamente ou trabalho
+        físico."
+      label-units: "Unidades:"
+      label-formula: "Fórmula:"
+      label-gender: "Gênero:"
+      label-age: "Idade:"
+      title-body-measurements: Medidas corporais
+      label-activity-level: "Nível de atividade:"
+      title-results: Resultados
+      label-bmr-kcal-day: "Taxa metabólica basal (kcal/dia):"
+      label-tdee-calories-kcal-day: "Gasto Energético Diário Total (GET)/Calorias (kcal/dia):"
+      label-bmi-category: "Categoria de IMC:"
+      label-healthy-range-min: "Faixa saudável (mín.):"
+      label-healthy-range-max: "Faixa saudável (máxima):"
+      label-devine-1974: "— (Torna-se 1974):"
+      label-hamwi-1964: "— (Hamwi 1964):"
+      label-miller-1983: "— (Miller 1983):"
+      label-robinson-1983: "— (Robinson 1983):"
+      label-body-fat: "Percentual de gordura corporal:"
+      label-fat-mass: "Massa gorda:"
+      label-lean-mass: "Massa magra:"
+      label-max-heart-rate-bpm: "Frequência cardíaca máxima (bpm):"
+      tag-metric-kg-cm: Sistema métrico (kg, cm)
+      tag-us-lbs-inches: EUA (libras, polegadas)
+      tag-male: Macho
+      tag-female: Fêmea
+  food-energy-converter:
+    title: Conversor de Energia Alimentar
+    description: Converter entre unidades de medida de alimentos (joules, calorias)
+    externalAccess: nulo
+  iso-639-searcher:
+    title: Pesquisador ISO 639
+    description: Pesquisar em códigos de idioma ISO 639-1/2T/2B/3
+    externalAccess: nulo
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Pesquisar código de idioma ISO-639 por ISO-1, ISO-2T/2B, ISO-3, nome...
+      label-max-results: "Resultados máximos:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "INGLÊS:"
+      tag-no-results: Nenhum resultado
+      tag-search-results: Resultados da pesquisa
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: Nome em inglês e nome local
+      loading-more-results: Carregando mais resultados...
+  jasypt-string-encryption:
+    title: Criptografia de strings Jasypt
+    description: Criptografe e descriptografe strings usando o padrão Jasypt (Java
+      Simplified Encryption).
+    externalAccess: nulo
+    texts:
+      label-mode: "Modo:"
+      label-password-secret-key: "Senha (Chave Secreta):"
+      placeholder-enter-jasypt-password-salt-secret-key: Digite a senha do Jasypt (salt / chave secreta)
+      title-results: Resultados
+      label-decoded: "Decodificado:"
+      label-raw: "Cru:"
+      label-enc-form: "Formulário ENC:"
+      tag-encrypt: Criptografar
+      tag-decrypt: Descriptografar
+      plain-text: "Texto simples:"
+      jasypt-encrypted-string: "Cadeia de caracteres criptografada do Jasypt:"
+      text-to-encrypt-e-g-db-password: "Texto a ser criptografado (ex.: senha do banco de dados)"
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Valor criptografado (por exemplo, ENC(...)) ou string Jasypt bruta
+  k8s-rbac-generator:
+    title: Gerador RBAC do Kubernetes
+    description: Gerar YAML de política RBAC do Kubernetes
+    externalAccess: nulo
+    texts:
+      label-user: Usuário
+      label-group: Grupo
+      label-serviceaccount: Conta de serviço
+      label-role-name: "Nome do cargo:"
+      label-role-type: Tipo de função
+      label-namespace: Espaço de nomes
+      title-rules: Regras
+      label-resources: Recursos
+      placeholder-select-resources-supports: Selecione os recursos (suporta *)
+      label-resource-names-optional: Nomes dos recursos (opcional)
+      placeholder-specific-resources-names: Nomes de recursos específicos
+      label-verbs: Verbos
+      placeholder-select-verbs-supports: Selecione os verbos (suporta *)
+      title-subjects: Assuntos
+      label-kind: Tipo
+      label-name: Nome
+      title-output-yaml: YAML de saída
+      tab-role-yaml: YAML de função
+      tab-rolebinding-yaml: YAML de vinculação de função
+      tag-clusterrole-global: Função de cluster (global)
+      tag-role-namespaced: Função (com namespace)
+      tag-add-rule: + Adicionar regra
+      tag-remove-rule: Remover regra
+      tag-add-subject: + Adicionar disciplina
+      tag-remove-subject: Remover assunto
+  objgen-html:
+    title: Conversão de ObjGen para HTML
+    description: Gere HTML xomplex a partir de sintaxe semelhante a TOML.
+    externalAccess: nulo
+    texts:
+      input-label-objgen-html-definition: Definição HTML do ObjGen
+      input-placeholder-put-your-objgen-html-definition-here: Insira aqui sua definição HTML do ObjGen...
+      output-label-generated-html: HTML gerado
+      tag-documentation: Documentação
+  objgen-json:
+    title: Geração de objetos para JSON
+    description: Gere JSON xomplex a partir de sintaxe semelhante a TOML.
+    externalAccess: nulo
+    texts:
+      input-label-objgen-json-definition: Definição JSON do ObjGen
+      input-placeholder-put-your-objgen-json-definition-here: Insira aqui sua definição JSON do ObjGen...
+      output-label-generated-json: JSON gerado
+      tag-documentation: Documentação
+  pgp-file-encryption:
+    title: Criptografia de arquivos PGP
+    description: Criptografe e descriptografe arquivos usando PGP
+    externalAccess: nulo
+    texts:
+      title-1-select-a-file: 1. Selecione um arquivo
+      title-drag-and-drop-a-file-or-click-to-select: Arraste e solte um arquivo ou clique para selecionar.
+      title-2-public-key-for-encryption: 2. Chave pública (para criptografia)
+      title-3-private-key-passphrase-for-decryption: 3. Chave privada + senha (para descriptografia)
+      label-passphrase: "Senha:"
+      placeholder-passphrase: Senha
+      tag-selected-file: "Arquivo selecionado:"
+      tag-encrypt-stream: Criptografar (fluxo)
+      tag-decrypt-stream: Decifrar (fluxo)
+      tag-encrypting: Criptografando…
+      tag-decrypting: Decifrando…
+      tag-encrypted-file-ready: Arquivo criptografado pronto.
+      tag-download-encrypted: Baixar criptografado
+      tag-decrypted-file-ready: Arquivo descriptografado pronto.
+      tag-download-decrypted: Baixar versão descriptografada
+  remove-background:
+    title: Remover o fundo da imagem
+    description: Remover o fundo de uma imagem usando IA
+    externalAccess: Baixe os modelos de fundo do HuggingFace. O processamento é
+      feito no seu navegador.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Transparente
+      label-solid-color: Cor sólida
+      label-pattern: "Padrão:"
+      label-blurred-original: Original desfocado
+      label-adjust-contrast-brightness: Ajustar contraste/brilho
+      label-diagonal-stripes: Listras diagonais
+      label-dots: Pontos
+      label-checkerboard: Tabuleiro de xadrez
+      title-drag-and-drop-an-image-or-click-to-select: Arraste e solte uma imagem ou clique para selecionar.
+      label-model: "Modelo:"
+      label-blur: "Borrão:"
+      label-contrast: "Contraste:"
+      label-brightness: "Brilho:"
+      title-original: Original
+      title-result: Resultado
+      tag-apply-background: Aplicar experiência
+      tag-download-result: Baixar Resultado
+  shell-formatter:
+    title: Formatador de comandos do shell
+    description: Formate os comandos do shell como comandos de várias linhas
+      divididos por argumentos.
+    externalAccess: nulo
+    texts:
+      input-label-shell-commands-to-format: Comandos do Shell para formatar
+      input-placeholder-put-your-shell-commands-to-format-here: Insira aqui os comandos do shell que deseja formatar...
+      output-label-formatted-shell-commands: Comandos de shell formatados
+  shell-linearizer:
+    title: Linearizador de comandos do shell
+    description: Linearizar comandos de shell de múltiplas linhas
+    externalAccess: nulo
+    texts:
+      input-label-shell-commands-to-linearize: Comandos do Shell para linearizar
+      input-placeholder-put-your-shell-commands-to-linearize-here: Insira aqui os comandos do shell que deseja linearizar...
+      output-label-linearized-shell-commands: Comandos de shell linearizados
+  ufw-generator:
+    title: Gerador de comandos UFW
+    description: Gerar linhas de comando UFW
+    externalAccess: nulo
+    texts:
+      label-allow: Permitir
+      label-deny: Negar
+      label-reject: Rejeitar
+      label-limit: Limite
+      label-incoming: Entrada
+      label-outgoing: Extrovertido
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: Qualquer
+      label-action: "Ação:"
+      label-direction: "Direção:"
+      label-protocol: "Protocolo:"
+      label-port: "Porta:"
+      placeholder-80: "80"
+      label-port-to-range: "Porta para (alcance):"
+      placeholder-443: "443"
+      label-from-ip: "Do endereço IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "Para IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Interface:"
+      placeholder-eth0: eth0
+      label-logging: "Registro de atividades:"
+      label-comment: "Comentário:"
+      placeholder-optional-comment: Comentário opcional
+      title-generated-command: Comando gerado
+      missing-port: Porto ausente
+  visual-subnet-calculator:
+    title: Calculadora visual de sub-redes
+    description: Uma ferramenta para projetar redes rapidamente e colaborar nesse
+      projeto com outras pessoas. Ela se concentra em agilizar o trabalho dos
+      administradores de rede, e não em cálculos acadêmicos de sub-redes.
+    externalAccess: nulo
+  zalgo:
+    title: Gerador/Banner Zalgo
+    description: Gere texto Zalgo e limpe o texto Zalgo gerado.
+    externalAccess: nulo
+    texts:
+      text-zalgo-text-copied: Texto do Zalgo copiado!
+      title-zalgo-text-generation: Geração de texto Zalgo
+      placeholder-put-your-string-here: Coloque seu fio aqui...
+      label-text-to-decorate-with-zalgo: Texto para decorar com Zalgo
+      label-intensity: "Intensidade:"
+      title-zalgo-text: Texto Zalgo
+      title-zalgo-cleaner: Limpador Zalgo
+      placeholder-put-zalgo-text-to-clean-here: Insira o texto zalgo para limpar aqui...
+      label-zalgo-text-to-clean: Texto Zalgo para limpar
+      label-cleaned-text: Texto limpo
+      placeholder-clean-zalgo-text-will-appear-here: O texto limpo do zalgo aparecerá aqui...
+      tag-generate: Gerar
+      tag-copy: Cópia
+      tag-clean: Limpar
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: É necessário definir uma das mensagens | função
+        function-must-set-messages: A função deve definir mensagens
+  dead-pixel-tester:
+    title: Testador de Pixel Morto
+  gif-to-mp4:
+    title: GIF para MP4
+    description: Converter GIF para MP4 usando ffmpeg
+    externalAccess: nulo
+    texts:
+      label-stream-loop: "Fluxo contínuo:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Arraste e solte o GIF aqui ou clique para selecionar um arquivo.
+      title-logs: Registros
+  html-to-pdf:
+    title: HTML para PDF
+    description: Gere PDFs a partir de conteúdo HTML ou URL com seleção de formato e
+      ocultação automática de banners de cookies.
+    externalAccess: Esta ferramenta envia URLs e conteúdo HTML para o serviço web
+      Puppeteer *auto-hospedado* configurado.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: Carta
+      label-legal: Jurídico
+      label-html-to-pdf-service-url: "URL do serviço de conversão de HTML para PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Autenticação básica:"
+      placeholder-username-password: nome de usuário:senha
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "Conteúdo HTML:"
+      tab-batch-url-pdf: URL do lote → PDF
+      label-urls-one-per-line: "URLs (uma por linha):"
+      title-results: Resultados
+      tab-custom-pdf-options: Opções de PDF personalizadas
+      label-format: "Formatar:"
+      label-language: "Linguagem:"
+      placeholder-en-us: en-EUA
+      label-landscape: "Paisagem:"
+      label-one-long-page: "Uma página longa:"
+      label-auto-hide-cookie-banners: "Ocultar automaticamente os banners de cookies:"
+      label-print-background: "Fundo para impressão:"
+      title-margins: Margens
+      label-top-mm: "Topo (mm):"
+      label-bottom-mm: "Parte inferior (mm):"
+      label-left-mm: "Esquerda (mm):"
+      label-right-mm: "Direita (mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: Configuração do serviço HTML para PDF (hospedado localmente)
+      tag-you-must-self-host-html-to-pdf-service-see: "Você precisa hospedar o serviço
+        de conversão de HTML para PDF por conta própria. Veja:"
+      tag-html-to-pdf-service-install: Instalação do serviço HTML para PDF
+      tag-generate-pdf: Gerar PDF
+      tag-generate-pdfs: Gerar PDFs
+      tag-url: URL
+      tag-download: Download
+      tag-download-pdf: Baixar PDF
+      tag-failed: Fracassado
+  shutdown-command-generator:
+    title: Gerador de comandos de desligamento
+    description: Gere comandos de desligamento para diversos sistemas operacionais.
+    externalAccess: nulo
+    texts:
+      label-windows: Windows
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Atraso:"
+      label-specific-time: Horário específico
+      label-platform: "Plataforma:"
+      label-shutdown-time: "Tempo de desligamento:"
+      label-force: Vigor
+      label-reboot: Reinício
+      label-logoff: Logoff
+      label-cancel: Cancelar
+      label-hibernate: Hibernar
+      title-generated-command: Comando gerado
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: m
+      tag-nbsp-s: "&nbsp;s"
 spanCopyable:
   copy: Copiar para a área de transferência
   copied: Copiado!
@@ -8023,3 +8732,9 @@ textareaCopyable:
   download: Download
 locale-selector:
   select-a-language: Selecione um idioma
+collapsibleToolMenu:
+  text:
+    expanding: Expandindo...
+    collapsing: Desabando...
+    collapse-all-tools: Recolher todas as ferramentas
+    expand-all-tools: Expandir todas as ferramentas

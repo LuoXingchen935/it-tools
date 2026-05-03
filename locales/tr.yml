@@ -4,6 +4,9 @@
   maybe: Öndellek aldatıcı birşeyler yapıyor olabilir. Sayfayı zorla-yenilemeye ne
     dersin?
   backHome: Ev'e geri dön
+  page:
+    text:
+      page-not-found-it-tools: Sayfa bulunamadı - BT Araçları
 home:
   categories:
     newestTools: En yeni Araçlar
@@ -34,6 +37,14 @@ home:
     twitterX: X hesabı
     twitterXAccount: BT Araçları X hesabı
   loading-more-tools: Daha fazla araç yükleniyor...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Geliştiriciler için harika bir kullanıcı deneyimi sunan kullanışlı
+        çevrimiçi araçlar koleksiyonu. BT Araçları, geliştiriciler ve BT
+        alanında çalışanlar için kullanışlı çevrimiçi araçlardan oluşan ücretsiz
+        ve açık kaynaklı bir koleksiyondur.
+      it-tools-handy-online-tools-for-developers: BT Araçları - Geliştiriciler için kullanışlı çevrimiçi araçlar
 favoriteButton:
   remove: Favorilerden kaldır
   add: Favorilere ekle
@@ -71,6 +82,9 @@ tools:
     physics: Fizik
     cheatsheets: Hile sayfaları
     forensic: Adli
+    finance: Finans
+    default: Varsayılan
+    toml: TOML
   password-strength-analyser:
     title: Şifre gücü analizi
     description: Şifrenin ne kadar güçlü olduğunu bu araçla birlikte analiz et ve
@@ -677,6 +691,7 @@ tools:
       tag-preview-image: Önizleme görüntüsü
       tag-download-file: Dosyayı indir
       tag-copy: Kopyala
+      include-data-uri-prefix: "Dahil edilecek veri: URI öneki"
   list-converter:
     title: Liste dönüştürücü
     description: Bu araç sütün bazlı verileri işleyebilir ve çeşitli değişiklikler
@@ -977,6 +992,8 @@ tools:
       tag-refresh-key-pair: Anahtar çiftini yenile
       tag-public-key: Genel anahtar
       tag-private-key: Özel anahtar
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Bit sayısı 256 ile 16384 arasında olmalı ve 8'in katı olmalıdır.
   html-wysiwyg-editor:
     title: HTML WYSIWYG düzenleyici
     description: İçeriğin kaynak kodunu anında üreten, çevrimiçi, özelliklerle dolu
@@ -1207,6 +1224,8 @@ tools:
       tag-quantity: Miktar
       tag-copy: Kopyala
       tag-refresh: Yenile
+      uppercase: Büyük harf
+      no-hyphen: Tire yok
   nanoid-generator:
     title: NanoID üreteci
     description: Uygulamalarınız için rastgele, benzersiz ve URL dostu kimlikler oluşturun.
@@ -1732,6 +1751,8 @@ tools:
       tag-certificate-signing-request: Sertifika İmzalama Talebi
       tag-public-key: Genel anahtar
       tag-private-key: Özel anahtar
+      label-rsa-bits: "RSA Bitleri:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Bit sayısı 256 ile 16384 arasında olmalı ve 8'in katı olmalıdır.
   css-prettifier:
     title: CSS güzelleştirici
     description: CSS Güzelleştirme
@@ -2193,6 +2214,7 @@ tools:
       label-file-name: "Dosya adı:"
       label-extension: "Eklenti:"
       label-mime-type: "MIME Türü:"
+      an-error-occured-processing: İşlem sırasında bir hata oluştu.
   folder-structure-diagram:
     title: Klasör Yapısı Diyagramı
     description: ASCII klasör yapısı diyagramları oluşturmak için ağaç benzeri
@@ -2296,6 +2318,8 @@ tools:
       label-pib: PiB
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1MiB = 1024KiB; 1MB = 1000kB; 1GiB = 1024MiB; 1GB = 1000MB;
       tag-see-here-for-details: Ayrıntılar için buraya bakın
+      column-decimal: Ondalık
+      column-binary: İkili
   heic-converter:
     title: HEIC Dönüştürücü
     description: HEIC'i JPEG veya PNG'ye Dönüştürücü
@@ -2306,6 +2330,7 @@ tools:
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file:
         HEIC dosyasını buraya sürükleyip bırakın veya bir dosya seçmek için
         tıklayın
+      an-error-occured-processing-heic-heif-is-invalid: "İşlem sırasında bir hata oluştu: HEIC/HEIF geçersiz."
   hex-file-converter:
     title: HEX Dosya Dönüştürücü
     description: Dosya ve onaltılık gösterim arasında dönüştürme
@@ -2377,6 +2402,9 @@ tools:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file:
         Bir ICO veya PNG/JPEG dosyasını buraya sürükleyip bırakın veya bir dosya
         seçmek için tıklayın
+      an-error-occured-processing: İşlem sırasında bir hata oluştu.
+      invalid-ico-file: Geçersiz ICO dosyası!
+      invalid-png-file: Geçersiz PNG dosyası!
   illuminance-converter:
     title: Aydınlatma Dönüştürücü
     description: Aydınlatma birimi dönüştürücü (Lüks, Ayak Mumları, Nox, Phot, Alev)
@@ -2395,6 +2423,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Daha sonra görsellerinizi aşağıya sürükleyip bırakın, anında
         dönüştürülüp indirilecektir:"
+      invalid-image-file: Geçersiz resim dosyası!
+      an-error-occured-processing: İşlem sırasında bir hata oluştu.
   image-exif-reader:
     title: Görüntü EXIF/Meta Veri/GPS/JPEG Kalite okuyucu
     description: Resim dosyalarından EXIF, IPTC, XMP, GPS ve diğer meta verileri,
@@ -2599,6 +2629,7 @@ tools:
       tag-iso2-iso3: İzo2/İzo3
       tag-name-and-info: İsim ve Bilgi
       tag-gt-see-on-openstreetmap: "&gt; OpenStreetMap'te görün"
+      loading-more-results: Daha fazla sonuç yükleniyor...
   javascript-prettifier:
     title: Javascript Güzelleştirici
     description: JS/Javascript Güzelleştirici
@@ -3120,6 +3151,11 @@ tools:
       placeholder-passphrase: Şifre...
       tag-copy: Kopyala
       tag-refresh: Yenile
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Mevcut ayarlarla [{0} - {1}] karakterden oluşan bir parola
+        oluşturulamıyor, kelime sayısını değiştirmeyi deneyin."
+      words-words: Kelimeler ({0})
+      label-min-passphrase-len: "Minimum parola uzunluğu:"
   paste-as-markdown:
     title: Markdown olarak yapıştır
     description: Panodaki içerikten hücreleri/tabloları ve bağlantıları Markdown
@@ -3188,10 +3224,10 @@ tools:
         tıklayın
       title-logs: Günlükler
       label-qpdf: qpdf
-      label-password: 'Şifre:'
+      label-password: "Şifre:"
       placeholder-password: Şifre
       tag-decrypt-pdf: PDF'yi Şifrele
-      tag-output-file: 'Çıktı dosyası:'
+      tag-output-file: "Çıktı dosyası:"
   pgp-encryption:
     title: PGP şifrelemesi
     description: PGP Anahtarlarını kullanarak metni şifreleyin ve şifresini çözün.
@@ -4131,6 +4167,8 @@ tools:
       label-permanent: Kalıcı
       title-generated-fw-command: "Oluşturulan fw komutu:"
       tag-const-zone-ref: sabit bölge = ref
+    title: firewalld komut satırı oluşturucu
+    description: firewalld komut satırlarını oluşturun
   fortune-wheel:
     title: Fal çarkı
     description: Yapılandırılabilir bir fal çarkı
@@ -6227,6 +6265,9 @@ tools:
       label-django-secret-key: "Django gizli anahtarı:"
       tag-copy: Kopyala
       tag-regenerate: Yeniden oluşturmak
+    service:
+      texts:
+        generating-range-is-too-large: Üretim aralığı çok geniş.
   dnsbl-checker:
     title: DNSBL Denetleyicisi
     description: Belirli bir IP'nin bilinen DNS Kara Liste sunucularından herhangi
@@ -6276,6 +6317,7 @@ tools:
       title-html-head-tags: 📄 HTML Başlık Etiketleri
       tag-upload-png-image: PNG Resmini Yükle
       tag-download-zip: 📦 ZIP'i indirin
+      invalid-png-file: Geçersiz PNG dosyası!
   font-compare:
     title: Yazı Tipi Karşılaştır
     description: Belirli bir metindeki yazı tipleriyle karşılaştırın
@@ -6361,6 +6403,12 @@ tools:
       label-fallback: "Geri çekilmek:"
       placeholder-fallback-font: Yedek Yazı Tipi
       tag-defineprops: defineProps
+    text:
+      by-font-name: Yazı Tipi Adına Göre
+      by-font-url: Yazı Tipi URL'si ile
+      by-font-file: Yazı Tipi Dosyası Tarafından
+      by-inline-css: Satır İçi CSS ile
+      by-css-url: CSS URL'si ile
   gpt-token-encoder:
     title: GPT Token Kodlayıcı/Kod Çözücü
     description: Metni GPT belirteçlerine kodlayın ve GPT belirteçlerini tekrar
@@ -6398,6 +6446,10 @@ tools:
       tag-original-image: Orijinal Görüntü
       tag-inverted-image: Ters Görüntü
       tag-clear-upload-new: Temizle ve Yeni Yükle
+    service:
+      texts:
+        file-must-be-an-image: Dosya bir resim dosyası olmalıdır.
+        failed-to-process-image-err: "Görüntü işleme başarısız oldu:"
   image-comparer:
     title: Görüntü Karşılaştır
     description: Görüntüleri görsel olarak karşılaştırmak için bir araç
@@ -6412,6 +6464,9 @@ tools:
       tag-compare: Karşılaştırmak
       tag-upload-left: Soldan Yükle
       tag-upload-right: Sağa Yükle
+    text:
+      compare-by-url: URL ile karşılaştır
+      compare-by-upload: Yüklemeye Göre Karşılaştır
   logrotate-generator:
     title: Apache LogRotate Oluşturucu
     description: Apache .log rotasyon yapılandırmasını oluşturun
@@ -6540,6 +6595,15 @@ tools:
       label-decimal: "Ondalık:"
       label-octal: "Sekizli:"
       label-hexadecimal: "Onaltılık:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Geçersiz onaltılık giriş. Sadece 0-9 ve A-F rakamlarına izin verilir.
+        invalid-1: Geçersiz
+        invalid-0: Geçersiz
+        invalid: Geçersiz
+        unsupported-middle-endian-format: Desteklenmeyen orta endian formatı.
+        failed-to-parse-bytes: Bayt ayrıştırma işlemi başarısız oldu.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Giriş, {1} bit için {0} onaltılık karakter olmalıdır.
   mttdl-calculator:
     title: RAID Güvenilirlik Hesaplayıcısı
     description: Bilinen MTTDL metodolojisini kullanarak depolama sistemi
@@ -6680,6 +6744,11 @@ tools:
       tag-convert: Dönüştürmek
       tag-axial: Eksenel
       tag-radial: Radyal
+    text:
+      bands-notation: Gruplar → Nota
+      notation-bands: Nota → Bantlar
+      number-notation: Sayı → Gösterim
+      notation-number: Gösterim → Sayı
   sed-command-generator:
     title: Sed Komut üreteci
     description: Unix sed komutları oluşturun
@@ -7063,6 +7132,9 @@ tools:
       title-mw-to-dbm: mW ila dBm
       label-mw-value: "mW değeri:"
       label-corresponding-dbm-value: "Karşılık gelen dBm değeri:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Milivat cinsinden güç 0'dan büyük olmalıdır.
   diceware-generator:
     title: Diceware Şifre Oluşturucu
     description: Diceware yöntemini kullanarak rastgele parola oluşturun
@@ -7294,6 +7366,9 @@ tools:
       label-arguments: Argümanlar
       title-structured-output-json: Yapılandırılmış Çıktı JSON
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x: "{'{'}\"to\":\"0x...\",\"data\":\"0x...\"{'}'} veya ham 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: İşlem verileri 0x ile başlamalıdır.
   file-splitter:
     title: Dosya Bölücü
     description: JSON, XML veya metin dosyasını düğüm gruplarına veya satır
@@ -7312,6 +7387,9 @@ tools:
       tag-process-chunks: İşlem parçaları
       tag-download-all: Tümünü indir
       tag-download: İndirmek
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Desteklenmeyen format veya geçersiz içerik
   gitignore-generator:
     title: GitIgnore Oluşturucu
     description: Ortak şablonlar kümesi için .gitignore oluşturun
@@ -7428,6 +7506,8 @@ tools:
         tıklayın
       title-logs: Günlükler
       label-ghostscript: Hayalet senaryosu
+      process-run-failed: İşlem çalıştırma başarısız oldu
+      an-error-occured-processing: İşlem sırasında bir hata oluştu.
   serial-console:
     title: Seri Port Konsolu
     description: Seri Porta bağlanın, mesajı okuyun ve gönderin
@@ -7688,6 +7768,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: Ölü Piksel Modundan Çıkış
       tag-start-dead-pixel: Ölü Piksel Başlatma
+    title: Ölü Piksel Test Cihazı
+    description: Ekranınızdaki bir pikselin ölü olup olmadığını kontrol eden araç.
   UnitsConverter:
     texts:
       exclude-si-prefixes: SI Öneklerini Hariç Tut
@@ -7716,6 +7798,13 @@ tools:
       tag-convert-batch: Toplu İşlemi Dönüştür
       tag-longitude-east-is-positive-west-is-negative: "Boylam: Doğu pozitif, Batı negatiftir."
       tag-latitude-north-is-positive-south-is-negative: "Enlem: Kuzey pozitif, Güney negatiftir."
+    text:
+      coordinate-system: Koordinat Sistemi
+      decimal-format-lng-lat: Ondalık Biçim (boylam, enlem)
+      dms-format-lng-lat: DMS Formatı (boylam, enlem)
+      download-results-csv: Sonuçları CSV olarak indir
+      batch-lat-lng-converter: Toplu Enlem/Boylam Dönüştürücü
+      single-lat-lng-converter: Tek Enlem/Boylam Dönüştürücü
   si-prefixes-converter:
     title: SI Önekleri Dönüştürücü
     description: Metrik Ön Ekler Arasında Dönüştürme
@@ -7758,6 +7847,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: "{0} ile yapıldı"
+        runs-entirely-in-your-browser-no-external-requests: Tamamen tarayıcınızda çalışır. Harici istek göndermez.
   acceleration-converter:
     title: Hızlanma Dönüştürücü
     description: Hızlanma birimleri arasında değer dönüştürme
@@ -7876,7 +7966,6 @@ tools:
       tag-back: Geri (←)
       tag-next: Sonraki (→)
       tag-reset: Sıfırla
-      tag-: ↓
       tag-or: "- VEYA -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Fareye dokunmadan oynatma ve gezinmeyi kontrol edin.
       tag-shortcut: Kısayol
@@ -7895,6 +7984,16 @@ tools:
       tag-jump-to-start: Başlamak için atla
       tag-end: Son
       tag-jump-to-end: Sonuna atla
+    text:
+      please-provide-some-text-first: Lütfen önce biraz metin sağlayın.
+      unsupported-file-type: Desteklenmeyen dosya türü.
+      display: Görüntülemek
+      text: Metin
+      settings: Ayarlar
+      keyboard-shortcuts: Klavye Kısayolları
+      ready: Hazır
+      words: kelimeler
+      wpm: WPM
   speed-converter:
     title: Hız Dönüştürücü
     description: Hız birimleri arasında değer dönüştürme
@@ -7945,10 +8044,612 @@ tools:
       tag-apply-configuration: Yapılandırmayı Uygula
       tag-clear-logs: Günlükleri temizle
       tag-send: Göndermek
+      already-connected: ⚠️ Zaten bağlı
+      connected-to-websocket-bridge: ✅ WebSocket köprüsüne bağlı
+      disconnected: 🔌 Bağlantı kesildi
+      no-active-connection: ⚠️ Aktif bağlantı yok
+      sent-text: "➡️ Gönderilen mesaj:"
+      configured: ⚙️ Yapılandırıldı
+      sent-hex: "➡️ Gönderilen hex:"
+      disconnecting: 🔻 Bağlantı kesiliyor...
+      error: "❌ Hata:"
+      end: "🛑 Son:"
+      text: "📩 Mesaj:"
+      binary: "📩 İkili:"
+    text:
+      connected: Bağlı
+      disconnected: Bağlantı kesildi
   volume-flow-rate-converter:
     title: Hacim Akış Hızı Dönüştürücü
     description: Hacimsel akış hızı birimleri arasında değerleri dönüştürün.
     externalAccess: hükümsüz
+  tip-calculator:
+    title: Bahşiş hesaplayıcı
+    description: Bir hesap için bahşişi hesaplayın ve birden fazla kişi arasında
+      paylaştırın.
+    texts:
+      title-bill-details: Fatura Detayları
+      label-bill-amount: "Fatura Tutarı:"
+      placeholder-total-bill: Toplam Fatura
+      label-tip-percentage: "Bahşiş Oranı:"
+      placeholder-tip: Uç %
+      label-number-of-person: "Kişi sayısı:"
+      placeholder-people: İnsanlar
+      title-results: Sonuçlar
+      label-tip-amount: "Bahşiş Miktarı:"
+      label-total-bill: "Toplam Fatura:"
+      label-amount-per-person: "Kişi Başı Miktar:"
+      title-quick-tip: Hızlı İpucu %
+      tag-const-billamount-ref: sabit fatura tutarı = referans
+      tag-: "%"
+  json-to-env:
+    title: JSON'dan .env'ye
+    description: Düz bir JSON nesnesini .env dosyasına dönüştürün. Anahtarlar büyük
+      harfle yazılır ve değerler boşluk, tırnak işaretleri veya ortam özel
+      karakterleri içerdiğinde güvenli bir şekilde tırnak içine alınır.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: Verilen JSON geçerli bir düz metin nesnesi değil.
+      input-label-your-json: JSON verileriniz
+      input-placeholder-paste-your-json-here: JSON kodunuzu buraya yapıştırın...
+      output-label-env-from-your-json: JSON dosyanızdaki .env dosyasını alın.
+  calendar-converter:
+    service:
+      text:
+        sunday: Pazar
+        wednesday: Çarşamba
+        tuesday: Salı
+        monday: Pazartesi
+        thursday: Perşembe
+        friday: Cuma
+        saturday: Cumartesi
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Geçersiz yıl uzunluğu: {0} gün."
+        common-deficient-353-days: Yaygın eksiklik (353 gün)
+        common-regular-354-days: Normal (354 gün)
+        common-complete-355-days: Ortak tam süre (355 gün)
+        embolismic-deficient-383-days: Embolizis yetersizliği (383 gün)
+        embolismic-regular-384-days: Embolimik düzenli (384 gün)
+        embolismic-complete-385-days: Embolizi tamamen atlattık (385 gün)
+        normal-year: Normal yıl
+        leap-year: Artık yıl
+    title: Takvim Dönüştürücü
+    description: Gregoryen, Jülyen, İbrani, İslami, Fars, Maya, Hint, Fransız
+      Cumhuriyet, ISO-8601, Unix zamanı ve Excel seri formatları arasında tarih
+      ve saat dönüştürme.
+    externalAccess: hükümsüz
+    texts:
+      label-january: Ocak
+      label-february: Şubat
+      label-march: Mart
+      label-april: Nisan
+      label-may: Mayıs
+      label-june: Haziran
+      label-july: Temmuz
+      label-august: Ağustos
+      label-september: Eylül
+      label-october: Ekim
+      label-november: Kasım
+      label-december: Aralık
+      label-nisan-נִיסָן: Nisan
+      label-iyyar-אִיָּר: İyyar (İyyar)
+      label-sivan-סִיוָן: Sivan
+      label-tammuz-תַּמּוּז: Tammuz
+      label-av-אָב: Av (Av)
+      label-elul-אֱלוּל: Elul
+      label-tishri-תִּשְׁרֵי: Tishri
+      label-heshvan-חֶשְׁוָן: Heshvan (Heshvan)
+      label-kislev-כִּסְלֵו: Kislev
+      label-teveth-טֵבֵת: Teveth
+      label-shevat-שְׁבָט: Şevat (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Adar/Adar I (Adar)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Veadar/Adar II (İkinci Adar)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabi'ath-Thani (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada el-Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Receb (رَجَب)
+      label-shaʿban-شَعْبان: Şaban (شَعْبان)
+      label-ramadan-رَمَضان: Ramazan
+      label-shawwal-شَوّال: Şevval
+      label-dhu-al-qaʿda-ذو-القَعْدة: Zilkade (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Zilhicce (ذو الحِجّة)
+      label-farvardin-فروردین: Farvardin (Farvardin)
+      label-ordibehesht-اردیبهشت: Ordibehesht (Ordibehesht)
+      label-khordad-خرداد: Khordad (Khordad)
+      label-tir-تیر: Tir (Tir)
+      label-mordad-مرداد: Mordad (Mordad)
+      label-shahrivar-شهریور: Şahrivar (Şahrivar)
+      label-mehr-مهر: Mehr (Mehr)
+      label-aban-آبان: Aban (Kasım)
+      label-azar-آذر: Azar (Azar)
+      label-dey-دی: Dey (O)
+      label-bahman-بهمن: Bahman (Bahman)
+      label-esfand-اسفند: Esfand (Mart)
+      label-caitra-चैत्र: Caitra (Chaitra)
+      label-vaisakha-वैशाख: Vaisakha (Vaishakh)
+      label-jyaistha-ज्येष्ठ: Jyaistha (Kıdemli)
+      label-asadha-आषाढ़: Asadha
+      label-sravana-श्रावण: Şravana
+      label-bhadra-भाद्रपद: Bhadra (Bhadrapada)
+      label-asvina-आश्विन: Asvina (Ashwin)
+      label-kartika-कार्तिक: Kartika
+      label-agrahayana-अग्रहायण: Agrahayana (Agrahayana)
+      label-pausa-पौष: Duraklat
+      label-magha-माघ: Magha
+      label-phalguna-फाल्गुन: Phalguna
+      label-vendémiaire: Vendémiaire
+      label-brumaire: Brumaire
+      label-frimaire: Frimaire
+      label-nivôse: Nivôse
+      label-pluviôse: Yağmur
+      label-ventôse: Ventôse
+      label-germinal: Germinal
+      label-floréal: Floréal
+      label-prairial: Çayır
+      label-messidor: Messidor
+      label-thermidor: Termidor
+      label-fructidor: Meyve
+      label-sans-culottides: Sans-culottides
+      label-i: BEN
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Primidi (1)
+      label-duodi-2: (2) verin
+      label-tridi-3: Üç (3)
+      label-quartidi-4: Çeyrekler (4)
+      label-quintidi-5: Quintidius (5)
+      label-sextidi-6: Sextidi (6)
+      label-septidi-7: Septidi (7)
+      label-octidi-8: Sekiz (8)
+      label-nonidi-9: Gerçekten (9)
+      label-décadi-10: Décadi (10)
+      label-vertu-1: Erdem (1)
+      label-génie-2: Dahi (2)
+      label-travail-3: Çalışma (3)
+      label-opinion-4: Görüş (4)
+      label-récompenses-5: Ödüller (5)
+      label-révolution-6: Devrim (6)
+      tab-gregorian: Gregoryen
+      label-date: Tarih
+      label-leap: "Sıçramak:"
+      label-time: "Zaman:"
+      label-weekday: "Hafta içi:"
+      tab-julian-day: Julian Günü
+      label-julian-day: "Julian Day:"
+      tab-modified-julian: Değiştirilmiş Julian
+      label-modified-julian-day: "Değiştirilmiş Jülyen Günü:"
+      tab-julian-calendar: Jülyen takvimi
+      tab-gregorian-serial: Gregoryen Seri
+      label-gregorian-serial-day: "Gregoryen Seri Günü:"
+      tab-hebrew: İbranice
+      tab-islamic: İslami
+      tab-persian: Farsça
+      tab-persian-algorithmic: Farsça Algoritmik
+      tab-mayan: Maya
+      label-long-count: "Uzun Sayım:"
+      label-haab: Umut
+      label-tzolkin: Tzolkin
+      tab-indian-civil: Hint İç Savaşı
+      tab-french-republican: Fransız Cumhuriyetçi
+      label-day: "Gün:"
+      label-month: "Ay:"
+      label-décade: "On yıl:"
+      label-year: "Yıl:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "Haftanın Günü:"
+      label-week: "Hafta:"
+      label-day-of-year: "Yılın Günü:"
+      tab-unix-time: Unix zamanı()
+      label-unix-time: "Unix zamanı():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Excel Seri Numarasının Yayınlanma Tarihi (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Excel Seri Yayın Günü (1904):"
+      tag-this-is-a-port-of-wonderful: Burası harika bir liman.
+      tag-fourmilab-ch-calendar-converter: Fourmilab.ch Takvim dönüştürücü
+      tag-by-john-walker: John Walker tarafından
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Diğer takvimleri güncelleyin
+      tag-today: Bugün
+  bech32:
+    title: Bech32 Kodlayıcı/Kod Çözücü
+    description: Kodla/Kod Çöz/Doğrula betch32(m)
+    externalAccess: hükümsüz
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Bech32m
+      tab-decode: Kodu çöz
+      label-bech32-m-string: "Bech32(m) teli:"
+      placeholder-bech32-bech32m-string: Bech32 / Bech32m ipi
+      label-variant: "Varyant:"
+      label-hrp: "İnsan Kaynakları Planı (HRP):"
+      placeholder-hrp: HRP
+      label-payload: "Yük:"
+      placeholder-hex-payload: Hex yükü
+      placeholder-variant: Varyant
+      tab-encode: Kodla
+      label-encoded-bech32-string: "Kodlanmış bech32 dizesi:"
+      placeholder-bech32-string: bech32 teli
+      tab-batch: Grup
+      label-bech32-strings-one-per-line: "Bech32 telleri (her satırda bir tane):"
+      placeholder-one-bech32-string-per-line: Her satırda bir adet Bech32 teli.
+      title-results: Sonuçlar
+      tag-auto-detect: Otomatik algılama
+      tag-manual: Manuel
+      tag-checksum-only: Yalnızca sağlama toplamı
+      tag-full-decode: Tam kod çözme
+      tag-checksum-valid: Sağlama toplamı geçerli
+      tag-checksum-invalid: Sağlama toplamı geçersiz
+      tag-encode: Kodla
+      tag-convert: Dönüştürmek
+      tag-export-csv: CSV olarak dışa aktar
+      invalid-hex-payload: Geçersiz onaltılık veri yükü
+      input: Giriş
+      variant: Varyant
+      status: Durum
+      hex: Altıgen
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Docker Pangolin Etiketleri
+    description: Docker Compose Pangolin etiketlerini blueprint'lere ve
+      blueprint'leri de Docker Compose etiketlerine dönüştürün.
+    externalAccess: hükümsüz
+    texts:
+      tab-compose-blueprint: Oluştur → Taslak
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: docker-compose.yml dosyasının tamamını buraya yapıştırın…
+      label-generated-blueprint: "Oluşturulan Şablon:"
+      placeholder-blueprint-yaml-will-appear-here: Blueprint YAML dosyası burada görünecektir…
+      tab-blueprint-labels: Taslak → Etiketler
+      label-blueprint-yaml: "Şablon YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Pangolin planının YAML dosyasını buraya yapıştırın…
+      label-generated-docker-labels: "Oluşturulan Docker etiketleri:"
+      placeholder-docker-labels-will-appear-here: Docker etiketleri burada görünecektir...
+      tag-extract-pangolin-blueprint: Pangolin Planını Çıkarın
+      tag-array-key-value: Dizi (- anahtar=değer)
+      tag-object-key-value: "Nesne (anahtar: değer)"
+      tag-convert-to-docker-labels: Docker Etiketlerine Dönüştür
+      invalid-blueprint-yaml: Geçersiz şablon YAML
+  fitness-computer:
+    title: Fitness Bilgisayarı
+    description: Bazal metabolizma hızı (BMR), toplam günlük enerji harcaması (TDEE)
+      / kalori, vücut kitle indeksi (BMI), ideal kilo (ideal ağırlık), vücut yağ
+      oranı (vücut yağ yüzdesi), maksimum kalp atış hızı (maksimum kalp atış
+      hızı) gibi genel kondisyonu ve fizyolojik sağlığı değerlendirmek için
+      kullanılan temel ölçütleri hesaplayın.
+    externalAccess: hükümsüz
+    texts:
+      label-bmr: BMR
+      label-tdee-calories: TDEE/Kalori
+      label-bmi: "Vücut Kitle İndeksi (BMI):"
+      label-ideal-weight: "İdeal Kilo:"
+      label-body-fat-us-navy: Vücut Yağı (ABD Donanması)
+      label-body-fat-bmi: Vücut Yağ Oranı (VKİ)
+      label-max-heart-rate: Maksimum Kalp Atış Hızı
+      label-sedentary-little-or-no-exercise: "Hareketsiz yaşam tarzı: çok az veya hiç egzersiz yapmamak"
+      label-light-exercise-1-3-times-week: "Hafif egzersiz: haftada 1-3 kez"
+      label-moderate-exercise-4-5-times-week: "Orta düzey: haftada 4-5 kez egzersiz"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week: "Aktif yaşam tarzı: günlük egzersiz veya haftada 3-4 kez yoğun egzersiz"
+      label-very-active-intense-exercise-6-7-times-week: "Çok Aktif: Haftada 6-7 kez yoğun egzersiz"
+      label-extra-active-very-intense-exercise-daily-or-physical-job: "Ekstra Aktif: günlük çok yoğun egzersiz veya fiziksel bir iş."
+      label-units: "Birimler:"
+      label-formula: "Formül:"
+      label-gender: "Cinsiyet:"
+      label-age: "Yaş:"
+      title-body-measurements: Vücut Ölçüleri
+      label-activity-level: "Aktivite Seviyesi:"
+      title-results: Sonuçlar
+      label-bmr-kcal-day: "BMR (kcal/gün):"
+      label-tdee-calories-kcal-day: "TDEE/Kalori (kcal/gün):"
+      label-bmi-category: "Vücut Kitle İndeksi (BMI) Kategorisi:"
+      label-healthy-range-min: "Sağlıklı Aralık (dakika):"
+      label-healthy-range-max: "Sağlıklı Aralık (maksimum):"
+      label-devine-1974: "— (Tarih 1974 oluyor):"
+      label-hamwi-1964: "— (Hamwi 1964):"
+      label-miller-1983: "— (Miller 1983):"
+      label-robinson-1983: "— (Robinson 1983):"
+      label-body-fat: "Vücut Yağ Oranı (%):"
+      label-fat-mass: "Yağ Kütlesi:"
+      label-lean-mass: "Yağsız Kas Kütlesi:"
+      label-max-heart-rate-bpm: "Maksimum Kalp Atış Hızı (bpm):"
+      tag-metric-kg-cm: Metrik (kg, cm)
+      tag-us-lbs-inches: ABD (libre, inç)
+      tag-male: Erkek
+      tag-female: Dişi
+  food-energy-converter:
+    title: Gıda Enerji Dönüştürücü
+    description: Besinler arasında (joule, kalori) dönüşüm yapın.
+    externalAccess: hükümsüz
+  iso-639-searcher:
+    title: ISO 639 Arama Aracı
+    description: ISO 639-1/2T/2B/3 dil kodlarında arama yapın
+    externalAccess: hükümsüz
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name:
+        ISO-1, ISO-2T/2B, ISO-3, isim vb. kriterlere göre ISO-639 dil kodunu
+        arayın...
+      label-max-results: "Maksimum sonuçlar:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "İNGİLİZCE:"
+      tag-no-results: Sonuç bulunamadı.
+      tag-search-results: Arama Sonuçları
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: İngilizce ve yerel isim
+      loading-more-results: Daha fazla sonuç yükleniyor...
+  jasypt-string-encryption:
+    title: Jasypt Dize Şifrelemesi
+    description: Dizeleri Jasypt (Java Basitleştirilmiş Şifreleme) standardını
+      kullanarak şifreleyin ve şifresini çözün.
+    externalAccess: hükümsüz
+    texts:
+      label-mode: "Mod:"
+      label-password-secret-key: "Parola (Gizli Anahtar):"
+      placeholder-enter-jasypt-password-salt-secret-key: Jasypt şifresini (tuz/gizli anahtar) girin.
+      title-results: Sonuçlar
+      label-decoded: "Çözümlendi:"
+      label-raw: "Çiğ:"
+      label-enc-form: "ENC Formu:"
+      tag-encrypt: Şifrele
+      tag-decrypt: Şifreyi çöz
+      plain-text: "Düz Metin:"
+      jasypt-encrypted-string: "Jasypt Şifrelenmiş Dize:"
+      text-to-encrypt-e-g-db-password: Şifrelenecek metin (örneğin, veritabanı şifresi)
+      encrypted-value-e-g-enc-or-raw-jasypt-string: Şifrelenmiş değer (ör. ENC(...)) veya ham Jasypt dizesi
+  k8s-rbac-generator:
+    title: Kubernetes RBAC Oluşturucu
+    description: Kubernetes RBAC politikası YAML dosyasını oluşturun.
+    externalAccess: hükümsüz
+    texts:
+      label-user: Kullanıcı
+      label-group: Grup
+      label-serviceaccount: Hizmet Hesabı
+      label-role-name: "Görev Adı:"
+      label-role-type: Rol Türü
+      label-namespace: Ad alanı
+      title-rules: Tüzük
+      label-resources: Kaynaklar
+      placeholder-select-resources-supports: Kaynakları seçin (destekler *)
+      label-resource-names-optional: Kaynak Adları (isteğe bağlı)
+      placeholder-specific-resources-names: Belirli Kaynak Adları
+      label-verbs: Fiiller
+      placeholder-select-verbs-supports: Fiilleri seçin (destekler *)
+      title-subjects: Konular
+      label-kind: Tür
+      label-name: İsim
+      title-output-yaml: Çıktı YAML
+      tab-role-yaml: Rol YAML
+      tab-rolebinding-yaml: Rol Bağlama YAML
+      tag-clusterrole-global: KümeRolü (Küresel)
+      tag-role-namespaced: Rol (Adlandırılmış)
+      tag-add-rule: + Kural Ekle
+      tag-remove-rule: Kuralı Kaldır
+      tag-add-subject: + Konu Ekle
+      tag-remove-subject: Konuyu Kaldır
+  objgen-html:
+    title: ObjGen'den HTML'ye
+    description: TOML benzeri sözdiziminden karmaşık HTML oluşturun.
+    externalAccess: hükümsüz
+    texts:
+      input-label-objgen-html-definition: ObjGen HTML tanımı
+      input-placeholder-put-your-objgen-html-definition-here: ObjGen HTML tanımınızı buraya yazın...
+      output-label-generated-html: Oluşturulan HTML
+      tag-documentation: Dokümantasyon
+  objgen-json:
+    title: ObjGen'den JSON'a
+    description: TOML benzeri sözdiziminden karmaşık JSON oluşturun.
+    externalAccess: hükümsüz
+    texts:
+      input-label-objgen-json-definition: ObjGen JSON tanımı
+      input-placeholder-put-your-objgen-json-definition-here: ObjGen JSON tanımınızı buraya yazın...
+      output-label-generated-json: Oluşturulan JSON
+      tag-documentation: Dokümantasyon
+  pgp-file-encryption:
+    title: PGP Dosya Şifrelemesi
+    description: PGP kullanarak dosyaları şifreleyin ve şifresini çözün.
+    externalAccess: hükümsüz
+    texts:
+      title-1-select-a-file: 1. Bir dosya seçin
+      title-drag-and-drop-a-file-or-click-to-select: Dosyayı sürükleyip bırakın veya seçmek için tıklayın.
+      title-2-public-key-for-encryption: 2. Açık anahtar (şifreleme için)
+      title-3-private-key-passphrase-for-decryption: 3. Özel anahtar + parola (şifre çözme için)
+      label-passphrase: "Parola:"
+      placeholder-passphrase: Parola
+      tag-selected-file: "Seçilen dosya:"
+      tag-encrypt-stream: Şifrele (akış)
+      tag-decrypt-stream: Şifreyi çöz (akış)
+      tag-encrypting: Şifreleniyor…
+      tag-decrypting: Şifre çözülüyor…
+      tag-encrypted-file-ready: Şifrelenmiş dosya hazır.
+      tag-download-encrypted: Şifrelenmiş olarak indir
+      tag-decrypted-file-ready: Şifresi çözülmüş dosya hazır.
+      tag-download-decrypted: Şifresi çözülmüş dosyayı indir
+  remove-background:
+    title: Görüntü Arka Planını Kaldır
+    description: Yapay zeka kullanarak bir görüntünün arka planını kaldırma
+    externalAccess: İndirmeler HuggingFace'ten arka plan modellerini kaldırır. İşlem
+      tarayıcınızda yapılır.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG-1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Şeffaf
+      label-solid-color: Düz Renk
+      label-pattern: "Model:"
+      label-blurred-original: Bulanık Orijinal
+      label-adjust-contrast-brightness: Kontrastı/Parlaklığı Ayarla
+      label-diagonal-stripes: Çapraz Çizgiler
+      label-dots: Noktalar
+      label-checkerboard: Satranç tahtası
+      title-drag-and-drop-an-image-or-click-to-select: Bir resmi sürükleyip bırakın veya seçmek için tıklayın.
+      label-model: "Model:"
+      label-blur: "Bulanıklık:"
+      label-contrast: "Zıtlık:"
+      label-brightness: "Parlaklık:"
+      title-original: Orijinal
+      title-result: Sonuç
+      tag-apply-background: Arka Plan Başvurusu
+      tag-download-result: Sonucu İndir
+  shell-formatter:
+    title: Kabuk Komutları Biçimlendiricisi
+    description: Kabuk komutlarını, argümanlara göre ayrılmış çok satırlı kabuk
+      komutları olarak biçimlendirin.
+    externalAccess: hükümsüz
+    texts:
+      input-label-shell-commands-to-format: Biçimlendirmek için kabuk komutları
+      input-placeholder-put-your-shell-commands-to-format-here: Komutlarınızı biçimlendirilmiş şekilde buraya yazın...
+      output-label-formatted-shell-commands: Biçimlendirilmiş kabuk komutları
+  shell-linearizer:
+    title: Kabuk Komutları Doğrusallaştırıcı
+    description: Çok satırlı kabuk komutlarını doğrusal hale getirme
+    externalAccess: hükümsüz
+    texts:
+      input-label-shell-commands-to-linearize: Doğrusallaştırma için kabuk komutları
+      input-placeholder-put-your-shell-commands-to-linearize-here: Linearize etmek için kabuk komutlarınızı buraya yazın...
+      output-label-linearized-shell-commands: Doğrusallaştırılmış kabuk komutları
+  ufw-generator:
+    title: UFW Komut Üreticisi
+    description: UFW komut satırlarını oluşturun
+    externalAccess: hükümsüz
+    texts:
+      label-allow: İzin vermek
+      label-deny: Reddetmek
+      label-reject: Reddetmek
+      label-limit: Sınır
+      label-incoming: Gelen
+      label-outgoing: Dışa dönük
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: Herhangi
+      label-action: "Aksiyon:"
+      label-direction: "Yön:"
+      label-protocol: "Protokol:"
+      label-port: "Liman:"
+      placeholder-80: "80"
+      label-port-to-range: "(Aralık) bağlantı noktası:"
+      placeholder-443: "443"
+      label-from-ip: "IP adresinden:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "IP adresine:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Arayüz:"
+      placeholder-eth0: eth0
+      label-logging: "Günlük kaydı:"
+      label-comment: "Yorum:"
+      placeholder-optional-comment: İsteğe bağlı yorum
+      title-generated-command: Oluşturulan Komut
+      missing-port: Eksik liman
+  visual-subnet-calculator:
+    title: Görsel Alt Ağ Hesaplayıcı
+    description: Ağları hızlı bir şekilde tasarlamak ve bu tasarım üzerinde
+      başkalarıyla işbirliği yapmak için bir araçtır. Akademik alt ağ
+      matematiğine değil, ağ yöneticilerinin işini hızlandırmaya odaklanır.
+    externalAccess: hükümsüz
+  zalgo:
+    title: Zalgo Jeneratörü/Banner
+    description: Zalgo metni oluşturun ve Zalgo tarafından oluşturulan metni temizleyin.
+    externalAccess: hükümsüz
+    texts:
+      text-zalgo-text-copied: Zalgo metni kopyalandı!
+      title-zalgo-text-generation: Zalgo Metin Üretimi
+      placeholder-put-your-string-here: İpinizi buraya koyun...
+      label-text-to-decorate-with-zalgo: Zalgo ile süslenecek metin
+      label-intensity: "Yoğunluk:"
+      title-zalgo-text: Zalgo Metni
+      title-zalgo-cleaner: Zalgo temizleyici
+      placeholder-put-zalgo-text-to-clean-here: Zalgo metnini buraya temizlenecek şekilde yerleştirin...
+      label-zalgo-text-to-clean: Zalgo metni temizleme
+      label-cleaned-text: Temizlenmiş metin
+      placeholder-clean-zalgo-text-will-appear-here: Temizlenmiş Zalgo metni burada görünecektir...
+      tag-generate: Oluştur
+      tag-copy: Kopyala
+      tag-clean: Temiz
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Mesajlardan birini veya işlevi ayarlamanız gerekir.
+        function-must-set-messages: İşlev mesajları ayarlamalıdır.
+  dead-pixel-tester:
+    title: Ölü Piksel Test Cihazı
+  gif-to-mp4:
+    title: GIF'ten MP4'e
+    description: ffmpeg kullanarak GIF'i MP4'e dönüştürün
+    externalAccess: hükümsüz
+    texts:
+      label-stream-loop: "Akış Döngüsü:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: GIF dosyasını buraya sürükleyip bırakın veya dosya seçmek için tıklayın.
+      title-logs: Günlükler
+  html-to-pdf:
+    title: HTML'den PDF'ye
+    description: HTML içeriğinden veya URL'den format seçimi ve çerez banner'larını
+      otomatik gizleme özelliğiyle PDF oluşturun.
+    externalAccess: Bu araç, yapılandırılmış *kendi sunucunuzda barındırılan*
+      Puppeteer web servisine URL'ler ve HTML içeriği gönderir.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: Mektup
+      label-legal: Yasal
+      label-html-to-pdf-service-url: "HTML'den PDF'ye Dönüştürme Hizmeti URL'si:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Temel Kimlik Doğrulama:"
+      placeholder-username-password: kullanıcı adı:şifre
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "HTML İçeriği:"
+      tab-batch-url-pdf: Toplu İşlem URL'si → PDF
+      label-urls-one-per-line: "URL'ler (her satırda bir tane):"
+      title-results: Sonuçlar
+      tab-custom-pdf-options: Özel PDF Seçenekleri
+      label-format: "Biçim:"
+      label-language: "Dil:"
+      placeholder-en-us: en-ABD
+      label-landscape: "Manzara:"
+      label-one-long-page: "Tek Uzun Sayfa:"
+      label-auto-hide-cookie-banners: "Çerez Bildirimlerini Otomatik Gizle:"
+      label-print-background: "Arka Plan Baskısı:"
+      title-margins: Kenar boşlukları
+      label-top-mm: "Üst kısım (mm):"
+      label-bottom-mm: "Alt kısım (mm):"
+      label-left-mm: "Sol (mm):"
+      label-right-mm: "Sağ (mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: HTML'den PDF'ye Dönüştürme
+        Hizmeti Yapılandırması (kendi sunucunuzda barındırılan)
+      tag-you-must-self-host-html-to-pdf-service-see: "HTML'den PDF'ye dönüştürme hizmetini kendiniz barındırmalısınız. Bkz:"
+      tag-html-to-pdf-service-install: HTML'den PDF'ye Dönüştürme Hizmeti Kurulumu
+      tag-generate-pdf: PDF oluştur
+      tag-generate-pdfs: PDF dosyaları oluştur
+      tag-url: URL
+      tag-download: İndirmek
+      tag-download-pdf: PDF dosyasını indir
+      tag-failed: Arızalı
+  shutdown-command-generator:
+    title: Kapatma Komutu Oluşturucu
+    description: Çeşitli işletim sistemleri için kapatma komutu oluşturun.
+    externalAccess: hükümsüz
+    texts:
+      label-windows: Windows
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Gecikme:"
+      label-specific-time: Belirli Zaman
+      label-platform: "Platform:"
+      label-shutdown-time: "Kapanma süresi:"
+      label-force: Güç
+      label-reboot: Yeniden Başlat
+      label-logoff: Oturumu Kapat
+      label-cancel: İptal etmek
+      label-hibernate: Kış uykusuna yatmak
+      title-generated-command: Oluşturulan komut
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: "&nbsp;m&nbsp;"
+      tag-nbsp-s: s
 about:
   alltools-title: Tüm {toolsCount} Araç
   tools:
@@ -7997,6 +8698,13 @@ about:
   import-button: İçe aktarmak
   favorites-imported-successfully: Favoriler başarıyla içe aktarıldı!
   error-importing-favorites-e: "Favoriler içe aktarılırken hata oluştu: {0}"
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Geliştiriciler için harika bir kullanıcı deneyimi sunan kullanışlı
+      çevrimiçi araçlar koleksiyonu. BT Araçları, geliştiriciler ve BT alanında
+      çalışanlar için kullanışlı çevrimiçi araçlardan oluşan ücretsiz ve açık
+      kaynaklı bir koleksiyondur.
+    about-it-tools: Hakkımızda - BT Araçları
 spanCopyable:
   copy: Panoya kopyala
   copied: Kopyalandı!
@@ -8014,3 +8722,9 @@ textareaCopyable:
   download: İndirmek
 locale-selector:
   select-a-language: Bir dil seçin
+collapsibleToolMenu:
+  text:
+    expanding: Genişliyor...
+    collapsing: Çöküyor...
+    collapse-all-tools: Tüm Araçları Daralt
+    expand-all-tools: Tüm Araçları Genişlet

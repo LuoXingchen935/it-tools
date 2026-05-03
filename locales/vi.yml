@@ -3,6 +3,9 @@
   sorry: Xin lỗi, trang này dường như không tồn tại
   maybe: Lỗi xảy ra có thể do bộ nhớ đệm, hãy (CTRL + F5) để tải lại trang?
   backHome: Quay về trang chủ
+  page:
+    text:
+      page-not-found-it-tools: Trang không tìm thấy - Công cụ CNTT
 home:
   categories:
     newestTools: Công cụ mới nhất
@@ -33,6 +36,14 @@ home:
     lightMode: Chế độ sáng
     mode: Chuyển đổi chế độ tối/sáng
   loading-more-tools: Đang tải thêm công cụ...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        Bộ sưu tập các công cụ trực tuyến tiện dụng dành cho nhà phát triển, với
+        trải nghiệm người dùng tuyệt vời. IT Tools là một bộ sưu tập miễn phí và
+        mã nguồn mở các công cụ trực tuyến tiện dụng dành cho nhà phát triển và
+        những người làm việc trong lĩnh vực CNTT.
+      it-tools-handy-online-tools-for-developers: Công cụ CNTT - Các công cụ trực tuyến tiện dụng dành cho nhà phát triển
 about:
   alltools-title: Tất cả {toolsCount} Công cụ
   tools:
@@ -79,6 +90,13 @@ about:
     lòng gửi báo cáo lỗi trong phần
     [issues](https://github.com/sharevb/it-tools/issues/new/choose) của kho lưu
     trữ GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      Bộ sưu tập các công cụ trực tuyến tiện dụng dành cho nhà phát triển, với
+      trải nghiệm người dùng tuyệt vời. IT Tools là một bộ sưu tập miễn phí và
+      mã nguồn mở các công cụ trực tuyến tiện dụng dành cho nhà phát triển và
+      những người làm việc trong lĩnh vực CNTT.
+    about-it-tools: Giới thiệu - Công cụ CNTT
 favoriteButton:
   remove: Xóa khỏi mục yêu thích
   add: Thêm vào mục yêu thích
@@ -116,6 +134,9 @@ tools:
     physics: Vật lý
     cheatsheets: Phiếu gian lận
     forensic: Pháp y
+    finance: Tài chính
+    default: Mặc định
+    toml: TOML
   password-strength-analyser:
     title: Bộ phân tích độ mạnh mật khẩu
     description: Khám phá độ mạnh của mật khẩu của bạn với công cụ phân tích độ mạnh
@@ -746,6 +767,7 @@ tools:
       tag-preview-image: Xem trước hình ảnh
       tag-download-file: Tải xuống tập tin
       tag-copy: Sao chép
+      include-data-uri-prefix: "Bao gồm dữ liệu: Tiền tố URI"
   list-converter:
     title: Trình chuyển đổi danh sách
     description: Công cụ này có thể xử lý dữ liệu dựa trên cột và áp dụng các thay
@@ -1090,6 +1112,8 @@ tools:
       tag-refresh-key-pair: Làm mới cặp khóa
       tag-public-key: Khóa công khai
       tag-private-key: Khóa riêng tư
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Số bit phải nằm trong khoảng 256 <= bit <= 16384 và phải là bội số của 8.
   html-wysiwyg-editor:
     title: Trình soạn thảo HTML WYSIWYG
     description: Trình soạn thảo HTML trực tuyến với trình soạn thảo WYSIWYG đa chức
@@ -1439,6 +1463,8 @@ tools:
       tag-quantity: Số lượng
       tag-copy: Sao chép
       tag-refresh: Làm cho khỏe lại
+      uppercase: Chữ hoa
+      no-hyphen: Không có dấu gạch ngang
   ipv4-address-converter:
     title: Chuyển đổi địa chỉ Ipv4
     description: Chuyển đổi địa chỉ ip thành số thập phân, nhị phân, thập lục phân
@@ -2051,6 +2077,8 @@ tools:
       tag-certificate-signing-request: Yêu cầu ký chứng chỉ
       tag-public-key: Khóa công khai
       tag-private-key: Khóa riêng tư
+      label-rsa-bits: "RSA Bits:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: Số bit phải nằm trong khoảng 256 <= bit <= 16384 và phải là bội số của 8.
   css-prettifier:
     title: Trình làm đẹp CSS
     description: CSS Làm đẹp
@@ -2508,6 +2536,7 @@ tools:
       label-file-name: "Tên tệp:"
       label-extension: "Sự mở rộng:"
       label-mime-type: "Loại MIME:"
+      an-error-occured-processing: Đã xảy ra lỗi trong quá trình xử lý
   folder-structure-diagram:
     title: Sơ đồ cấu trúc thư mục
     description: tiện ích dạng cây để tạo sơ đồ cấu trúc thư mục ASCII
@@ -2609,6 +2638,8 @@ tools:
       label-pib: PiB
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1MiB = 1024KiB; 1MB = 1000kB; 1GiB = 1024MiB; 1GB = 1000MB;
       tag-see-here-for-details: xem chi tiết tại đây
+      column-decimal: Số thập phân
+      column-binary: Nhị phân
   heic-converter:
     title: Bộ chuyển đổi HEIC
     description: Bộ chuyển đổi HEIC sang JPEG hoặc PNG
@@ -2617,6 +2648,7 @@ tools:
       label-png: PNG
       label-output-format: Định dạng đầu ra
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: Kéo và thả tệp HEIC vào đây hoặc nhấp để chọn tệp
+      an-error-occured-processing-heic-heif-is-invalid: "Đã xảy ra lỗi trong quá trình xử lý: HEIC/HEIF không hợp lệ."
   hex-file-converter:
     title: Bộ chuyển đổi tệp HEX
     description: Chuyển đổi giữa biểu diễn tệp và thập lục phân
@@ -2683,6 +2715,9 @@ tools:
     description: Chuyển đổi từ PNG/JPEG sang/từ ICO
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: Kéo và thả tệp ICO hoặc PNG/JPEG vào đây hoặc nhấp để chọn tệp
+      an-error-occured-processing: Đã xảy ra lỗi trong quá trình xử lý
+      invalid-ico-file: Tệp ICO không hợp lệ!
+      invalid-png-file: Tệp PNG không hợp lệ!
   illuminance-converter:
     title: Bộ chuyển đổi độ rọi
     description: Bộ chuyển đổi đơn vị độ rọi (Lux, Foot Candles, Nox, Phot, Flame)
@@ -2699,6 +2734,8 @@ tools:
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately:
         "Sau đó, kéo và thả hình ảnh của bạn bên dưới và chúng sẽ được chuyển
         đổi và tải xuống ngay lập tức:"
+      invalid-image-file: Tệp hình ảnh không hợp lệ!
+      an-error-occured-processing: Đã xảy ra lỗi trong quá trình xử lý
   image-exif-reader:
     title: Trình đọc chất lượng hình ảnh EXIF/Siêu dữ liệu/GPS/JPEG
     description: Đọc EXIF, IPTC, XMP, GPS và các siêu dữ liệu khác, Chất lượng JPEG
@@ -2900,6 +2937,7 @@ tools:
       tag-iso2-iso3: Iso2/Iso3
       tag-name-and-info: Tên và thông tin
       tag-gt-see-on-openstreetmap: "&gt; Xem trên OpenStreetMap"
+      loading-more-results: Đang tải thêm kết quả...
   javascript-prettifier:
     title: Trình làm đẹp Javascript
     description: Trình làm đẹp JS/Javascript
@@ -3412,6 +3450,11 @@ tools:
       placeholder-passphrase: Mật khẩu...
       tag-copy: Sao chép
       tag-refresh: Làm cho khỏe lại
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# Không thể tạo mật khẩu có độ dài [{0} - {1}] ký tự với cài đặt hiện
+        tại, hãy thử thay đổi số lượng từ."
+      words-words: Từ ({0})
+      label-min-passphrase-len: "Độ dài mật khẩu tối thiểu:"
   paste-as-markdown:
     title: Dán dưới dạng Markdown
     description: Dán các ô/bảng và liên kết từ nội dung bảng tạm dưới dạng Markdown
@@ -3469,10 +3512,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Kéo và thả tệp PDF vào đây hoặc nhấp để chọn tệp
       title-logs: Nhật ký
       label-qpdf: qpdf
-      label-password: 'Mật khẩu:'
+      label-password: "Mật khẩu:"
       placeholder-password: Mật khẩu
       tag-decrypt-pdf: Giải mã PDF
-      tag-output-file: 'Tệp đầu ra:'
+      tag-output-file: "Tệp đầu ra:"
   pgp-encryption:
     title: Mã hóa PGP
     description: Mã hóa và giải mã văn bản rõ ràng bằng khóa PGP.
@@ -4393,6 +4436,8 @@ tools:
       label-permanent: Vĩnh viễn
       title-generated-fw-command: "Đã tạo lệnh fw:"
       tag-const-zone-ref: vùng hằng số = tham chiếu
+    title: trình tạo dòng lệnh firewalld
+    description: Tạo các dòng lệnh firewalld
   fortune-wheel:
     title: Bánh xe may mắn
     description: Một bánh xe may mắn có thể cấu hình
@@ -6211,6 +6256,9 @@ tools:
       label-django-secret-key: "Khóa bí mật Django:"
       tag-copy: Sao chép
       tag-regenerate: Tái tạo
+    service:
+      texts:
+        generating-range-is-too-large: Phạm vi tạo quá lớn
   dnsbl-checker:
     title: Trình kiểm tra DNSBL
     description: Kiểm tra xem một IP nhất định có nằm trong bất kỳ máy chủ DNS
@@ -6260,6 +6308,7 @@ tools:
       title-html-head-tags: 📄 Thẻ tiêu đề HTML
       tag-upload-png-image: Tải lên hình ảnh PNG
       tag-download-zip: 📦 Tải xuống ZIP
+      invalid-png-file: Tệp PNG không hợp lệ!
   font-compare:
     title: So sánh phông chữ
     description: So sánh với phông chữ trên một văn bản nhất định
@@ -6345,6 +6394,12 @@ tools:
       label-fallback: "Giải pháp dự phòng:"
       placeholder-fallback-font: Phông chữ dự phòng
       tag-defineprops: defineProps
+    text:
+      by-font-name: Theo tên phông chữ
+      by-font-url: Theo URL phông chữ
+      by-font-file: Theo tệp phông chữ
+      by-inline-css: Bằng CSS nội tuyến
+      by-css-url: Theo URL CSS
   gpt-token-encoder:
     title: Bộ mã hóa/giải mã mã thông báo GPT
     description: Mã hóa văn bản thành mã thông báo GPT và giải mã mã thông báo GPT
@@ -6381,6 +6436,10 @@ tools:
       tag-original-image: Hình ảnh gốc
       tag-inverted-image: Hình ảnh đảo ngược
       tag-clear-upload-new: Xóa &amp; Tải lên mới
+    service:
+      texts:
+        file-must-be-an-image: Tệp phải là hình ảnh
+        failed-to-process-image-err: "Quá trình xử lý hình ảnh thất bại:"
   image-comparer:
     title: So sánh hình ảnh
     description: Một công cụ để so sánh hình ảnh một cách trực quan
@@ -6395,6 +6454,9 @@ tools:
       tag-compare: So sánh
       tag-upload-left: Tải lên bên trái
       tag-upload-right: Tải lên đúng
+    text:
+      compare-by-url: So sánh theo URL
+      compare-by-upload: So sánh theo số lượt tải lên
   logrotate-generator:
     title: Trình tạo Apache LogRotate
     description: Tạo cấu hình xoay vòng Apache .log
@@ -6522,6 +6584,15 @@ tools:
       label-decimal: "Số thập phân:"
       label-octal: "Hệ bát phân:"
       label-hexadecimal: "Hệ thập lục phân:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: Nhập mã hex không hợp lệ. Chỉ cho phép các số từ 0-9 và A-F.
+        invalid-1: Không hợp lệ
+        invalid-0: Không hợp lệ
+        invalid: Không hợp lệ
+        unsupported-middle-endian-format: Định dạng middle-endian không được hỗ trợ.
+        failed-to-parse-bytes: Không thể phân tích cú pháp byte.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: Đầu vào phải là {0} ký tự thập lục phân cho {1}-bit.
   mttdl-calculator:
     title: Máy tính độ tin cậy RAID
     description: Tính toán độ tin cậy của hệ thống lưu trữ bằng phương pháp MTTDL nổi tiếng
@@ -6659,6 +6730,11 @@ tools:
       tag-convert: Chuyển thành
       tag-axial: Trục
       tag-radial: Xuyên tâm
+    text:
+      bands-notation: Dải nhạc → Ký hiệu
+      notation-bands: Ký hiệu → Dải tần
+      number-notation: Số → Ký hiệu
+      notation-number: Ký hiệu → Số
   sed-command-generator:
     title: Trình tạo lệnh Sed
     description: Tạo lệnh sed unix
@@ -7043,6 +7119,9 @@ tools:
       title-mw-to-dbm: mW sang dBm
       label-mw-value: "giá trị mW:"
       label-corresponding-dbm-value: "Giá trị dBm tương ứng:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: Công suất tính bằng miliwatt phải lớn hơn 0.
   diceware-generator:
     title: Trình tạo mật khẩu Diceware
     description: Tạo mật khẩu ngẫu nhiên bằng phương pháp Diceware
@@ -7274,6 +7353,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} hoặc 0x thô...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: Dữ liệu giao dịch phải bắt đầu bằng 0x
   file-splitter:
     title: Bộ chia tệp
     description: Chia tách tệp JSON, XML hoặc văn bản theo nhóm nút hoặc theo nhóm dòng
@@ -7289,6 +7371,9 @@ tools:
       tag-process-chunks: Các khối xử lý
       tag-download-all: Tải xuống tất cả
       tag-download: Tải xuống
+    service:
+      texts:
+        unsupported-format-or-invalid-content: Định dạng không được hỗ trợ hoặc nội dung không hợp lệ
   gitignore-generator:
     title: Trình tạo GitIgnore
     description: Tạo .gitignore cho một tập hợp các mẫu chung
@@ -7400,6 +7485,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: Kéo và thả tệp PDF vào đây hoặc nhấp để chọn tệp
       title-logs: Nhật ký
       label-ghostscript: Ghostscript
+      process-run-failed: Quá trình chạy thất bại
+      an-error-occured-processing: Đã xảy ra lỗi trong quá trình xử lý
   serial-console:
     title: Bảng điều khiển cổng nối tiếp
     description: Kết nối, đọc và gửi tin nhắn đến Cổng nối tiếp
@@ -7660,6 +7747,8 @@ tools:
       tag-esc: THOÁT
       tag-exit-dead-pixel-mode: Thoát khỏi Chế độ điểm ảnh chết
       tag-start-dead-pixel: Điểm ảnh chết khởi đầu
+    title: Công cụ kiểm tra điểm ảnh chết
+    description: Công cụ kiểm tra xem điểm ảnh trên màn hình của bạn có bị hỏng hay không.
   UnitsConverter:
     texts:
       exclude-si-prefixes: Loại trừ các tiền tố SI
@@ -7687,6 +7776,13 @@ tools:
       tag-convert-batch: Chuyển đổi hàng loạt
       tag-longitude-east-is-positive-west-is-negative: "Kinh độ: Hướng Đông là dương, hướng Tây là âm."
       tag-latitude-north-is-positive-south-is-negative: "Vĩ độ: Hướng Bắc là dương, hướng Nam là âm."
+    text:
+      coordinate-system: Hệ tọa độ
+      decimal-format-lng-lat: Định dạng thập phân (kinh độ, vĩ độ)
+      dms-format-lng-lat: Định dạng DMS (kinh độ, vĩ độ)
+      download-results-csv: Tải xuống kết quả CSV
+      batch-lat-lng-converter: Bộ chuyển đổi vĩ độ/kinh độ hàng loạt
+      single-lat-lng-converter: Bộ chuyển đổi vĩ độ/kinh độ đơn
   si-prefixes-converter:
     title: Bộ chuyển đổi tiền tố SI
     description: Chuyển đổi giữa các tiền tố hệ mét
@@ -7729,6 +7825,9 @@ tools:
     layout:
       text:
         made-with-npmpackages: Được tạo bằng {0}
+        runs-entirely-in-your-browser-no-external-requests: Ứng dụng chạy hoàn toàn
+          trong trình duyệt của bạn. Không yêu cầu bất kỳ thao tác bên ngoài
+          nào.
   acceleration-converter:
     title: Bộ chuyển đổi gia tốc
     description: Chuyển đổi giá trị giữa các đơn vị gia tốc.
@@ -7842,7 +7941,6 @@ tools:
       tag-back: Quay lại (←)
       tag-next: Tiếp theo (→)
       tag-reset: Cài lại
-      tag-: ↓
       tag-or: "- HOẶC -"
       tag-control-playback-and-navigation-without-touching-the-mouse: Điều khiển phát lại và điều hướng mà không cần chạm vào chuột.
       tag-shortcut: Phím tắt
@@ -7861,6 +7959,16 @@ tools:
       tag-jump-to-start: Chuyển đến đầu
       tag-end: Kết thúc
       tag-jump-to-end: Chuyển đến cuối
+    text:
+      please-provide-some-text-first: Vui lòng cung cấp một số văn bản trước.
+      unsupported-file-type: Loại tệp không được hỗ trợ.
+      display: Trưng bày
+      text: Chữ
+      settings: Cài đặt
+      keyboard-shortcuts: Phím tắt
+      ready: Sẵn sàng
+      words: từ
+      wpm: WPM
   speed-converter:
     title: Bộ chuyển đổi tốc độ
     description: Chuyển đổi giá trị giữa các đơn vị tốc độ
@@ -7910,10 +8018,611 @@ tools:
       tag-apply-configuration: Áp dụng cấu hình
       tag-clear-logs: Xóa nhật ký
       tag-send: Gửi
+      already-connected: ⚠️ Đã kết nối
+      connected-to-websocket-bridge: ✅ Đã kết nối với cầu nối WebSocket
+      disconnected: 🔌 Đã ngắt kết nối
+      no-active-connection: ⚠️ Không có kết nối hoạt động
+      sent-text: "➡️ Đã gửi tin nhắn:"
+      configured: ⚙️ Đã cấu hình
+      sent-hex: "➡️ Đã gửi mã hex:"
+      disconnecting: 🔻 Đang ngắt kết nối...
+      error: "❌ Lỗi:"
+      end: "🛑 Kết thúc:"
+      text: "📩 Văn bản:"
+      binary: "📩 Nhị phân:"
+    text:
+      connected: Đã kết nối
+      disconnected: Đã ngắt kết nối
   volume-flow-rate-converter:
     title: Bộ chuyển đổi lưu lượng thể tích
     description: Chuyển đổi giá trị giữa các đơn vị lưu lượng thể tích
     externalAccess: vô giá trị
+  tip-calculator:
+    title: Máy tính tiền boa
+    description: Tính toán tiền boa cho hóa đơn và chia đều cho nhiều người.
+    texts:
+      title-bill-details: Chi tiết hóa đơn
+      label-bill-amount: "Tổng số tiền hóa đơn:"
+      placeholder-total-bill: Tổng hóa đơn
+      label-tip-percentage: "Tỷ lệ tiền boa:"
+      placeholder-tip: Mẹo %
+      label-number-of-person: "Số lượng người:"
+      placeholder-people: Mọi người
+      title-results: Kết quả
+      label-tip-amount: "Số tiền boa:"
+      label-total-bill: "Tổng hóa đơn:"
+      label-amount-per-person: "Số tiền mỗi người:"
+      title-quick-tip: Mẹo nhanh %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: Chuyển đổi JSON sang tệp .env
+    description: Chuyển đổi một đối tượng JSON phẳng thành tệp .env. Khóa được viết
+      hoa và giá trị được đặt trong dấu ngoặc kép an toàn khi chúng chứa khoảng
+      trắng, dấu ngoặc kép hoặc các ký tự đặc biệt của môi trường.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: JSON được cung cấp không phải là một đối tượng phẳng hợp lệ.
+      input-label-your-json: JSON của bạn
+      input-placeholder-paste-your-json-here: Hãy dán mã JSON của bạn vào đây...
+      output-label-env-from-your-json: .env từ tệp JSON của bạn
+  calendar-converter:
+    service:
+      text:
+        sunday: Chủ nhật
+        wednesday: Thứ Tư
+        tuesday: Thứ ba
+        monday: Thứ hai
+        thursday: Thứ năm
+        friday: Thứ sáu
+        saturday: Thứ bảy
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "Độ dài năm không hợp lệ: {0} ngày."
+        common-deficient-353-days: Thiếu hụt thường gặp (353 ngày)
+        common-regular-354-days: Thông thường (354 ngày)
+        common-complete-355-days: Hoàn thành chung (355 ngày)
+        embolismic-deficient-383-days: Thiếu hụt do tắc mạch (383 ngày)
+        embolismic-regular-384-days: Tắc mạch thường quy (384 ngày)
+        embolismic-complete-385-days: Tắc mạch hoàn toàn (385 ngày)
+        normal-year: Năm bình thường
+        leap-year: Năm nhuận
+    title: Công cụ chuyển đổi lịch
+    description: Chuyển đổi ngày giờ giữa các định dạng Gregorian, Julian, Do Thái,
+      Hồi giáo, Ba Tư, Maya, Ấn Độ, Cộng hòa Pháp, ISO-8601, thời gian Unix và
+      định dạng số sê-ri Excel.
+    externalAccess: vô giá trị
+    texts:
+      label-january: Tháng Một
+      label-february: Tháng hai
+      label-march: Bước đều
+      label-april: Tháng tư
+      label-may: Có thể
+      label-june: Tháng sáu
+      label-july: Tháng bảy
+      label-august: Tháng tám
+      label-september: Tháng 9
+      label-october: Tháng Mười
+      label-november: Tháng mười một
+      label-december: Tháng 12
+      label-nisan-נִיסָן: Nissan
+      label-iyyar-אִיָּר: Iyyar (Iyyar)
+      label-sivan-סִיוָן: Sivan
+      label-tammuz-תַּמּוּז: Tammuz
+      label-av-אָב: Av (Av)
+      label-elul-אֱלוּל: Elul
+      label-tishri-תִּשְׁרֵי: Tishri
+      label-heshvan-חֶשְׁוָן: Heshvan (Heshvan)
+      label-kislev-כִּסְלֵו: Kislev
+      label-teveth-טֵבֵת: Teveth
+      label-shevat-שְׁבָט: Shevat (שְׁבָט)
+      label-adar-adar-i-אֲדָר: Adar/Adar I (Adar)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: Veadar/Adar II (Adar thứ hai)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الأأول)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath-Thani (رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al-Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Rajab (رَجَب)
+      label-shaʿban-شَعْبان: Shaʿban (شَعْبان)
+      label-ramadan-رَمَضان: Ramadan
+      label-shawwal-شَوّال: Shawwal
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al-Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al-Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: Farvardin (Farvardin)
+      label-ordibehesht-اردیبهشت: Ordibehesht (Ordibehesht)
+      label-khordad-خرداد: Khordad (Khordad)
+      label-tir-تیر: Tir (Tir)
+      label-mordad-مرداد: Mordad (Mordad)
+      label-shahrivar-شهریور: Shahrivar (Shahrivar)
+      label-mehr-مهر: Mehr (Mehr)
+      label-aban-آبان: Aban (Tháng Mười Một)
+      label-azar-آذر: Azar (Azar)
+      label-dey-دی: Dey (The)
+      label-bahman-بهمن: Bahman (Bahman)
+      label-esfand-اسفند: Esfand (tháng Ba)
+      label-caitra-चैत्र: Caitra (Chatra)
+      label-vaisakha-वैशाख: Vaisakha (Vaishakh)
+      label-jyaistha-ज्येष्ठ: Jyaistha (Cao cấp)
+      label-asadha-आषाढ़: Asadha
+      label-sravana-श्रावण: Sravana
+      label-bhadra-भाद्रपद: Bhadra (Bhadrapada)
+      label-asvina-आश्विन: Asvina (Ashwin)
+      label-kartika-कार्तिक: Kartika
+      label-agrahayana-अग्रहायण: Agrahayana (Agrahayana)
+      label-pausa-पौष: Tạm dừng
+      label-magha-माघ: Magha
+      label-phalguna-फाल्गुन: Phalguna
+      label-vendémiaire: Vendémiaire
+      label-brumaire: Brumaire
+      label-frimaire: Frimaire
+      label-nivôse: Nivôse
+      label-pluviôse: Pluviôse
+      label-ventôse: Ventôse
+      label-germinal: Mầm
+      label-floréal: Floréal
+      label-prairial: Đồng cỏ
+      label-messidor: Messidor
+      label-thermidor: Thermidor
+      label-fructidor: Fructidor
+      label-sans-culottides: Sans-culottides
+      label-i: TÔI
+      label-ii: II
+      label-iii: III
+      label-primidi-1: Primidi (1)
+      label-duodi-2: Đưa (2)
+      label-tridi-3: Ba (3)
+      label-quartidi-4: Quý (4)
+      label-quintidi-5: Quintidius (5)
+      label-sextidi-6: Sextidi (6)
+      label-septidi-7: Septidi (7)
+      label-octidi-8: Octidi (8)
+      label-nonidi-9: Thật vậy (9)
+      label-décadi-10: Décadi (10)
+      label-vertu-1: Đức hạnh (1)
+      label-génie-2: Thiên tài (2)
+      label-travail-3: Công việc (3)
+      label-opinion-4: Ý kiến (4)
+      label-récompenses-5: Phần thưởng (5)
+      label-révolution-6: Cách mạng (6)
+      tab-gregorian: Gregorian
+      label-date: Ngày
+      label-leap: "Bước nhảy vọt:"
+      label-time: "Thời gian:"
+      label-weekday: "Ngày trong tuần:"
+      tab-julian-day: Ngày Julian
+      label-julian-day: "Julian Day:"
+      tab-modified-julian: Julian đã được sửa đổi
+      label-modified-julian-day: "Ngày Julian đã được điều chỉnh:"
+      tab-julian-calendar: Lịch Julian
+      tab-gregorian-serial: Chuỗi Gregorian
+      label-gregorian-serial-day: "Ngày theo lịch Gregorian:"
+      tab-hebrew: tiếng Do Thái
+      tab-islamic: Hồi giáo
+      tab-persian: Ba Tư
+      tab-persian-algorithmic: Thuật toán Ba Tư
+      tab-mayan: Người Maya
+      label-long-count: "Đếm dài:"
+      label-haab: Mong
+      label-tzolkin: Tzolkin
+      tab-indian-civil: Dân sự Ấn Độ
+      tab-french-republican: Cộng hòa Pháp
+      label-day: "Ngày:"
+      label-month: "Tháng:"
+      label-décade: "Thập kỷ:"
+      label-year: "Năm:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "Ngày trong tuần:"
+      label-week: "Tuần:"
+      label-day-of-year: "Ngày trong năm:"
+      tab-unix-time: Unix time()
+      label-unix-time: "Thời gian Unix():"
+      tab-excel-1900-windows: Excel 1900 (Windows)
+      label-excel-serial-day-1900: "Ngày Excel Serial (1900):"
+      tab-excel-1904-macintosh: Excel 1904 (Macintosh)
+      label-excel-serial-day-1904: "Ngày Excel Serial (1904):"
+      tag-this-is-a-port-of-wonderful: Đây là một cảng tuyệt vời.
+      tag-fourmilab-ch-calendar-converter: Công cụ chuyển đổi lịch Fourmilab.ch
+      tag-by-john-walker: bởi John Walker
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: Cập nhật các lịch khác
+      tag-today: Hôm nay
+  bech32:
+    title: Bộ mã hóa/giải mã Bech32
+    description: Mã hóa/Giải mã/Xác thực betch32(m)
+    externalAccess: vô giá trị
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Bech32m
+      tab-decode: Giải mã
+      label-bech32-m-string: "Chuỗi Bech32(m):"
+      placeholder-bech32-bech32m-string: Dây đàn Bech32 / Bech32m
+      label-variant: "Khác nhau:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "Tải trọng:"
+      placeholder-hex-payload: Tải trọng Hex
+      placeholder-variant: Khác nhau
+      tab-encode: Mã hóa
+      label-encoded-bech32-string: "Chuỗi bech32 được mã hóa:"
+      placeholder-bech32-string: chuỗi bech32
+      tab-batch: Lô
+      label-bech32-strings-one-per-line: "Chuỗi Bech32 (mỗi dòng một chuỗi):"
+      placeholder-one-bech32-string-per-line: Một chuỗi Bech32 cho mỗi dòng
+      title-results: Kết quả
+      tag-auto-detect: Tự động phát hiện
+      tag-manual: Thủ công
+      tag-checksum-only: Chỉ kiểm tra tổng
+      tag-full-decode: Giải mã hoàn toàn
+      tag-checksum-valid: Mã kiểm tra hợp lệ
+      tag-checksum-invalid: Tổng kiểm tra không hợp lệ
+      tag-encode: Mã hóa
+      tag-convert: Chuyển thành
+      tag-export-csv: Xuất CSV
+      invalid-hex-payload: Tải trọng hex không hợp lệ
+      input: Đầu vào
+      variant: Khác nhau
+      status: Trạng thái
+      hex: Hex
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Nhãn Docker Pangolin
+    description: Chuyển đổi nhãn Docker Compose Pangolin thành bản thiết kế và ngược lại.
+    externalAccess: vô giá trị
+    texts:
+      tab-compose-blueprint: Soạn thảo → Bản thiết kế
+      label-docker-compose-yaml: "Tệp YAML của Docker Compose:"
+      placeholder-paste-full-docker-compose-yml-here: Sao chép toàn bộ nội dung file docker-compose.yml vào đây…
+      label-generated-blueprint: "Bản thiết kế được tạo ra:"
+      placeholder-blueprint-yaml-will-appear-here: Bản thiết kế YAML sẽ xuất hiện ở đây…
+      tab-blueprint-labels: Bản thiết kế → Nhãn
+      label-blueprint-yaml: "Bản thiết kế YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: Dán file YAML của bản thiết kế Pangolin vào đây…
+      label-generated-docker-labels: "Các nhãn Docker được tạo:"
+      placeholder-docker-labels-will-appear-here: Các nhãn Docker sẽ xuất hiện ở đây...
+      tag-extract-pangolin-blueprint: Trích xuất bản thiết kế tê tê
+      tag-array-key-value: Mảng (- key=value)
+      tag-object-key-value: "Đối tượng (khóa: giá trị)"
+      tag-convert-to-docker-labels: Chuyển đổi thành nhãn Docker
+      invalid-blueprint-yaml: Bản thiết kế YAML không hợp lệ
+  fitness-computer:
+    title: Máy tính thể dục
+    description: "Tính toán BMR (Tỷ lệ trao đổi chất cơ bản), TDEE / Calo (Tổng
+      lượng năng lượng tiêu hao hàng ngày), BMI (Chỉ số khối cơ thể), Cân nặng
+      lý tưởng, Tỷ lệ mỡ cơ thể, Nhịp tim tối đa: các chỉ số quan trọng được sử
+      dụng để đánh giá thể chất tổng thể và sức khỏe sinh lý."
+    externalAccess: vô giá trị
+    texts:
+      label-bmr: BMR
+      label-tdee-calories: TDEE/Lượng calo
+      label-bmi: "Chỉ số BMI:"
+      label-ideal-weight: "Cân nặng lý tưởng:"
+      label-body-fat-us-navy: Lượng mỡ cơ thể (Hải quân Hoa Kỳ)
+      label-body-fat-bmi: Chỉ số mỡ cơ thể (BMI)
+      label-max-heart-rate: Nhịp tim tối đa
+      label-sedentary-little-or-no-exercise: "Ít vận động: ít hoặc không vận động."
+      label-light-exercise-1-3-times-week: "Nhẹ nhàng: tập thể dục 1-3 lần/tuần"
+      label-moderate-exercise-4-5-times-week: "Mức độ vừa phải: tập thể dục 4-5 lần/tuần"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week:
+        "Năng động: tập thể dục hàng ngày hoặc tập thể dục cường độ cao 3-4
+        lần/tuần"
+      label-very-active-intense-exercise-6-7-times-week: "Rất năng động: tập thể dục cường độ cao 6-7 lần/tuần"
+      label-extra-active-very-intense-exercise-daily-or-physical-job:
+        "Năng động vượt trội: tập thể dục cường độ cao hàng ngày hoặc công việc
+        đòi hỏi thể lực."
+      label-units: "Đơn vị:"
+      label-formula: "Công thức:"
+      label-gender: "Giới tính:"
+      label-age: "Tuổi:"
+      title-body-measurements: Số đo cơ thể
+      label-activity-level: "Mức độ hoạt động:"
+      title-results: Kết quả
+      label-bmr-kcal-day: "BMR (kcal/ngày):"
+      label-tdee-calories-kcal-day: "TDEE/Lượng calo (kcal/ngày):"
+      label-bmi-category: "Phân loại BMI:"
+      label-healthy-range-min: "Phạm vi lành mạnh (tối thiểu):"
+      label-healthy-range-max: "Phạm vi an toàn (tối đa):"
+      label-devine-1974: "— (Đến năm 1974):"
+      label-hamwi-1964: "— (Hamwi 1964):"
+      label-miller-1983: "— (Miller 1983):"
+      label-robinson-1983: "— (Robinson 1983):"
+      label-body-fat: "Tỷ lệ mỡ cơ thể (%):"
+      label-fat-mass: "Khối lượng mỡ:"
+      label-lean-mass: "Khối lượng cơ nạc:"
+      label-max-heart-rate-bpm: "Nhịp tim tối đa (bpm):"
+      tag-metric-kg-cm: Đơn vị đo lường (kg, cm)
+      tag-us-lbs-inches: Đơn vị đo lường Mỹ (pound, inch)
+      tag-male: Nam giới
+      tag-female: Nữ giới
+  food-energy-converter:
+    title: Bộ chuyển đổi năng lượng thực phẩm
+    description: Quy đổi giữa các loại thực phẩm (joule, calo)
+    externalAccess: vô giá trị
+  iso-639-searcher:
+    title: Công cụ tìm kiếm ISO 639
+    description: Tìm kiếm theo mã ngôn ngữ ISO 639-1/2T/2B/3
+    externalAccess: vô giá trị
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: Tìm kiếm mã ngôn ngữ ISO-639 theo ISO-1, ISO-2T/2B, ISO-3, tên...
+      label-max-results: "Kết quả tối đa:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "TIẾNG ANH:"
+      tag-no-results: Không có kết quả
+      tag-search-results: Kết quả tìm kiếm
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: Tên tiếng Anh và tên địa phương
+      loading-more-results: Đang tải thêm kết quả...
+  jasypt-string-encryption:
+    title: Mã hóa chuỗi Jasypt
+    description: Mã hóa và giải mã chuỗi ký tự bằng cách sử dụng tiêu chuẩn Jasypt
+      (Java Simplified Encryption).
+    externalAccess: vô giá trị
+    texts:
+      label-mode: "Cách thức:"
+      label-password-secret-key: "Mật khẩu (Khóa bí mật):"
+      placeholder-enter-jasypt-password-salt-secret-key: Nhập mật khẩu Jasypt (mật mã bí mật)
+      title-results: Kết quả
+      label-decoded: "Đã giải mã:"
+      label-raw: "Nguyên liệu thô:"
+      label-enc-form: "Mẫu ENC:"
+      tag-encrypt: Mã hóa
+      tag-decrypt: Giải mã
+      plain-text: "Văn bản thuần túy:"
+      jasypt-encrypted-string: "Chuỗi mã hóa Jasypt:"
+      text-to-encrypt-e-g-db-password: "Văn bản cần mã hóa (ví dụ: mật khẩu cơ sở dữ liệu)"
+      encrypted-value-e-g-enc-or-raw-jasypt-string: "Giá trị được mã hóa (ví dụ: ENC(...)) hoặc chuỗi Jasypt thô"
+  k8s-rbac-generator:
+    title: Trình tạo RBAC Kubernetes
+    description: Tạo tệp YAML chính sách RBAC cho Kubernetes.
+    externalAccess: vô giá trị
+    texts:
+      label-user: Người dùng
+      label-group: Nhóm
+      label-serviceaccount: Tài khoản dịch vụ
+      label-role-name: "Tên vai trò:"
+      label-role-type: Loại vai trò
+      label-namespace: Không gian tên
+      title-rules: Quy tắc
+      label-resources: Tài nguyên
+      placeholder-select-resources-supports: Chọn nguồn tài nguyên (hỗ trợ *)
+      label-resource-names-optional: Tên tài nguyên (tùy chọn)
+      placeholder-specific-resources-names: Tên tài nguyên cụ thể
+      label-verbs: Động từ
+      placeholder-select-verbs-supports: Chọn các động từ (hỗ trợ *)
+      title-subjects: Các chủ đề
+      label-kind: Loại
+      label-name: Tên
+      title-output-yaml: Đầu ra YAML
+      tab-role-yaml: Vai trò YAML
+      tab-rolebinding-yaml: RoleBinding YAML
+      tag-clusterrole-global: ClusterRole (Toàn cầu)
+      tag-role-namespaced: Vai trò (có không gian tên)
+      tag-add-rule: + Thêm quy tắc
+      tag-remove-rule: Xóa quy tắc
+      tag-add-subject: + Thêm chủ đề
+      tag-remove-subject: Xóa đối tượng
+  objgen-html:
+    title: Chuyển đổi ObjGen sang HTML
+    description: Tạo HTML phức tạp từ cú pháp giống TOML.
+    externalAccess: vô giá trị
+    texts:
+      input-label-objgen-html-definition: Định nghĩa HTML của ObjGen
+      input-placeholder-put-your-objgen-html-definition-here: Hãy đặt định nghĩa HTML của ObjGen vào đây...
+      output-label-generated-html: HTML được tạo
+      tag-documentation: Tài liệu
+  objgen-json:
+    title: Chuyển đổi ObjGen sang JSON
+    description: Tạo JSON phức tạp từ cú pháp giống TOML.
+    externalAccess: vô giá trị
+    texts:
+      input-label-objgen-json-definition: Định nghĩa JSON của ObjGen
+      input-placeholder-put-your-objgen-json-definition-here: Hãy đặt định nghĩa JSON của ObjGen vào đây...
+      output-label-generated-json: JSON được tạo
+      tag-documentation: Tài liệu
+  pgp-file-encryption:
+    title: Mã hóa tập tin PGP
+    description: Mã hóa và giải mã tập tin bằng PGP
+    externalAccess: vô giá trị
+    texts:
+      title-1-select-a-file: 1. Chọn một tệp
+      title-drag-and-drop-a-file-or-click-to-select: Kéo và thả tệp hoặc nhấp chuột để chọn.
+      title-2-public-key-for-encryption: 2. Khóa công khai (để mã hóa)
+      title-3-private-key-passphrase-for-decryption: 3. Khóa riêng tư + mật khẩu (để giải mã)
+      label-passphrase: "Mật khẩu:"
+      placeholder-passphrase: Mật khẩu
+      tag-selected-file: "Tệp đã chọn:"
+      tag-encrypt-stream: Mã hóa (luồng)
+      tag-decrypt-stream: Giải mã (luồng)
+      tag-encrypting: Đang mã hóa…
+      tag-decrypting: Đang giải mã…
+      tag-encrypted-file-ready: Tệp tin được mã hóa đã sẵn sàng.
+      tag-download-encrypted: Tải xuống đã mã hóa
+      tag-decrypted-file-ready: Tệp đã được giải mã sẵn sàng.
+      tag-download-decrypted: Tải xuống đã giải mã
+  remove-background:
+    title: Xóa nền ảnh
+    description: Xóa nền ảnh bằng AI
+    externalAccess: Tải xuống các mô hình xóa nền từ HuggingFace. Quá trình xử lý
+      được thực hiện trong trình duyệt của bạn.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG‑1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: Trong suốt
+      label-solid-color: Màu trơn
+      label-pattern: "Mẫu:"
+      label-blurred-original: Ảnh gốc bị làm mờ
+      label-adjust-contrast-brightness: Điều chỉnh độ tương phản/độ sáng
+      label-diagonal-stripes: Sọc chéo
+      label-dots: Chấm
+      label-checkerboard: Bàn cờ
+      title-drag-and-drop-an-image-or-click-to-select: Kéo và thả hình ảnh hoặc nhấp chuột để chọn.
+      label-model: "Người mẫu:"
+      label-blur: "Làm mờ:"
+      label-contrast: "Sự tương phản:"
+      label-brightness: "Độ sáng:"
+      title-original: Nguyên bản
+      title-result: Kết quả
+      tag-apply-background: Áp dụng nền tảng
+      tag-download-result: Tải xuống kết quả
+  shell-formatter:
+    title: Trình định dạng lệnh Shell
+    description: Định dạng các lệnh shell thành các lệnh shell nhiều dòng, được phân
+      tách theo đối số.
+    externalAccess: vô giá trị
+    texts:
+      input-label-shell-commands-to-format: Các lệnh shell để định dạng
+      input-placeholder-put-your-shell-commands-to-format-here: Nhập các lệnh shell của bạn vào đây để định dạng...
+      output-label-formatted-shell-commands: Các lệnh shell được định dạng
+  shell-linearizer:
+    title: Bộ tuyến tính hóa lệnh Shell
+    description: Chuyển đổi các lệnh shell nhiều dòng thành dạng tuyến tính.
+    externalAccess: vô giá trị
+    texts:
+      input-label-shell-commands-to-linearize: Các lệnh shell để tuyến tính hóa
+      input-placeholder-put-your-shell-commands-to-linearize-here: Hãy đặt các lệnh shell cần chuyển đổi sang dạng tuyến tính vào đây...
+      output-label-linearized-shell-commands: Lệnh shell tuyến tính
+  ufw-generator:
+    title: Bộ tạo lệnh UFW
+    description: Tạo các dòng lệnh UFW
+    externalAccess: vô giá trị
+    texts:
+      label-allow: Cho phép
+      label-deny: Từ chối
+      label-reject: Từ chối
+      label-limit: Giới hạn
+      label-incoming: Đang đến
+      label-outgoing: Hướng ngoại
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: Bất kì
+      label-action: "Hoạt động:"
+      label-direction: "Phương hướng:"
+      label-protocol: "Giao thức:"
+      label-port: "Cảng:"
+      placeholder-80: "80"
+      label-port-to-range: "Cảng tới (phạm vi):"
+      placeholder-443: "443"
+      label-from-ip: "Từ địa chỉ IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "Gửi đến địa chỉ IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "Giao diện:"
+      placeholder-eth0: eth0
+      label-logging: "Ghi nhật ký:"
+      label-comment: "Bình luận:"
+      placeholder-optional-comment: (Tùy chọn)
+      title-generated-command: Lệnh được tạo
+      missing-port: Cổng bị thiếu
+  visual-subnet-calculator:
+    title: Công cụ tính toán mạng con trực quan
+    description: Một công cụ giúp thiết kế mạng nhanh chóng và cộng tác với người
+      khác trong quá trình thiết kế. Nó tập trung vào việc đẩy nhanh tiến độ
+      công việc của các quản trị viên mạng, chứ không phải các phép toán chia
+      mạng con mang tính học thuật.
+    externalAccess: vô giá trị
+  zalgo:
+    title: Máy phát điện/Biểu ngữ Zalgo
+    description: Tạo văn bản Zalgo và làm sạch văn bản do Zalgo tạo ra.
+    externalAccess: vô giá trị
+    texts:
+      text-zalgo-text-copied: Văn bản của Zalgo đã được sao chép!
+      title-zalgo-text-generation: Tạo văn bản Zalgo
+      placeholder-put-your-string-here: Đặt chuỗi của bạn vào đây...
+      label-text-to-decorate-with-zalgo: Văn bản để trang trí bằng Zalgo
+      label-intensity: "Cường độ:"
+      title-zalgo-text: Zalgo text
+      title-zalgo-cleaner: Máy làm sạch Zalgo
+      placeholder-put-zalgo-text-to-clean-here: Đặt văn bản zalgo cần làm sạch vào đây...
+      label-zalgo-text-to-clean: Văn bản Zalgo cần được làm sạch
+      label-cleaned-text: Văn bản đã được làm sạch
+      placeholder-clean-zalgo-text-will-appear-here: Văn bản Zalgo sạch sẽ sẽ xuất hiện ở đây...
+      tag-generate: Phát ra
+      tag-copy: Sao chép
+      tag-clean: Lau dọn
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: Phải thiết lập một trong các thông báo | chức năng
+        function-must-set-messages: Chức năng phải thiết lập thông báo
+  dead-pixel-tester:
+    title: Công cụ kiểm tra điểm ảnh chết
+  gif-to-mp4:
+    title: Chuyển đổi GIF sang MP4
+    description: Chuyển đổi GIF sang MP4 bằng ffmpeg
+    externalAccess: vô giá trị
+    texts:
+      label-stream-loop: "Vòng lặp luồng:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: Kéo và thả ảnh GIF vào đây hoặc nhấp chuột để chọn tệp.
+      title-logs: Nhật ký
+  html-to-pdf:
+    title: Chuyển đổi HTML sang PDF
+    description: Tạo PDF từ nội dung HTML hoặc URL với tùy chọn định dạng và tự động
+      ẩn biểu ngữ cookie.
+    externalAccess: Công cụ này gửi URL và nội dung HTML đến dịch vụ web Puppeteer
+      *tự lưu trữ* đã được cấu hình.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: Thư
+      label-legal: Hợp pháp
+      label-html-to-pdf-service-url: "URL dịch vụ chuyển đổi HTML sang PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "Xác thực cơ bản:"
+      placeholder-username-password: tên người dùng:mật khẩu
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "Nội dung HTML:"
+      tab-batch-url-pdf: Chuyển đổi URL hàng loạt sang PDF
+      label-urls-one-per-line: "URL (mỗi dòng một URL):"
+      title-results: Kết quả
+      tab-custom-pdf-options: Tùy chọn PDF tùy chỉnh
+      label-format: "Định dạng:"
+      label-language: "Ngôn ngữ:"
+      placeholder-en-us: en-US
+      label-landscape: "Phong cảnh:"
+      label-one-long-page: "Một trang dài:"
+      label-auto-hide-cookie-banners: "Tự động ẩn biểu ngữ thông báo cookie:"
+      label-print-background: "Hình nền in:"
+      title-margins: Lề
+      label-top-mm: "Đỉnh (mm):"
+      label-bottom-mm: "Đáy (mm):"
+      label-left-mm: "Trái (mm):"
+      label-right-mm: "Phải (mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: Cấu hình dịch vụ chuyển đổi HTML sang PDF (tự lưu trữ)
+      tag-you-must-self-host-html-to-pdf-service-see: "Bạn phải tự lưu trữ dịch vụ chuyển đổi HTML sang PDF. Xem:"
+      tag-html-to-pdf-service-install: Cài đặt dịch vụ chuyển đổi HTML sang PDF
+      tag-generate-pdf: Tạo PDF
+      tag-generate-pdfs: Tạo PDF
+      tag-url: URL
+      tag-download: Tải xuống
+      tag-download-pdf: Tải xuống PDF
+      tag-failed: Thất bại
+  shutdown-command-generator:
+    title: Bộ tạo lệnh tắt máy
+    description: Tạo lệnh tắt máy cho nhiều hệ điều hành khác nhau.
+    externalAccess: vô giá trị
+    texts:
+      label-windows: Windows
+      label-linux: Linux
+      label-macos: macOS
+      label-delay: "Trì hoãn:"
+      label-specific-time: Thời gian cụ thể
+      label-platform: "Nền tảng:"
+      label-shutdown-time: "Thời gian tắt máy:"
+      label-force: Lực lượng
+      label-reboot: Khởi động lại
+      label-logoff: Đăng xuất
+      label-cancel: Hủy bỏ
+      label-hibernate: Ngủ đông
+      title-generated-command: Lệnh được tạo
+      tag-nbsp-h-nbsp: h
+      tag-nbsp-m-nbsp: m
+      tag-nbsp-s: "&nbsp;s"
 spanCopyable:
   copy: Sao chép vào bảng tạm
   copied: Đã sao chép!
@@ -7931,3 +8640,9 @@ textareaCopyable:
   download: Tải xuống
 locale-selector:
   select-a-language: Chọn ngôn ngữ
+collapsibleToolMenu:
+  text:
+    expanding: Đang mở rộng...
+    collapsing: Sụp đổ...
+    collapse-all-tools: Thu gọn tất cả công cụ
+    expand-all-tools: Mở rộng tất cả công cụ

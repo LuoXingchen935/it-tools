@@ -3,6 +3,9 @@
   sorry: عذرًا، هذه الصفحة غير موجودة
   maybe: قد يكون الكاش يعمل بشكل غير متوقع، جرب تحديث الصفحة يدويًا؟
   backHome: العودة للصفحة الرئيسية
+  page:
+    text:
+      page-not-found-it-tools: الصفحة غير موجودة - أدوات تكنولوجيا المعلومات
 home:
   categories:
     newestTools: أحدث الأدوات
@@ -33,6 +36,13 @@ home:
     lightMode: الوضع النهاري
     mode: تبديل الوضع الليلي/النهاري
   loading-more-tools: جاري تحميل المزيد من الأدوات...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        مجموعة من الأدوات الإلكترونية المفيدة للمطورين، مع تجربة مستخدم رائعة.
+        أدوات تكنولوجيا المعلومات هي مجموعة مجانية ومفتوحة المصدر من الأدوات
+        الإلكترونية المفيدة للمطورين والعاملين في مجال تكنولوجيا المعلومات.
+      it-tools-handy-online-tools-for-developers: أدوات تكنولوجيا المعلومات - أدوات مفيدة عبر الإنترنت للمطورين
 about:
   alltools-title: جميع الأدوات {toolsCount}
   tools:
@@ -79,6 +89,12 @@ about:
     الخطأ في [قسم
     المشكلات](https://github.com/sharevb/it-tools/issues/new/choose) في مستودع
     GitHub.
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      مجموعة من الأدوات الإلكترونية المفيدة للمطورين، مع تجربة مستخدم رائعة.
+      أدوات تكنولوجيا المعلومات هي مجموعة مجانية ومفتوحة المصدر من الأدوات
+      الإلكترونية المفيدة للمطورين والعاملين في مجال تكنولوجيا المعلومات.
+    about-it-tools: نبذة عن أدوات تكنولوجيا المعلومات
 favoriteButton:
   remove: إزالة من المفضلة
   add: إضافة إلى المفضلة
@@ -116,6 +132,9 @@ tools:
     physics: الفيزياء
     cheatsheets: أوراق الغش
     forensic: الطب الشرعي
+    finance: تمويل
+    default: تقصير
+    toml: TOML
   password-strength-analyser:
     title: محلل قوة كلمة المرور
     description: اكتشف قوة كلمة المرور الخاصة بك باستخدام أداة التحليل هذه التي تعمل
@@ -711,6 +730,7 @@ tools:
       tag-preview-image: معاينة الصورة
       tag-download-file: تنزيل الملف
       tag-copy: ينسخ
+      include-data-uri-prefix: "تضمين البيانات: بادئة URI"
   list-converter:
     title: محول القوائم
     description: يمكن لهذه الأداة معالجة البيانات ذات الأعمدة وتطبيق تغييرات متنوعة
@@ -1093,6 +1113,8 @@ tools:
       tag-refresh-key-pair: تحديث زوج المفاتيح
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: يجب أن يكون عدد البتات 256 ≤ بتات ≤ 16384 وأن يكون من مضاعفات العدد 8
   html-wysiwyg-editor:
     title: محرر HTML مرئي
     description: محرر ويب لصفحات HTML (ما تراه هو ما تحصل عليه WYSIWYG). يتيح لك هذ
@@ -1468,6 +1490,8 @@ tools:
       tag-quantity: كمية
       tag-copy: ينسخ
       tag-refresh: ينعش
+      uppercase: أحرف كبيرة
+      no-hyphen: بدون واصلة
   nanoid-generator:
     title: مولد معرفات NanoIDs
     description: إنشاء معرفات عشوائية وفريدة وملائمة لعناوين URL لتطبيقاتك
@@ -2051,6 +2075,8 @@ tools:
       tag-certificate-signing-request: طلب توقيع الشهادة
       tag-public-key: المفتاح العام
       tag-private-key: مفتاح خاص
+      label-rsa-bits: "بتات RSA:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: يجب أن يكون عدد البتات 256 ≤ بتات ≤ 16384 وأن يكون من مضاعفات العدد 8
   css-prettifier:
     title: مُجمِّل CSS
     description: تجميل CSS
@@ -2503,6 +2529,7 @@ tools:
       label-file-name: "اسم الملف:"
       label-extension: "امتداد:"
       label-mime-type: "نوع MIME:"
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
   folder-structure-diagram:
     title: مخطط هيكل المجلد
     description: أداة شبيهة بالشجرة لإنشاء مخططات بنية مجلد ASCII
@@ -2604,6 +2631,8 @@ tools:
         كيلوبايت؛ 1 ميجا بايت = 1000 كيلوبايت؛ 1 جيجابايت = 1024 ميجا بايت؛ 1
         جيجابايت = 1000 ميجا بايت؛
       tag-see-here-for-details: انظر هنا للمزيد من التفاصيل
+      column-decimal: عشري
+      column-binary: ثنائي
   heic-converter:
     title: محول HEIC
     description: محول HEIC إلى JPEG أو PNG
@@ -2612,6 +2641,7 @@ tools:
       label-png: PNG
       label-output-format: تنسيق الإخراج
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف HEIC هنا، أو انقر لتحديد ملف
+      an-error-occured-processing-heic-heif-is-invalid: "حدث خطأ أثناء المعالجة: HEIC/HEIF غير صالح."
   hex-file-converter:
     title: محول ملفات HEX
     description: التحويل بين الملف والتمثيل السداسي عشري
@@ -2678,6 +2708,9 @@ tools:
     description: التحويل من PNG/JPEG إلى/من ICO
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف ICO أو PNG/JPEG هنا، أو انقر لتحديد ملف
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
+      invalid-ico-file: ملف ICO غير صالح!
+      invalid-png-file: ملف PNG غير صالح!
   illuminance-converter:
     title: محول الإضاءة
     description: محول وحدات الإضاءة (لوكس، شمعة القدم، أكاسيد النيتروجين، الضوء، اللهب)
@@ -2692,6 +2725,8 @@ tools:
       title-drag-and-drop-images-files-here-or-click-to-select-some-files: اسحب ملفات الصور وأفلِتها هنا، أو انقر لتحديد بعض الملفات
       tag-first-select-output-options: "أولاً، حدد خيارات الإخراج:"
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately: "بعد ذلك، قم بسحب صورك وإفلاتها أدناه وسيتم تحويلها وتنزيلها على الفور:"
+      invalid-image-file: ملف صورة غير صالح!
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
   image-exif-reader:
     title: قارئ جودة الصور EXIF/Metadata/GPS/JPEG
     description: قراءة EXIF وIPTC وXMP وGPS والبيانات الوصفية الأخرى وجودة JPEG
@@ -2894,6 +2929,7 @@ tools:
       tag-iso2-iso3: ايزو2/ايزو3
       tag-name-and-info: الاسم والمعلومات
       tag-gt-see-on-openstreetmap: "&gt; انظر على OpenStreetMap"
+      loading-more-results: جارٍ تحميل المزيد من النتائج...
   javascript-prettifier:
     title: مُحسِّن جافا سكريبت
     description: مُحسِّن JS/Javascript
@@ -3405,6 +3441,11 @@ tools:
       placeholder-passphrase: عبارة المرور...
       tag-copy: ينسخ
       tag-refresh: ينعش
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry:
+        "# لا يمكن إنشاء عبارة مرور مكونة من [{0} - {1}] حرفًا بالإعدادات
+        الحالية، حاول تغيير عدد الكلمات"
+      words-words: الكلمات ({0})
+      label-min-passphrase-len: "الحد الأدنى لطول عبارة المرور:"
   paste-as-markdown:
     title: لصق كعلامة Markdown
     description: لصق الخلايا/الجداول والروابط من محتوى الحافظة بتنسيق Markdown
@@ -3462,10 +3503,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف PDF هنا، أو انقر لتحديد ملف
       title-logs: السجلات
       label-qpdf: كيو بي دي إف
-      label-password: 'كلمة السر:'
+      label-password: "كلمة السر:"
       placeholder-password: كلمة السر
       tag-decrypt-pdf: فك تشفير PDF
-      tag-output-file: 'ملف الإخراج:'
+      tag-output-file: "ملف الإخراج:"
   pgp-encryption:
     title: تشفير PGP
     description: تشفير وفك تشفير النص العادي باستخدام مفاتيح PGP.
@@ -4383,6 +4424,8 @@ tools:
       label-permanent: دائم
       title-generated-fw-command: "أمر fw المُولَّد:"
       tag-const-zone-ref: منطقة ثابتة = مرجع
+    title: مولد أوامر جدار الحماية
+    description: إنشاء أوامر جدار الحماية (firewalld)
   fortune-wheel:
     title: عجلة الحظ
     description: عجلة الحظ القابلة للتكوين
@@ -6116,6 +6159,9 @@ tools:
       label-django-secret-key: "المفتاح السري لـ Django:"
       tag-copy: ينسخ
       tag-regenerate: تجدد
+    service:
+      texts:
+        generating-range-is-too-large: نطاق التوليد كبير جدًا
   dnsbl-checker:
     title: مدقق DNSBL
     description: التحقق مما إذا كان عنوان IP معين موجودًا في أي من خوادم القائمة
@@ -6164,6 +6210,7 @@ tools:
       title-html-head-tags: 📄 علامات رأس HTML
       tag-upload-png-image: تحميل صورة PNG
       tag-download-zip: 📦 تنزيل ملف ZIP
+      invalid-png-file: ملف PNG غير صالح!
   font-compare:
     title: مقارنة الخطوط
     description: مقارنة الخطوط الموجودة في نص معين
@@ -6250,6 +6297,12 @@ tools:
       label-fallback: "البديل:"
       placeholder-fallback-font: الخط البديل
       tag-defineprops: تعريف الدعائم
+    text:
+      by-font-name: حسب اسم الخط
+      by-font-url: عن طريق رابط الخط
+      by-font-file: بواسطة ملف الخط
+      by-inline-css: باستخدام CSS المضمن
+      by-css-url: باستخدام CSS URL
   gpt-token-encoder:
     title: مُشفِّر/فك تشفير رمز GPT
     description: تشفير النص إلى رموز GPT وفك تشفير رموز GPT مرة أخرى إلى نص
@@ -6285,6 +6338,10 @@ tools:
       tag-original-image: الصورة الأصلية
       tag-inverted-image: صورة مقلوبة
       tag-clear-upload-new: مسح وتحميل جديد
+    service:
+      texts:
+        file-must-be-an-image: يجب أن يكون الملف صورة
+        failed-to-process-image-err: "فشل معالجة الصورة:"
   image-comparer:
     title: مقارنة الصور
     description: أداة لمقارنة الصور بصريًا
@@ -6299,6 +6356,9 @@ tools:
       tag-compare: يقارن
       tag-upload-left: تحميل اليسار
       tag-upload-right: تحميل اليمين
+    text:
+      compare-by-url: قارن حسب عنوان URL
+      compare-by-upload: قارن عن طريق التحميل
   logrotate-generator:
     title: مولد Apache LogRotate
     description: إنشاء تكوين دوران Apache .log
@@ -6426,6 +6486,15 @@ tools:
       label-decimal: "عشري:"
       label-octal: "ثماني:"
       label-hexadecimal: "سداسي عشري:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: إدخال سداسي عشري غير صالح. يُسمح فقط بالأرقام من 0 إلى 9 ومن A إلى F.
+        invalid-1: غير صالح
+        invalid-0: غير صالح
+        invalid: غير صالح
+        unsupported-middle-endian-format: تنسيق middle-endian غير مدعوم.
+        failed-to-parse-bytes: فشل تحليل البايتات.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: يجب أن يكون الإدخال {0} حرفًا سداسيًا عشريًا لـ {1} بت.
   mttdl-calculator:
     title: حاسبة موثوقية RAID
     description: يحسب موثوقية نظام التخزين باستخدام منهجية MTTDL المعروفة
@@ -6558,6 +6627,11 @@ tools:
       tag-convert: يتحول
       tag-axial: محوري
       tag-radial: شعاعي
+    text:
+      bands-notation: الفرق الموسيقية ← التدوين الموسيقي
+      notation-bands: الترميز → الأشرطة
+      number-notation: الرقم ← الترميز
+      notation-number: الترميز ← الرقم
   sed-command-generator:
     title: مولد أوامر Sed
     description: إنشاء أوامر unix sed
@@ -6940,6 +7014,9 @@ tools:
       title-mw-to-dbm: من mW إلى dBm
       label-mw-value: "قيمة الميغاواط:"
       label-corresponding-dbm-value: "قيمة dBm المقابلة:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: يجب أن تكون القدرة بالمللي واط أكبر من 0
   diceware-generator:
     title: مولد كلمة المرور Diceware
     description: إنشاء كلمة مرور عشوائية باستخدام طريقة Diceware
@@ -7171,6 +7248,9 @@ tools:
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x:
         "{'{'}&quot;to&quot;:&quot;0x...&quot;,&quot;data&quot;:&quot;0x...&quo\
         t;{'}'} or raw 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: يجب أن تبدأ بيانات المعاملة بـ 0x
   file-splitter:
     title: مقسم الملفات
     description: تقسيم ملف JSON أو XML أو النص إما حسب مجموعة العقد أو حسب مجموعة الأسطر
@@ -7186,6 +7266,9 @@ tools:
       tag-process-chunks: قطع العملية
       tag-download-all: تنزيل الكل
       tag-download: تحميل
+    service:
+      texts:
+        unsupported-format-or-invalid-content: تنسيق غير مدعوم أو محتوى غير صالح
   gitignore-generator:
     title: مولد تجاهل Git
     description: إنشاء .gitignore لمجموعة من القوالب الشائعة
@@ -7295,6 +7378,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: اسحب وأفلِت ملف PDF هنا، أو انقر لتحديد ملف
       title-logs: السجلات
       label-ghostscript: غوست سكريبت
+      process-run-failed: فشلت عملية التشغيل
+      an-error-occured-processing: حدث خطأ أثناء المعالجة
   serial-console:
     title: وحدة التحكم بالمنفذ التسلسلي
     description: الاتصال وقراءة وإرسال الرسالة إلى المنفذ التسلسلي
@@ -7553,6 +7638,8 @@ tools:
       tag-esc: خروج
       tag-exit-dead-pixel-mode: الخروج من وضع البكسل الميت
       tag-start-dead-pixel: ابدأ تشغيل Dead Pixel
+    title: مختبر البكسلات الميتة
+    description: أداة للتحقق مما إذا كانت إحدى وحدات البكسل على شاشتك معطلة أم لا.
   UnitsConverter:
     texts:
       exclude-si-prefixes: استبعاد البادئات الدولية
@@ -7578,6 +7665,13 @@ tools:
       tag-convert-batch: تحويل الدفعة
       tag-longitude-east-is-positive-west-is-negative: "خط الطول: الشرق موجب، والغرب سالب."
       tag-latitude-north-is-positive-south-is-negative: "خط العرض: الشمال موجب، والجنوب سالب."
+    text:
+      coordinate-system: نظام الإحداثيات
+      decimal-format-lng-lat: التنسيق العشري (خط الطول، خط العرض)
+      dms-format-lng-lat: تنسيق DMS (خط الطول، خط العرض)
+      download-results-csv: تنزيل نتائج ملف CSV
+      batch-lat-lng-converter: محول خطوط الطول والعرض الدفعي
+      single-lat-lng-converter: محول خطوط الطول والعرض أحادي
   si-prefixes-converter:
     title: محول بادئات النظام الدولي للوحدات
     description: التحويل بين البادئات المترية
@@ -7620,6 +7714,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: صُنع باستخدام {0}
+        runs-entirely-in-your-browser-no-external-requests: يعمل بالكامل داخل متصفحك. لا توجد طلبات خارجية.
   acceleration-converter:
     title: محول التسارع
     description: تحويل القيم بين وحدات التسارع
@@ -7729,7 +7824,6 @@ tools:
       tag-back: الرجوع (←)
       tag-next: التالي (→)
       tag-reset: إعادة ضبط
-      tag-: ↓
       tag-or: "- أو -"
       tag-control-playback-and-navigation-without-touching-the-mouse: تحكم في التشغيل والتنقل دون لمس الماوس.
       tag-shortcut: اختصار
@@ -7748,6 +7842,16 @@ tools:
       tag-jump-to-start: انتقل إلى البداية
       tag-end: نهاية
       tag-jump-to-end: انتقل إلى النهاية
+    text:
+      please-provide-some-text-first: يرجى تقديم بعض النصوص أولاً.
+      unsupported-file-type: نوع الملف غير مدعوم.
+      display: عرض
+      text: نص
+      settings: إعدادات
+      keyboard-shortcuts: اختصارات لوحة المفاتيح
+      ready: مستعد
+      words: كلمات
+      wpm: كلمة في الدقيقة
   speed-converter:
     title: محول السرعة
     description: تحويل القيم بين وحدات السرعة
@@ -7795,10 +7899,607 @@ tools:
       tag-apply-configuration: تطبيق التكوين
       tag-clear-logs: مسح السجلات
       tag-send: يرسل
+      already-connected: ⚠️ متصل بالفعل
+      connected-to-websocket-bridge: ✅ متصل بجسر WebSocket
+      disconnected: 🔌 غير متصل
+      no-active-connection: ⚠️ لا يوجد اتصال نشط
+      sent-text: "➡️ تم إرسال النص:"
+      configured: ⚙️ مُهيأ
+      sent-hex: "➡️ تم إرسال الرمز السداسي العشري:"
+      disconnecting: 🔻 جارٍ قطع الاتصال...
+      error: "❌ خطأ:"
+      end: "🛑 النهاية:"
+      text: "📩 نص:"
+      binary: "📩 ثنائي:"
+    text:
+      connected: متصل
+      disconnected: غير متصل
   volume-flow-rate-converter:
     title: محول معدل التدفق الحجمي
     description: تحويل القيم بين وحدات معدل التدفق الحجمي
     externalAccess: باطل
+  tip-calculator:
+    title: حاسبة الإكراميات
+    description: احسب الإكرامية للفاتورة وقم بتقسيمها بين عدة أشخاص.
+    texts:
+      title-bill-details: تفاصيل الفاتورة
+      label-bill-amount: "مبلغ الفاتورة:"
+      placeholder-total-bill: إجمالي الفاتورة
+      label-tip-percentage: "نسبة الإكرامية:"
+      placeholder-tip: نصيحة ٪
+      label-number-of-person: "عدد الأشخاص:"
+      placeholder-people: الناس
+      title-results: نتائج
+      label-tip-amount: "مبلغ الإكرامية:"
+      label-total-bill: "إجمالي الفاتورة:"
+      label-amount-per-person: "المبلغ لكل شخص:"
+      title-quick-tip: نصيحة سريعة %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON إلى .env
+    description: حوّل كائن JSON مسطحًا إلى ملف .env. يتم تحويل المفاتيح إلى أحرف
+      كبيرة، ويتم وضع القيم بين علامتي اقتباس بأمان عندما تحتوي على مسافات بيضاء
+      أو علامات اقتباس أو أحرف خاصة بـ env.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: البيانات المُقدمة بتنسيق JSON ليست كائنًا مسطحًا صالحًا.
+      input-label-your-json: بيانات JSON الخاصة بك
+      input-placeholder-paste-your-json-here: ألصق بيانات JSON الخاصة بك هنا...
+      output-label-env-from-your-json: ملف .env من ملف JSON الخاص بك
+  calendar-converter:
+    service:
+      text:
+        sunday: الأحد
+        wednesday: الأربعاء
+        tuesday: يوم الثلاثاء
+        monday: الاثنين
+        thursday: يوم الخميس
+        friday: جمعة
+        saturday: السبت
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "طول السنة غير صالح: {0} يومًا."
+        common-deficient-353-days: نقص شائع (353 يومًا)
+        common-regular-354-days: منتظم شائع (354 يومًا)
+        common-complete-355-days: مكتملة بشكل عام (355 يومًا)
+        embolismic-deficient-383-days: نقص في الانصمام (383 يومًا)
+        embolismic-regular-384-days: انصمام منتظم (384 يومًا)
+        embolismic-complete-385-days: اكتمال الانصمام (385 يومًا)
+        normal-year: سنة عادية
+        leap-year: سنة كبيسة
+    title: محول التقويم
+    description: تحويل التواريخ والأوقات بين التنسيقات الميلادية، واليوليانية،
+      والعبرية، والإسلامية، والفارسية، والماياوية، والهندية، والفرنسية
+      الجمهورية، وISO-8601، وتوقيت يونكس، والتنسيقات التسلسلية لبرنامج إكسل.
+    externalAccess: باطل
+    texts:
+      label-january: يناير
+      label-february: فبراير
+      label-march: يمشي
+      label-april: أبريل
+      label-may: يمكن
+      label-june: يونيو
+      label-july: يوليو
+      label-august: أغسطس
+      label-september: سبتمبر
+      label-october: أكتوبر
+      label-november: نوفمبر
+      label-december: ديسمبر
+      label-nisan-נִיסָן: نيسان
+      label-iyyar-אִיָּר: إيار (إيار)
+      label-sivan-סִיוָן: سيفان
+      label-tammuz-תַּמּוּז: تموز
+      label-av-אָב: Av (Av)
+      label-elul-אֱלוּל: إيلول
+      label-tishri-תִּשְׁרֵי: تشري
+      label-heshvan-חֶשְׁוָן: هيشفان (هيشفان)
+      label-kislev-כִּסְלֵו: كيسليف
+      label-teveth-טֵבֵת: تيفيث
+      label-shevat-שְׁבָט: شيفات (שְׁבָט)
+      label-adar-adar-i-אֲדָר: أدار/أدار 1 (أدار)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: فيدار/أدار الثاني (أدار الثاني)
+      label-muharram-مُحَرَّم: Muharram (مُحَرَّم)
+      label-safar-صَفَر: Safar (صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al‑Awwal (رَبيع الأوّل)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: Rabiʿ ath‑Thani (رَبيع الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: Jumada al‑Ula (جُمادى الأولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath‑Thania (جُمادى الآخرة)
+      label-rajab-رَجَب: Rajab (رَجَب)
+      label-shaʿban-شَعْبان: Shaʿban (شَعْبان)
+      label-ramadan-رَمَضان: Ramadan (رَمَضان)
+      label-shawwal-شَوّال: شوال
+      label-dhu-al-qaʿda-ذو-القَعْدة: Dhu al‑Qaʿda (ذو القَعْدة)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al‑Hijja (ذو الحِجّة)
+      label-farvardin-فروردین: فارواردين (فارواردين)
+      label-ordibehesht-اردیبهشت: أورديبهشت (أورديبهشت)
+      label-khordad-خرداد: خرداد (خرداد)
+      label-tir-تیر: تير (تير)
+      label-mordad-مرداد: مورداد (مورداد)
+      label-shahrivar-شهریور: شهريوار (شهريوار)
+      label-mehr-مهر: مهر (مهر)
+      label-aban-آبان: أبان (نوفمبر)
+      label-azar-آذر: آزار (آزار)
+      label-dey-دی: دي (الـ)
+      label-bahman-بهمن: بهمن (بهمن)
+      label-esfand-اسفند: إسفاند (مارس)
+      label-caitra-चैत्र: كايترا (شايترا)
+      label-vaisakha-वैशाख: فايساخا (فايشاخ)
+      label-jyaistha-ज्येष्ठ: جيايشتا (كبير)
+      label-asadha-आषाढ़: أسادها
+      label-sravana-श्रावण: سرافانا
+      label-bhadra-भाद्रपद: بهادرا (بهادرابادا)
+      label-asvina-आश्विन: أشفينا (أشوين)
+      label-kartika-कार्तिक: كارتيكا
+      label-agrahayana-अग्रहायण: أغراهايانا (أغراهايانا)
+      label-pausa-पौष: يوقف
+      label-magha-माघ: ماغا
+      label-phalguna-फाल्गुन: فالغونا
+      label-vendémiaire: بائع متجول
+      label-brumaire: برومير
+      label-frimaire: فريمير
+      label-nivôse: نيفوز
+      label-pluviôse: بلوفيوز
+      label-ventôse: مكنسة كهربائية
+      label-germinal: الخلايا الجرثومية
+      label-floréal: فلوريال
+      label-prairial: البراري
+      label-messidor: مسيدور
+      label-thermidor: ثيرميدور
+      label-fructidor: فروكتيدور
+      label-sans-culottides: سان كولوتيد
+      label-i: أنا
+      label-ii: ٢
+      label-iii: "3"
+      label-primidi-1: بريميدي (1)
+      label-duodi-2: أعطِ (2)
+      label-tridi-3: ثلاثة (3)
+      label-quartidi-4: أرباع (4)
+      label-quintidi-5: كوينتيديوس (5)
+      label-sextidi-6: سيكستيدي (6)
+      label-septidi-7: سيبتيدي (7)
+      label-octidi-8: أوكتيدي (8)
+      label-nonidi-9: بالفعل (9)
+      label-décadi-10: ديكادي (10)
+      label-vertu-1: الفضيلة (1)
+      label-génie-2: عبقري (2)
+      label-travail-3: العمل (3)
+      label-opinion-4: الرأي (4)
+      label-récompenses-5: المكافآت (5)
+      label-révolution-6: الثورة (6)
+      tab-gregorian: غريغوريان
+      label-date: تاريخ
+      label-leap: "خطوة:"
+      label-time: "وقت:"
+      label-weekday: "أيام الأسبوع:"
+      tab-julian-day: جوليان داي
+      label-julian-day: "جوليان داي:"
+      tab-modified-julian: جوليان المعدل
+      label-modified-julian-day: "جوليان داي المعدل:"
+      tab-julian-calendar: التقويم اليولياني
+      tab-gregorian-serial: المسلسل الغريغوري
+      label-gregorian-serial-day: "اليوم التسلسلي الغريغوري:"
+      tab-hebrew: العبرية
+      tab-islamic: الإسلام
+      tab-persian: الفارسية
+      tab-persian-algorithmic: الخوارزمية الفارسية
+      tab-mayan: المايا
+      label-long-count: "العد الطويل:"
+      label-haab: يأمل
+      label-tzolkin: تزولكين
+      tab-indian-civil: الهندسة المدنية الهندية
+      tab-french-republican: الجمهورية الفرنسية
+      label-day: "يوم:"
+      label-month: "شهر:"
+      label-décade: "عقد:"
+      label-year: "سنة:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "يوم الأسبوع:"
+      label-week: "أسبوع:"
+      label-day-of-year: "يوم السنة:"
+      tab-unix-time: وقت يونكس()
+      label-unix-time: "وقت يونكس():"
+      tab-excel-1900-windows: إكسل 1900 (ويندوز)
+      label-excel-serial-day-1900: "يوم التسلسل في إكسل (1900):"
+      tab-excel-1904-macintosh: إكسل 1904 (ماكنتوش)
+      label-excel-serial-day-1904: "يوم التسلسل في إكسل (1904):"
+      tag-this-is-a-port-of-wonderful: هذا ميناء رائع
+      tag-fourmilab-ch-calendar-converter: محول التقويم من Fourmilab.ch
+      tag-by-john-walker: بقلم جون ووكر
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: قم بتحديث التقاويم الأخرى
+      tag-today: اليوم
+  bech32:
+    title: مشفر/مفكك شفرة Bech32
+    description: تشفير/فك تشفير/التحقق من صحة betch32(m)
+    externalAccess: باطل
+    texts:
+      label-bech32: Bech32
+      label-bech32m: Bech32m
+      tab-decode: فك الشفرة
+      label-bech32-m-string: "سلسلة Bech32(m):"
+      placeholder-bech32-bech32m-string: وتر Bech32 / Bech32m
+      label-variant: "النسخة البديلة:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "الحمولة:"
+      placeholder-hex-payload: حمولة سداسية
+      placeholder-variant: متغير
+      tab-encode: التشفير
+      label-encoded-bech32-string: "سلسلة bech32 المشفرة:"
+      placeholder-bech32-string: سلسلة bech32
+      tab-batch: حزمة
+      label-bech32-strings-one-per-line: "سلاسل Bech32 (سلسلة واحدة لكل سطر):"
+      placeholder-one-bech32-string-per-line: وتر واحد من نوع Bech32 لكل سطر
+      title-results: نتائج
+      tag-auto-detect: الكشف التلقائي
+      tag-manual: يدوي
+      tag-checksum-only: مجموع التحقق فقط
+      tag-full-decode: فك التشفير الكامل
+      tag-checksum-valid: المجموع الاختباري صالح
+      tag-checksum-invalid: مجموع التحقق غير صالح
+      tag-encode: التشفير
+      tag-convert: يتحول
+      tag-export-csv: تصدير ملف CSV
+      invalid-hex-payload: حمولة سداسية عشرية غير صالحة
+      input: مدخل
+      variant: متغير
+      status: حالة
+      hex: عرافة
+      hrp: HRP
+  docker-pangolin-labels:
+    title: ملصقات دوكر بانغولين
+    description: تحويل تسميات Docker Compose Pangolin إلى مخططات والعكس صحيح
+    externalAccess: باطل
+    texts:
+      tab-compose-blueprint: تأليف → مخطط
+      label-docker-compose-yaml: "ملف YAML الخاص بـ Docker Compose:"
+      placeholder-paste-full-docker-compose-yml-here: ألصق ملف docker-compose.yml كاملاً هنا…
+      label-generated-blueprint: "المخطط المُنشأ:"
+      placeholder-blueprint-yaml-will-appear-here: سيظهر مخطط YAML هنا...
+      tab-blueprint-labels: مخطط → ملصقات
+      label-blueprint-yaml: "مخطط YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: ألصق مخطط بانغولين بصيغة YAML هنا…
+      label-generated-docker-labels: "تم إنشاء تسميات Docker:"
+      placeholder-docker-labels-will-appear-here: ستظهر تسميات Docker هنا...
+      tag-extract-pangolin-blueprint: استخراج مخطط البنغول
+      tag-array-key-value: مصفوفة (- المفتاح=القيمة)
+      tag-object-key-value: "كائن (مفتاح: قيمة)"
+      tag-convert-to-docker-labels: تحويل إلى تسميات Docker
+      invalid-blueprint-yaml: مخطط YAML غير صالح
+  fitness-computer:
+    title: كمبيوتر اللياقة البدنية
+    description: "حساب معدل الأيض الأساسي (BMR)، وإجمالي استهلاك الطاقة اليومي /
+      السعرات الحرارية (TDEE)، ومؤشر كتلة الجسم (BMI)، والوزن المثالي (الوزن
+      المثالي للجسم)، ونسبة الدهون في الجسم (نسبة الدهون في الجسم)، والحد الأقصى
+      لمعدل ضربات القلب (الحد الأقصى لمعدل ضربات القلب): مقاييس رئيسية تستخدم
+      لتقييم اللياقة البدنية العامة والصحة الفسيولوجية."
+    externalAccess: باطل
+    texts:
+      label-bmr: معدل الأيض الأساسي
+      label-tdee-calories: إجمالي الطاقة المستهلكة/السعرات الحرارية
+      label-bmi: "مؤشر كتلة الجسم:"
+      label-ideal-weight: "الوزن المثالي:"
+      label-body-fat-us-navy: نسبة الدهون في الجسم (البحرية الأمريكية)
+      label-body-fat-bmi: نسبة الدهون في الجسم (مؤشر كتلة الجسم)
+      label-max-heart-rate: الحد الأقصى لمعدل ضربات القلب
+      label-sedentary-little-or-no-exercise: "نمط حياة خامل: ممارسة قليلة أو معدومة للرياضة"
+      label-light-exercise-1-3-times-week: "خفيف: ممارسة الرياضة من 1 إلى 3 مرات في الأسبوع"
+      label-moderate-exercise-4-5-times-week: "متوسط: ممارسة الرياضة 4-5 مرات في الأسبوع"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week:
+        "النشاط: ممارسة التمارين الرياضية يوميًا أو ممارسة التمارين الرياضية
+        المكثفة 3-4 مرات في الأسبوع"
+      label-very-active-intense-exercise-6-7-times-week: "نشاط عالٍ: تمارين مكثفة 6-7 مرات في الأسبوع"
+      label-extra-active-very-intense-exercise-daily-or-physical-job: "نشاط إضافي: ممارسة تمارين رياضية مكثفة للغاية يوميًا، أو عمل بدني."
+      label-units: "الوحدات:"
+      label-formula: "صيغة:"
+      label-gender: "جنس:"
+      label-age: "عمر:"
+      title-body-measurements: قياسات الجسم
+      label-activity-level: "مستوى النشاط:"
+      title-results: نتائج
+      label-bmr-kcal-day: "معدل الأيض الأساسي (كيلو كالوري/يوم):"
+      label-tdee-calories-kcal-day: "إجمالي الطاقة المستهلكة/السعرات الحرارية (كيلو كالوري/يوم):"
+      label-bmi-category: "فئة مؤشر كتلة الجسم:"
+      label-healthy-range-min: "النطاق الصحي (بالدقائق):"
+      label-healthy-range-max: "النطاق الصحي (الحد الأقصى):"
+      label-devine-1974: "— (يصبح عام 1974):"
+      label-hamwi-1964: "— (حموي 1964):"
+      label-miller-1983: "— (ميلر 1983):"
+      label-robinson-1983: "— (روبنسون 1983):"
+      label-body-fat: "نسبة الدهون في الجسم (%):"
+      label-fat-mass: "كتلة الدهون:"
+      label-lean-mass: "الكتلة العضلية الخالية من الدهون:"
+      label-max-heart-rate-bpm: "الحد الأقصى لمعدل ضربات القلب (نبضة في الدقيقة):"
+      tag-metric-kg-cm: النظام المتري (كجم، سم)
+      tag-us-lbs-inches: الولايات المتحدة (رطل، بوصة)
+      tag-male: ذكر
+      tag-female: أنثى
+  food-energy-converter:
+    title: محول طاقة الطعام
+    description: التحويل بين أنواع الطعام (الجول، السعرات الحرارية)
+    externalAccess: باطل
+  iso-639-searcher:
+    title: باحث ISO 639
+    description: ابحث باستخدام رموز لغة ISO 639-1/2T/2B/3
+    externalAccess: باطل
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: ابحث عن رمز لغة ISO-639 باستخدام ISO-1، ISO-2T/2B، ISO-3، الاسم...
+      label-max-results: "أقصى النتائج:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "إنجليزي:"
+      tag-no-results: لا توجد نتائج
+      tag-search-results: نتائج البحث
+      tag-iso-639-1: iso-639-1
+      tag-iso-639-2t-2b: iso-639-2T/2B
+      tag-iso-639-3: iso-639-3
+      tag-english-and-local-name: الاسم الإنجليزي والاسم المحلي
+      loading-more-results: جارٍ تحميل المزيد من النتائج...
+  jasypt-string-encryption:
+    title: تشفير سلسلة Jasypt
+    description: تشفير وفك تشفير السلاسل النصية باستخدام معيار Jasypt (التشفير
+      المبسط في جافا).
+    externalAccess: باطل
+    texts:
+      label-mode: "وضع:"
+      label-password-secret-key: "كلمة المرور (المفتاح السري):"
+      placeholder-enter-jasypt-password-salt-secret-key: أدخل كلمة مرور Jasypt (الملح / المفتاح السري)
+      title-results: نتائج
+      label-decoded: "تم فك التشفير:"
+      label-raw: "خام:"
+      label-enc-form: "نموذج ENC:"
+      tag-encrypt: تشفير
+      tag-decrypt: فك التشفير
+      plain-text: "نص عادي:"
+      jasypt-encrypted-string: "سلسلة Jasypt المشفرة:"
+      text-to-encrypt-e-g-db-password: "النص المراد تشفيره (مثلاً: كلمة مرور قاعدة البيانات)"
+      encrypted-value-e-g-enc-or-raw-jasypt-string: قيمة مشفرة (مثل ENC(...)) أو سلسلة Jasypt خام
+  k8s-rbac-generator:
+    title: مولد التحكم في الوصول المستند إلى الأدوار (RBAC) في Kubernetes
+    description: إنشاء سياسة RBAC لـ Kubernetes بصيغة YAML
+    externalAccess: باطل
+    texts:
+      label-user: مستخدم
+      label-group: مجموعة
+      label-serviceaccount: حساب الخدمة
+      label-role-name: "اسم الدور:"
+      label-role-type: نوع الدور
+      label-namespace: مساحة الاسم
+      title-rules: قواعد
+      label-resources: موارد
+      placeholder-select-resources-supports: حدد الموارد (يدعم *)
+      label-resource-names-optional: أسماء الموارد (اختياري)
+      placeholder-specific-resources-names: أسماء الموارد المحددة
+      label-verbs: الأفعال
+      placeholder-select-verbs-supports: اختر الأفعال (يدعم *)
+      title-subjects: المواضيع
+      label-kind: عطوف
+      label-name: اسم
+      title-output-yaml: مخرجات YAML
+      tab-role-yaml: دور YAML
+      tab-rolebinding-yaml: ربط الأدوار YAML
+      tag-clusterrole-global: دور المجموعة (عالمي)
+      tag-role-namespaced: الدور (المُسمى)
+      tag-add-rule: + إضافة قاعدة
+      tag-remove-rule: إزالة القاعدة
+      tag-add-subject: + إضافة موضوع
+      tag-remove-subject: إزالة الموضوع
+  objgen-html:
+    title: تحويل ObjGen إلى HTML
+    description: إنشاء HTML معقد من صيغة مشابهة لـ TOML
+    externalAccess: باطل
+    texts:
+      input-label-objgen-html-definition: تعريف ObjGen HTML
+      input-placeholder-put-your-objgen-html-definition-here: ضع تعريف ObjGen HTML الخاص بك هنا...
+      output-label-generated-html: HTML المُنشأ
+      tag-documentation: الوثائق
+  objgen-json:
+    title: تحويل ObjGen إلى JSON
+    description: إنشاء JSON معقد من صيغة مشابهة لـ TOML
+    externalAccess: باطل
+    texts:
+      input-label-objgen-json-definition: تعريف ObjGen JSON
+      input-placeholder-put-your-objgen-json-definition-here: ضع تعريف ObjGen JSON الخاص بك هنا...
+      output-label-generated-json: JSON المُنشأ
+      tag-documentation: الوثائق
+  pgp-file-encryption:
+    title: تشفير الملفات باستخدام PGP
+    description: تشفير وفك تشفير الملفات باستخدام PGP
+    externalAccess: باطل
+    texts:
+      title-1-select-a-file: 1. حدد ملفًا
+      title-drag-and-drop-a-file-or-click-to-select: اسحب الملف وأفلته أو انقر لتحديده
+      title-2-public-key-for-encryption: 2. المفتاح العام (للتشفير)
+      title-3-private-key-passphrase-for-decryption: 3. المفتاح الخاص + عبارة المرور (لفك التشفير)
+      label-passphrase: "عبارة المرور:"
+      placeholder-passphrase: عبارة المرور
+      tag-selected-file: "الملف المحدد:"
+      tag-encrypt-stream: تشفير (بث)
+      tag-decrypt-stream: فك التشفير (البث)
+      tag-encrypting: جارٍ التشفير…
+      tag-decrypting: جارٍ فك التشفير...
+      tag-encrypted-file-ready: الملف المشفر جاهز.
+      tag-download-encrypted: تنزيل مشفر
+      tag-decrypted-file-ready: الملف الذي تم فك تشفيره جاهز.
+      tag-download-decrypted: قم بتنزيل الملف الذي تم فك تشفيره
+  remove-background:
+    title: إزالة خلفية الصورة
+    description: إزالة الخلفية من الصورة باستخدام الذكاء الاصطناعي
+    externalAccess: "تنزيلات: إزالة نماذج الخلفية من HuggingFace. تتم المعالجة في متصفحك."
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG-1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet (WebGPU)
+      label-transparent: شفاف
+      label-solid-color: لون موحد
+      label-pattern: "نمط:"
+      label-blurred-original: الأصل غير الواضح
+      label-adjust-contrast-brightness: ضبط التباين/السطوع
+      label-diagonal-stripes: خطوط مائلة
+      label-dots: نقاط
+      label-checkerboard: رقعة الشطرنج
+      title-drag-and-drop-an-image-or-click-to-select: اسحب الصورة وأفلتها أو انقر لتحديدها
+      label-model: "نموذج:"
+      label-blur: "ضبابية:"
+      label-contrast: "مقابلة:"
+      label-brightness: "سطوع:"
+      title-original: إبداعي
+      title-result: نتيجة
+      tag-apply-background: تطبيق الخلفية
+      tag-download-result: تنزيل النتيجة
+  shell-formatter:
+    title: مُنسِّق أوامر الصدفة
+    description: قم بتنسيق أوامر الصدفة كأوامر صدفة متعددة الأسطر مقسمة حسب الوسائط
+    externalAccess: باطل
+    texts:
+      input-label-shell-commands-to-format: أوامر سطر الأوامر لتنسيق
+      input-placeholder-put-your-shell-commands-to-format-here: ضع أوامر سطر الأوامر الخاصة بك هنا...
+      output-label-formatted-shell-commands: أوامر shell المنسقة
+  shell-linearizer:
+    title: مُحَوِّل أوامر الصدفة
+    description: تبسيط أوامر shell متعددة الأسطر
+    externalAccess: باطل
+    texts:
+      input-label-shell-commands-to-linearize: أوامر سطر الأوامر لتحويل البيانات إلى خطية
+      input-placeholder-put-your-shell-commands-to-linearize-here: ضع أوامر سطر الأوامر الخاصة بك لترتيبها بشكل خطي هنا...
+      output-label-linearized-shell-commands: أوامر shell خطية
+  ufw-generator:
+    title: مولد أوامر UFW
+    description: إنشاء سطور أوامر UFW
+    externalAccess: باطل
+    texts:
+      label-allow: يسمح
+      label-deny: ينكر
+      label-reject: يرفض
+      label-limit: حد
+      label-incoming: وارد
+      label-outgoing: صادر
+      label-tcp: بروتوكول التحكم بالنقل (TCP)
+      label-udp: بروتوكول UDP
+      label-any: أي
+      label-action: "فعل:"
+      label-direction: "اتجاه:"
+      label-protocol: "بروتوكول:"
+      label-port: "ميناء:"
+      placeholder-80: "80"
+      label-port-to-range: "المنفذ إلى (النطاق):"
+      placeholder-443: "443"
+      label-from-ip: "من عنوان IP:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "إلى عنوان IP:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "واجهة المستخدم:"
+      placeholder-eth0: eth0
+      label-logging: "تسجيل الدخول:"
+      label-comment: "تعليق:"
+      placeholder-optional-comment: تعليق اختياري
+      title-generated-command: الأمر المُنشأ
+      missing-port: منفذ مفقود
+  visual-subnet-calculator:
+    title: حاسبة الشبكات الفرعية المرئية
+    description: أداة لتصميم الشبكات بسرعة والتعاون في هذا التصميم مع الآخرين. تركز
+      على تسريع عمل مديري الشبكات، وليس على حسابات تقسيم الشبكات الفرعية
+      المعقدة.
+    externalAccess: باطل
+  zalgo:
+    title: مولد/بانر زالغو
+    description: قم بإنشاء نص Zalgo وتنظيف النص الناتج عن Zalgo
+    externalAccess: باطل
+    texts:
+      text-zalgo-text-copied: تم نسخ نص زالغو!
+      title-zalgo-text-generation: توليد النصوص باستخدام Zalgo
+      placeholder-put-your-string-here: ضع الخيط هنا...
+      label-text-to-decorate-with-zalgo: نص للتزيين باستخدام زالغو
+      label-intensity: "شدة:"
+      title-zalgo-text: نص زالغو
+      title-zalgo-cleaner: منظف زالغو
+      placeholder-put-zalgo-text-to-clean-here: ضع نص زالغو للتنظيف هنا...
+      label-zalgo-text-to-clean: نص زالغو للتنظيف
+      label-cleaned-text: نص منقح
+      placeholder-clean-zalgo-text-will-appear-here: سيظهر نص زالغو نظيف هنا...
+      tag-generate: يولد
+      tag-copy: ينسخ
+      tag-clean: ينظف
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: يجب تحديد إحدى الرسائل | الوظيفة
+        function-must-set-messages: يجب أن تقوم الدالة بتعيين الرسائل
+  dead-pixel-tester:
+    title: مختبر البكسلات الميتة
+  gif-to-mp4:
+    title: تحويل GIF إلى MP4
+    description: تحويل صور GIF إلى MP4 باستخدام ffmpeg
+    externalAccess: باطل
+    texts:
+      label-stream-loop: "حلقة البث:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: اسحب ملف GIF وأفلته هنا أو انقر لتحديد ملف
+      title-logs: سجلات
+  html-to-pdf:
+    title: تحويل HTML إلى PDF
+    description: إنشاء ملف PDF من محتوى HTML أو عنوان URL مع تحديد التنسيق وإخفاء
+      لافتات ملفات تعريف الارتباط تلقائيًا
+    externalAccess: تقوم هذه الأداة بإرسال عناوين URL ومحتوى HTML إلى خدمة الويب
+      Puppeteer *المستضافة ذاتيًا* التي تم تكوينها.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: خطاب
+      label-legal: قانوني
+      label-html-to-pdf-service-url: "رابط خدمة تحويل HTML إلى PDF:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "المصادقة الأساسية:"
+      placeholder-username-password: "اسم المستخدم: كلمة المرور"
+      tab-url-pdf: رابط URL → ملف PDF
+      label-url: "عنوان URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "محتوى HTML:"
+      tab-batch-url-pdf: رابط الدفعة → PDF
+      label-urls-one-per-line: "عناوين المواقع الإلكترونية (عنوان واحد في كل سطر):"
+      title-results: نتائج
+      tab-custom-pdf-options: خيارات PDF مخصصة
+      label-format: "شكل:"
+      label-language: "لغة:"
+      placeholder-en-us: en-US
+      label-landscape: "منظر جمالي:"
+      label-one-long-page: "صفحة واحدة طويلة:"
+      label-auto-hide-cookie-banners: "إخفاء لافتات ملفات تعريف الارتباط تلقائيًا:"
+      label-print-background: "خلفية الطباعة:"
+      title-margins: الهوامش
+      label-top-mm: "أعلى (مم):"
+      label-bottom-mm: "القاع (مم):"
+      label-left-mm: "اليسار (مم):"
+      label-right-mm: "اليمين (مم):"
+      tag-html-to-pdf-service-configuration-self-hosted: تهيئة خدمة تحويل HTML إلى PDF (مستضافة ذاتيًا)
+      tag-you-must-self-host-html-to-pdf-service-see: "يجب عليك استضافة خدمة تحويل HTML إلى PDF بنفسك. انظر:"
+      tag-html-to-pdf-service-install: تثبيت خدمة تحويل HTML إلى PDF
+      tag-generate-pdf: إنشاء ملف PDF
+      tag-generate-pdfs: إنشاء ملفات PDF
+      tag-url: عنوان URL
+      tag-download: تحميل
+      tag-download-pdf: تنزيل ملف PDF
+      tag-failed: فشل
+  shutdown-command-generator:
+    title: مولد أوامر الإيقاف
+    description: إنشاء أمر إيقاف التشغيل لأنظمة تشغيل مختلفة
+    externalAccess: باطل
+    texts:
+      label-windows: ويندوز
+      label-linux: لينكس
+      label-macos: نظام التشغيل macOS
+      label-delay: "تأخير:"
+      label-specific-time: وقت محدد
+      label-platform: "منصة:"
+      label-shutdown-time: "وقت الإيقاف:"
+      label-force: قوة
+      label-reboot: إعادة التشغيل
+      label-logoff: إطفاء
+      label-cancel: يلغي
+      label-hibernate: السبات
+      title-generated-command: الأمر المُنشأ
+      tag-nbsp-h-nbsp: ح
+      tag-nbsp-m-nbsp: م
+      tag-nbsp-s: "&nbsp;s"
 spanCopyable:
   copy: نسخ إلى الحافظة
   copied: تم النسخ!
@@ -7816,3 +8517,9 @@ textareaCopyable:
   download: تحميل
 locale-selector:
   select-a-language: اختر لغة
+collapsibleToolMenu:
+  text:
+    expanding: توسع...
+    collapsing: ينهار...
+    collapse-all-tools: طي جميع الأدوات
+    expand-all-tools: عرض جميع الأدوات

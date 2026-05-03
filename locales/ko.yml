@@ -3,6 +3,9 @@
   sorry: 죄송합니다, 해당 페이지가 존재하지 않는 것 같습니다.
   maybe: 캐시 문제일 수 있습니다. 캐시를 비우고 새로고침을 시도해 보세요.
   backHome: 홈으로 돌아가기
+  page:
+    text:
+      page-not-found-it-tools: 페이지를 찾을 수 없습니다 - IT 도구
 home:
   categories:
     newestTools: 최신
@@ -33,6 +36,12 @@ home:
     lightMode: 라이트 모드
     mode: 다크/라이트 모드 전환
   loading-more-tools: 더 많은 도구를 로딩 중입니다...
+  page:
+    text:
+      collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+        개발자를 위한 유용한 온라인 도구 모음으로, 뛰어난 사용자 경험(UX)을 제공합니다. IT Tools는 개발자 및 IT 종사자를
+        위한 무료 오픈 소스 온라인 도구 모음입니다.
+      it-tools-handy-online-tools-for-developers: IT 도구 - 개발자를 위한 유용한 온라인 도구
 favoriteButton:
   remove: 즐겨찾기 제거
   add: 즐겨찾기 추가
@@ -70,6 +79,9 @@ tools:
     physics: 물리학
     cheatsheets: 치트시트
     forensic: 법의학
+    finance: 재원
+    default: 기본
+    toml: 톰
   password-strength-analyser:
     title: 비밀번호 강도 분석기
     description: 클라이언트 사이드에서만 동작하는 비밀번호 강도 분석 및 해킹 예상 시간 추정 도구입니다.
@@ -598,6 +610,7 @@ tools:
       tag-preview-image: 미리보기 이미지
       tag-download-file: 파일 다운로드
       tag-copy: 복사
+      include-data-uri-prefix: "포함 데이터: URI 접두사"
   list-converter:
     title: 리스트 변환기
     description: 전치·접두/접미·역순·정렬·소문자화·길이 제한 등 행 단위 변환을 적용합니다.
@@ -911,6 +924,8 @@ tools:
       tag-refresh-key-pair: 키 쌍 새로 고침
       tag-public-key: 공개 키
       tag-private-key: 개인 키
+    text:
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: 비트 수는 256비트 이하, 16384비트 이하이어야 하며 8의 배수여야 합니다.
   html-wysiwyg-editor:
     title: HTML WYSIWYG 편집기
     description: 풍부한 기능의 온라인 WYSIWYG HTML 편집기입니다.
@@ -1236,6 +1251,8 @@ tools:
       tag-quantity: 수량
       tag-copy: 복사
       tag-refresh: 새로 고치다
+      uppercase: 대문자
+      no-hyphen: 하이픈 없음
   ipv4-address-converter:
     title: IPv4 주소 변환기
     description: IP 주소를 10진수·2진수·16진수·IPv6 표현으로 변환합니다.
@@ -1841,6 +1858,8 @@ tools:
       tag-certificate-signing-request: 인증서 서명 요청
       tag-public-key: 공개 키
       tag-private-key: 개인 키
+      label-rsa-bits: "RSA 비트:"
+      bits-should-be-256-less-than-bits-less-than-16384-and-be-a-multiple-of-8: 비트 수는 256비트 이하, 16384비트 이하이어야 하며 8의 배수여야 합니다.
   css-prettifier:
     title: CSS 프리티파이어
     description: CSS 프리티파이
@@ -2285,6 +2304,7 @@ tools:
       label-file-name: "파일 이름:"
       label-extension: "확대:"
       label-mime-type: "MIME 유형:"
+      an-error-occured-processing: 처리 중 오류가 발생했습니다.
   folder-structure-diagram:
     title: 폴더 구조 다이어그램
     description: ASCII 폴더 구조 다이어그램을 생성하기 위한 트리형 유틸리티
@@ -2382,6 +2402,8 @@ tools:
       label-pib: 피비
       tag-1mib-1024kib-1mb-1000kb-1gib-1024mib-1gb-1000mb: 1MiB = 1024KiB ; 1MB = 1000kB ; 1GiB = 1024MiB ; 1GB = 1000MB ;
       tag-see-here-for-details: 자세한 내용은 여기를 참조하세요
+      column-decimal: 소수
+      column-binary: 이진수
   heic-converter:
     title: HEIC 변환기
     description: HEIC를 JPEG 또는 PNG로 변환
@@ -2390,6 +2412,7 @@ tools:
       label-png: PNG
       label-output-format: 출력 형식
       title-drag-and-drop-a-heic-file-here-or-click-to-select-a-file: HEIC 파일을 여기에 끌어다 놓거나 클릭하여 파일을 선택하세요.
+      an-error-occured-processing-heic-heif-is-invalid: "처리 중 오류가 발생했습니다: HEIC/HEIF 형식이 유효하지 않습니다."
   hex-file-converter:
     title: HEX 파일 변환기
     description: 파일과 16진수 표현 간 변환
@@ -2456,6 +2479,9 @@ tools:
     description: PNG/JPEG에서 ICO로 변환
     texts:
       title-drag-and-drop-an-ico-or-png-jpeg-file-here-or-click-to-select-a-file: ICO 또는 PNG/JPEG 파일을 여기에 끌어다 놓거나 클릭하여 파일을 선택하세요.
+      an-error-occured-processing: 처리 중 오류가 발생했습니다.
+      invalid-ico-file: 유효하지 않은 ICO 파일입니다!
+      invalid-png-file: 잘못된 PNG 파일입니다!
   illuminance-converter:
     title: 조도 변환기
     description: 조도 단위 변환기(룩스, 풋캔들, 녹스, 포토, 화염)
@@ -2470,6 +2496,8 @@ tools:
       title-drag-and-drop-images-files-here-or-click-to-select-some-files: 여기에 이미지 파일을 끌어다 놓거나 클릭하여 일부 파일을 선택하세요.
       tag-first-select-output-options: 먼저 출력 옵션을 선택하세요.
       tag-then-drag-and-drop-your-images-below-and-they-will-be-converted-and-downloaded-immediately: 그런 다음 이미지를 아래로 끌어다 놓으면 이미지가 즉시 변환되어 다운로드됩니다.
+      invalid-image-file: 잘못된 이미지 파일입니다!
+      an-error-occured-processing: 처리 중 오류가 발생했습니다.
   image-exif-reader:
     title: 이미지 EXIF/메타데이터/GPS/JPEG 품질 리더
     description: 이미지 파일에서 EXIF, IPTC, XMP, GPS 및 기타 메타데이터, JPEG 품질 및 기타 정보를 읽습니다.
@@ -2666,6 +2694,7 @@ tools:
       tag-iso2-iso3: 이소2/이소3
       tag-name-and-info: 이름 및 정보
       tag-gt-see-on-openstreetmap: "&gt; OpenStreetMap에서 보기"
+      loading-more-results: 더 많은 결과를 불러오는 중...
   javascript-prettifier:
     title: 자바스크립트 프리티파이어
     description: JS/자바스크립트 프리티파이어
@@ -3166,6 +3195,9 @@ tools:
       placeholder-passphrase: 암호문구...
       tag-copy: 복사
       tag-refresh: 새로 고치다
+      cannot-generate-a-passphrase-of-minlen-value-maxlen-value-characters-please-retry: "# 현재 설정으로는 [{0} - {1}] 문자의 암호를 생성할 수 없습니다. 단어 수를 변경해 보세요."
+      words-words: 단어 ({0})
+      label-min-passphrase-len: "최소 암호 길이:"
   paste-as-markdown:
     title: 마크다운으로 붙여넣기
     description: 클립보드 콘텐츠에서 셀/표 및 링크를 마크다운으로 붙여넣기
@@ -3221,10 +3253,10 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: PDF 파일을 여기에 끌어다 놓거나 클릭하여 파일을 선택하세요.
       title-logs: 로그
       label-qpdf: qpdf
-      label-password: '비밀번호:'
+      label-password: "비밀번호:"
       placeholder-password: 비밀번호
       tag-decrypt-pdf: PDF 복호화
-      tag-output-file: '출력 파일:'
+      tag-output-file: "출력 파일:"
   pgp-encryption:
     title: PGP 암호화
     description: PGP 키를 사용하여 일반 텍스트를 암호화하고 해독합니다.
@@ -4126,6 +4158,8 @@ tools:
       label-permanent: 영구적인
       title-generated-fw-command: "생성된 fw 명령:"
       tag-const-zone-ref: 상수 영역 = 참조
+    title: firewalld 명령줄 생성기
+    description: firewalld 명령줄 생성
   fortune-wheel:
     title: 행운의 바퀴
     description: 구성 가능한 행운의 바퀴
@@ -5875,6 +5909,9 @@ tools:
       label-django-secret-key: "Django 비밀 키:"
       tag-copy: 복사
       tag-regenerate: 재생하다
+    service:
+      texts:
+        generating-range-is-too-large: 발전 범위가 너무 넓습니다
   dnsbl-checker:
     title: DNSBL 검사기
     description: 주어진 IP가 알려진 DNS 블랙리스트 서버(스팸 차단)에 있는지 확인하세요.
@@ -5921,6 +5958,7 @@ tools:
       title-html-head-tags: 📄 HTML 헤드 태그
       tag-upload-png-image: PNG 이미지 업로드
       tag-download-zip: 📦 ZIP 다운로드
+      invalid-png-file: 잘못된 PNG 파일입니다!
   font-compare:
     title: 글꼴 비교
     description: 주어진 텍스트의 글꼴과 비교
@@ -6006,6 +6044,12 @@ tools:
       label-fallback: "폴백:"
       placeholder-fallback-font: 폴백 글꼴
       tag-defineprops: 정의소품
+    text:
+      by-font-name: 글꼴 이름으로
+      by-font-url: 글꼴 URL로
+      by-font-file: 글꼴 파일 제공
+      by-inline-css: 인라인 CSS를 통해
+      by-css-url: CSS URL을 통해
   gpt-token-encoder:
     title: GPT 토큰 인코더/디코더
     description: 텍스트를 GPT 토큰으로 인코딩하고 GPT 토큰을 다시 텍스트로 디코딩합니다.
@@ -6040,6 +6084,10 @@ tools:
       tag-original-image: 원본 이미지
       tag-inverted-image: 반전된 이미지
       tag-clear-upload-new: 지우기 및 새로 업로드
+    service:
+      texts:
+        file-must-be-an-image: 파일은 이미지여야 합니다.
+        failed-to-process-image-err: "이미지 처리 실패:"
   image-comparer:
     title: 이미지 비교
     description: 이미지를 시각적으로 비교하는 도구
@@ -6054,6 +6102,9 @@ tools:
       tag-compare: 비교하다
       tag-upload-left: 왼쪽 업로드
       tag-upload-right: 오른쪽 업로드
+    text:
+      compare-by-url: URL로 비교하기
+      compare-by-upload: 업로드로 비교하기
   logrotate-generator:
     title: Apache LogRotate 생성기
     description: Apache .log 회전 구성 생성
@@ -6179,6 +6230,15 @@ tools:
       label-decimal: "소수:"
       label-octal: "8진법:"
       label-hexadecimal: "16진법:"
+    service:
+      texts:
+        invalid-hex-input-only-0-9-and-a-f-allowed: 잘못된 16진수 입력입니다. 0-9와 A-F만 허용됩니다.
+        invalid-1: 유효하지 않은
+        invalid-0: 유효하지 않은
+        invalid: 유효하지 않은
+        unsupported-middle-endian-format: 지원되지 않는 미들 엔디안 형식입니다.
+        failed-to-parse-bytes: 바이트를 구문 분석하는 데 실패했습니다.
+        input-must-be-bytecount-2-hex-characters-for-bitlength-bit: 입력은 {1}비트의 경우 {0}개의 16진수 문자여야 합니다.
   mttdl-calculator:
     title: RAID 안정성 계산기
     description: 잘 알려진 MTTDL 방법론을 사용하여 저장 시스템 안정성을 계산합니다.
@@ -6292,6 +6352,11 @@ tools:
       tag-convert: 전환하다
       tag-axial: 축방향
       tag-radial: 방사형
+    text:
+      bands-notation: 밴드 → 표기법
+      notation-bands: 표기법 → 밴드
+      number-notation: 숫자 → 표기법
+      notation-number: 표기법 → 숫자
   sed-command-generator:
     title: Sed 명령 생성기
     description: 유닉스 sed 명령어 생성
@@ -6667,6 +6732,9 @@ tools:
       title-mw-to-dbm: mW에서 dBm으로
       label-mw-value: "mW 값:"
       label-corresponding-dbm-value: "해당 dBm 값:"
+    service:
+      texts:
+        power-in-milliwatts-must-be-greater-than-0: 밀리와트 단위의 전력은 0보다 커야 합니다.
   diceware-generator:
     title: 다이스웨어 비밀번호 생성기
     description: Diceware 방법을 사용하여 무작위 비밀번호 생성
@@ -6893,6 +6961,9 @@ tools:
       label-arguments: 인수
       title-structured-output-json: 구조화된 출력 JSON
       placeholder-quot-to-quot-quot-0x-quot-quot-data-quot-quot-0x-quot-or-raw-0x: "{'{'}\"to\":\"0x...\",\"data\":\"0x...\" 또는 원시 0x...."
+    service:
+      texts:
+        transaction-data-must-start-with-0x: 거래 데이터는 0x로 시작해야 합니다.
   file-splitter:
     title: 파일 분할기
     description: 노드 그룹 또는 줄 그룹별로 JSON, XML 또는 텍스트 파일을 분할합니다.
@@ -6908,6 +6979,9 @@ tools:
       tag-process-chunks: 청크 처리
       tag-download-all: 모두 다운로드
       tag-download: 다운로드
+    service:
+      texts:
+        unsupported-format-or-invalid-content: 지원되지 않는 형식 또는 잘못된 콘텐츠
   gitignore-generator:
     title: GitIgnore 생성기
     description: 공통 템플릿 세트에 대한 .gitignore 생성
@@ -7017,6 +7091,8 @@ tools:
       title-drag-and-drop-a-pdf-file-here-or-click-to-select-a-file: PDF 파일을 여기에 끌어다 놓거나 클릭하여 파일을 선택하세요.
       title-logs: 로그
       label-ghostscript: 고스트스크립트
+      process-run-failed: 프로세스 실행 실패
+      an-error-occured-processing: 처리 중 오류가 발생했습니다.
   serial-console:
     title: 직렬 포트 콘솔
     description: 직렬 포트에 메시지를 연결하고 읽고 보냅니다.
@@ -7273,6 +7349,8 @@ tools:
       tag-esc: ESC
       tag-exit-dead-pixel-mode: ": 데드 픽셀 모드 종료"
       tag-start-dead-pixel: 데드 픽셀 시작
+    title: 불량 화소 테스터
+    description: 화면의 픽셀이 죽었는지 살았는지 확인하는 도구입니다.
   UnitsConverter:
     texts:
       exclude-si-prefixes: SI 접두사를 제외합니다
@@ -7298,6 +7376,13 @@ tools:
       tag-convert-batch: 일괄 변환
       tag-longitude-east-is-positive-west-is-negative: "경도: 동쪽은 양수, 서쪽은 음수입니다."
       tag-latitude-north-is-positive-south-is-negative: "위도: 북쪽은 양수, 남쪽은 음수입니다."
+    text:
+      coordinate-system: 좌표계
+      decimal-format-lng-lat: 소수점 형식 (경도, 위도)
+      dms-format-lng-lat: DMS 형식 (경도, 위도)
+      download-results-csv: 결과 CSV 다운로드
+      batch-lat-lng-converter: 일괄 위도/경도 변환기
+      single-lat-lng-converter: 단일 위도/경도 변환기
   si-prefixes-converter:
     title: SI 접두사 변환기
     description: 미터법 접두사 간 변환
@@ -7340,6 +7425,7 @@ tools:
     layout:
       text:
         made-with-npmpackages: "{0}으로 제작됨"
+        runs-entirely-in-your-browser-no-external-requests: 브라우저 내에서만 실행되며 외부 요청은 전혀 없습니다.
   acceleration-converter:
     title: 가속 변환기
     description: 가속도 단위 간 값 변환
@@ -7447,7 +7533,6 @@ tools:
       tag-back: 뒤로 (←)
       tag-next: 다음(→)
       tag-reset: 다시 놓기
-      tag-: ↓
       tag-or: "- 또는 -"
       tag-control-playback-and-navigation-without-touching-the-mouse: 마우스를 사용하지 않고 재생 및 탐색을 제어하세요.
       tag-shortcut: 지름길
@@ -7466,6 +7551,16 @@ tools:
       tag-jump-to-start: 시작 부분으로 이동
       tag-end: 끝
       tag-jump-to-end: 맨 끝으로 이동
+    text:
+      please-provide-some-text-first: 먼저 텍스트를 입력해 주세요.
+      unsupported-file-type: 지원되지 않는 파일 형식입니다.
+      display: 표시하다
+      text: 텍스트
+      settings: 설정
+      keyboard-shortcuts: 키보드 단축키
+      ready: 준비가 된
+      words: 단어
+      wpm: 분당 단어 수
   speed-converter:
     title: 속도 변환기
     description: 속도 단위 간 값 변환
@@ -7513,10 +7608,596 @@ tools:
       tag-apply-configuration: 구성 적용
       tag-clear-logs: 로그 지우기
       tag-send: 보내다
+      already-connected: ⚠️ 이미 연결됨
+      connected-to-websocket-bridge: ✅ 웹소켓 브리지에 연결되었습니다
+      disconnected: 🔌 연결이 끊어졌습니다
+      no-active-connection: ⚠️ 활성 연결이 없습니다
+      sent-text: "➡️ 보낸 문자:"
+      configured: ⚙️ 구성됨
+      sent-hex: "➡️ 16진수 전송:"
+      disconnecting: 🔻 연결을 해제하는 중...
+      error: "❌ 오류:"
+      end: "🛑 끝:"
+      text: "📩 문자:"
+      binary: "📩 바이너리:"
+    text:
+      connected: 연결됨
+      disconnected: 연결이 끊어졌습니다
   volume-flow-rate-converter:
     title: 체적 유량 변환기
     description: 체적 유량 단위 간 값 변환
     externalAccess: 널
+  tip-calculator:
+    title: 팁 계산기
+    description: 계산서에 대한 팁을 계산하고 여러 사람에게 나눠주세요.
+    texts:
+      title-bill-details: 청구서 상세 정보
+      label-bill-amount: "청구 금액:"
+      placeholder-total-bill: 총 청구 금액
+      label-tip-percentage: "팁 비율:"
+      placeholder-tip: 팁 %
+      label-number-of-person: "인원수:"
+      placeholder-people: 사람들
+      title-results: 결과
+      label-tip-amount: "팁 금액:"
+      label-total-bill: "총 청구 금액:"
+      label-amount-per-person: "1인당 금액:"
+      title-quick-tip: 빠른 팁 %
+      tag-const-billamount-ref: const billAmount = ref
+      tag-: "%"
+  json-to-env:
+    title: JSON을 .env 파일로 변환
+    description: 일반 JSON 객체를 .env 파일로 변환합니다. 키는 대문자로 변환되고, 값에 공백, 따옴표 또는 환경 변수 특수
+      문자가 포함된 경우 안전하게 따옴표로 묶습니다.
+    texts:
+      message-provided-json-is-not-a-valid-flat-object: 제공된 JSON은 유효한 플랫 객체가 아닙니다.
+      input-label-your-json: JSON
+      input-placeholder-paste-your-json-here: 여기에 JSON 파일을 붙여넣으세요...
+      output-label-env-from-your-json: JSON에서 .env를 가져옵니다.
+  calendar-converter:
+    service:
+      text:
+        sunday: 일요일
+        wednesday: 수요일
+        tuesday: 화요일
+        monday: 월요일
+        thursday: 목요일
+        friday: 금요일
+        saturday: 토요일
+        invalid-year-length-hebrew_year_days-hebcal-0-days: "잘못된 1년 길이: {0}일."
+        common-deficient-353-days: 일반적인 결핍 (353일)
+        common-regular-354-days: 일반적인 정기 검진 (354일)
+        common-complete-355-days: 일반적인 완료일(355일)
+        embolismic-deficient-383-days: 색전증 결핍 (383일)
+        embolismic-regular-384-days: 색전증 정기적 (384일)
+        embolismic-complete-385-days: 색전증 완료(385일)
+        normal-year: 평년
+        leap-year: 윤년
+    title: 달력 변환기
+    description: 그레고리력, 율리우스력, 히브리력, 이슬람력, 페르시아력, 마야력, 인도력, 프랑스 공화국력, ISO-8601, 유닉스
+      시간 및 엑셀 직렬화 형식 간의 날짜 및 시간을 변환합니다.
+    externalAccess: 널
+    texts:
+      label-january: 1월
+      label-february: 2월
+      label-march: 3월
+      label-april: 4월
+      label-may: 5월
+      label-june: 6월
+      label-july: 칠월
+      label-august: 팔월
+      label-september: 구월
+      label-october: 십월
+      label-november: 십일월
+      label-december: 12월
+      label-nisan-נִיסָן: 니산
+      label-iyyar-אִיָּר: 이이야르 (이이야르)
+      label-sivan-סִיוָן: 시반
+      label-tammuz-תַּמּוּז: 타무즈
+      label-av-אָב: 아브(Av)
+      label-elul-אֱלוּל: 엘룰
+      label-tishri-תִּשְׁרֵי: 티슈리
+      label-heshvan-חֶשְׁוָן: 헤슈반 (Heshvan)
+      label-kislev-כִּסְלֵו: 키슬레프
+      label-teveth-טֵבֵת: 테베스
+      label-shevat-שְׁבָט: 셰바트 (שְׁבָט)
+      label-adar-adar-i-אֲדָר: 아다르/아다르 1세 (아다르)
+      label-veadar-adar-ii-אֲדָר-שֵׁנִי: 베아다르/아다르 II (두 번째 아다르)
+      label-muharram-مُحَرَّم: 무하람 (مُحَرَّم)
+      label-safar-صَفَر: 사파르(صَفَر)
+      label-rabiʿ-al-awwal-رَبيع-الأوّل: Rabiʿ al-Awwal (رَبيع الاَل)
+      label-rabiʿ-ath-thani-رَبيع-الثاني: 라비아트타니(رَبي الثاني)
+      label-jumada-al-ula-جُمادى-الأولى: 주마다 알 울라(جُمادى الاولى)
+      label-jumada-ath-thania-جُمادى-الآخرة: Jumada ath-Thania (جُمادى الآجرة)
+      label-rajab-رَجَب: 라잡 (رَجَب)
+      label-shaʿban-شَعْبان: 샤반 (شَعْبان)
+      label-ramadan-رَمَضان: 라마단
+      label-shawwal-شَوّال: 샤왈
+      label-dhu-al-qaʿda-ذو-القَعْدة: 두 알카다(True al-Qaʿda)
+      label-dhu-al-hijja-ذو-الحِجّة: Dhu al-Hijja (Ðو الحِجّة)
+      label-farvardin-فروردین: 파르바르딘 (파르바르딘)
+      label-ordibehesht-اردیبهشت: 오르디베헤슈트(Ordibehesht)
+      label-khordad-خرداد: 코르다드(Khordad)
+      label-tir-تیر: 티르(티르)
+      label-mordad-مرداد: 모르다드 (모르다드)
+      label-shahrivar-شهریور: 샤리바르 (Shahrivar)
+      label-mehr-مهر: 메르(Mehr)
+      label-aban-آبان: 아반(11월)
+      label-azar-آذر: 아자르 (Azar)
+      label-dey-دی: 데이(The)
+      label-bahman-بهمن: 바흐만 (Bahman)
+      label-esfand-اسفند: 에스판드(3월)
+      label-caitra-चैत्र: 차이트라(Chaitra)
+      label-vaisakha-वैशाख: 바이샤카(바이샤크)
+      label-jyaistha-ज्येष्ठ: 자이스타(선임)
+      label-asadha-आषाढ़: 아사다
+      label-sravana-श्रावण: 스라바나
+      label-bhadra-भाद्रपद: 바드라(바드라파다)
+      label-asvina-आश्विन: 아스비나 (아슈윈)
+      label-kartika-कार्तिक: 카르티카
+      label-agrahayana-अग्रहायण: 아그라하야나 (Agrahayana)
+      label-pausa-पौष: 정지시키다
+      label-magha-माघ: 마가
+      label-phalguna-फाल्गुन: 팔구나
+      label-vendémiaire: 방데미에르
+      label-brumaire: 브뤼메르
+      label-frimaire: 프리메르
+      label-nivôse: 니보즈
+      label-pluviôse: 플루비오즈
+      label-ventôse: 방토즈
+      label-germinal: 새싹
+      label-floréal: 플로레알
+      label-prairial: 초원
+      label-messidor: 메시도르
+      label-thermidor: 테르미도르
+      label-fructidor: 프룩티도르
+      label-sans-culottides: 상퀼로티드
+      label-i: 나
+      label-ii: II
+      label-iii: III
+      label-primidi-1: 프리미디(1)
+      label-duodi-2: (2)를 주세요
+      label-tridi-3: 3개
+      label-quartidi-4: 분기(4)
+      label-quintidi-5: 퀸티디우스(5)
+      label-sextidi-6: 섹스티디(6)
+      label-septidi-7: 셉티디(7)
+      label-octidi-8: 옥티디(8)
+      label-nonidi-9: 실제로 (9)
+      label-décadi-10: 데카디(10)
+      label-vertu-1: 미덕 (1)
+      label-génie-2: 천재 (2)
+      label-travail-3: 작업(3)
+      label-opinion-4: 의견 (4)
+      label-récompenses-5: 보상 (5)
+      label-révolution-6: 혁명(6)
+      tab-gregorian: 그레고리력
+      label-date: 날짜
+      label-leap: "뛰다:"
+      label-time: "시간:"
+      label-weekday: "주일:"
+      tab-julian-day: 줄리안 데이
+      label-julian-day: "줄리안 데이:"
+      tab-modified-julian: 수정된 줄리안
+      label-modified-julian-day: "수정된 줄리안 데이:"
+      tab-julian-calendar: 율리우스력
+      tab-gregorian-serial: 그레고리안 직렬
+      label-gregorian-serial-day: "그레고리력 연속 일수:"
+      tab-hebrew: 헤브라이 사람
+      tab-islamic: 이슬람교
+      tab-persian: 페르시아 인
+      tab-persian-algorithmic: 페르시아어 알고리즘
+      tab-mayan: 마야인
+      label-long-count: "장기 계산:"
+      label-haab: 희망
+      label-tzolkin: 촐킨
+      tab-indian-civil: 인도 민간
+      tab-french-republican: 프랑스 공화국
+      label-day: "낮:"
+      label-month: "월:"
+      label-décade: "10년:"
+      label-year: "년도:"
+      tab-iso-8601: ISO-8601
+      label-day-of-week: "요일:"
+      label-week: "주:"
+      label-day-of-year: "연중 일수:"
+      tab-unix-time: 유닉스 시간()
+      label-unix-time: "유닉스 시간():"
+      tab-excel-1900-windows: 엑셀 1900 (윈도우)
+      label-excel-serial-day-1900: "엑셀 시리얼 일련번호(1900):"
+      tab-excel-1904-macintosh: 엑셀 1904 (매킨토시)
+      label-excel-serial-day-1904: "엑셀 시리얼 일련번호(1904):"
+      tag-this-is-a-port-of-wonderful: 이곳은 멋진 항구입니다
+      tag-fourmilab-ch-calendar-converter: Fourmilab.ch 달력 변환기
+      tag-by-john-walker: 존 워커 지음
+      tag-xa0-xa0: "&#xa0;.&#xa0;"
+      tag-update-other-calendars: 다른 캘린더도 업데이트하세요
+      tag-today: 오늘
+  bech32:
+    title: Bech32 인코더/디코더
+    description: betch32(m) 인코딩/디코딩/유효성 검사
+    externalAccess: 널
+    texts:
+      label-bech32: 베흐32
+      label-bech32m: 베치32m
+      tab-decode: 풀다
+      label-bech32-m-string: "Bech32(m) 문자열:"
+      placeholder-bech32-bech32m-string: Bech32 / Bech32m 스트링
+      label-variant: "변종:"
+      label-hrp: "HRP:"
+      placeholder-hrp: HRP
+      label-payload: "유효 탑재량:"
+      placeholder-hex-payload: 헥스 페이로드
+      placeholder-variant: 변종
+      tab-encode: 인코딩
+      label-encoded-bech32-string: "인코딩된 bech32 문자열:"
+      placeholder-bech32-string: bech32 스트링
+      tab-batch: 일괄
+      label-bech32-strings-one-per-line: "Bech32 문자열(한 줄에 하나씩):"
+      placeholder-one-bech32-string-per-line: 라인당 Bech32 스트링 하나씩
+      title-results: 결과
+      tag-auto-detect: 자동 감지
+      tag-manual: 수동
+      tag-checksum-only: 체크섬만
+      tag-full-decode: 전체 디코딩
+      tag-checksum-valid: 체크섬이 유효합니다
+      tag-checksum-invalid: 체크섬이 잘못되었습니다
+      tag-encode: 인코딩
+      tag-convert: 전환하다
+      tag-export-csv: CSV 내보내기
+      invalid-hex-payload: 잘못된 16진수 페이로드
+      input: 입력
+      variant: 변종
+      status: 상태
+      hex: 마녀
+      hrp: HRP
+  docker-pangolin-labels:
+    title: Docker Pangolin 레이블
+    description: Docker Compose Pangolin 레이블을 블루프린트로 변환하고 그 반대로도 변환합니다.
+    externalAccess: 널
+    texts:
+      tab-compose-blueprint: 구성 → 설계도
+      label-docker-compose-yaml: "Docker Compose YAML:"
+      placeholder-paste-full-docker-compose-yml-here: docker-compose.yml 파일 전체를 여기에 붙여넣으세요…
+      label-generated-blueprint: "생성된 설계도:"
+      placeholder-blueprint-yaml-will-appear-here: 여기에 블루프린트 YAML 파일이 표시됩니다…
+      tab-blueprint-labels: 설계도 → 라벨
+      label-blueprint-yaml: "설계도 YAML:"
+      placeholder-paste-pangolin-blueprint-yaml-here: 여기에 Pangolin 설계도 YAML 파일을 붙여넣으세요…
+      label-generated-docker-labels: "생성된 Docker 레이블:"
+      placeholder-docker-labels-will-appear-here: 도커 레이블이 여기에 표시됩니다...
+      tag-extract-pangolin-blueprint: 천산갑 설계도 추출
+      tag-array-key-value: 배열 (- 키=값)
+      tag-object-key-value: "객체(키: 값)"
+      tag-convert-to-docker-labels: Docker 레이블로 변환
+      invalid-blueprint-yaml: 잘못된 설계도 YAML 파일입니다.
+  fitness-computer:
+    title: 피트니스 컴퓨터
+    description: 기초대사율(BMR), 일일 총 에너지 소비량(TDEE), 체질량지수(BMI), 이상체중, 체지방률, 최대 심박수(Max
+      HR)를 계산합니다. 이러한 주요 지표는 전반적인 체력과 생리적 건강을 평가하는 데 사용됩니다.
+    externalAccess: 널
+    texts:
+      label-bmr: 기초대사량
+      label-tdee-calories: TDEE/칼로리
+      label-bmi: "체질량지수(BMI):"
+      label-ideal-weight: "이상적인 몸무게:"
+      label-body-fat-us-navy: 체지방 (미 해군)
+      label-body-fat-bmi: 체지방률(BMI)
+      label-max-heart-rate: 최대 심박수
+      label-sedentary-little-or-no-exercise: "좌식 생활: 운동을 거의 또는 전혀 하지 않음"
+      label-light-exercise-1-3-times-week: "가벼운 운동: 주 1~3회"
+      label-moderate-exercise-4-5-times-week: "중강도: 주 4~5회 운동"
+      label-active-daily-exercise-or-intense-exercise-3-4-times-week: "활동적인 생활: 매일 운동하거나 주 3~4회 고강도 운동을 하는 것"
+      label-very-active-intense-exercise-6-7-times-week: "매우 활동적: 주 6~7회 고강도 운동"
+      label-extra-active-very-intense-exercise-daily-or-physical-job: "매우 활동적인 사람: 매일 매우 강도 높은 운동을 하거나 육체적인 일을 하는 사람"
+      label-units: "단위:"
+      label-formula: "공식:"
+      label-gender: "성별:"
+      label-age: "나이:"
+      title-body-measurements: 신체 측정
+      label-activity-level: "활동 수준:"
+      title-results: 결과
+      label-bmr-kcal-day: "기초대사량(kcal/일):"
+      label-tdee-calories-kcal-day: "TDEE/칼로리(kcal/일):"
+      label-bmi-category: "BMI 범주:"
+      label-healthy-range-min: "건강 범위(최소):"
+      label-healthy-range-max: "건강 범위(최대):"
+      label-devine-1974: "— (1974년이 된다):"
+      label-hamwi-1964: "— (함위 1964):"
+      label-miller-1983: "— (밀러 1983):"
+      label-robinson-1983: "— (로빈슨 1983):"
+      label-body-fat: "체지방률(%):"
+      label-fat-mass: "체지방량:"
+      label-lean-mass: "제지방량:"
+      label-max-heart-rate-bpm: "최대 심박수(bpm):"
+      tag-metric-kg-cm: 미터법 (kg, cm)
+      tag-us-lbs-inches: 미국 (파운드, 인치)
+      tag-male: 남성
+      tag-female: 여성
+  food-energy-converter:
+    title: 식품 에너지 변환기
+    description: 에너지(줄)와 칼로리(칼로리) 간 변환
+    externalAccess: 널
+  iso-639-searcher:
+    title: ISO 639 검색기
+    description: ISO 639-1/2T/2B/3 언어 코드로 검색
+    externalAccess: 널
+    texts:
+      placeholder-search-iso-639-language-code-by-iso-1-iso-2t-2b-iso-3-name: ISO-1, ISO-2T/2B, ISO-3, 이름 등으로 ISO-639 언어 코드를 검색하세요.
+      label-max-results: "최대 결과:"
+      label-2b: "2B:"
+      label-2t: "2T:"
+      label-eng: "영어:"
+      tag-no-results: 결과가 없습니다
+      tag-search-results: 검색 결과
+      tag-iso-639-1: 아이소-639-1
+      tag-iso-639-2t-2b: ISO-639-2T/2B
+      tag-iso-639-3: 아이소-639-3
+      tag-english-and-local-name: 영어 및 현지 이름
+      loading-more-results: 더 많은 결과를 불러오는 중...
+  jasypt-string-encryption:
+    title: Jasypt 문자열 암호화
+    description: Jasypt(Java Simplified Encryption) 표준을 사용하여 문자열을 암호화하고 복호화합니다.
+    externalAccess: 널
+    texts:
+      label-mode: "방법:"
+      label-password-secret-key: "비밀번호(비밀 키):"
+      placeholder-enter-jasypt-password-salt-secret-key: Jasypt 비밀번호(솔트/비밀키)를 입력하세요.
+      title-results: 결과
+      label-decoded: "해독됨:"
+      label-raw: "날것의:"
+      label-enc-form: "ENC 양식:"
+      tag-encrypt: 암호화
+      tag-decrypt: 복호화하기
+      plain-text: "일반 텍스트:"
+      jasypt-encrypted-string: "Jasypt로 암호화된 문자열:"
+      text-to-encrypt-e-g-db-password: "암호화할 텍스트 (예: 데이터베이스 비밀번호)"
+      encrypted-value-e-g-enc-or-raw-jasypt-string: "암호화된 값(예: ENC(...)) 또는 원시 Jasypt 문자열"
+  k8s-rbac-generator:
+    title: Kubernetes RBAC 생성기
+    description: Kubernetes RBAC 정책 YAML 파일 생성
+    externalAccess: 널
+    texts:
+      label-user: 사용자
+      label-group: 그룹
+      label-serviceaccount: 서비스 계정
+      label-role-name: "역할 이름:"
+      label-role-type: 역할 유형
+      label-namespace: 네임스페이스
+      title-rules: 규칙
+      label-resources: 자원
+      placeholder-select-resources-supports: 리소스를 선택하세요(*)
+      label-resource-names-optional: 리소스 이름(선택 사항)
+      placeholder-specific-resources-names: 특정 리소스 이름
+      label-verbs: 동사
+      placeholder-select-verbs-supports: 동사 선택 (지원 항목 *)
+      title-subjects: 주제
+      label-kind: 친절한
+      label-name: 이름
+      title-output-yaml: 출력 YAML
+      tab-role-yaml: 역할 YAML
+      tab-rolebinding-yaml: 역할 바인딩 YAML
+      tag-clusterrole-global: 클러스터 역할(전역)
+      tag-role-namespaced: 역할(네임스페이스 포함)
+      tag-add-rule: + 규칙 추가
+      tag-remove-rule: 규칙 제거
+      tag-add-subject: + 제목 추가
+      tag-remove-subject: 제목 삭제
+  objgen-html:
+    title: ObjGen을 HTML로 변환
+    description: TOML과 유사한 구문을 사용하여 복잡한 HTML을 생성합니다.
+    externalAccess: 널
+    texts:
+      input-label-objgen-html-definition: ObjGen HTML 정의
+      input-placeholder-put-your-objgen-html-definition-here: ObjGen HTML 정의를 여기에 입력하세요...
+      output-label-generated-html: 생성된 HTML
+      tag-documentation: 선적 서류 비치
+  objgen-json:
+    title: ObjGen을 JSON으로 변환
+    description: TOML과 유사한 구문에서 복잡한 JSON을 생성합니다.
+    externalAccess: 널
+    texts:
+      input-label-objgen-json-definition: ObjGen JSON 정의
+      input-placeholder-put-your-objgen-json-definition-here: ObjGen JSON 정의를 여기에 입력하세요...
+      output-label-generated-json: 생성된 JSON
+      tag-documentation: 선적 서류 비치
+  pgp-file-encryption:
+    title: PGP 파일 암호화
+    description: PGP를 사용하여 파일을 암호화하고 복호화합니다.
+    externalAccess: 널
+    texts:
+      title-1-select-a-file: 1. 파일을 선택하세요
+      title-drag-and-drop-a-file-or-click-to-select: 파일을 드래그 앤 드롭하거나 클릭하여 선택하세요.
+      title-2-public-key-for-encryption: 2. 공개 키 (암호화용)
+      title-3-private-key-passphrase-for-decryption: 3. 개인 키 + 암호문 (복호화용)
+      label-passphrase: "암호문:"
+      placeholder-passphrase: 암호문
+      tag-selected-file: "선택한 파일:"
+      tag-encrypt-stream: (스트림) 암호화
+      tag-decrypt-stream: 복호화(스트림)
+      tag-encrypting: 암호화 중…
+      tag-decrypting: 암호 해독 중…
+      tag-encrypted-file-ready: 암호화된 파일이 준비되었습니다.
+      tag-download-encrypted: 암호화된 다운로드
+      tag-decrypted-file-ready: 암호 해독된 파일이 준비되었습니다.
+      tag-download-decrypted: 암호 해제된 파일을 다운로드하세요.
+  remove-background:
+    title: 이미지 배경 제거
+    description: AI를 사용하여 이미지에서 배경을 제거합니다.
+    externalAccess: HuggingFace에서 배경 모델을 제거하는 다운로드입니다. 처리는 브라우저에서 진행됩니다.
+    texts:
+      label-rmbg-1-4-cpu-wasm: RMBG-1.4 (CPU/WASM)
+      label-modnet-webgpu: MODNet(WebGPU)
+      label-transparent: 투명한
+      label-solid-color: 단색
+      label-pattern: "무늬:"
+      label-blurred-original: 흐릿한 원본
+      label-adjust-contrast-brightness: 명암/밝기 조정
+      label-diagonal-stripes: 대각선 줄무늬
+      label-dots: 점들
+      label-checkerboard: 서양 장기판
+      title-drag-and-drop-an-image-or-click-to-select: 이미지를 드래그 앤 드롭하거나 클릭하여 선택하세요.
+      label-model: "모델:"
+      label-blur: "흐림:"
+      label-contrast: "차이:"
+      label-brightness: "명도:"
+      title-original: 원래의
+      title-result: 결과
+      tag-apply-background: 배경을 적용하세요
+      tag-download-result: 다운로드 결과
+  shell-formatter:
+    title: 셸 명령어 포맷터
+    description: 셸 명령어를 인수를 기준으로 분할된 여러 줄 셸 명령어로 형식화합니다.
+    externalAccess: 널
+    texts:
+      input-label-shell-commands-to-format: 포맷하기 위한 셸 명령어
+      input-placeholder-put-your-shell-commands-to-format-here: 포맷팅에 사용할 셸 명령어를 여기에 입력하세요...
+      output-label-formatted-shell-commands: 형식화된 셸 명령
+  shell-linearizer:
+    title: 셸 명령 선형화기
+    description: 여러 줄로 된 셸 명령어를 선형화합니다.
+    externalAccess: 널
+    texts:
+      input-label-shell-commands-to-linearize: 선형화하기 위한 셸 명령
+      input-placeholder-put-your-shell-commands-to-linearize-here: 선형화에 사용할 셸 명령어를 여기에 입력하세요...
+      output-label-linearized-shell-commands: 선형화된 셸 명령
+  ufw-generator:
+    title: UFW 명령 생성기
+    description: UFW 명령줄 생성
+    externalAccess: 널
+    texts:
+      label-allow: 허용하다
+      label-deny: 부인하다
+      label-reject: 거부하다
+      label-limit: 한계
+      label-incoming: 들어오는
+      label-outgoing: 나가는
+      label-tcp: TCP
+      label-udp: UDP
+      label-any: 어느
+      label-action: "행동:"
+      label-direction: "방향:"
+      label-protocol: "규약:"
+      label-port: "포트:"
+      placeholder-80: "80"
+      label-port-to-range: "포트 대상(범위):"
+      placeholder-443: "443"
+      label-from-ip: "IP 주소에서:"
+      placeholder-192-168-1-10: 192.168.1.10
+      label-to-ip: "IP 주소로:"
+      placeholder-10-0-0-5: 10.0.0.5
+      label-interface: "인터페이스:"
+      placeholder-eth0: 이쓰0
+      label-logging: "벌채 반출:"
+      label-comment: "논평:"
+      placeholder-optional-comment: 선택적 주석
+      title-generated-command: 생성된 명령
+      missing-port: 항구가 없습니다
+  visual-subnet-calculator:
+    title: 비주얼 서브넷 계산기
+    description: 네트워크를 신속하게 설계하고 다른 사람들과 협업하여 설계를 진행할 수 있는 도구입니다. 복잡한 서브넷팅 계산보다는
+      네트워크 관리자의 업무 속도를 높이는 데 중점을 둡니다.
+    externalAccess: 널
+  zalgo:
+    title: 잘고 생성기/배너
+    description: Zalgo 텍스트를 생성하고 Zalgo에서 생성된 텍스트를 정리합니다.
+    externalAccess: 널
+    texts:
+      text-zalgo-text-copied: 잘고 텍스트가 복사되었습니다!
+      title-zalgo-text-generation: 잘고 텍스트 생성
+      placeholder-put-your-string-here: 여기에 줄을 넣어주세요...
+      label-text-to-decorate-with-zalgo: 잘고로 장식할 텍스트
+      label-intensity: "강함:"
+      title-zalgo-text: 잘고 텍스트
+      title-zalgo-cleaner: 잘고 클리너
+      placeholder-put-zalgo-text-to-clean-here: 여기에 zalgo 텍스트를 입력하여 정리하세요...
+      label-zalgo-text-to-clean: 잘고 텍스트를 정리합니다
+      label-cleaned-text: 정리된 텍스트
+      placeholder-clean-zalgo-text-will-appear-here: 깔끔한 잘고 텍스트가 여기에 표시됩니다...
+      tag-generate: 생성하다
+      tag-copy: 복사
+      tag-clean: 깨끗한
+  gpt-tokens:
+    service:
+      texts:
+        must-set-one-of-messages-or-function: 메시지 또는 함수 중 하나를 반드시 설정해야 합니다.
+        function-must-set-messages: 함수는 메시지를 설정해야 합니다.
+  dead-pixel-tester:
+    title: 불량 화소 테스터
+  gif-to-mp4:
+    title: GIF를 MP4로 변환
+    description: ffmpeg을 사용하여 GIF를 MP4로 변환
+    externalAccess: 널
+    texts:
+      label-stream-loop: "스트림 루프:"
+      title-drag-and-drop-gif-here-or-click-to-select-a-file: GIF 파일을 여기에 드래그 앤 드롭하거나 클릭하여 파일을 선택하세요.
+      title-logs: 로그
+  html-to-pdf:
+    title: HTML을 PDF로 변환
+    description: HTML 콘텐츠 또는 URL에서 PDF를 생성하고, 형식 선택 및 쿠키 배너 자동 숨기기 기능을 제공합니다.
+    externalAccess: 이 도구는 구성된 *자체 호스팅* Puppeteer 웹 서비스로 URL과 HTML 콘텐츠를 전송합니다.
+    texts:
+      label-a2: A2
+      label-a3: A3
+      label-a4: A4
+      label-a5: A5
+      label-letter: 편지
+      label-legal: 합법적인
+      label-html-to-pdf-service-url: "HTML을 PDF로 변환하는 서비스 URL:"
+      placeholder-http-localhost-3000: http://localhost:3000
+      label-basic-authentication: "기본 인증:"
+      placeholder-username-password: 사용자 이름:비밀번호
+      tab-url-pdf: URL → PDF
+      label-url: "URL:"
+      placeholder-https-example-com: https://example.com
+      tab-html-pdf: HTML → PDF
+      label-html-content: "HTML 콘텐츠:"
+      tab-batch-url-pdf: 일괄 URL → PDF
+      label-urls-one-per-line: "URL (한 줄에 하나씩):"
+      title-results: 결과
+      tab-custom-pdf-options: 사용자 지정 PDF 옵션
+      label-format: "체재:"
+      label-language: "언어:"
+      placeholder-en-us: 영어-미국
+      label-landscape: "풍경:"
+      label-one-long-page: "한 페이지 분량의 긴 글:"
+      label-auto-hide-cookie-banners: "쿠키 배너 자동 숨기기:"
+      label-print-background: "인쇄 배경:"
+      title-margins: 마진
+      label-top-mm: "상단(mm):"
+      label-bottom-mm: "바닥면(mm):"
+      label-left-mm: "왼쪽(mm):"
+      label-right-mm: "오른쪽(mm):"
+      tag-html-to-pdf-service-configuration-self-hosted: HTML을 PDF로 변환하는 서비스 구성(자체 호스팅)
+      tag-you-must-self-host-html-to-pdf-service-see: HTML을 PDF로 변환하는 서비스는 직접 호스팅해야 합니다. 자세한 내용은 다음을 참조하세요.
+      tag-html-to-pdf-service-install: HTML을 PDF로 변환하는 서비스 설치
+      tag-generate-pdf: PDF 생성
+      tag-generate-pdfs: PDF 생성
+      tag-url: URL
+      tag-download: 다운로드
+      tag-download-pdf: PDF 다운로드
+      tag-failed: 실패한
+  shutdown-command-generator:
+    title: 종료 명령 생성기
+    description: 다양한 운영체제용 종료 명령 생성
+    externalAccess: 널
+    texts:
+      label-windows: 윈도우
+      label-linux: 리눅스
+      label-macos: macOS
+      label-delay: "지연:"
+      label-specific-time: 특정 시간
+      label-platform: "플랫폼:"
+      label-shutdown-time: "종료 시간:"
+      label-force: 힘
+      label-reboot: 재부팅
+      label-logoff: 로그오프
+      label-cancel: 취소
+      label-hibernate: 절전 모드
+      title-generated-command: 생성된 명령
+      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
+      tag-nbsp-m-nbsp: "&nbsp;m&nbsp;"
+      tag-nbsp-s: "&nbsp;s"
 about:
   alltools-title: 모든 {toolsCount}개 도구
   tools:
@@ -7555,6 +8236,11 @@ about:
   import-button: 수입
   favorites-imported-successfully: 즐겨찾기를 성공적으로 가져왔습니다!
   error-importing-favorites-e: "즐겨찾기 가져오기 오류: {0}"
+  text:
+    collection-of-handy-online-tools-for-developers-with-great-ux-it-tools-is-a-free-and-open-source-collection-of-handy-online-tools-for-developers-and-people-working-in-it:
+      개발자를 위한 유용한 온라인 도구 모음으로, 뛰어난 사용자 경험(UX)을 제공합니다. IT Tools는 개발자 및 IT 종사자를 위한
+      무료 오픈 소스 온라인 도구 모음입니다.
+    about-it-tools: 소개 - IT 도구
 spanCopyable:
   copy: 클립보드에 복사
   copied: 복사됨!
@@ -7572,3 +8258,9 @@ textareaCopyable:
   download: 다운로드
 locale-selector:
   select-a-language: 언어를 선택하세요
+collapsibleToolMenu:
+  text:
+    expanding: 확장 중...
+    collapsing: 무너지고 있다...
+    collapse-all-tools: 모든 도구 접기
+    expand-all-tools: 모든 도구 펼치기
