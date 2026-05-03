@@ -1220,8 +1220,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)
       vite-plugin-node-polyfills:
-        specifier: ^0.23.0
-        version: 0.23.0(rollup@2.79.2)(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0))
+        specifier: ^0.26.0
+        version: 0.26.0(rollup@2.79.2)(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0))
       vite-plugin-pwa:
         specifier: ^1.1.0
         version: 1.1.0(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
@@ -1229,8 +1229,8 @@ importers:
         specifier: ^0.2.0
         version: 0.2.0
       vite-plugin-wasm:
-        specifier: ^3.4.1
-        version: 3.4.1(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0))
+        specifier: ^3.6.0
+        version: 3.6.0(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0))
       vite-svg-loader:
         specifier: ^4.0.0
         version: 4.0.0
@@ -9081,8 +9081,8 @@ packages:
   node-rsa@1.1.1:
     resolution: {integrity: sha512-Jd4cvbJMryN21r5HgxQOpMEqv+ooke/korixNNK3mGqfGJmy0M77WDDzo/05969+OkMy3XW1UuZsSmW9KQm7Fw==}
 
-  node-stdlib-browser@1.3.0:
-    resolution: {integrity: sha512-g/koYzOr9Fb1Jc+tHUHlFd5gODjGn48tHexUK8q6iqOVriEgSnd3/1T7myBYc+0KBVze/7F7n65ec9rW6OD7xw==}
+  node-stdlib-browser@1.3.1:
+    resolution: {integrity: sha512-X75ZN8DCLftGM5iKwoYLA3rjnrAEs97MkzvSd4q2746Tgpg8b8XWiBGiBG4ZpgcAqBgtgPHTiAc8ZMCvZuikDw==}
     engines: {node: '>=10'}
 
   nodemailer@6.9.16:
@@ -11278,10 +11278,10 @@ packages:
     engines: {node: '>=v14.18.0'}
     hasBin: true
 
-  vite-plugin-node-polyfills@0.23.0:
-    resolution: {integrity: sha512-4n+Ys+2bKHQohPBKigFlndwWQ5fFKwaGY6muNDMTb0fSQLyBzS+jjUNRZG9sKF0S/Go4ApG6LFnUGopjkILg3w==}
+  vite-plugin-node-polyfills@0.26.0:
+    resolution: {integrity: sha512-BAe5YzJf368XGev02hDvioidx4uVH8dqEJlG73bjQSxM26/AQnGcKFomq9n3vGq5yqpSHKN4h1XQNxx9l98mBg==}
     peerDependencies:
-      vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+      vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
 
   vite-plugin-pwa@1.1.0:
     resolution: {integrity: sha512-VsSpdubPzXhHWVINcSx6uHRMpOHVHQcHsef1QgkOlEoaIDAlssFEW88LBq1a59BuokAhsh2kUDJbaX1bZv4Bjw==}
@@ -11298,10 +11298,10 @@ packages:
   vite-plugin-splash-screen@0.2.0:
     resolution: {integrity: sha512-PCUiVq8wjx7dHMa9vOqnB+bewKp60VFbhPJJjQOA8UdwmPdf9ChBGuxh+sku4szrnJFsriB0gIDAURAmOqBcUQ==}
 
-  vite-plugin-wasm@3.4.1:
-    resolution: {integrity: sha512-ja3nSo2UCkVeitltJGkS3pfQHAanHv/DqGatdI39ja6McgABlpsZ5hVgl6wuR8Qx5etY3T5qgDQhOWzc5RReZA==}
+  vite-plugin-wasm@3.6.0:
+    resolution: {integrity: sha512-mL/QPziiIA4RAA6DkaZZzOstdwbW5jO4Vz7Zenj0wieKWBlNvIvX5L5ljum9lcUX0ShNfBgCNLKTjNkRVVqcsw==}
     peerDependencies:
-      vite: ^2 || ^3 || ^4 || ^5 || ^6
+      vite: ^2 || ^3 || ^4 || ^5 || ^6 || ^7 || ^8
 
   vite-svg-loader@4.0.0:
     resolution: {integrity: sha512-0MMf1yzzSYlV4MGePsLVAOqXsbF5IVxbn4EEzqRnWxTQl8BJg/cfwIzfQNmNQxZp5XXwd4kyRKF1LytuHZTnqA==}
@@ -20890,7 +20890,7 @@ snapshots:
     dependencies:
       asn1: 0.2.6
 
-  node-stdlib-browser@1.3.0:
+  node-stdlib-browser@1.3.1:
     dependencies:
       assert: 2.1.0
       browser-resolve: 2.0.0
@@ -23460,10 +23460,10 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-node-polyfills@0.23.0(rollup@2.79.2)(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)):
+  vite-plugin-node-polyfills@0.26.0(rollup@2.79.2)(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)):
     dependencies:
       '@rollup/plugin-inject': 5.0.5(rollup@2.79.2)
-      node-stdlib-browser: 1.3.0
+      node-stdlib-browser: 1.3.1
       vite: 4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)
     transitivePeerDependencies:
       - rollup
@@ -23481,7 +23481,7 @@ snapshots:
 
   vite-plugin-splash-screen@0.2.0: {}
 
-  vite-plugin-wasm@3.4.1(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)):
+  vite-plugin-wasm@3.6.0(vite@4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)):
     dependencies:
       vite: 4.4.9(@types/node@24.10.1)(less@4.2.2)(lightningcss@1.30.1)(sass@1.83.4)(terser@5.39.0)
 
