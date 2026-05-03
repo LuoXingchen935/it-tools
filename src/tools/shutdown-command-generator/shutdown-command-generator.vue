@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 type Platform = 'windows' | 'linux' | 'macos';
 type Mode = 'delay' | 'time';
 
@@ -22,14 +25,14 @@ const cancel = ref(false);
 const hibernate = ref(false);
 
 const platformOptions = [
-  { label: 'Windows', value: 'windows' },
-  { label: 'Linux', value: 'linux' },
-  { label: 'macOS', value: 'macos' },
+  { label: t('tools.shutdown-command-generator.texts.label-windows'), value: 'windows' },
+  { label: t('tools.shutdown-command-generator.texts.label-linux'), value: 'linux' },
+  { label: t('tools.shutdown-command-generator.texts.label-macos'), value: 'macos' },
 ];
 
 const modeOptions = [
-  { label: 'Delay', value: 'delay' },
-  { label: 'Specific Time', value: 'time' },
+  { label: t('tools.shutdown-command-generator.texts.label-delay'), value: 'delay' },
+  { label: t('tools.shutdown-command-generator.texts.label-specific-time'), value: 'time' },
 ];
 
 // --- Command Builders -------------------------------------------------------
@@ -167,7 +170,7 @@ const command = computed(() => {
     <c-select
       v-model:value="platform"
       :options="platformOptions"
-      label="Platform:"
+      :label="t('tools.shutdown-command-generator.texts.label-platform')"
       label-position="left"
       mb-1
     />
@@ -185,27 +188,22 @@ const command = computed(() => {
     </NSpace>
 
     <NSpace v-if="mode === 'delay'" justify="center" mb-1>
-      <NFormItem label="Delay:" label-placement="left" mb-1>
+      <NFormItem :label="t('tools.shutdown-command-generator.texts.label-delay')" label-placement="left" mb-1>
         <NInputNumber
           v-model:value="delayHours"
           :min="0"
-        />
-        &nbsp;h&nbsp;
-        <NInputNumber
+        />{{ t('tools.shutdown-command-generator.texts.tag-nbsp-h-nbsp') }}<NInputNumber
           v-model:value="delayMinutes"
           :min="0"
-        />
-        &nbsp;m&nbsp;
-        <NInputNumber
+        />{{ t('tools.shutdown-command-generator.texts.tag-nbsp-m-nbsp') }}<NInputNumber
           v-model:value="delaySeconds"
           :min="0"
-        />
-        &nbsp;s
+        />{{ t('tools.shutdown-command-generator.texts.tag-nbsp-s') }}
       </NFormItem>
     </NSpace>
 
     <NSpace v-if="mode === 'time'" justify="center" mb-1>
-      <NFormItem label="Shutdown time:" label-placement="left">
+      <NFormItem :label="t('tools.shutdown-command-generator.texts.label-shutdown-time')" label-placement="left">
         <NDatePicker
           v-model:value="timeValue"
           type="datetime"
@@ -214,14 +212,14 @@ const command = computed(() => {
     </NSpace>
 
     <NSpace justify="center" mb-1>
-      <NCheckbox v-model:checked="force" label="Force" />
-      <NCheckbox v-model:checked="reboot" label="Reboot" />
-      <NCheckbox v-model:checked="logoff" label="Logoff" />
-      <NCheckbox v-model:checked="cancel" label="Cancel" />
-      <NCheckbox v-model:checked="hibernate" label="Hibernate" />
+      <NCheckbox v-model:checked="force" :label="t('tools.shutdown-command-generator.texts.label-force')" />
+      <NCheckbox v-model:checked="reboot" :label="t('tools.shutdown-command-generator.texts.label-reboot')" />
+      <NCheckbox v-model:checked="logoff" :label="t('tools.shutdown-command-generator.texts.label-logoff')" />
+      <NCheckbox v-model:checked="cancel" :label="t('tools.shutdown-command-generator.texts.label-cancel')" />
+      <NCheckbox v-model:checked="hibernate" :label="t('tools.shutdown-command-generator.texts.label-hibernate')" />
     </NSpace>
 
-    <c-card title="Generated command">
+    <c-card :title="t('tools.shutdown-command-generator.texts.title-generated-command')">
       <textarea-copyable :value="command" language="bash" />
     </c-card>
   </div>

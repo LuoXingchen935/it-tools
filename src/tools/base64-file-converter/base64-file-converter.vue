@@ -141,7 +141,7 @@ async function onUpload(file: File) {
 
     <n-space justify="center" mb-1>
       <n-checkbox v-model:checked="includeDataUri">
-        Include data: URI prefix
+        {{ $t('tools.base64-file-converter.texts.include-data-uri-prefix') }}
       </n-checkbox>
     </n-space>
 

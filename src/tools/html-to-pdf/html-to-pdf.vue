@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import { useITStorage } from '@/composable/queryParams';
 import { Base64 } from 'js-base64';
+
+const { t } = useI18n();
 
 const url = ref('');
 const html = ref('');
@@ -26,12 +29,12 @@ const options = useITStorage('html-to-pdf:opts', {
 });
 
 const pdfFormats = [
-  { label: 'A2', value: 'A2' },
-  { label: 'A3', value: 'A3' },
-  { label: 'A4', value: 'A4' },
-  { label: 'A5', value: 'A5' },
-  { label: 'Letter', value: 'Letter' },
-  { label: 'Legal', value: 'Legal' },
+  { label: t('tools.html-to-pdf.texts.label-a2'), value: 'A2' },
+  { label: t('tools.html-to-pdf.texts.label-a3'), value: 'A3' },
+  { label: t('tools.html-to-pdf.texts.label-a4'), value: 'A4' },
+  { label: t('tools.html-to-pdf.texts.label-a5'), value: 'A5' },
+  { label: t('tools.html-to-pdf.texts.label-letter'), value: 'Letter' },
+  { label: t('tools.html-to-pdf.texts.label-legal'), value: 'Legal' },
 ];
 
 function downloadURL(data: string, fileName: string) {
@@ -186,28 +189,27 @@ async function generateBatch() {
 <template>
   <div>
     <details mb-2>
-      <summary>HTML to PDF Service Configuration (self hosted)</summary>
+      <summary>{{ t('tools.html-to-pdf.texts.tag-html-to-pdf-service-configuration-self-hosted') }}</summary>
       <n-card>
-        <NFormItem label="HTML to PDF Service Url:" label-placement="top">
-          <NInput v-model:value="serverHost" placeholder="http://localhost:3000" />
+        <NFormItem :label="t('tools.html-to-pdf.texts.label-html-to-pdf-service-url')" label-placement="top">
+          <NInput v-model:value="serverHost" :placeholder="t('tools.html-to-pdf.texts.placeholder-http-localhost-3000')" />
         </NFormItem>
-        <NFormItem label="Basic Authentication:" label-placement="left" label-width="auto">
-          <NInput v-model:value="serverAuth" placeholder="username:password" />
+        <NFormItem :label="t('tools.html-to-pdf.texts.label-basic-authentication')" label-placement="left" label-width="auto">
+          <NInput v-model:value="serverAuth" :placeholder="t('tools.html-to-pdf.texts.placeholder-username-password')" />
         </NFormItem>
         <n-p>
-          You must self host HTML to PDF Service. See:
-          <c-link href="https://github.com/sharevb/puppeteer-htmltopdf?tab=readme-ov-file#running-in-docker" target="_blank">
-            HTML to PDF Service install
+          {{ t('tools.html-to-pdf.texts.tag-you-must-self-host-html-to-pdf-service-see') }}<c-link href="https://github.com/sharevb/puppeteer-htmltopdf?tab=readme-ov-file#running-in-docker" target="_blank">
+            {{ t('tools.html-to-pdf.texts.tag-html-to-pdf-service-install') }}
           </c-link>
         </n-p>
       </n-card>
     </details>
 
     <NTabs type="line">
-      <NTabPane name="url" tab="URL → PDF">
+      <NTabPane name="url" :tab="t('tools.html-to-pdf.texts.tab-url-pdf')">
         <NForm label-placement="left">
-          <NFormItem label="URL:">
-            <NInput v-model:value="url" placeholder="https://example.com" />
+          <NFormItem :label="t('tools.html-to-pdf.texts.label-url')">
+            <NInput v-model:value="url" :placeholder="t('tools.html-to-pdf.texts.placeholder-https-example-com')" />
           </NFormItem>
 
           <n-space mb-2 justify="center">
@@ -217,7 +219,7 @@ async function generateBatch() {
               :disabled="isRunning"
               @click="generateFromUrl"
             >
-              Generate PDF
+              {{ t('tools.html-to-pdf.texts.tag-generate-pdf') }}
             </NButton>
           </n-space>
 
@@ -227,9 +229,9 @@ async function generateBatch() {
         </NForm>
       </NTabPane>
 
-      <NTabPane name="html" tab="HTML → PDF">
+      <NTabPane name="html" :tab="t('tools.html-to-pdf.texts.tab-html-pdf')">
         <NForm label-placement="top">
-          <NFormItem label="HTML Content:">
+          <NFormItem :label="t('tools.html-to-pdf.texts.label-html-content')">
             <NInput
               v-model:value="html"
               type="textarea"
@@ -244,7 +246,7 @@ async function generateBatch() {
               :disabled="isRunning"
               @click="generateFromHtml"
             >
-              Generate PDF
+              {{ t('tools.html-to-pdf.texts.tag-generate-pdf') }}
             </NButton>
           </n-space>
 
@@ -254,9 +256,9 @@ async function generateBatch() {
         </NForm>
       </NTabPane>
 
-      <NTabPane name="batch" tab="Batch URL → PDF">
+      <NTabPane name="batch" :tab="t('tools.html-to-pdf.texts.tab-batch-url-pdf')">
         <NForm label-placement="top">
-          <NFormItem label="URLs (one per line):">
+          <NFormItem :label="t('tools.html-to-pdf.texts.label-urls-one-per-line')">
             <NInput
               v-model:value="batchUrls"
               type="textarea"
@@ -271,7 +273,7 @@ async function generateBatch() {
               :disabled="isBatchRunning"
               @click="generateBatch"
             >
-              Generate PDFs
+              {{ t('tools.html-to-pdf.texts.tag-generate-pdfs') }}
             </NButton>
           </n-space>
         </NForm>
@@ -289,11 +291,11 @@ async function generateBatch() {
         </div>
 
         <!-- Results -->
-        <NCard v-if="batchResults.length > 0" title="Results">
+        <NCard v-if="batchResults.length > 0" :title="t('tools.html-to-pdf.texts.title-results')">
           <n-table>
             <thead>
-              <th>Url</th>
-              <th>Download</th>
+              <th>{{ t('tools.html-to-pdf.texts.tag-url') }}</th>
+              <th>{{ t('tools.html-to-pdf.texts.tag-download') }}</th>
             </thead>
             <tbody>
               <tr
@@ -311,13 +313,13 @@ async function generateBatch() {
                       type="success"
                       @click="downloadBlob(item.pdfBlob!, `${urlToFilename(item.url)}.pdf`)"
                     >
-                      Download PDF
+                      {{ t('tools.html-to-pdf.texts.tag-download-pdf') }}
                     </NButton>
                   </template>
 
                   <template v-else>
                     <NButton size="small" type="error" disabled>
-                      Failed
+                      {{ t('tools.html-to-pdf.texts.tag-failed') }}
                     </NButton>
                     <div style="color: red; font-size: 12px">
                       {{ item.error }}
@@ -331,52 +333,52 @@ async function generateBatch() {
       </NTabPane>
 
       <!-- Custom PDF Options -->
-      <NTabPane name="custom-options" tab="Custom PDF Options">
+      <NTabPane name="custom-options" :tab="t('tools.html-to-pdf.texts.tab-custom-pdf-options')">
         <NForm label-placement="left">
-          <NFormItem label="Format:">
+          <NFormItem :label="t('tools.html-to-pdf.texts.label-format')">
             <NSelect
               v-model:value="options.format"
               :options="pdfFormats"
             />
           </NFormItem>
 
-          <NFormItem label="Language:">
-            <NInput v-model:value="options.language" placeholder="en-US" />
+          <NFormItem :label="t('tools.html-to-pdf.texts.label-language')">
+            <NInput v-model:value="options.language" :placeholder="t('tools.html-to-pdf.texts.placeholder-en-us')" />
           </NFormItem>
 
           <n-space justify="center">
-            <NFormItem label="Landscape:">
+            <NFormItem :label="t('tools.html-to-pdf.texts.label-landscape')">
               <NSwitch v-model:value="options.landscape" />
             </NFormItem>
 
-            <NFormItem label="One Long Page:">
+            <NFormItem :label="t('tools.html-to-pdf.texts.label-one-long-page')">
               <NSwitch v-model:value="options.onePage" />
             </NFormItem>
 
-            <NFormItem label="Auto-Hide Cookie Banners:">
+            <NFormItem :label="t('tools.html-to-pdf.texts.label-auto-hide-cookie-banners')">
               <NSwitch v-model:value="options.autoHideCookies" />
             </NFormItem>
 
-            <NFormItem label="Print Background:">
+            <NFormItem :label="t('tools.html-to-pdf.texts.label-print-background')">
               <NSwitch v-model:value="options.printBackground" />
             </NFormItem>
           </n-space>
 
-          <c-card title="Margins">
+          <c-card :title="t('tools.html-to-pdf.texts.title-margins')">
             <NSpace justify="center">
-              <NFormItem label="Top (mm):" style="width: 200px">
+              <NFormItem :label="t('tools.html-to-pdf.texts.label-top-mm')" style="width: 200px">
                 <NInputNumber v-model:value="options.margin.top" />
               </NFormItem>
 
-              <NFormItem label="Bottom (mm):" style="width: 200px">
+              <NFormItem :label="t('tools.html-to-pdf.texts.label-bottom-mm')" style="width: 200px">
                 <NInputNumber v-model:value="options.margin.bottom" />
               </NFormItem>
 
-              <NFormItem label="Left (mm):" style="width: 200px">
+              <NFormItem :label="t('tools.html-to-pdf.texts.label-left-mm')" style="width: 200px">
                 <NInputNumber v-model:value="options.margin.left" />
               </NFormItem>
 
-              <NFormItem label="Right (mm):" style="width: 200px">
+              <NFormItem :label="t('tools.html-to-pdf.texts.label-right-mm')" style="width: 200px">
                 <NInputNumber v-model:value="options.margin.right" />
               </NFormItem>
             </NSpace>

@@ -1,10 +1,11 @@
+import { translate as t } from '@/plugins/i18n.plugin';
 import { SunOff } from '@vicons/tabler';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Shutdown Command Generator',
+  name: t('tools.shutdown-command-generator.title'),
   path: '/shutdown-command-generator',
-  description: 'Generate shutdown command for various OS',
+  description: t('tools.shutdown-command-generator.description'),
   keywords: ['shutdown', 'command'],
   component: () => import('./shutdown-command-generator.vue'),
   icon: SunOff,

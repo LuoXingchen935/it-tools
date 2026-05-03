@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
 const billAmount = ref<number>();
 const tipPercentage = ref<number>(15);
 const numberOfPeople = ref<number>(1);
@@ -35,33 +39,33 @@ const amountPerPersonFormatted = computed(() => formatCurrency(amountPerPerson.v
 
 <template>
   <div style="margin: 0 auto; max-width: 600px">
-    <c-card mb-3 title="Bill Details">
+    <c-card mb-3 :title="t('tools.tip-calculator.texts.title-bill-details')">
       <n-form label-placement="left" label-width="150px" label-align="left">
-        <n-form-item label="Bill Amount:">
-          <n-input-number v-model:value="billAmount" :min="0" placeholder="Total Bill" />
+        <n-form-item :label="t('tools.tip-calculator.texts.label-bill-amount')">
+          <n-input-number v-model:value="billAmount" :min="0" :placeholder="t('tools.tip-calculator.texts.placeholder-total-bill')" />
         </n-form-item>
 
-        <n-form-item label="Tip Percentage:">
-          <n-input-number v-model:value="tipPercentage" :min="0" placeholder="Tip %">
+        <n-form-item :label="t('tools.tip-calculator.texts.label-tip-percentage')">
+          <n-input-number v-model:value="tipPercentage" :min="0" :placeholder="t('tools.tip-calculator.texts.placeholder-tip')">
             <template #suffix>
-              %
+              {{ t('tools.tip-calculator.texts.tag-') }}
             </template>
           </n-input-number>
         </n-form-item>
 
-        <n-form-item label="Number of person:">
-          <n-input-number v-model:value="numberOfPeople" :min="1" placeholder="People" />
+        <n-form-item :label="t('tools.tip-calculator.texts.label-number-of-person')">
+          <n-input-number v-model:value="numberOfPeople" :min="1" :placeholder="t('tools.tip-calculator.texts.placeholder-people')" />
         </n-form-item>
       </n-form>
     </c-card>
 
-    <c-card mb-3 title="Results">
-      <input-copyable label="Tip Amount:" :value="tipAmountFormatted" readonly label-position="left" label-width="150px" mb-1 />
-      <input-copyable label="Total Bill:" :value="totalAmountFormatted" readonly label-position="left" label-width="150px" mb-1 />
-      <input-copyable label="Amount Per Person:" :value="amountPerPersonFormatted" readonly label-position="left" label-width="150px" mb-1 />
+    <c-card mb-3 :title="t('tools.tip-calculator.texts.title-results')">
+      <input-copyable :label="t('tools.tip-calculator.texts.label-tip-amount')" :value="tipAmountFormatted" readonly label-position="left" label-width="150px" mb-1 />
+      <input-copyable :label="t('tools.tip-calculator.texts.label-total-bill')" :value="totalAmountFormatted" readonly label-position="left" label-width="150px" mb-1 />
+      <input-copyable :label="t('tools.tip-calculator.texts.label-amount-per-person')" :value="amountPerPersonFormatted" readonly label-position="left" label-width="150px" mb-1 />
     </c-card>
 
-    <c-card title="Quick Tip %">
+    <c-card :title="t('tools.tip-calculator.texts.title-quick-tip')">
       <n-space justify="center">
         <n-button v-for="tip in [10, 15, 18, 20, 25]" :key="tip" size="small" @click="tipPercentage = tip">
           {{ tip }}%
