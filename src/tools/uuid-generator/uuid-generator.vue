@@ -13,6 +13,8 @@ const versions = ['NIL', 'v1', 'v3', 'v4', 'v5', 'v6', 'v7'] as const;
 
 const version = useQueryParamOrStorage<typeof versions[number]>({ name: 'version', storageName: 'uuid-generator:version', defaultValue: 'v4' });
 const count = useQueryParamOrStorage({ name: 'amount', storageName: 'uuid-generator:quantity', defaultValue: 1 });
+const bare = useQueryParamOrStorage({ name: 'bare', storageName: 'uuid-generator:bare', defaultValue: false });
+const upperCase = useQueryParamOrStorage({ name: 'upper', storageName: 'uuid-generator:upper', defaultValue: false });
 const v35Args = ref({ namespace: '6ba7b811-9dad-11d1-80b4-00c04fd430c8', name: '' });
 
 const validUuidRules = [
@@ -46,7 +48,13 @@ const generators = {
 const [uuids, refreshUUIDs] = computedRefreshable(() => withDefaultOnError(() =>
   Array.from({ length: count.value }, (_ignored, index) => {
     const generator = generators[version.value] ?? generators.NIL;
-    return generator(index);
+    let uuid = generator(index);
+
+    if (bare.value) {
+      uuid = uuid.replace(/-/g, '');
+    }
+
+    return upperCase.value ? uuid.toUpperCase() : uuid.toLowerCase();
   }).join('\n'), ''));
 
 const { copy } = useCopy({ source: uuids, text: t('tools.uuid-generator.texts.text-uuids-copied-to-the-clipboard') });
@@ -61,7 +69,7 @@ const { copy } = useCopy({ source: uuids, text: t('tools.uuid-generator.texts.te
       <n-input-number-i18n v-model:value="count" flex-1 :min="1" :max="50" :placeholder="t('tools.uuid-generator.texts.placeholder-uuid-quantity')" />
     </div>
 
-    <div v-if="version === 'v3' || version === 'v5'">
+    <div v-if="version === 'v3' || version === 'v5'" mb-2>
       <div>
         <c-buttons-select
           v-model:value="v35Args.namespace"
@@ -97,6 +105,15 @@ const { copy } = useCopy({ source: uuids, text: t('tools.uuid-generator.texts.te
         mb-2
       />
     </div>
+
+    <n-space justify="center" mb-2>
+      <n-checkbox v-model:checked="upperCase">
+        {{ $t('tools.uuid-generator.texts.uppercase') }}
+      </n-checkbox>
+      <n-checkbox v-model:checked="bare">
+        {{ $t('tools.uuid-generator.texts.no-hyphen') }}
+      </n-checkbox>
+    </n-space>
 
     <c-input-text
       style="text-align: center; font-family: monospace"
