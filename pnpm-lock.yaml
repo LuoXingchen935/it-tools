@@ -8,6 +8,11 @@ overrides:
   '@vueuse/shared': 13.9.0
   xlsx: https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz
 
+patchedDependencies:
+  node-forge@1.4.0:
+    hash: be4w4shpo4tldv77tcysxrioha
+    path: patches/node-forge@1.4.0.patch
+
 importers:
 
   .:
@@ -722,7 +727,7 @@ importers:
         version: 1.0.23
       node-forge:
         specifier: ^1.4.0
-        version: 1.4.0
+        version: 1.4.0(patch_hash=be4w4shpo4tldv77tcysxrioha)
       openai-chat-tokens:
         specifier: ^0.2.8
         version: 0.2.8
@@ -19864,7 +19869,7 @@ snapshots:
 
   jks-js@1.1.4:
     dependencies:
-      node-forge: 1.4.0
+      node-forge: 1.4.0(patch_hash=be4w4shpo4tldv77tcysxrioha)
       node-int64: 0.4.0
       node-rsa: 1.1.1
 
@@ -20889,7 +20894,7 @@ snapshots:
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
 
-  node-forge@1.4.0: {}
+  node-forge@1.4.0(patch_hash=be4w4shpo4tldv77tcysxrioha): {}
 
   node-gyp-build-optional-packages@5.2.2:
     dependencies:
@@ -21316,7 +21321,7 @@ snapshots:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
-      node-forge: 1.4.0
+      node-forge: 1.4.0(patch_hash=be4w4shpo4tldv77tcysxrioha)
 
   pdfjs-dist@4.10.38:
     optionalDependencies:

@@ -462,6 +462,9 @@
     "overrides": {
       "@vueuse/shared": "13.9.0",
       "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+    },
+    "patchedDependencies": {
+      "node-forge@1.4.0": "patches/node-forge@1.4.0.patch"
     }
   },
   "scarfSettings": {
