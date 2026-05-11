@@ -3537,6 +3537,7 @@ tools:
       tag-fingerprint: 'Fingerprint:'
       tag-public-key: Public key
       tag-private-key: Private key
+      rsa-bits: 'RSA Bits:'
   xpath-memo:
     title: XPath Syntax Cheatsheet
     description: XPath Syntax Cheatsheet
@@ -8707,16 +8708,16 @@ tools:
       label-cancel: Cancel
       label-hibernate: Hibernate
       title-generated-command: Generated command
-      tag-nbsp-h-nbsp: "&nbsp;h&nbsp;"
-      tag-nbsp-m-nbsp: "&nbsp;m&nbsp;"
-      tag-nbsp-s: "&nbsp;s"
+      tag-nbsp-h-nbsp: '&nbsp;h&nbsp;'
+      tag-nbsp-m-nbsp: '&nbsp;m&nbsp;'
+      tag-nbsp-s: '&nbsp;s'
   random-line-picker:
     title: Random Line Picker
     description: Pick random lines from a text input
-    externalAccess: "null"
+    externalAccess: 'null'
     texts:
       label-allow-repeated-lines: Allow repeated lines
-      label-number-of-lines-to-pick: "Number of lines to pick:"
+      label-number-of-lines-to-pick: 'Number of lines to pick:'
       label-prefix-lines-with-line-number: Add line numbers
       placeholder-picked-lines: Picked lines
       placeholder-put-your-text-here: Put your text here...
