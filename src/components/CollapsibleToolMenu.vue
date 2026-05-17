@@ -182,7 +182,6 @@ const themeVars = useThemeVars();
           :collapsed-icon-size="22"
           :options="tools"
           :indent="8"
-          :default-expand-all="true"
         />
       </div>
     </div>

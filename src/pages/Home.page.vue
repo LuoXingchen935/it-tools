@@ -3,16 +3,11 @@ import { IconDragDrop, IconHeart } from '@tabler/icons-vue';
 import { useHead } from '@vueuse/head';
 import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue';
 import Draggable from 'vuedraggable';
-import VueMarkdown from 'vue-markdown-render';
 import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
+import HomeCustom from './Home.custom.vue';
 import { useToolStore } from '@/tools/tools.store';
 import { config } from '@/config';
-import { useTheme } from '../ui/c-link/c-link.theme';
-
-const base = import.meta.env.BASE_URL ?? '/';
-
-const homeCustomMarkdown = ref('');
 
 const { t } = useI18n();
 
@@ -55,9 +50,6 @@ useHead({
 });
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
-
-const linkTheme = useTheme();
-
 const isOrderingFavorites = ref(false);
 
 window.addEventListener('contextmenu', (e) => {
@@ -121,16 +113,6 @@ onMounted(() => {
       );
       loadingObserver.observe(loadingIndicator);
     }
-
-    fetch(`${base}home.custom.md`).then((r) => {
-      if (r.ok) {
-        r.text().then((t) => {
-          if (t) {
-            homeCustomMarkdown.value = t;
-          }
-        });
-      }
-    });
   });
 });
 
@@ -193,9 +175,9 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <div v-if="homeCustomMarkdown" class="home-custom-md">
-        <VueMarkdown :source="homeCustomMarkdown" />
-      </div>
+      <Suspense>
+        <HomeCustom />
+      </Suspense>
 
       <h3 class="mb-5px mt-25px font-500 text-neutral-400">
         {{ $t('home.categories.allTools') }}
@@ -247,33 +229,6 @@ onUnmounted(() => {
   100% {
     opacity: 0.4;
     transform: scale(1.0);
-  }
-}
-
-::v-deep(.home-custom-md) a {
-  line-height: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 400;
-  color: v-bind('linkTheme.default.textColor');
-  border-radius: 4px;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
-
-  outline-offset: 1px;
-
-  &:hover {
-    color: v-bind('linkTheme.default.hover.textColor');
-  }
-
-  &:active {
-    color: v-bind('linkTheme.default.textColor');
-  }
-
-  &:focus {
-    color: v-bind('linkTheme.default.outline.color');
   }
 }
 </style>
