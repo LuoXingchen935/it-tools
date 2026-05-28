@@ -92,13 +92,20 @@ function update(key: string) {
       .value();
   }
   else {
-    const converter = unitsconverter[converterType.value](value).from(key);
+    const mapUnit = (unit: string) => {
+      // npm units-converter uses wrong symbol for miles per hour, so we need to fix it
+      if (converterType.value === 'speed' && unit === 'mi/h') {
+        return 'm/h';
+      }
+      return unit;
+    };
+    const converter = unitsconverter[converterType.value](value).from(mapUnit(key));
 
     _.chain(units)
-      .omit(key)
+      .omit(mapUnit(key))
       .forEach(({ unit }) => {
         try {
-          units[unit].ref = converter.to(unit).value;
+          units[unit].ref = converter.to(mapUnit(unit)).value;
         }
         catch (e: any) {
           units[unit].ref = 0;

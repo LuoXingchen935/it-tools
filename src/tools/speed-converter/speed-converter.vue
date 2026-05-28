@@ -4,10 +4,10 @@ import UnitsConverter from '@/components/UnitsConverter.vue';
 const supportedUnits = {
   'm/s': 'meter per second',
   'km/h': 'kilometer per hour',
-  'm/h': 'meter per hour',
+  'mi/h': 'miles per hour',
   'knot': 'knot',
   'ft/s': 'feet per second',
-}; ;
+};
 </script>
 
 <template>
