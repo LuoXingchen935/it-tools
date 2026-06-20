@@ -9,6 +9,9 @@ overrides:
   xlsx: https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz
 
 patchedDependencies:
+  esm-potrace-wasm:
+    hash: 4txgfquopg5wxm3hbowsmko764
+    path: patches/esm-potrace-wasm.patch
   node-forge@1.4.0:
     hash: be4w4shpo4tldv77tcysxrioha
     path: patches/node-forge@1.4.0.patch
@@ -386,6 +389,9 @@ importers:
       epubjs:
         specifier: ^0.3.93
         version: 0.3.93
+      esm-potrace-wasm:
+        specifier: ^0.4.4
+        version: 0.4.4(patch_hash=4txgfquopg5wxm3hbowsmko764)
       ethers:
         specifier: ^6.16.0
         version: 6.16.0
@@ -6891,6 +6897,9 @@ packages:
 
   esm-env@1.2.2:
     resolution: {integrity: sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA==}
+
+  esm-potrace-wasm@0.4.4:
+    resolution: {integrity: sha512-2t9Rds/ZWf4n2bvyLv/fAkZdLCgv02q316xoBSSm5qp7jstlheTAZbdu4Q/ojbS6kwJwVoSv1Pjpx+e7niAp+A==}
 
   esniff@2.0.1:
     resolution: {integrity: sha512-kTUIGKQ/mDPFoJ0oVfcmyJn4iBDRptjNVIzwIFR7tqWXdVI9xfA2RMwY/gbSpJG3lkdWNEjLap/NqVHZiJsdfg==}
@@ -18589,6 +18598,8 @@ snapshots:
       - supports-color
 
   esm-env@1.2.2: {}
+
+  esm-potrace-wasm@0.4.4(patch_hash=4txgfquopg5wxm3hbowsmko764): {}
 
   esniff@2.0.1:
     dependencies:
