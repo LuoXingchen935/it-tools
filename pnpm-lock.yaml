@@ -15,6 +15,9 @@ patchedDependencies:
   node-forge@1.4.0:
     hash: be4w4shpo4tldv77tcysxrioha
     path: patches/node-forge@1.4.0.patch
+  run-pace:
+    hash: flfgxpnzx6iyo2pksk6djrkobe
+    path: patches/run-pace.patch
 
 importers:
 
@@ -845,6 +848,9 @@ importers:
       rtf-stream-parser:
         specifier: ^3.8.1
         version: 3.8.1
+      run-pace:
+        specifier: ^2.2.0
+        version: 2.2.0(patch_hash=flfgxpnzx6iyo2pksk6djrkobe)
       safe-license-list:
         specifier: ^0.1.2
         version: 0.1.2
@@ -10145,6 +10151,10 @@ packages:
   run-applescript@7.1.0:
     resolution: {integrity: sha512-DPe5pVFaAsinSaV6QjQ6gdiedWDcRCbUuiQfQa2wmWV7+xC9bGulGI8+TdRmoFkAPaBXk8CrAbnlY2ISniJ47Q==}
     engines: {node: '>=18'}
+
+  run-pace@2.2.0:
+    resolution: {integrity: sha512-IeBogfkMIxyg97mxE+vbf71Iimda/+qAYgfqcn+JTXHJSb8efECyMWazlBE2Jrzgaxu8QHAKZbudPjyX+o+Cew==}
+    hasBin: true
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -22189,6 +22199,8 @@ snapshots:
   rtf-stream-parser@3.8.1: {}
 
   run-applescript@7.1.0: {}
+
+  run-pace@2.2.0(patch_hash=flfgxpnzx6iyo2pksk6djrkobe): {}
 
   run-parallel@1.2.0:
     dependencies:

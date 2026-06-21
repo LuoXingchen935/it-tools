@@ -317,6 +317,7 @@
     "riimut": "^0.9.1",
     "roboto-base64": "^0.1.2",
     "rtf-stream-parser": "^3.8.1",
+    "run-pace": "^2.2.0",
     "safe-license-list": "^0.1.2",
     "sandybox": "^1.1.2",
     "sanitize-html": "^2.17.0",
@@ -467,7 +468,8 @@
     },
     "patchedDependencies": {
       "node-forge@1.4.0": "patches/node-forge@1.4.0.patch",
-      "esm-potrace-wasm": "patches/esm-potrace-wasm.patch"
+      "esm-potrace-wasm": "patches/esm-potrace-wasm.patch",
+      "run-pace": "patches/run-pace.patch"
     }
   },
   "scarfSettings": {
