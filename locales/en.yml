@@ -5385,7 +5385,9 @@ tools:
         summary-with-large-image: Summary with large image
         summary: Summary
         twitter: Twitter
-        the-name-of-the-twitter-account-of-the-creator-ex-cthmsst: The name of the Twitter account of the creator (ex{':'} {'@'}cthmsst)...
+        the-name-of-the-twitter-account-of-the-creator-ex-cthmsst: >-
+          The name of the Twitter account of the creator (ex{':'}
+          {'@'}cthmsst)...
     videoEpisode:
       text:
         which-series-this-episode-belongs-to: Which series this episode belongs to...
@@ -6071,6 +6073,23 @@ tools:
       label-fingerprint-base64: 'Fingerprint (base64):'
       label-fingerprint-asn1: 'Fingerprint (asn1):'
       label-fingerprint-ssh: 'Fingerprint (ssh):'
+      label-pem-header: 'PEM Header Type:'
+      autodetect: Autodetect
+      certificate-x-509: Certificate (X.509)
+      certificate-request-csr-pkcs-10: Certificate Request (CSR / PKCS#10)
+      private-key-pkcs-8: Private Key (PKCS#8)
+      public-key-pkcs-8: Public Key (PKCS#8)
+      encrypted-private-key-pkcs-8-encrypted: Encrypted Private Key (PKCS#8 Encrypted)
+      rsa-private-key-pkcs-1: RSA Private Key (PKCS#1)
+      rsa-public-key-pkcs-1: RSA Public Key (PKCS#1)
+      ec-private-key: EC Private Key
+      ec-parameters: EC Parameters
+      dsa-private-key: DSA Private Key
+      dsa-public-key: DSA Public Key
+      openssh-private-key: OpenSSH Private Key
+      ssh-public-key-rfc4716: SSH Public Key (RFC4716)
+      pgp-public-key-block: PGP Public Key Block
+      pgp-private-key-block: PGP Private Key Block
     service:
       text:
         type: 'Type:'
