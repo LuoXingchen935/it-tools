@@ -1,36 +1,13 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import { useI18n } from 'vue-i18n';
 import { useThemeVars } from 'naive-ui';
-import type { Component } from 'vue';
+import Memo from './bash-memo.content.md';
 
 const themeVars = useThemeVars();
-const { locale } = useI18n();
-
-const memoImports = import.meta.glob('./bash-memo.content*.md');
-const memoComponent = ref<Component | null>(null);
-
-async function loadMemo(currentLocale = locale.value) {
-  const memoKey = `./bash-memo.content.${currentLocale}.md`;
-  const loader = memoImports[memoKey] ?? memoImports['./bash-memo.content.en.md'];
-
-  if (!loader) {
-    memoComponent.value = null;
-    return;
-  }
-
-  const module = (await loader()) as { default?: Component };
-  memoComponent.value = module.default ?? module;
-}
-
-watch(locale, () => {
-  loadMemo();
-}, { immediate: true });
 </script>
 
 <template>
   <div>
-    <component v-if="memoComponent" :is="memoComponent" />
+    <Memo />
   </div>
 </template>
 
