@@ -6,6 +6,10 @@ You can override listening port using environment variable `PORT` (docker option
 
 If the container needs to listen to IPv6, it needs to be enabled: https://serverfault.com/questions/1147296/how-to-enable-ipv6-on-ubuntu-20-04. Alternatively, you can mount your own `nginx.conf` own using docker option `-v "./nginx.conf:/etc/nginx/templates/default.conf.template"` (with `listen [::]:8080;` removed)
 
+## Build requirements
+
+**To build this project**, you need around **16GB** (as it builds on Github workers). Below, you will get some `out of memory` or `node allocation failed`.
+
 ## PR Welcome
 
 Especially for UI improvements and translation. And for anything else.
