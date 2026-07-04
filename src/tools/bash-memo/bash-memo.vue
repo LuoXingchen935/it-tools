@@ -19,7 +19,7 @@ async function loadMemo(currentLocale = locale.value) {
     return;
   }
 
-  const module = await loader();
+  const module = (await loader()) as { default?: Component };
   memoComponent.value = module.default ?? module;
 }
 
