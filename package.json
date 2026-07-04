@@ -42,6 +42,7 @@
     "precommit": "pnpm install --ignore-scripts && pnpm lint --fix && pnpm typecheck"
   },
   "dependencies": {
+    "@boxyhq/saml20": "^1.16.0",
     "@chenfengyuan/vue-barcode": "^2.0.2",
     "@date-fns/utc": "^2.1.1",
     "@dice-roller/rpg-dice-roller": "^5.5.1",
@@ -284,6 +285,7 @@
     "openpgp": "^6.3.0",
     "otpauth-migration": "^1.0.0",
     "oui-data": "^1.1.571",
+    "pako": "^3.0.0",
     "parse-duration": "^2.1.6",
     "parse-torrent": "^11.0.19",
     "paseto-ts": "^2.0.5",
