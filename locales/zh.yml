@@ -6730,11 +6730,11 @@ tools:
       tag-tb-gb: 结核病/英国
       tag-minimum-spares: 最低备件数量：
       tag-new-vdev-type: 新的 vdev 类型：
-      tag-mirror: 镜子
+      tag-mirror: 镜像
       tag-raidz1: RAIDZ1
       tag-raidz2: RAIDZ2
       tag-raidz3: RAIDZ3
-      tag-draid: 龙
+      tag-draid: dRAID
       tag-openzfs-2-0-7-slop: OpenZFS 2.0.7 斜率：
       tag-new-vdev-width: 新的 Vdev 宽度：
       tag-zfs-recordsize-value: ZFS 记录大小值：
@@ -6790,7 +6790,7 @@ tools:
       tag-click-on-the-section-titles-to-expand-collapse-and-view-calculated-data-hovering-over-a-table-cell-loads-the-relevant-data-into-the-calculation-values-section-below-you-can-click-table-cells-to-freeze-or-unfreeze-those-values: >-
         点击各部分标题即可展开/折叠并查看计算数据。将鼠标悬停在表格单元格上，相关数据会加载到下方的“计算值”部分。您可以点击表格单元格来冻结或解冻这些值。
       tag-common-layouts: 常见布局
-      tag-raw-stripes-mirrors: 原始、条纹和镜面
+      tag-raw-stripes-mirrors: 原始、条带和镜像
       tag-calculation-values: 计算值
       tag-click-table-cells-above-to-freeze-unfreeze: （单击上面的表格单元格即可冻结/解冻）
   zpool-memo:
