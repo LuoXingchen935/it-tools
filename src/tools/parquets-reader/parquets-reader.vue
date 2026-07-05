@@ -58,7 +58,7 @@ function downloadCsv() {
 
     <n-tabs v-if="!error" type="line" animated>
       <n-tab-pane name="jsonData" :tab="t('tools.parquets-reader.text.json-content')">
-        <textarea-copyable :value="resultsJson" language="json" :download-file-name="`${fileInput?.name}.json`" />
+        <CodeBlockCopyable :value="resultsJson" language="json" :download-file-name="`${fileInput?.name}.json`" />
       </n-tab-pane>
       <n-tab-pane v-if="columns.length" name="tabData" :tab="t('tools.parquets-reader.text.table-view')">
         <div mb-1 flex justify-center>

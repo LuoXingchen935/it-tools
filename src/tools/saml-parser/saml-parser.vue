@@ -265,16 +265,15 @@ const signatureStatus = computed(() => {
       </c-card>
 
       <c-card title="Raw Assertion" mt-2>
-        <textarea-copyable
+        <CodeBlockCopyable
           :value="JSON.stringify(parsingResult.profile, null, 2)"
           language="json"
           mb-2
         />
 
-        <textarea-copyable
+        <CodeBlockCopyable
           :value="parsingResult?.raw"
           language="xml"
-          word-wrap
         />
       </c-card>
     </c-card>

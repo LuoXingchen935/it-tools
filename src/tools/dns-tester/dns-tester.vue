@@ -371,7 +371,7 @@ const labelProps = {
             mb-1
           />
 
-          <textarea-copyable
+          <CodeBlockCopyable
             v-if="whoisResult.parsed"
             label="Parsed"
             :value="prettyJSON(whoisResult.parsed)"

@@ -197,10 +197,14 @@ const { download } = useDownloadFileFromBase64(
   </CInputText>
 
   <div overflow-auto>
-    <div mb-5px>
-      {{ outputLabel }}
-    </div>
-    <textarea-copyable :value="output" :language="outputLanguage" :follow-height-of="inputElement?.inputWrapperRef" />
+    <n-tabs type="line">
+      <n-tab-pane name="output" :tab="outputLabel">
+        <textarea-copyable :value="output" :language="outputLanguage" :follow-height-of="inputElement?.inputWrapperRef" />
+      </n-tab-pane>
+      <n-tab-pane name="editable" :tab="t('formatTransformer.viewer')">
+        <CodeBlockCopyable :value="output" :language="outputLanguage" />
+      </n-tab-pane>
+    </n-tabs>
 
     <div v-if="downloadFileName !== '' && output !== ''" mt-5 flex justify-center>
       <c-button secondary @click="download">
