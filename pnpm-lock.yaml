@@ -29,6 +29,9 @@ importers:
       '@chenfengyuan/vue-barcode':
         specifier: ^2.0.2
         version: 2.0.2(jsbarcode@3.12.1)(vue@3.3.4)
+      '@colordx/core':
+        specifier: ^5.5.0
+        version: 5.5.0
       '@date-fns/utc':
         specifier: ^2.1.1
         version: 2.1.1
@@ -2298,6 +2301,9 @@ packages:
 
   '@codemod/utils@1.1.0':
     resolution: {integrity: sha512-Zx6A4xDifEqL0s9ejh62/mQmDXje+E62zYHGiGfRHzVhzmA41pDFZW/m7Hl9+fmbODJxlg9ElMsjHdhasSm7TA==}
+
+  '@colordx/core@5.5.0':
+    resolution: {integrity: sha512-3PxTH8itZzltK0U9jTwVVnjLXvnDYuq3m+QXsHkENxWiPRh4WaoLcs1SQjqgZ55kS+QyirpH5BVwzP2gMVG6EQ==}
 
   '@css-render/plugin-bem@0.15.14':
     resolution: {integrity: sha512-QK513CJ7yEQxm/P3EwsI+d+ha8kSOcjGvD6SevM41neEMxdULE+18iuQK6tEChAWMOQNQPLG/Rw3Khb69r5neg==}
@@ -13611,6 +13617,8 @@ snapshots:
       '@codemod/parser': 1.4.1
     transitivePeerDependencies:
       - supports-color
+
+  '@colordx/core@5.5.0': {}
 
   '@css-render/plugin-bem@0.15.14(css-render@0.15.14)':
     dependencies:

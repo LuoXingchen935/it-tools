@@ -44,6 +44,7 @@
   "dependencies": {
     "@boxyhq/saml20": "^1.16.0",
     "@chenfengyuan/vue-barcode": "^2.0.2",
+    "@colordx/core": "^5.5.0",
     "@date-fns/utc": "^2.1.1",
     "@dice-roller/rpg-dice-roller": "^5.5.1",
     "@faker-js/faker": "^10.2.0",

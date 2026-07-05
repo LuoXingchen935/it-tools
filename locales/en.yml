@@ -5212,6 +5212,8 @@ tools:
       label-brightness: Brightness
       label-grayscale: Grayscale
       label-invert: Invert
+      label-oklab: oklab
+      label-oklch: oklch
     models:
       text:
         invalid-label-tolowercase-format: Invalid {0} format.
