@@ -7579,6 +7579,7 @@ tools:
       label-docker-compose-file: 'Docker Compose file:'
       placeholder-paste-your-docker-compose-yaml-here: Paste your docker-compose YAML here...
       title-extract-env: Extract .env
+      title-updated-docker-compose: 'Updated Docker Compose:'
   emv-tlv-decoder:
     title: EMV TLV decoder
     description: >-
