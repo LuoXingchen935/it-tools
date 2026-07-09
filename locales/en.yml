@@ -680,6 +680,9 @@ tools:
       label-titlecase: 'Titlecase:'
       label-spongecase: 'Spongecase:'
       label-swapcase: 'Swapcase:'
+      label-lang-title-case: 'Language TitleCase:'
+      label-language: 'Language:'
+      placeholder-your-language: Language Title casing language...
   html-entities:
     title: Escape HTML entities
     description: >-
