@@ -195,6 +195,7 @@
     "exif-be-gone": "^1.5.1",
     "exifreader": "^4.33.1",
     "fanger": "0.3.1",
+    "fast-json-patch": "^3.1.1",
     "fast-xml-parser": "^5.7.2",
     "fast_array_intersect": "^1.1.0",
     "fflate": "^0.8.2",
