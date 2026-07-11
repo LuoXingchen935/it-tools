@@ -8834,7 +8834,7 @@ tools:
     title: Markdown to data
     description: Convert Markdown table to JSON, YAML, CSV, SQL INSERT, XML,
       Markdown or XLSX
-    externalAccess: null
+    externalAccess: "null"
   html-to-data:
     texts:
       label-paste-your-html-content: "Paste your HTML content:"
@@ -8842,11 +8842,11 @@ tools:
       error-multiple-json-blocks: Cannot convert multiple tables at once
     title: HTML to data
     description: Convert HTML table to JSON, YAML, CSV, SQL INSERT, XML, Markdown or XLSX
-    externalAccess: null
+    externalAccess: "null"
   cron-expression-builder:
     title: Cron Expression Builder
     description: Generate Cron expressions from a UI
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-seconds: Seconds
       label-minutes: Minutes
@@ -8888,7 +8888,7 @@ tools:
   css-js-prettify-minify:
     title: CSS/JS Prettify & Minify
     description: Prettify or minify your CSS and JavaScript code online.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-javascript: JavaScript
       label-css: CSS
@@ -8944,7 +8944,7 @@ tools:
     title: Cloudflare DNS/RDAP Queries
     description: Query DNS records and RDAP for any domain name online using
       Cloudflare DNS/RDAP.org.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       message-please-enter-a-valid-domain-name: Please enter a valid domain name
       text-dns-records-copied-to-the-clipboard: DNS records copied to the clipboard
@@ -9099,7 +9099,7 @@ tools:
   dockerfile-label-generator:
     title: Dockerfile Label Generator
     description: A simple tool for generating labels for Dockerfiles.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-title: "Title:"
       placeholder-my-project: My Project
@@ -9119,7 +9119,7 @@ tools:
       label-created: "Created:"
       placeholder-2024-01-01t12-00-00z: 2024-01-01T12:00:00Z
       label-authors: "Authors:"
-      placeholder-your-name-you-example-com: Your Name <you@example.com>
+      placeholder-your-name-you-example-com: Your Name {'<'}you{'@'}example.com{'>'}
       title-generated-label-block: Generated LABEL block
   https-tester:
     title: HTTPS Tester
@@ -9169,7 +9169,7 @@ tools:
   k6-script-generator:
     title: K6 Load Testing Script Generator
     description: Generate k6 load testing scripts with common presets
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-smoke-test: Smoke Test
       label-load-test: Load Test
@@ -9209,7 +9209,7 @@ tools:
   markdown-diff:
     title: Markdown Diff
     description: Compare two Markdown documents and see the differences between them.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-code: Code
       label-preview: Preview
@@ -9218,7 +9218,7 @@ tools:
   markdown-preview:
     title: Markdown preview
     description: Live preview of Markdown as you type
-    externalAccess: null
+    externalAccess: "null"
     texts:
       placeholder-your-markdown-content: Your Markdown content...
       label-your-markdown-to-preview: "Your Markdown to preview:"
@@ -9226,7 +9226,7 @@ tools:
   markdown-table-generator:
     title: Markdown Table Generator
     description: Create GitHub-flavored Markdown tables with a visual editor.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-left: Left
       label-center: Center
@@ -9240,7 +9240,7 @@ tools:
   nmap-command-builder:
     title: Nmap Command Builder
     description: A simple command builder for generating Nmap scan commands.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-default-scan: Default Scan
       label-quick-scan: Quick Scan
@@ -9287,7 +9287,7 @@ tools:
     title: Picomatch Tester
     description: A simple tester for the picomatch library, which is used for glob
       pattern matching.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-pattern: "Pattern:"
       placeholder-enter-a-glob-pattern-like-js: Enter a glob pattern like *.js
@@ -9306,12 +9306,12 @@ tools:
       designed for system administration and automation. It provides a wide
       range of cmdlets and features that allow users to manage and automate
       tasks on Windows systems efficiently.
-    externalAccess: null
+    externalAccess: "null"
   running-pace-calculator:
     title: Running Pace Calculator
     description: Calculate your running pace, estimate your finish times for popular
       races, break down splits, and find your training zones.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-length: "Length:"
       placeholder-e-g-10km-or-100m: e.g. 10km or 100m
@@ -9331,7 +9331,7 @@ tools:
       signature, and displays a structured view of the assertion—including
       issuer, subject, conditions, authentication context, claims, and
       validation status.
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-saml-assertion-base64-deflate-or-xml: "SAML assertion (Base64, DEFLATE, or XML):"
       placeholder-paste-saml-assertion-base64-deflate-or-xml: Paste SAML assertion (Base64, DEFLATE, or XML)
@@ -9357,7 +9357,7 @@ tools:
   url-builder:
     title: URL Builder
     description: Allows to edit and build URLs with query parameters
-    externalAccess: null
+    externalAccess: "null"
     texts:
       label-string: string
       label-number: number
