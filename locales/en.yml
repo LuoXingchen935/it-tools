@@ -593,6 +593,7 @@ tools:
       placeholder-the-decoded-string-will-be-here: The decoded string will be here
       tag-copy-base64: Copy base64
       tag-copy-decoded-string: Copy decoded string
+      text-encoding: 'Text Encoding:'
   toml-to-yaml:
     title: TOML to YAML
     description: Parse and convert TOML to YAML.
