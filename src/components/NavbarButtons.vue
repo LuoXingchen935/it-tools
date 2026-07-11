@@ -37,6 +37,7 @@ const localesLong: Record<string, string> = {
   zh: '中文',
   vi: 'Tiếng Việt',
   ar: 'عربي',
+  hi: 'हिन्दी',
 };
 
 function renderIcon(icon: Component) {
@@ -48,7 +49,7 @@ function optionLabel(text: string, isActive: boolean) {
 }
 
 const languageOptions = computed(() =>
-  appLocales.map(availableLocale => ({
+  appLocales.map((availableLocale) => ({
     key: availableLocale,
     label: optionLabel(localesLong[availableLocale] ?? availableLocale, availableLocale === locale.value),
     icon: availableLocale === locale.value ? renderIcon(IconCheck) : undefined,
@@ -60,9 +61,21 @@ function onLanguageSelect(key: string) {
 }
 
 const themeOptions = computed(() => [
-  { key: 'auto', label: optionLabel(t('home.nav.themeSystem', 'System'), themeMode.value === 'auto'), icon: renderIcon(IconDeviceDesktop) },
-  { key: 'light', label: optionLabel(t('home.nav.themeLight', 'Light'), themeMode.value === 'light'), icon: renderIcon(IconSun) },
-  { key: 'dark', label: optionLabel(t('home.nav.themeDark', 'Dark'), themeMode.value === 'dark'), icon: renderIcon(IconMoon) },
+  {
+    key: 'auto',
+    label: optionLabel(t('home.nav.themeSystem', 'System'), themeMode.value === 'auto'),
+    icon: renderIcon(IconDeviceDesktop),
+  },
+  {
+    key: 'light',
+    label: optionLabel(t('home.nav.themeLight', 'Light'), themeMode.value === 'light'),
+    icon: renderIcon(IconSun),
+  },
+  {
+    key: 'dark',
+    label: optionLabel(t('home.nav.themeDark', 'Dark'), themeMode.value === 'dark'),
+    icon: renderIcon(IconMoon),
+  },
 ]);
 
 const themeTriggerIcon = computed(() => (isDarkTheme.value ? IconMoon : IconSun));
