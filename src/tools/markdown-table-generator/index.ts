@@ -1,9 +1,10 @@
+import { translate as t } from '@/plugins/i18n.plugin';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Markdown Table Generator',
+  name: t('tools.markdown-table-generator.title'),
   path: '/markdown-table-generator',
-  description: 'Create GitHub-flavored Markdown tables with a visual editor.',
+  description: t('tools.markdown-table-generator.description'),
   keywords: ['markdown', 'table', 'generator', 'gfm', 'github'],
   component: () => import('./markdown-table-generator.vue'),
   icon: defineAsyncComponent(() => import('@vicons/tabler/es/Table')),

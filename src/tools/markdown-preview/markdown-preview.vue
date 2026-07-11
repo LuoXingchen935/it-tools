@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { useStorage } from '@vueuse/core';
 import { renderMarkdown } from './markdown-preview.service';
 
@@ -11,10 +13,10 @@ const previewHtml = computed(() => renderMarkdown(inputMarkdown.value));
     <c-input-text
       v-model:value="inputMarkdown"
 
-      placeholder="Your Markdown content..."
+      :placeholder="t('tools.markdown-preview.texts.placeholder-your-markdown-content')"
       rows="8"
 
-      label="Your Markdown to preview:"
+      :label="t('tools.markdown-preview.texts.label-your-markdown-to-preview')"
       autocomplete="off"
       autocorrect="off"
       autocapitalize="off"
@@ -25,7 +27,7 @@ const previewHtml = computed(() => renderMarkdown(inputMarkdown.value));
 
     <n-divider />
 
-    <n-form-item label="Rendered preview:">
+    <n-form-item :label="t('tools.markdown-preview.texts.label-rendered-preview')">
       <c-card>
         <div
           class="markdown-preview"

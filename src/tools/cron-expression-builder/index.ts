@@ -1,9 +1,10 @@
+import { translate as t } from '@/plugins/i18n.plugin';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Cron Expression Builder',
+  name: t('tools.cron-expression-builder.title'),
   path: '/cron-expression-builder',
-  description: 'Generate Cron expressions from a UI',
+  description: t('tools.cron-expression-builder.description'),
   keywords: ['cron', 'expression', 'builder'],
   component: () => import('./cron-expression-builder.vue'),
   icon: defineAsyncComponent(() => import('@vicons/tabler/es/Clock')),

@@ -1,9 +1,10 @@
+import { translate as t } from '@/plugins/i18n.plugin';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Markdown preview',
+  name: t('tools.markdown-preview.title'),
   path: '/markdown-preview',
-  description: 'Live preview of Markdown as you type',
+  description: t('tools.markdown-preview.description'),
   keywords: ['markdown', 'preview'],
   component: () => import('./markdown-preview.vue'),
   icon: defineAsyncComponent(() => import('@vicons/tabler/es/Markdown')),

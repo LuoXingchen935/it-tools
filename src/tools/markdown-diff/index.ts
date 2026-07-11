@@ -1,9 +1,10 @@
+import { translate as t } from '@/plugins/i18n.plugin';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Markdown Diff',
+  name: t('tools.markdown-diff.title'),
   path: '/markdown-diff',
-  description: 'Compare two Markdown documents and see the differences between them.',
+  description: t('tools.markdown-diff.description'),
   keywords: ['markdown', 'diff', 'compare', 'difference', 'markdown diff', 'md', 'text'],
   component: () => import('./markdown-diff.vue'),
   icon: defineAsyncComponent(() => import('@vicons/tabler/es/Markdown')),

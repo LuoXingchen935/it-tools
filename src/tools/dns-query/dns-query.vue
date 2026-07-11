@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { useCopy } from '@/composable/copy';
 import { queryAllDns, queryWhois, formatDnsRecords, getTypeName, defaultRecordTypes } from './dns-query.service';
 import type { DnsAnswer, WhoisInfo } from './dns-query.service';
@@ -13,7 +15,7 @@ const hasQueried = ref(false);
 
 const domainValidationRules = [
   {
-    message: 'Please enter a valid domain name',
+    message: t('tools.dns-query.texts.message-please-enter-a-valid-domain-name'),
     validator: (value: string) => /^([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$/.test(value.trim()),
   },
 ];
@@ -37,7 +39,7 @@ const groupedAnswers = computed(() => {
 
 const formattedResult = computed(() => formatDnsRecords(answers.value));
 
-const { copy } = useCopy({ source: formattedResult, text: 'DNS records copied to the clipboard' });
+const { copy } = useCopy({ source: formattedResult, text: t('tools.dns-query.texts.text-dns-records-copied-to-the-clipboard') });
 
 async function doQuery() {
   const trimmed = domain.value.trim();
@@ -78,8 +80,8 @@ async function doQuery() {
   <div>
     <c-input-text
       v-model:value="domain"
-      label="Domain name"
-      placeholder="e.g. example.com"
+      :label="t('tools.dns-query.texts.label-domain-name')"
+      :placeholder="t('tools.dns-query.texts.placeholder-e-g-example-com')"
       clearable
       autocomplete="off"
       autocorrect="off"
@@ -108,9 +110,9 @@ async function doQuery() {
           <n-table :bordered="true" :single-line="false" size="small">
             <thead>
               <tr>
-                <th scope="col">Name</th>
-                <th scope="col">TTL</th>
-                <th scope="col">Data</th>
+                <th scope="col">{{ t('tools.dns-query.texts.tag-name') }}</th>
+                <th scope="col">{{ t('tools.dns-query.texts.tag-ttl') }}</th>
+                <th scope="col">{{ t('tools.dns-query.texts.tag-data') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -126,77 +128,53 @@ async function doQuery() {
         </div>
 
         <div flex justify-center mb-5>
-          <c-button @click="copy()">
-            Copy results
-          </c-button>
+          <c-button @click="copy()">{{ t('tools.dns-query.texts.tag-copy-results') }}</c-button>
         </div>
       </div>
 
       <c-card v-else mb-4>
-        <div italic op-60>
-          No records found for this domain.
-        </div>
+        <div italic op-60>{{ t('tools.dns-query.texts.tag-no-records-found-for-this-domain') }}</div>
       </c-card>
     </div>
 
-    <div v-if="whoisLoading" mt-2 op-60 italic>
-      Loading WHOIS info...
-    </div>
+    <div v-if="whoisLoading" mt-2 op-60 italic>{{ t('tools.dns-query.texts.tag-loading-whois-info') }}</div>
 
     <div v-if="whoisInfo" mt-2>
       <n-divider />
-      <div mb-3 font-bold text-16px>
-        WHOIS
-      </div>
+      <div mb-3 font-bold text-16px>{{ t('tools.dns-query.texts.tag-whois') }}</div>
 
       <n-table :bordered="true" :single-line="false" size="small">
         <tbody>
           <tr>
-            <td font-500 w-180px>
-              Domain Name
-            </td>
+            <td font-500 w-180px>{{ t('tools.dns-query.texts.tag-domain-name') }}</td>
             <td>{{ whoisInfo.domainName }}</td>
           </tr>
           <tr v-if="whoisInfo.registrar">
-            <td font-500>
-              Registrar
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-registrar') }}</td>
             <td>{{ whoisInfo.registrar }}</td>
           </tr>
           <tr v-if="whoisInfo.registrationDate">
-            <td font-500>
-              Registration Date
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-registration-date') }}</td>
             <td>{{ whoisInfo.registrationDate }}</td>
           </tr>
           <tr v-if="whoisInfo.expirationDate">
-            <td font-500>
-              Expiration Date
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-expiration-date') }}</td>
             <td>{{ whoisInfo.expirationDate }}</td>
           </tr>
           <tr v-if="whoisInfo.updatedDate">
-            <td font-500>
-              Updated Date
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-updated-date') }}</td>
             <td>{{ whoisInfo.updatedDate }}</td>
           </tr>
           <tr v-if="whoisInfo.registrantCountry">
-            <td font-500>
-              Registrant
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-registrant') }}</td>
             <td>{{ [whoisInfo.registrantProvince, whoisInfo.registrantCountry].filter(Boolean).join(', ') }}</td>
           </tr>
           <tr v-if="whoisInfo.nameServers.length > 0">
-            <td font-500>
-              Name Servers
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-name-servers') }}</td>
             <td>{{ whoisInfo.nameServers.join(', ') }}</td>
           </tr>
           <tr v-if="whoisInfo.status.length > 0">
-            <td font-500>
-              Domain Status
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-domain-status') }}</td>
             <td>
               <div v-for="s in whoisInfo.status" :key="s">
                 {{ s }}
@@ -204,9 +182,7 @@ async function doQuery() {
             </td>
           </tr>
           <tr v-if="whoisInfo.dnssec">
-            <td font-500>
-              DNSSEC
-            </td>
+            <td font-500>{{ t('tools.dns-query.texts.tag-dnssec') }}</td>
             <td>{{ whoisInfo.dnssec }}</td>
           </tr>
         </tbody>

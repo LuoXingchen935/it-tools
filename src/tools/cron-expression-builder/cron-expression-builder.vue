@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 function range(start: number, end: number) {
   return Array.from({ length: end - start + 1 }, (_, i) => ({
     label: String(start + i),
@@ -43,51 +45,51 @@ const fields: {
   description: string;
   options?: { label: string; value: number }[];
 }[] = [
-  { field: seconds, label: 'Seconds', description: '0-59' },
-  { field: minutes, label: 'Minutes', description: '0-59' },
-  { field: hours, label: 'Hours', description: '0-23' },
-  { field: dayOfMonth, label: 'Day of Month', description: '1-31' },
+  { field: seconds, label: t('tools.cron-expression-builder.texts.label-seconds'), description: '0-59' },
+  { field: minutes, label: t('tools.cron-expression-builder.texts.label-minutes'), description: '0-59' },
+  { field: hours, label: t('tools.cron-expression-builder.texts.label-hours'), description: '0-23' },
+  { field: dayOfMonth, label: t('tools.cron-expression-builder.texts.label-day-of-month'), description: '1-31' },
   {
     field: month,
-    label: 'Month',
+    label: t('tools.cron-expression-builder.texts.label-month'),
     description: '1-12',
     options: [
-      { label: 'January', value: 1 },
-      { label: 'February', value: 2 },
-      { label: 'March', value: 3 },
-      { label: 'April', value: 4 },
-      { label: 'May', value: 5 },
-      { label: 'June', value: 6 },
-      { label: 'July', value: 7 },
-      { label: 'August', value: 8 },
-      { label: 'September', value: 9 },
-      { label: 'October', value: 10 },
-      { label: 'November', value: 11 },
-      { label: 'December', value: 12 },
+      { label: t('tools.cron-expression-builder.texts.label-january'), value: 1 },
+      { label: t('tools.cron-expression-builder.texts.label-february'), value: 2 },
+      { label: t('tools.cron-expression-builder.texts.label-march'), value: 3 },
+      { label: t('tools.cron-expression-builder.texts.label-april'), value: 4 },
+      { label: t('tools.cron-expression-builder.texts.label-may'), value: 5 },
+      { label: t('tools.cron-expression-builder.texts.label-june'), value: 6 },
+      { label: t('tools.cron-expression-builder.texts.label-july'), value: 7 },
+      { label: t('tools.cron-expression-builder.texts.label-august'), value: 8 },
+      { label: t('tools.cron-expression-builder.texts.label-september'), value: 9 },
+      { label: t('tools.cron-expression-builder.texts.label-october'), value: 10 },
+      { label: t('tools.cron-expression-builder.texts.label-november'), value: 11 },
+      { label: t('tools.cron-expression-builder.texts.label-december'), value: 12 },
     ],
   },
   {
     field: dayOfWeek,
-    label: 'Day of Week',
+    label: t('tools.cron-expression-builder.texts.label-day-of-week'),
     options: [
-      { label: 'Sunday', value: 0 },
-      { label: 'Monday', value: 1 },
-      { label: 'Tuesday', value: 2 },
-      { label: 'Wednesday', value: 3 },
-      { label: 'Thursday', value: 4 },
-      { label: 'Friday', value: 5 },
-      { label: 'Saturday', value: 6 },
+      { label: t('tools.cron-expression-builder.texts.label-sunday'), value: 0 },
+      { label: t('tools.cron-expression-builder.texts.label-monday'), value: 1 },
+      { label: t('tools.cron-expression-builder.texts.label-tuesday'), value: 2 },
+      { label: t('tools.cron-expression-builder.texts.label-wednesday'), value: 3 },
+      { label: t('tools.cron-expression-builder.texts.label-thursday'), value: 4 },
+      { label: t('tools.cron-expression-builder.texts.label-friday'), value: 5 },
+      { label: t('tools.cron-expression-builder.texts.label-saturday'), value: 6 },
     ],
     description: '0-6 (Sunday=0, Monday=1, ..., Saturday=6)',
   },
-  { field: year, label: 'Year', description: '1970-...' },
+  { field: year, label: t('tools.cron-expression-builder.texts.label-year'), description: '1970-...' },
 ] as const;
 
 const modes = [
-  { label: 'Every (*)', value: 'every' },
-  { label: 'Specific values', value: 'specific' },
-  { label: 'Range', value: 'range' },
-  { label: 'Increment', value: 'increment' },
+  { label: t('tools.cron-expression-builder.texts.label-every'), value: 'every' },
+  { label: t('tools.cron-expression-builder.texts.label-specific-values'), value: 'specific' },
+  { label: t('tools.cron-expression-builder.texts.label-range'), value: 'range' },
+  { label: t('tools.cron-expression-builder.texts.label-increment'), value: 'increment' },
 ];
 
 function validateField(label: string, field: Field) {
@@ -176,14 +178,14 @@ defineExpose({ cron, isValid, errors });
 
 <template>
   <div>
-    <NCard title="Generated Cron Expression" size="small" mb-2>
+    <NCard :title="t('tools.cron-expression-builder.texts.title-generated-cron-expression')" size="small" mb-2>
       <input-copyable :value="cron" />
       <div v-if="!isValid" mt-2>
-        <NText type="error"> Cron expression is invalid </NText>
+        <NText type="error">{{ t('tools.cron-expression-builder.texts.tag-cron-expression-is-invalid') }}</NText>
       </div>
     </NCard>
 
-    <NAlert v-if="errors.length" type="error" title="Validation Errors" closable mb-2>
+    <NAlert v-if="errors.length" type="error" :title="t('tools.cron-expression-builder.texts.title-validation-errors')" closable mb-2>
       <ul>
         <li v-for="err in errors" :key="err">
           {{ err }}
@@ -193,7 +195,7 @@ defineExpose({ cron, isValid, errors });
 
     <n-tabs type="segment" animated>
       <n-tab-pane :name="label" :tab="label" v-for="{ field, label, description, options } in fields" :key="label">
-        <NFormItem label="Mode:" label-placement="left">
+        <NFormItem :label="t('tools.cron-expression-builder.texts.label-mode')" label-placement="left">
           <NSelect v-model:value="field.value.mode" :options="modes" style="width: 200px" mr-2 />
           <NText v-if="description" type="secondary" size="small" italic>
             {{ description }}
@@ -226,18 +228,18 @@ defineExpose({ cron, isValid, errors });
         <!-- Range -->
         <div v-if="field.value.mode === 'range'">
           <NSpace v-if="options">
-            <NFormItem label="From:" label-placement="left">
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-from')" label-placement="left">
               <NSelect v-model:value="field.value.start" :options="options" />
             </NFormItem>
-            <NFormItem label="To:" label-placement="left">
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-to')" label-placement="left">
               <NSelect v-model:value="field.value.end" :options="options" />
             </NFormItem>
           </NSpace>
           <NSpace v-else>
-            <NFormItem label="From:" label-placement="left">
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-from')" label-placement="left">
               <NInputNumber v-model:value="field.value.start" :min="field.value.min" :max="field.value.max" />
             </NFormItem>
-            <NFormItem label="To:" label-placement="left">
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-to')" label-placement="left">
               <NInputNumber v-model:value="field.value.end" :min="field.value.min" :max="field.value.max" />
             </NFormItem>
           </NSpace>
@@ -246,13 +248,13 @@ defineExpose({ cron, isValid, errors });
         <!-- Increment -->
         <div v-if="field.value.mode === 'increment'">
           <NSpace>
-            <NFormItem label="Start at:" label-placement="left" v-if="options">
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-start-at')" label-placement="left" v-if="options">
               <NSelect v-model:value="field.value.start" :options="options" />
             </NFormItem>
-            <NFormItem label="Start at:" label-placement="left" v-else>
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-start-at')" label-placement="left" v-else>
               <NInputNumber v-model:value="field.value.start" :min="field.value.min" :max="field.value.max" />
             </NFormItem>
-            <NFormItem label="every" label-placement="left">
+            <NFormItem :label="t('tools.cron-expression-builder.texts.label-every')" label-placement="left">
               <NInputNumber v-model:value="field.value.step" :min="1" :max="field.value.end" mr-1 />
               <NText>{{ label.toLowerCase() }}</NText>
             </NFormItem>

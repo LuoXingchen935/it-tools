@@ -17,14 +17,14 @@
     <c-card v-else data-test-id="markdown-preview" w-full>
       <div class="markdown-preview-grid">
         <section>
-          <h3>Source Markdown</h3>
+          <h3>{{ t('tools.markdown-diff.texts.tag-source-markdown') }}</h3>
           <div class="markdown-preview-pane" data-test-id="source-markdown-preview">
             <c-markdown :markdown="sourceMarkdown" />
           </div>
         </section>
 
         <section>
-          <h3>Modified Markdown</h3>
+          <h3>{{ t('tools.markdown-diff.texts.tag-modified-markdown') }}</h3>
           <div class="markdown-preview-pane" data-test-id="modified-markdown-preview">
             <c-markdown :markdown="targetMarkdown" />
           </div>
@@ -35,6 +35,8 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { ref } from 'vue';
 import { modifiedMarkdown, originalMarkdown } from './markdown-diff.constants';
 
@@ -45,8 +47,8 @@ const sourceMarkdown = ref(originalMarkdown);
 const targetMarkdown = ref(modifiedMarkdown);
 
 const modeOptions: Array<{ label: string; value: MarkdownDiffMode }> = [
-  { label: 'Code', value: 'code' },
-  { label: 'Preview', value: 'preview' },
+  { label: t('tools.markdown-diff.texts.label-code'), value: 'code' },
+  { label: t('tools.markdown-diff.texts.label-preview'), value: 'preview' },
 ];
 </script>
 

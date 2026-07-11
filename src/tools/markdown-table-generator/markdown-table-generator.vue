@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import {
   type MarkdownTableAlignment,
   createMarkdownTable,
@@ -10,9 +12,9 @@ import CInputText from '@/ui/c-input-text/c-input-text.vue';
 
 const table = ref(createMarkdownTable());
 const alignmentOptions: { label: string; value: MarkdownTableAlignment }[] = [
-  { label: 'Left', value: 'left' },
-  { label: 'Center', value: 'center' },
-  { label: 'Right', value: 'right' },
+  { label: t('tools.markdown-table-generator.texts.label-left'), value: 'left' },
+  { label: t('tools.markdown-table-generator.texts.label-center'), value: 'center' },
+  { label: t('tools.markdown-table-generator.texts.label-right'), value: 'right' },
 ];
 const inputMarkdown = ref('');
 const error = ref('');
@@ -68,8 +70,8 @@ function onPasteMarkdownTable(markdownContent: string) {
     <c-card>
       <c-input-text
         v-model:value="inputMarkdown"
-        label="Paste clipboard table data here:"
-        placeholder="Paste your table to edit..."
+        :label="t('tools.markdown-table-generator.texts.label-paste-clipboard-table-data-here')"
+        :placeholder="t('tools.markdown-table-generator.texts.placeholder-paste-your-table-to-edit')"
         ref="inputElement"
         multiline
         rows="5"
@@ -77,8 +79,7 @@ function onPasteMarkdownTable(markdownContent: string) {
       />
       <n-space justify="center" mb-2>
         <c-button @click="table = onPasteMarkdownTable(inputMarkdown) || createMarkdownTable()"
-          >Import Table Data
-        </c-button>
+          >{{ t('tools.markdown-table-generator.texts.tag-import-table-data') }}</c-button>
       </n-space>
 
       <c-alert v-if="error" type="error" mb-2>
@@ -86,8 +87,8 @@ function onPasteMarkdownTable(markdownContent: string) {
       </c-alert>
 
       <div mb-4 flex flex-wrap items-center gap-2>
-        <c-button @click="addRow"> Add row </c-button>
-        <c-button @click="addColumn"> Add column </c-button>
+        <c-button @click="addRow">{{ t('tools.markdown-table-generator.texts.tag-add-row') }}</c-button>
+        <c-button @click="addColumn">{{ t('tools.markdown-table-generator.texts.tag-add-column') }}</c-button>
       </div>
 
       <n-scrollbar x-scrollable>
@@ -155,7 +156,7 @@ function onPasteMarkdownTable(markdownContent: string) {
 
     <n-divider />
 
-    <n-form-item label="Generated Markdown table:">
+    <n-form-item :label="t('tools.markdown-table-generator.texts.label-generated-markdown-table')">
       <TextareaCopyable :value="output" language="markdown" copy-placement="outside" />
     </n-form-item>
   </div>

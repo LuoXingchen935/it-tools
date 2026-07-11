@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { css as cssBeautify, js as jsBeautify } from 'js-beautify';
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
 import { useStyleStore } from '@/stores/style.store';
@@ -7,8 +9,8 @@ import { withDefaultOnError } from '@/utils/defaults';
 const styleStore = useStyleStore();
 
 const languages = [
-  { label: 'JavaScript', value: 'javascript' },
-  { label: 'CSS', value: 'css' },
+  { label: t('tools.css-js-prettify-minify.texts.label-javascript'), value: 'javascript' },
+  { label: t('tools.css-js-prettify-minify.texts.label-css'), value: 'css' },
 ] as { label: string; value: string }[];
 
 const selectedLanguage = ref('javascript');
@@ -64,47 +66,47 @@ const minifyOutput = computed(() =>
     <div style="max-width: 600px" :class="{ 'flex-col': styleStore.isSmallScreen }" mx-auto mb-5 flex gap-2>
       <c-select
         v-model:value="selectedLanguage"
-        label="Language"
+        :label="t('tools.css-js-prettify-minify.texts.label-language')"
         style="flex: 1"
         :options="languages"
       />
       <c-input-text
         v-model:value="indentSize"
-        label="Indent size"
-        placeholder="2"
+        :label="t('tools.css-js-prettify-minify.texts.label-indent-size')"
+        :placeholder="t('tools.css-js-prettify-minify.texts.placeholder-2')"
         style="flex: 1"
       />
     </div>
   </div>
 
-  <c-card title="Prettify">
-    <n-form-item label="Your code">
+  <c-card :title="t('tools.css-js-prettify-minify.texts.title-prettify')">
+    <n-form-item :label="t('tools.css-js-prettify-minify.texts.label-your-code')">
       <c-input-text
         v-model:value="prettifyInput"
-        placeholder="Paste your code to prettify..."
+        :placeholder="t('tools.css-js-prettify-minify.texts.placeholder-paste-your-code-to-prettify')"
         rows="10"
         multiline
         monospace
         raw-text
       />
     </n-form-item>
-    <n-form-item label="Prettified code">
+    <n-form-item :label="t('tools.css-js-prettify-minify.texts.label-prettified-code')">
       <TextareaCopyable :value="prettifyOutput" :language="selectedLanguage" />
     </n-form-item>
   </c-card>
 
-  <c-card title="Minify" mt-5>
-    <n-form-item label="Your code">
+  <c-card :title="t('tools.css-js-prettify-minify.texts.title-minify')" mt-5>
+    <n-form-item :label="t('tools.css-js-prettify-minify.texts.label-your-code')">
       <c-input-text
         v-model:value="minifyInput"
-        placeholder="Paste your code to minify..."
+        :placeholder="t('tools.css-js-prettify-minify.texts.placeholder-paste-your-code-to-minify')"
         rows="10"
         multiline
         monospace
         raw-text
       />
     </n-form-item>
-    <n-form-item label="Minified code">
+    <n-form-item :label="t('tools.css-js-prettify-minify.texts.label-minified-code')">
       <TextareaCopyable :value="minifyOutput" :language="selectedLanguage" />
     </n-form-item>
   </c-card>

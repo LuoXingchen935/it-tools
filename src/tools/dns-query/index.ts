@@ -1,9 +1,10 @@
+import { translate as t } from '@/plugins/i18n.plugin';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
-  name: 'Cloudflare DNS/RDAP Queries',
+  name: t('tools.dns-query.title'),
   path: '/dns-query',
-  description: 'Query DNS records and RDAP for any domain name online using Cloudflare DNS/RDAP.org.',
+  description: t('tools.dns-query.description'),
   keywords: [
     'dns',
     'query',
