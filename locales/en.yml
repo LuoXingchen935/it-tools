@@ -4685,6 +4685,26 @@ tools:
       placeholder-your-url-to-parse: Your url to parse...
       url-must-have-http-or-https-prefix: Url must have http:// or https:// prefix
       button-open-url: Open URL
+  keyboard-tester:
+    instructions:
+      highlight: Pressed keys will be highlighted
+      press: Press any key on your keyboard to test it
+      reset: Click the "Reset" button to clear test records
+      tested: Tested keys will be shown in green
+      title: Instructions
+    keys: Keys
+    layout: 'Keyboard Layout:'
+    legend:
+      pressed: Pressed
+      tested: Tested
+      untested: Untested
+    progress: Test Progress
+    reset: Reset
+    size: 'Keyboard Size:'
+    sizes:
+      '60': 60% Compact
+      full: Full Size (100%)
+      tkl: TKL (80%)
   text-to-binary:
     title: Text to UTF-8 binary
     description: Convert text to its UTF-8 binary representation and vice-versa.
