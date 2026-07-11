@@ -184,6 +184,7 @@ tools:
       label-denied-characters-ie-visually-similar-oo01li-or-punctuations: Denied Characters (ie, visually similar { oO01lI } or punctuations)
       placeholder-put-characters-to-deny-from-token: Put characters to deny from token
       label-number-of-token-to-generate: Number of token to generate
+      label-allow-ambiguous-characters: Allows Visually Ambigous Characters
   percentage-calculator:
     title: Percentage calculator
     description: >-
