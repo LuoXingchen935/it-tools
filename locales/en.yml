@@ -9010,6 +9010,22 @@ tools:
       label-to: 'To:'
       label-start-at: 'Start at:'
       tag-cron-expression-is-invalid: Cron expression is invalid
+      paste-cron-expression: Paste Cron Expression
+      e-g-5-0-12-1-2025: e.g. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Sunday=0, Monday=1, ..., Saturday=6)
+      label-select-at-least-one-value: '{0}: select at least one value'
+      day-of-month-and-day-of-week-cannot-both-be-specific: Day of Month and Day of Week cannot both be specific
+      label-start-cannot-be-greater-than-end: '{0}: start cannot be greater than end'
+      label-start-must-be-within-allowed-range: '{0}: start must be within allowed range'
+      label-step-must-be-greater-than-1: '{0}: step must be >= 1'
+      label-start-cannot-be-greater-than-end-0: '{0}: start cannot be greater than end'
+      seconds: Seconds
+      minutes: Minutes
+      hours: Hours
+      day-of-month: Day of Month
+      month: Month
+      day-of-week: Day of Week
+      year: Year
   css-js-prettify-minify:
     title: CSS/JS Prettify & Minify
     description: Prettify or minify your CSS and JavaScript code online.
