@@ -952,6 +952,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: أدخل رقم IBAN للتحقق من صحته...
       title-valid-iban-examples: أمثلة على رقم IBAN صالح
       placeholder-enter-ibans-to-check-for-validity: أدخل رقم IBAN لكل سطر للتحقق من صحته
+      bank-name: اسم البنك
+      account-number: رقم الحساب
+      branch-identifier: معرّف الفرع
+      bank-identifier: معرّف البنك
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: لا يُسمح بـ QR-IBAN
@@ -8807,6 +8812,22 @@ tools:
       label-to: "ل:"
       label-start-at: "ابدأ من:"
       tag-cron-expression-is-invalid: تعبير Cron غير صالح
+      paste-cron-expression: لصق تعبير Cron
+      e-g-5-0-12-1-2025: "مثال: */5 0 12 * * 1 2025"
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (الأحد=0، الاثنين=1، ...، السبت=6)
+      label-select-at-least-one-value: "{0}: حدد قيمة واحدة على الأقل"
+      day-of-month-and-day-of-week-cannot-both-be-specific: لا يمكن تحديد كل من يوم الشهر ويوم الأسبوع بشكل دقيق
+      label-start-cannot-be-greater-than-end: "{0}: لا يمكن أن تكون قيمة البداية أكبر من قيمة النهاية"
+      label-start-must-be-within-allowed-range: "{0}: يجب أن تكون نقطة البداية ضمن النطاق المسموح به"
+      label-step-must-be-greater-than-1: "{0}: يجب أن تكون الخطوة أكبر من أو تساوي 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: لا يمكن أن تكون قيمة البداية أكبر من قيمة النهاية"
+      seconds: ثوانٍ
+      minutes: دقائق
+      hours: ساعات
+      day-of-month: يوم من الشهر
+      month: شهر
+      day-of-week: يوم من أيام الأسبوع
+      year: سنة
   css-js-prettify-minify:
     title: تنسيق وتصغير ملفات CSS/JS
     description: قم بتنسيق أو تصغير كود CSS و JavaScript الخاص بك عبر الإنترنت.
@@ -9316,6 +9337,27 @@ tools:
       tag-copy-json-paths: انسخ مسارات JSON
       tag-generate-patch: إنشاء رقعة
       tag-apply-patch: قم بتطبيق التصحيح
+  ping:
+    title: بينغ
+    description: قم بإجراء اختبار اتصال (ping) لمجموعة من أسماء المضيفين أو عناوين
+      IP أو نطاقات عناوين IP (CIDR)
+    externalAccess: تستدعي هذه الأداة خدمة أدوات الشبكة ذاتية الاستضافة الخاصة بك
+      لإجراء اختبارات ICMP ping.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "الأهداف (عناوين IP/CIDRs/أسماء المضيفين، واحد لكل سطر أو ، أو ؛):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "عدد:"
+      label-timeout-seconds: "المهلة الزمنية (بالثواني):"
+      tag-ping-all: إرسال إشارة للجميع
+      tag-target: هدف
+      tag-ip: الملكية الفكرية
+      tag-status: حالة
+      tag-avg-rtt-ms: متوسط زمن الاستجابة (بالمللي ثانية)
+      tag-packet-loss: فقدان الحزم
+      tag-error: خطأ
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: يتوسع نطاق CIDR إلى {0} عنوان IP، متجاوزًا الحد الأقصى البالغ {1}
+      tag-reachable: يمكن الوصول إليه
+      tag-unreachable: غير قابل للوصول
 spanCopyable:
   copy: نسخ إلى الحافظة
   copied: تم النسخ!

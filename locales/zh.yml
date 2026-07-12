@@ -5459,6 +5459,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: 输入要验证的IBAN...
       title-valid-iban-examples: 有效IBAN示例
       placeholder-enter-ibans-to-check-for-validity: 每行输入一个 IBAN 来检查有效性
+      bank-name: 银行名称
+      account-number: 帐号
+      branch-identifier: 分支标识符
+      bank-identifier: 银行识别码
+      bic: 百因
     service:
       text:
         qr-iban-not-allowed: 不允许QR-IBAN
@@ -8563,6 +8568,22 @@ tools:
       label-to: 到：
       label-start-at: 从这里开始：
       tag-cron-expression-is-invalid: 定时任务表达式无效
+      paste-cron-expression: 粘贴 Cron 表达式
+      e-g-5-0-12-1-2025: 例如：*/5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6（星期日=0，星期一=1，……，星期六=6）
+      label-select-at-least-one-value: "{0}：至少选择一个值"
+      day-of-month-and-day-of-week-cannot-both-be-specific: 月份中的日期和星期几不能同时是具体的。
+      label-start-cannot-be-greater-than-end: "{0}：起始点不能大于结束点"
+      label-start-must-be-within-allowed-range: "{0}：起始位置必须在允许的范围内"
+      label-step-must-be-greater-than-1: "{0}：步长必须大于等于 1"
+      label-start-cannot-be-greater-than-end-0: "{0}：起始点不能大于结束点"
+      seconds: 秒
+      minutes: 分钟
+      hours: 小时
+      day-of-month: 月份中的某一天
+      month: 月
+      day-of-week: 星期几
+      year: 年
   css-js-prettify-minify:
     title: CSS/JS 美化和压缩
     description: 在线美化或压缩您的 CSS 和 JavaScript 代码。
@@ -9063,6 +9084,25 @@ tools:
       tag-copy-json-paths: 复制 JSON 路径
       tag-generate-patch: 生成补丁
       tag-apply-patch: 贴片
+  ping:
+    title: 平
+    description: ping 一组主机名、IP 地址、CIDR 或 IP 地址范围
+    externalAccess: 该工具会调用您的自托管网络实用程序服务来执行 ICMP ping 操作。
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: 目标地址（IP/CIDR/主机名，每行一个，或使用逗号、分号或分号）：
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: 数数：
+      label-timeout-seconds: 超时时间（秒）：
+      tag-ping-all: 全部
+      tag-target: 目标
+      tag-ip: IP
+      tag-status: 地位
+      tag-avg-rtt-ms: 平均往返时间（毫秒）
+      tag-packet-loss: 丢包
+      tag-error: 错误
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR 扩展到 {0} 个 IP 地址，超过了 {1} 个 IP 地址的限制。
+      tag-reachable: 可达
+      tag-unreachable: 无法连接
 collapsibleToolMenu:
   text:
     expanding: 正在扩展……

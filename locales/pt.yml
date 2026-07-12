@@ -5722,6 +5722,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Digite um IBAN para verificar a validade...
       title-valid-iban-examples: Exemplos de IBAN válidos
       placeholder-enter-ibans-to-check-for-validity: Insira um IBAN por linha para verificar a validade
+      bank-name: Nome do banco
+      account-number: Número de conta
+      branch-identifier: Identificador da filial
+      bank-identifier: Identificador bancário
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN não permitido
@@ -9025,6 +9030,22 @@ tools:
       label-to: "Para:"
       label-start-at: "Comece em:"
       tag-cron-expression-is-invalid: A expressão Cron é inválida.
+      paste-cron-expression: Expressão Cron de Pasta
+      e-g-5-0-12-1-2025: "Exemplo: */5 0 12 * * 1 2025"
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Domingo=0, Segunda-feira=1, ..., Sábado=6)
+      label-select-at-least-one-value: "{0}: selecione pelo menos um valor"
+      day-of-month-and-day-of-week-cannot-both-be-specific: O dia do mês e o dia da semana não podem ser ambos específicos.
+      label-start-cannot-be-greater-than-end: "{0}: o início não pode ser maior que o fim"
+      label-start-must-be-within-allowed-range: "{0}: o início deve estar dentro do intervalo permitido"
+      label-step-must-be-greater-than-1: "{0}: o passo deve ser >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: o início não pode ser maior que o fim"
+      seconds: Segundos
+      minutes: Minutos
+      hours: Horas
+      day-of-month: Dia do mês
+      month: Mês
+      day-of-week: Dia da semana
+      year: Ano
   css-js-prettify-minify:
     title: Formatar e minimizar CSS/JS
     description: Formate ou minimize seu código CSS e JavaScript online.
@@ -9542,6 +9563,26 @@ tools:
       tag-copy-json-paths: Copiar caminhos JSON
       tag-generate-patch: Gerar patch
       tag-apply-patch: Aplicar remendo
+  ping:
+    title: Ping
+    description: Faça ping em um conjunto de nomes de host, IPs, CIDR ou intervalos de IP.
+    externalAccess: Esta ferramenta utiliza o serviço Self Host Network Utilities
+      para realizar pings ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Alvos (IPs/CIDRs/Nomes de host, um por linha ou , ou ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Contar:"
+      label-timeout-seconds: "Tempo limite (em segundos):"
+      tag-ping-all: Ping All
+      tag-target: Alvo
+      tag-ip: IP
+      tag-status: Status
+      tag-avg-rtt-ms: Tempo médio de ida e volta (ms)
+      tag-packet-loss: Perda de pacotes
+      tag-error: Erro
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: O CIDR expande para {0} IPs, excedendo o limite de {1}
+      tag-reachable: Acessível
+      tag-unreachable: Inalcançável
 spanCopyable:
   copy: Copiar para a área de transferência
   copied: Copiado!

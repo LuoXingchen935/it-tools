@@ -2907,6 +2907,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Entrez un iban pour vérifier la validité…
       title-valid-iban-examples: Exemples Iban valides
       placeholder-enter-ibans-to-check-for-validity: Saisissez un IBAN par ligne pour vérifier la validité
+      bank-name: Nom de la banque
+      account-number: Numéro de compte
+      branch-identifier: Identifiant de la succursale
+      bank-identifier: Identifiant bancaire
+      bic: BIC
     title: VALIDATEUR IBAN et PARSER
   ical-generator:
     description: Générer un fichier ical / ics à partir de l'événement infos
@@ -9301,6 +9306,23 @@ tools:
       label-to: "À:"
       label-start-at: "Commencez par :"
       tag-cron-expression-is-invalid: L'expression Cron est invalide.
+      paste-cron-expression: Coller l'expression Cron
+      e-g-5-0-12-1-2025: "Par exemple : */5 0 12 * * 1 2025"
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Dimanche=0, Lundi=1, ..., Samedi=6)
+      label-select-at-least-one-value: "{0} : sélectionnez au moins une valeur"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Le jour du mois et le jour
+        de la semaine ne peuvent pas être tous deux spécifiques.
+      label-start-cannot-be-greater-than-end: "{0} : le début ne peut pas être supérieur à la fin"
+      label-start-must-be-within-allowed-range: "{0} : le début doit se situer dans la plage autorisée"
+      label-step-must-be-greater-than-1: "{0} : l'étape doit être >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0} : le début ne peut pas être supérieur à la fin"
+      seconds: Secondes
+      minutes: Minutes
+      hours: Heures
+      day-of-month: Jour du mois
+      month: Mois
+      day-of-week: Jour de la semaine
+      year: Année
   css-js-prettify-minify:
     title: Amélioration et minification CSS/JS
     description: Embellissez ou minifiez votre code CSS et JavaScript en ligne.
@@ -9817,6 +9839,27 @@ tools:
       tag-copy-json-paths: Copier les chemins JSON
       tag-generate-patch: Générer un patch
       tag-apply-patch: Appliquer le patch
+  ping:
+    title: Ping
+    description: Effectuer un ping sur un ensemble de noms d'hôtes, d'adresses IP,
+      de CIDR ou de plages d'adresses IP
+    externalAccess: Cet outil fait appel à votre service d'utilitaires réseau
+      auto-hébergé pour effectuer des requêtes ping ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Cibles (adresses IP/CIDR/noms d'hôte, une par ligne ou , ou ;) :"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Compter:"
+      label-timeout-seconds: "Délai d'attente (secondes) :"
+      tag-ping-all: Ping All
+      tag-target: Cible
+      tag-ip: IP
+      tag-status: Statut
+      tag-avg-rtt-ms: RTT moyen (ms)
+      tag-packet-loss: Perte de paquets
+      tag-error: Erreur
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR s'étend à {0} adresses IP, dépassant la limite de {1}
+      tag-reachable: Accessible
+      tag-unreachable: Injoignable
 favoriteButton:
   add: Ajouter aux favoris
   remove: Retirer des favoris

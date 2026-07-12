@@ -943,6 +943,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Inserisci un IBAN per verificarne la validità...
       title-valid-iban-examples: Esempi di IBAN validi
       placeholder-enter-ibans-to-check-for-validity: Inserisci un IBAN per riga per verificarne la validità
+      bank-name: Nome della banca
+      account-number: Numero di conto
+      branch-identifier: Identificatore della filiale
+      bank-identifier: Identificativo bancario
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN non consentito
@@ -9051,6 +9056,24 @@ tools:
       label-to: "A:"
       label-start-at: "Inizia da:"
       tag-cron-expression-is-invalid: L'espressione Cron non è valida.
+      paste-cron-expression: Incolla l'espressione Cron
+      e-g-5-0-12-1-2025: ad esempio */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (domenica=0, lunedì=1, ..., sabato=6)
+      label-select-at-least-one-value: "{0}: seleziona almeno un valore"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Non è possibile
+        specificare contemporaneamente il giorno del mese e il giorno della
+        settimana.
+      label-start-cannot-be-greater-than-end: "{0}: l'inizio non può essere maggiore della fine"
+      label-start-must-be-within-allowed-range: "{0}: l'inizio deve essere entro l'intervallo consentito"
+      label-step-must-be-greater-than-1: "{0}: il passo deve essere >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: l'inizio non può essere maggiore della fine"
+      seconds: secondi
+      minutes: Minuti
+      hours: Ore
+      day-of-month: Giorno del mese
+      month: Mese
+      day-of-week: Giorno della settimana
+      year: Anno
   css-js-prettify-minify:
     title: CSS/JS Abbellisci e minimizza
     description: Formatta o minimizza il tuo codice CSS e JavaScript online.
@@ -9568,6 +9591,27 @@ tools:
       tag-copy-json-paths: Copia i percorsi JSON
       tag-generate-patch: Genera patch
       tag-apply-patch: Applicare la patch
+  ping:
+    title: Ping
+    description: Eseguire un ping su un insieme di nomi host, indirizzi IP, CIDR o
+      intervalli IP.
+    externalAccess: Questo strumento richiama il servizio Utilità di rete Self Host
+      per eseguire ping ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Destinazioni (IP/CIDR/Nomi host, uno per riga o , o ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Contare:"
+      label-timeout-seconds: "Timeout (secondi):"
+      tag-ping-all: Ping All
+      tag-target: Bersaglio
+      tag-ip: IP
+      tag-status: Stato
+      tag-avg-rtt-ms: Tempo di raddoppio medio (ms)
+      tag-packet-loss: Perdita di pacchetti
+      tag-error: Errore
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR si espande a {0} IP, superando il limite di {1}
+      tag-reachable: Raggiungibile
+      tag-unreachable: Irraggiungibile
 about:
   alltools-title: Tutti gli strumenti {toolsCount}
   tools:

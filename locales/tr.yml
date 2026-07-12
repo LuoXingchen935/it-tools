@@ -5900,6 +5900,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Geçerliliğini kontrol etmek için bir IBAN girin...
       title-valid-iban-examples: Geçerli IBAN örnekleri
       placeholder-enter-ibans-to-check-for-validity: Geçerliliğini kontrol etmek için satır başına bir IBAN girin
+      bank-name: Banka Adı
+      account-number: Hesap Numarası
+      branch-identifier: Şube Tanımlayıcısı
+      bank-identifier: Banka Tanımlayıcısı
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN'a izin verilmiyor
@@ -8960,6 +8965,22 @@ tools:
       label-to: "İle:"
       label-start-at: "Başlangıç noktası:"
       tag-cron-expression-is-invalid: Cron ifadesi geçersiz.
+      paste-cron-expression: Cron İfadesini Yapıştır
+      e-g-5-0-12-1-2025: örneğin */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Pazar=0, Pazartesi=1, ..., Cumartesi=6)
+      label-select-at-least-one-value: "{0}: en az bir değer seçin"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Ayın günü ve haftanın günü aynı anda belirli olamaz.
+      label-start-cannot-be-greater-than-end: "{0}: başlangıç bitişten büyük olamaz"
+      label-start-must-be-within-allowed-range: "{0}: başlangıç izin verilen aralıkta olmalıdır"
+      label-step-must-be-greater-than-1: "{0}: adım 1'den büyük veya eşit olmalıdır"
+      label-start-cannot-be-greater-than-end-0: "{0}: başlangıç bitişten büyük olamaz"
+      seconds: Saniyeler
+      minutes: Dakikalar
+      hours: Saat
+      day-of-month: Ayın Günü
+      month: Ay
+      day-of-week: Haftanın Günü
+      year: Yıl
   css-js-prettify-minify:
     title: CSS/JS Güzelleştirme ve Küçültme
     description: CSS ve JavaScript kodunuzu çevrimiçi olarak daha şık hale getirin
@@ -9477,6 +9498,29 @@ tools:
       tag-copy-json-paths: JSON yollarını kopyala
       tag-generate-patch: Yama oluştur
       tag-apply-patch: Yama uygulayın
+  ping:
+    title: Ping
+    description: Bir dizi ana bilgisayar adını, IP adresini, CIDR'yi veya IP
+      aralığını pingleyin.
+    externalAccess: Bu araç, ICMP ping'leri gerçekleştirmek için Self Host Network
+      Utilities Service'inizi çağırır.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Hedefler (IP
+        adresleri/CIDR'ler/Ana bilgisayar adları, her satırda bir tane veya ,
+        veya ;) ):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Saymak:"
+      label-timeout-seconds: "Zaman aşımı (saniye):"
+      tag-ping-all: Tümünü pingle
+      tag-target: Hedef
+      tag-ip: IP
+      tag-status: Durum
+      tag-avg-rtt-ms: Ortalama RTT (ms)
+      tag-packet-loss: Paket Kaybı
+      tag-error: Hata
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR, {1} sınırını aşarak {0} IP adresine genişliyor.
+      tag-reachable: Ulaşılabilir
+      tag-unreachable: Ulaşılamaz
 about:
   alltools-title: Tüm {toolsCount} Araç
   tools:

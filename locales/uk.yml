@@ -957,6 +957,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Введіть IBAN, щоб перевірити його дійсність...
       title-valid-iban-examples: Дійсні приклади IBAN
       placeholder-enter-ibans-to-check-for-validity: Введіть IBAN у кожен рядок, щоб перевірити його дійсність
+      bank-name: Назва банку
+      account-number: Номер рахунку
+      branch-identifier: Ідентифікатор відділення
+      bank-identifier: Ідентифікатор банку
+      bic: БІК
     service:
       text:
         qr-iban-not-allowed: QR-IBAN не дозволено
@@ -8967,6 +8972,22 @@ tools:
       label-to: "До:"
       label-start-at: "Початок о:"
       tag-cron-expression-is-invalid: Cron-вираз недійсний
+      paste-cron-expression: Вставити вираз Cron
+      e-g-5-0-12-1-2025: наприклад */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (неділя=0, понеділок=1, ..., субота=6)
+      label-select-at-least-one-value: "{0}: виберіть принаймні одне значення"
+      day-of-month-and-day-of-week-cannot-both-be-specific: День місяця та день тижня не можуть одночасно бути конкретними
+      label-start-cannot-be-greater-than-end: "{0}: початок не може бути більшим за кінець"
+      label-start-must-be-within-allowed-range: "{0}: початок має бути в межах дозволеного діапазону"
+      label-step-must-be-greater-than-1: "{0}: крок має бути >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: початок не може бути більшим за кінець"
+      seconds: Секунди
+      minutes: Хвилини
+      hours: Години
+      day-of-month: День місяця
+      month: Місяць
+      day-of-week: День тижня
+      year: Рік
   css-js-prettify-minify:
     title: CSS/JS Прикрашання та мінімізація
     description: Прикрашайте або мінімізуйте свій CSS та JavaScript код онлайн.
@@ -9479,6 +9500,26 @@ tools:
       tag-copy-json-paths: Копіювати шляхи JSON
       tag-generate-patch: Згенерувати патч
       tag-apply-patch: Нанести патч
+  ping:
+    title: Пінг
+    description: Здійснити ping набору імен хостів, IP-адрес, CIDR або діапазону IP-адрес
+    externalAccess: Цей інструмент викликає службу Self Host Network Utilities для
+      виконання запитів ICMP ping.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Цілі (IP-адреси/CIDR/імена хостів, по одній на рядок або , або ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Кількість:"
+      label-timeout-seconds: "Тайм-аут (секунди):"
+      tag-ping-all: Пінгувати все
+      tag-target: Ціль
+      tag-ip: ІП
+      tag-status: Статус
+      tag-avg-rtt-ms: Середній час очікування (мс)
+      tag-packet-loss: Втрата пакетів
+      tag-error: Помилка
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR розширюється до {0} IP-адрес, перевищуючи ліміт у {1}
+      tag-reachable: Досяжний
+      tag-unreachable: Недосяжний
 spanCopyable:
   copy: Копіювати в буфер обміну
   copied: Скопійовано!

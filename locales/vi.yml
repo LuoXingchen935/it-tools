@@ -968,6 +968,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Nhập IBAN để kiểm tra tính hợp lệ...
       title-valid-iban-examples: Ví dụ IBAN hợp lệ
       placeholder-enter-ibans-to-check-for-validity: Nhập IBAN theo từng dòng để kiểm tra tính hợp lệ
+      bank-name: Tên ngân hàng
+      account-number: Số tài khoản
+      branch-identifier: Mã định danh chi nhánh
+      bank-identifier: Mã định danh ngân hàng
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: Không được phép sử dụng QR-IBAN
@@ -8932,6 +8937,23 @@ tools:
       label-to: "ĐẾN:"
       label-start-at: "Bắt đầu từ:"
       tag-cron-expression-is-invalid: Biểu thức Cron không hợp lệ
+      paste-cron-expression: Dán biểu thức Cron
+      e-g-5-0-12-1-2025: "ví dụ: */5 0 12 * * 1 2025"
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Chủ nhật=0, Thứ hai=1, ..., Thứ bảy=6)
+      label-select-at-least-one-value: "{0}: chọn ít nhất một giá trị"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Ngày trong tháng và ngày
+        trong tuần không thể cùng lúc được chỉ định cụ thể.
+      label-start-cannot-be-greater-than-end: "{0}: bắt đầu không thể lớn hơn kết thúc"
+      label-start-must-be-within-allowed-range: "{0}: điểm bắt đầu phải nằm trong phạm vi cho phép"
+      label-step-must-be-greater-than-1: "{0}: bước phải lớn hơn hoặc bằng 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: bắt đầu không thể lớn hơn kết thúc"
+      seconds: Giây
+      minutes: Phút
+      hours: Giờ
+      day-of-month: Ngày trong tháng
+      month: Tháng
+      day-of-week: Ngày trong tuần
+      year: Năm
   css-js-prettify-minify:
     title: Làm đẹp và thu nhỏ CSS/JS
     description: Làm đẹp hoặc thu nhỏ mã CSS và JavaScript của bạn trực tuyến.
@@ -9445,6 +9467,27 @@ tools:
       tag-copy-json-paths: Sao chép đường dẫn JSON
       tag-generate-patch: Tạo bản vá
       tag-apply-patch: Áp dụng miếng vá
+  ping:
+    title: Ping
+    description: Ping một tập hợp các tên máy chủ, địa chỉ IP, CIDR hoặc dải địa chỉ IP.
+    externalAccess: Công cụ này gọi Dịch vụ Tiện ích Mạng Tự lưu trữ của bạn để thực
+      hiện các lệnh ping ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Các mục tiêu (Địa chỉ
+        IP/CIDR/Tên máy chủ, mỗi dòng một mục hoặc , hoặc ;) :"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Đếm:"
+      label-timeout-seconds: "Thời gian chờ (giây):"
+      tag-ping-all: Thông báo cho tất cả
+      tag-target: Mục tiêu
+      tag-ip: Địa chỉ IP
+      tag-status: Trạng thái
+      tag-avg-rtt-ms: Thời gian khứ hồi trung bình (ms)
+      tag-packet-loss: Mất gói tin
+      tag-error: Lỗi
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR mở rộng thành {0} địa chỉ IP, vượt quá giới hạn {1}
+      tag-reachable: Có thể liên lạc được
+      tag-unreachable: Không thể liên lạc được
 spanCopyable:
   copy: Sao chép vào bảng tạm
   copied: Đã sao chép!

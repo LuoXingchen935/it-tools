@@ -5719,6 +5719,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Wprowadź numer IBAN, aby sprawdzić jego poprawność...
       title-valid-iban-examples: Przykłady prawidłowych numerów IBAN
       placeholder-enter-ibans-to-check-for-validity: Wprowadź numer IBAN w każdym wierszu, aby sprawdzić jego poprawność
+      bank-name: Nazwa banku
+      account-number: Numer konta
+      branch-identifier: Identyfikator oddziału
+      bank-identifier: Identyfikator banku
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: Kod QR-IBAN nie jest dozwolony
@@ -8984,6 +8989,22 @@ tools:
       label-to: "Do:"
       label-start-at: "Zacznij od:"
       tag-cron-expression-is-invalid: Wyrażenie cron jest nieprawidłowe
+      paste-cron-expression: Wklej wyrażenie Cron
+      e-g-5-0-12-1-2025: np. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (niedziela=0, poniedziałek=1, ..., sobota=6)
+      label-select-at-least-one-value: "{0}: wybierz co najmniej jedną wartość"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Dzień miesiąca i dzień tygodnia nie mogą być jednocześnie konkretne
+      label-start-cannot-be-greater-than-end: "{0}: początek nie może być większy od końca"
+      label-start-must-be-within-allowed-range: "{0}: początek musi mieścić się w dozwolonym zakresie"
+      label-step-must-be-greater-than-1: "{0}: krok musi być >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: początek nie może być większy od końca"
+      seconds: Towary drugiej jakości
+      minutes: Protokół
+      hours: Godziny
+      day-of-month: Dzień miesiąca
+      month: Miesiąc
+      day-of-week: Dzień tygodnia
+      year: Rok
   css-js-prettify-minify:
     title: CSS/JS Upiększ i pomniejsz
     description: Upiększ lub zminimalizuj swój kod CSS i JavaScript online.
@@ -9495,6 +9516,26 @@ tools:
       tag-copy-json-paths: Kopiuj ścieżki JSON
       tag-generate-patch: Wygeneruj łatkę
       tag-apply-patch: Zastosuj łatkę
+  ping:
+    title: Świst
+    description: Pingowanie zestawu nazw hostów, adresów IP, CIDR lub zakresu adresów IP
+    externalAccess: To narzędzie wywołuje usługę Self Host Network Utilities Service
+      w celu wykonania poleceń ping ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Cele (adresy IP/CIDR/nazwy hostów, jeden na wiersz lub , lub ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&google.com&10.0.0.0/24
+      label-count: "Liczyć:"
+      label-timeout-seconds: "Limit czasu (sekundy):"
+      tag-ping-all: Pinguj wszystkich
+      tag-target: Cel
+      tag-ip: IP
+      tag-status: Status
+      tag-avg-rtt-ms: Średni RTT (ms)
+      tag-packet-loss: Utrata pakietów
+      tag-error: Błąd
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR rozszerza się do {0} adresów IP, przekraczając limit {1}
+      tag-reachable: Dostępny
+      tag-unreachable: Nieosiągalny
 favoriteButton:
   remove: Usuń z ulubionych
   add: Dodaj do ulubionych

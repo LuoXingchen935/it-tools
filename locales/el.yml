@@ -5905,6 +5905,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Εισαγάγετε ένα IBAN για να ελέγξετε την εγκυρότητα...
       title-valid-iban-examples: Έγκυρα παραδείγματα IBAN
       placeholder-enter-ibans-to-check-for-validity: Εισαγάγετε ένα IBAN ανά γραμμή για να ελέγξετε την εγκυρότητα
+      bank-name: Όνομα Τράπεζας
+      account-number: Αριθμός Λογαριασμού
+      branch-identifier: Αναγνωριστικό υποκαταστήματος
+      bank-identifier: Αναγνωριστικό Τράπεζας
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: Δεν επιτρέπεται το QR-IBAN
@@ -9224,6 +9229,23 @@ tools:
       label-to: "Να:"
       label-start-at: "Έναρξη από:"
       tag-cron-expression-is-invalid: Η έκφραση Cron δεν είναι έγκυρη
+      paste-cron-expression: Επικόλληση έκφρασης Cron
+      e-g-5-0-12-1-2025: π.χ. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Κυριακή=0, Δευτέρα=1, ..., Σάββατο=6)
+      label-select-at-least-one-value: "{0}: επιλέξτε τουλάχιστον μία τιμή"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Η ημέρα του μήνα και η
+        ημέρα της εβδομάδας δεν μπορούν να είναι και οι δύο συγκεκριμένες
+      label-start-cannot-be-greater-than-end: "{0}: η αρχή δεν μπορεί να είναι μεγαλύτερη από το τέλος"
+      label-start-must-be-within-allowed-range: "{0}: η έναρξη πρέπει να βρίσκεται εντός του επιτρεπόμενου εύρους"
+      label-step-must-be-greater-than-1: "{0}: το βήμα πρέπει να είναι >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: η αρχή δεν μπορεί να είναι μεγαλύτερη από το τέλος"
+      seconds: Δευτερόλεπτα
+      minutes: Πρακτικά
+      hours: Ώρες
+      day-of-month: Ημέρα του μήνα
+      month: Μήνας
+      day-of-week: Ημέρα της εβδομάδας
+      year: Ετος
   css-js-prettify-minify:
     title: CSS/JS Prettify & Minify
     description: Ομορφύνετε ή ελαχιστοποιήστε τον κώδικα CSS και JavaScript σας στο
@@ -9746,6 +9768,26 @@ tools:
       tag-copy-json-paths: Αντιγραφή διαδρομών JSON
       tag-generate-patch: Δημιουργία ενημέρωσης κώδικα
       tag-apply-patch: Εφαρμογή έμπλαστρου
+  ping:
+    title: Πινγκ
+    description: Ping σε ένα σύνολο ονομάτων κεντρικού υπολογιστή, IP, CIDR ή εύρους IP
+    externalAccess: Αυτό το εργαλείο καλεί την υπηρεσία Self Host Network Utilities
+      για να εκτελέσει ping ICMP.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Στόχοι (IP/CIDR/Ονόματα κεντρικού υπολογιστή, ένα ανά γραμμή ή , ή ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Κόμης:"
+      label-timeout-seconds: "Χρονικό όριο (δευτερόλεπτα):"
+      tag-ping-all: Ping σε όλα
+      tag-target: Στόχος
+      tag-ip: Πνευματική Ιδιοκτησία
+      tag-status: Κατάσταση
+      tag-avg-rtt-ms: Μέσος χρόνος RTT (ms)
+      tag-packet-loss: Απώλεια πακέτων
+      tag-error: Σφάλμα
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: Το CIDR επεκτείνεται σε {0} IP, υπερβαίνοντας το όριο των {1}
+      tag-reachable: Προσβάσιμο
+      tag-unreachable: Απρόσιτος
 collapsibleToolMenu:
   text:
     expanding: Επέκταση...

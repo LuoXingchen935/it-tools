@@ -921,6 +921,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Indtast et IBAN for at kontrollere gyldigheden...
       title-valid-iban-examples: Eksempler på gyldige IBAN-nummer
       placeholder-enter-ibans-to-check-for-validity: Indtast et IBAN-nummer pr. linje for at kontrollere gyldigheden
+      bank-name: Bankens navn
+      account-number: Kontonummer
+      branch-identifier: Filialidentifikator
+      bank-identifier: Bankidentifikator
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN ikke tilladt
@@ -8878,6 +8883,22 @@ tools:
       label-to: "Til:"
       label-start-at: "Start ved:"
       tag-cron-expression-is-invalid: Cron-udtrykket er ugyldigt
+      paste-cron-expression: Indsæt Cron-udtryk
+      e-g-5-0-12-1-2025: f.eks. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (søndag=0, mandag=1, ..., lørdag=6)
+      label-select-at-least-one-value: "{0}: vælg mindst én værdi"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Månedens dag og ugedag kan ikke begge være specifikke
+      label-start-cannot-be-greater-than-end: "{0}: start må ikke være større end slut"
+      label-start-must-be-within-allowed-range: "{0}: Start skal være inden for det tilladte område"
+      label-step-must-be-greater-than-1: "{0}: trin skal være >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: start må ikke være større end slut"
+      seconds: Sekunder
+      minutes: Minutter
+      hours: Timer
+      day-of-month: Månedens dag
+      month: Måned
+      day-of-week: Ugedag
+      year: År
   css-js-prettify-minify:
     title: CSS/JS Forskøn og minimer
     description: Forskøn eller minimer din CSS- og JavaScript-kode online.
@@ -9390,6 +9411,26 @@ tools:
       tag-copy-json-paths: Kopiér JSON-stier
       tag-generate-patch: Generer programrettelse
       tag-apply-patch: Påfør programrettelse
+  ping:
+    title: Ping
+    description: Ping et sæt værtsnavne, IP'er, CIDR eller IP-interval
+    externalAccess: Dette værktøj kalder din Self Host Network Utilities Service for
+      at udføre ICMP-pings.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Mål (IP'er/CIDR'er/værtsnavne, én pr. linje eller , eller ;)):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Tælle:"
+      label-timeout-seconds: "Timeout (sekunder):"
+      tag-ping-all: Ping alle
+      tag-target: Mål
+      tag-ip: IP-adresse
+      tag-status: Status
+      tag-avg-rtt-ms: Gennemsnitlig RTT (ms)
+      tag-packet-loss: Pakketab
+      tag-error: Fejl
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR udvides til {0} IP-adresser og overskrider dermed grænsen på {1}
+      tag-reachable: Tilgængelig
+      tag-unreachable: Uopnåelig
 about:
   alltools-title: Alle {toolsCount} værktøjer
   tools:

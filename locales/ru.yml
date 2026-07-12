@@ -970,6 +970,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Введите IBAN для проверки действительности...
       title-valid-iban-examples: Действительные примеры IBAN
       placeholder-enter-ibans-to-check-for-validity: Введите IBAN в каждой строке для проверки действительности.
+      bank-name: Название банка
+      account-number: Номер счета
+      branch-identifier: Идентификатор филиала
+      bank-identifier: Банковский идентификатор
+      bic: БИК
     service:
       text:
         qr-iban-not-allowed: QR-IBAN не допускается
@@ -9007,6 +9012,22 @@ tools:
       label-to: "К:"
       label-start-at: "Начните с:"
       tag-cron-expression-is-invalid: Выражение Cron недействительно.
+      paste-cron-expression: Вставить выражение Cron
+      e-g-5-0-12-1-2025: например, */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (воскресенье = 0, понедельник = 1, ..., суббота = 6)
+      label-select-at-least-one-value: "{0}: выберите хотя бы одно значение"
+      day-of-month-and-day-of-week-cannot-both-be-specific: День месяца и день недели не могут быть одновременно и конкретными.
+      label-start-cannot-be-greater-than-end: "{0}: начало не может быть больше конца"
+      label-start-must-be-within-allowed-range: "{0}: начало должно находиться в допустимом диапазоне"
+      label-step-must-be-greater-than-1: "{0}: шаг должен быть >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: начало не может быть больше конца"
+      seconds: Секунды
+      minutes: Протокол
+      hours: Часы
+      day-of-month: День месяца
+      month: Месяц
+      day-of-week: День недели
+      year: Год
   css-js-prettify-minify:
     title: Улучшение и минимизация CSS/JS
     description: Улучшайте или минимизируйте свой CSS и JavaScript код онлайн.
@@ -9527,6 +9548,28 @@ tools:
       tag-copy-json-paths: Скопировать пути JSON
       tag-generate-patch: Сгенерировать патч
       tag-apply-patch: Применить патч
+  ping:
+    title: Пинг
+    description: Проверьте доступность набора имен хостов, IP-адресов, CIDR или
+      диапазона IP-адресов, отправив ping-запрос.
+    externalAccess: Этот инструмент вызывает службу сетевых утилит вашего локального
+      сервера для выполнения ICMP-пингов.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Целевые адреса
+        (IP-адреса/CIDR-адреса/имена хостов, по одному на строку или , или ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Считать:"
+      label-timeout-seconds: "Время ожидания (секунды):"
+      tag-ping-all: Пинг всех
+      tag-target: Цель
+      tag-ip: IP
+      tag-status: Статус
+      tag-avg-rtt-ms: Среднее время отклика (мс)
+      tag-packet-loss: Потеря пакетов
+      tag-error: Ошибка
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR расширяется до {0} IP-адресов, превышая лимит {1}.
+      tag-reachable: Доступный
+      tag-unreachable: Недостижимый
 spanCopyable:
   copy: Копировать в буфер обмена
   copied: Скопировано!

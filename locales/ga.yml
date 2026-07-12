@@ -1048,6 +1048,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Cuir isteach IBAN chun bailíocht a sheiceáil...
       title-valid-iban-examples: Samplaí bailí IBAN
       placeholder-enter-ibans-to-check-for-validity: Cuir isteach IBAN in aghaidh gach líne chun bailíocht a sheiceáil
+      bank-name: Ainm an Bhainc
+      account-number: Uimhir Chuntais
+      branch-identifier: Aitheantóir Brainse
+      bank-identifier: Aitheantóir Bainc
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: Ní cheadaítear QR-IBAN
@@ -9062,6 +9067,22 @@ tools:
       label-to: "Chuig:"
       label-start-at: "Tosaigh ag:"
       tag-cron-expression-is-invalid: Tá an abairt Cron neamhbhailí
+      paste-cron-expression: Greamaigh an Léiriú Cron
+      e-g-5-0-12-1-2025: m.sh. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Dé Domhnaigh=0, Dé Luain=1, ..., Dé Sathairn=6)
+      label-select-at-least-one-value: "{0}: roghnaigh luach amháin ar a laghad"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Ní féidir le Lá na Míosa agus Lá na Seachtaine a bheith sonrach araon
+      label-start-cannot-be-greater-than-end: "{0}: ní féidir leis an tús a bheith níos mó ná an deireadh"
+      label-start-must-be-within-allowed-range: "{0}: ní mór don tús a bheith laistigh den raon ceadaithe"
+      label-step-must-be-greater-than-1: "{0}: ní mór don chéim a bheith >= 1"
+      label-start-cannot-be-greater-than-end-0: "{0}: ní féidir leis an tús a bheith níos mó ná an deireadh"
+      seconds: Soicindí
+      minutes: Nóiméid
+      hours: Uaireanta
+      day-of-month: Lá na Míosa
+      month: Mí
+      day-of-week: Lá na Seachtaine
+      year: Bliain
   css-js-prettify-minify:
     title: CSS/JS Áilleachtú & Laghdaigh
     description: Déan do chód CSS agus JavaScript a mhaisiú nó a laghdú ar líne.
@@ -9578,6 +9599,28 @@ tools:
       tag-copy-json-paths: Cóipeáil cosáin JSON
       tag-generate-patch: Gin paiste
       tag-apply-patch: Cuir paiste i bhfeidhm
+  ping:
+    title: Ping
+    description: Ping sraith d'ainmneacha óstacha, IPanna, CIDR nó raon IP
+    externalAccess: Glaonn an uirlis seo ar do Sheirbhís Fóntais Líonra Féinóstach
+      chun pings ICMP a dhéanamh.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Spriocanna
+        (IPanna/CIDRanna/Ainmneacha Óstacha, ceann amháin in aghaidh na líne nó
+        , nó ;)):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&google.com&10.0.0.0/24
+      label-count: "Líon:"
+      label-timeout-seconds: "Am críochnaithe (soicindí):"
+      tag-ping-all: Ping Uile
+      tag-target: Sprioc
+      tag-ip: IP
+      tag-status: Stádas
+      tag-avg-rtt-ms: Meán-RTT (ms)
+      tag-packet-loss: Caillteanas Pacáiste
+      tag-error: Earráid
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: Leathnaíonn CIDR go dtí {0} IPanna, ag sárú teorainn {1}
+      tag-reachable: Inrochtana
+      tag-unreachable: Do-shroichte
 locale-selector:
   select-a-language: Roghnaigh teanga
 collapsibleToolMenu:

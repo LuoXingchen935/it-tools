@@ -913,6 +913,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Voer een IBAN in om de geldigheid ervan te controleren...
       title-valid-iban-examples: Geldige IBAN-voorbeelden
       placeholder-enter-ibans-to-check-for-validity: Voer per regel een IBAN in om de geldigheid te controleren
+      bank-name: Banknaam
+      account-number: Rekeningnummer
+      branch-identifier: Vestigingsidentificatie
+      bank-identifier: Bankidentificatie
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN niet toegestaan
@@ -8970,6 +8975,23 @@ tools:
       label-to: "Naar:"
       label-start-at: "Begin bij:"
       tag-cron-expression-is-invalid: De Cron-expressie is ongeldig.
+      paste-cron-expression: Plak de Cron-expressie
+      e-g-5-0-12-1-2025: bijv. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (zondag=0, maandag=1, ..., zaterdag=6)
+      label-select-at-least-one-value: "{0}: selecteer ten minste één waarde"
+      day-of-month-and-day-of-week-cannot-both-be-specific: De dag van de maand en de
+        dag van de week kunnen niet allebei specifiek zijn.
+      label-start-cannot-be-greater-than-end: "{0}: start mag niet groter zijn dan end"
+      label-start-must-be-within-allowed-range: "{0}: start moet binnen het toegestane bereik liggen"
+      label-step-must-be-greater-than-1: "{0}: stap moet >= 1 zijn"
+      label-start-cannot-be-greater-than-end-0: "{0}: start mag niet groter zijn dan end"
+      seconds: Seconden
+      minutes: Notulen
+      hours: Uren
+      day-of-month: Dag van de maand
+      month: Maand
+      day-of-week: Dag van de week
+      year: Jaar
   css-js-prettify-minify:
     title: CSS/JS Opmaak & Minimalisatie
     description: Verklein of minimaliseer je CSS- en JavaScript-code online.
@@ -9483,6 +9505,28 @@ tools:
       tag-copy-json-paths: Kopieer JSON-paden
       tag-generate-patch: Patch genereren
       tag-apply-patch: Plak de patch
+  ping:
+    title: Ping
+    description: Ping een set hostnamen, IP-adressen, CIDR-waarden of een IP-bereik.
+    externalAccess: Deze tool roept uw Self Host Network Utilities Service aan om
+      ICMP-pings uit te voeren.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Doelwitten (IP-adressen/CIDR's/hostnamen, één per regel of , of ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Graaf:"
+      label-timeout-seconds: "Time-out (seconden):"
+      tag-ping-all: Ping alles
+      tag-target: Doel
+      tag-ip: IP
+      tag-status: Status
+      tag-avg-rtt-ms: Gemiddelde RTT (ms)
+      tag-packet-loss: Pakketverlies
+      tag-error: Fout
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips:
+        CIDR wordt uitgebreid naar {0} IP-adressen, waarmee de limiet van {1}
+        wordt overschreden.
+      tag-reachable: Bereikbaar
+      tag-unreachable: Niet bereikbaar
 about:
   alltools-title: Alle {toolsCount}-hulpmiddelen
   tools:

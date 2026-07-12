@@ -1023,6 +1023,11 @@ tools:
       placeholder-enter-an-iban-to-check-for-validity: Geben Sie eine IBAN ein, um die Gültigkeit zu prüfen...
       title-valid-iban-examples: Gültige IBAN-Beispiele
       placeholder-enter-ibans-to-check-for-validity: Geben Sie pro Zeile eine IBAN ein, um die Gültigkeit zu prüfen
+      bank-name: Name der Bank
+      account-number: Kontonummer
+      branch-identifier: Filialkennung
+      bank-identifier: Bankleitzahl
+      bic: BIC
     service:
       text:
         qr-iban-not-allowed: QR-IBAN nicht zulässig
@@ -9187,6 +9192,22 @@ tools:
       label-to: "Zu:"
       label-start-at: "Beginnen Sie bei:"
       tag-cron-expression-is-invalid: Der Cron-Ausdruck ist ungültig.
+      paste-cron-expression: Cron-Ausdruck einfügen
+      e-g-5-0-12-1-2025: z.B. */5 0 12 * * 1 2025
+      0-6-sunday-0-monday-1-saturday-6: 0-6 (Sonntag=0, Montag=1, ..., Samstag=6)
+      label-select-at-least-one-value: "{0}: Wählen Sie mindestens einen Wert aus"
+      day-of-month-and-day-of-week-cannot-both-be-specific: Es können nicht beide Tage des Monats und Wochentage angegeben werden.
+      label-start-cannot-be-greater-than-end: "{0}: Der Startwert darf nicht größer als der Endwert sein."
+      label-start-must-be-within-allowed-range: "{0}: Der Startwert muss innerhalb des zulässigen Bereichs liegen."
+      label-step-must-be-greater-than-1: "{0}: Schrittweite muss >= 1 sein"
+      label-start-cannot-be-greater-than-end-0: "{0}: Der Startwert darf nicht größer als der Endwert sein."
+      seconds: Sekunden
+      minutes: Minuten
+      hours: Std
+      day-of-month: Tag des Monats
+      month: Monat
+      day-of-week: Wochentag
+      year: Jahr
   css-js-prettify-minify:
     title: CSS/JS-Formatierung und -Minifizierung
     description: Verschönern oder minimieren Sie Ihren CSS- und JavaScript-Code online.
@@ -9702,6 +9723,28 @@ tools:
       tag-copy-json-paths: JSON-Pfade kopieren
       tag-generate-patch: Patch generieren
       tag-apply-patch: Patch anwenden
+  ping:
+    title: Klingeln
+    description: Eine Gruppe von Hostnamen, IPs, CIDRs oder IP-Adressbereichen anpingen
+    externalAccess: Dieses Tool ruft Ihren Self Host Network Utilities Service auf,
+      um ICMP-Pings durchzuführen.
+    texts:
+      label-targets-ips-cidrs-hostnames-one-per-line-or-or: "Ziele (IPs/CIDRs/Hostnamen, eines pro Zeile oder , oder ;):"
+      placeholder-192-168-1-1-10-google-com-10-10-0-0-0-24: 192.168.1.1&#10;google.com&#10;10.0.0.0/24
+      label-count: "Zählen:"
+      label-timeout-seconds: "Zeitüberschreitung (Sekunden):"
+      tag-ping-all: Ping All
+      tag-target: Ziel
+      tag-ip: IP
+      tag-status: Status
+      tag-avg-rtt-ms: Durchschnittliche RTT (ms)
+      tag-packet-loss: Paketverlust
+      tag-error: Fehler
+      cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips:
+        CIDR erweitert sich auf {0} IPs und überschreitet damit das Limit von
+        {1}.
+      tag-reachable: Erreichbar
+      tag-unreachable: Nicht erreichbar
 locale-selector:
   select-a-language: Wählen Sie eine Sprache
 collapsibleToolMenu:
