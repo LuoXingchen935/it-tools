@@ -18,17 +18,19 @@ import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 
+import fs from 'node:fs';
+import fg from 'fast-glob';
+import Sitemap from 'vite-plugin-sitemap';
+
 import { visualizer } from 'rollup-plugin-visualizer';
 
 const baseUrl = process.env.BASE_URL || '/';
+const hostname = process.env.HOSTNAME;
 
 // Locales are code-split: only en is bundled eagerly, the rest become lazy chunks fetched on
 // first use (see src/plugins/i18n.plugin.ts). VITE_AVAILABLE_LOCALES filters the locales
 // offered at runtime instead of trimming the build.
-const includeLocales = [
-  resolve(__dirname, 'src/tools/*/locales/**'),
-  resolve(__dirname, 'locales/**'),
-];
+const includeLocales = [resolve(__dirname, 'src/tools/*/locales/**'), resolve(__dirname, 'locales/**')];
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -67,15 +69,16 @@ export default defineConfig({
         // tool chunk and WASM binary (~160 MB) on first visit; hashed assets are
         // cached on demand as tools are opened. Set VITE_PWA_FULL_PRECACHE=true to
         // restore full offline precaching of everything.
-        globPatterns: (process.env.VITE_PWA_FULL_PRECACHE === 'true' && !process.env.VITE_VERCEL_DEPLOY)
-          ? ['**\/*.{js,wasm,css,html}']
-          : ['**\/*.{css,html}'],
+        globPatterns:
+          process.env.VITE_PWA_FULL_PRECACHE === 'true' && !process.env.VITE_VERCEL_DEPLOY
+            ? ['**\/*.{js,wasm,css,html}']
+            : ['**\/*.{css,html}'],
         maximumFileSizeToCacheInBytes: 25 * 1024 ** 2,
         navigateFallback: `${baseUrl}index.html`,
         runtimeCaching: [
           {
-            urlPattern: ({ sameOrigin, request }) => sameOrigin
-              && (request.destination === 'script' || request.destination === 'worker'),
+            urlPattern: ({ sameOrigin, request }) =>
+              sameOrigin && (request.destination === 'script' || request.destination === 'worker'),
             handler: 'CacheFirst',
             options: {
               cacheName: 'app-chunks',
@@ -142,6 +145,29 @@ export default defineConfig({
     nodePolyfills(),
     wasm(),
     visualizer(),
+    hostname
+      ? Sitemap({
+          hostname,
+          generateRobotsTxt: true,
+          robots: [{ userAgent: '*', allow: '/' }],
+          dynamicRoutes: (() => {
+            const paths = ['/', '/about'];
+            fg.sync('src/tools/*/index.ts').forEach((file) => {
+              const content = fs.readFileSync(file, 'utf-8');
+              const pathMatch = content.match(/path:\s*['"`]([^'"`]+)['"`]/);
+              if (pathMatch) {
+                paths.push(pathMatch[1]);
+              }
+              const redirectMatch = content.match(/redirectFrom:\s*\[([^\]]+)\]/);
+              if (redirectMatch?.[1]) {
+                const redirectPaths = redirectMatch[1].match(/['"`]([^'"`]+)['"`]/g);
+                redirectPaths?.forEach((p) => paths.push(p.replace(/['"`]/g, '')));
+              }
+            });
+            return paths;
+          })(),
+        })
+      : undefined,
   ],
   base: baseUrl,
   resolve: {
@@ -149,12 +175,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'node:fs/promises': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
       'node:fs': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
-      'fs': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
+      fs: fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
       '@babel/core': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
       'isolated-vm': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
       'onnxruntime-node': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
       'unpdf/pdfjs': fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
-      'webcrypto-liner-shim': !process.env.VERCEL ? 'webcrypto-liner-shim' : fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
+      'webcrypto-liner-shim': !process.env.VERCEL
+        ? 'webcrypto-liner-shim'
+        : fileURLToPath(new URL('./src/_empty.ts', import.meta.url)),
     },
   },
   define: {
@@ -197,7 +225,16 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['isolated-vm', '@lezer/highlight', 'pdfjs-dist', 'onnxruntime-node', 'onnxruntime-web', 'unpdf', 'unpdf/pdfjs', ...(process.env.VERCEL ? ['webcrypto-liner-shim'] : [])], // optionally specify dependency name
+    include: [
+      'isolated-vm',
+      '@lezer/highlight',
+      'pdfjs-dist',
+      'onnxruntime-node',
+      'onnxruntime-web',
+      'unpdf',
+      'unpdf/pdfjs',
+      ...(process.env.VERCEL ? ['webcrypto-liner-shim'] : []),
+    ], // optionally specify dependency name
   },
   // server: {
   // headers: {
