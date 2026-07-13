@@ -9047,12 +9047,12 @@ tools:
     description: 允许编辑和构建带有查询参数的 URL
     externalAccess: 无效的
     texts:
-      label-string: 细绳
+      label-string: 字符串
       label-number: 数字
       label-boolean: 布尔值
       label-date: 日期
       label-datetime: 日期时间
-      label-array: 大批
+      label-array: 数组
       label-load-url: 加载网址：
       placeholder-paste-url-to-parse: 粘贴 URL 进行解析
       label-base-url: 基本网址：
