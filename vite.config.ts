@@ -236,11 +236,11 @@ export default defineConfig({
       ...(process.env.VERCEL ? ['webcrypto-liner-shim'] : []),
     ], // optionally specify dependency name
   },
-  // server: {
-  // headers: {
-  //   'Cross-Origin-Resource-Policy': 'same-site',
-  //   'Cross-Origin-Opener-Policy': 'same-origin',
-  //   'Cross-Origin-Embedder-Policy': 'require-corp',
-  // },
-  // },
+  server: {
+    headers: {
+      //   'Cross-Origin-Resource-Policy': 'same-site',
+      'Cross-Origin-Opener-Policy': 'same-origin',
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+    },
+  },
 });
