@@ -126,7 +126,7 @@ update(defaultUnit.value);
       </c-link>
     </n-space>
     <n-input-group v-for="[key, { title, unit }] in filteredUnits" :key="key" mb-3 w-full>
-      <n-input-group-label :style="{ width: labelWidth }">
+      <n-input-group-label :style="{ minWidth: labelWidth }">
         {{ title }}
       </n-input-group-label>
 
