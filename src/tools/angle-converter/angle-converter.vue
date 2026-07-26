@@ -2,12 +2,12 @@
 import UnitsConverter from '@/components/UnitsConverter.vue';
 
 const supportedUnits = {
-  deg: 'degree (°)',
-  rad: 'radian',
-  turn: 'turn',
-  gradian: 'gradian',
-  grad: 'grad',
-  gon: 'gon',
+  deg: { value: 'degree (°)', label: 'degree (°)' },
+  rad: { value: 'radian', label: 'radian' },
+  turn: { value: 'turn', label: 'turn' },
+  gradian: { value: 'gradian', label: 'gradian' },
+  grad: { value: 'grad', label: 'grad' },
+  gon: { value: 'gon', label: 'gon' },
 };
 </script>
 
