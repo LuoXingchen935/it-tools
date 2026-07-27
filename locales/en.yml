@@ -9574,6 +9574,24 @@ tools:
       cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR expands to {0} IPs, exceeding limit of {1}
       tag-reachable: Reachable
       tag-unreachable: Unreachable
+  command-palette:
+    store:
+      texts:
+        pages: Pages
+        learn-more-about-it-tools: Learn more about IT-Tools.
+        actions-0: Actions
+        report-a-bug-or-an-issue-to-help-improve-it-tools: Report a bug or an issue to help improve it-tools.
+        report-a-bug-or-an-issue: Report a bug or an issue
+        view-the-source-code-of-it-tools-on-github: View the source code of it-tools on Github.
+        external: External
+        github-repository: Github repository
+        actions: Actions
+        toggle-dark-mode-on-or-off: Toggle dark mode on or off.
+        toggle-dark-mode: Toggle dark mode
+        tools-0: Tools
+        get-a-random-tool-from-the-list: Get a random tool from the list.
+        random-tool: Random tool
+        tools: Tools
 collapsibleToolMenu:
   text:
     expanding: Expanding...
