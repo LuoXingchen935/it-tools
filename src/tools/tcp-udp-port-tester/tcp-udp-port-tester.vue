@@ -151,6 +151,7 @@ onBeforeUnmount(() => {
     <div mb-1>
       <details mb-2 v-if="!hasFixedConfig">
         <summary mb-1>
+          ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
           {{ t('tools.tcp-udp-port-tester.texts.tag-websocket-tcp-udp-bridge-configuration') }}
         </summary>
         <c-input-text

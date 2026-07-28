@@ -186,7 +186,10 @@ async function generateBatch() {
 <template>
   <div>
     <details mb-2 v-if="!hasFixedConfig">
-      <summary>{{ t('tools.html-to-pdf.texts.tag-html-to-pdf-service-configuration-self-hosted') }}</summary>
+      <summary>
+        ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
+        {{ t('tools.html-to-pdf.texts.tag-html-to-pdf-service-configuration-self-hosted') }}
+      </summary>
       <n-card>
         <NFormItem :label="t('tools.html-to-pdf.texts.label-html-to-pdf-service-url')" label-placement="top">
           <NInput

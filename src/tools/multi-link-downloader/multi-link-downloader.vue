@@ -38,7 +38,10 @@ const clearInput = () => {
 <template>
   <c-card>
     <details v-if="!hasFixedConfig">
-      <summary>{{ t('tools.short-urls-expander.texts.cors-anywhere-configuration') }}</summary>
+      <summary>
+        ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
+        {{ t('tools.short-urls-expander.texts.cors-anywhere-configuration') }}
+      </summary>
       <n-card>
         <c-input-text
           v-model:value="corsAnywhereUrl"

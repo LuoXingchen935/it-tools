@@ -179,6 +179,7 @@ async function runPropagation() {
   <div>
     <details v-if="!hasFixedConfig" mb-2>
       <summary>
+        ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
         {{ t('tools.dns-propagation-tester.texts.tag-network-utilities-service-configuration-self-hosted') }}
       </summary>
       <n-card>

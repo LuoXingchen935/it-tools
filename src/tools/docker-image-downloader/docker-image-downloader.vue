@@ -109,6 +109,7 @@ async function downloadImage() {
     <NForm label-width="120px" label-placement="left">
       <details mb-2 v-if="!hasFixedConfig">
         <summary>
+          ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
           {{ t('tools.docker-image-downloader.texts.tag-docker-image-download-service-configuration-self-hosted') }}
         </summary>
         <n-card>

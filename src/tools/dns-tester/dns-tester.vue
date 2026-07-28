@@ -262,7 +262,10 @@ const labelProps = {
 <template>
   <div style="min-height: 80vh">
     <details v-if="!hasFixedConfig" mb-2>
-      <summary>{{ t('tools.dns-tester.texts.tag-network-utilities-service-configuration-self-hosted') }}</summary>
+      <summary>
+        ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
+        {{ t('tools.dns-tester.texts.tag-network-utilities-service-configuration-self-hosted') }}
+      </summary>
       <n-card>
         <NFormItem :label="t('tools.dns-tester.texts.label-network-utilities-service-url')" label-placement="top">
           <NInput

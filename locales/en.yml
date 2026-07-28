@@ -9592,6 +9592,7 @@ tools:
         get-a-random-tool-from-the-list: Get a random tool from the list.
         random-tool: Random tool
         tools: Tools
+  external-self-hosted-required: External Self Hosted Required
 collapsibleToolMenu:
   text:
     expanding: Expanding...

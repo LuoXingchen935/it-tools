@@ -156,7 +156,10 @@ async function runPingBatch() {
 <template>
   <div>
     <details v-if="!hasFixedConfig" mb-2>
-      <summary>{{ t('tools.https-tester.texts.tag-network-utilities-service-configuration-self-hosted') }}</summary>
+      <summary>
+        ⚠ {{ t('tools.external-self-hosted-required') }} ⚠ -
+        {{ t('tools.https-tester.texts.tag-network-utilities-service-configuration-self-hosted') }}
+      </summary>
       <n-card>
         <NFormItem :label="t('tools.https-tester.texts.label-network-utilities-service-url')" label-placement="top">
           <NInput
