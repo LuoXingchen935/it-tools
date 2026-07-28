@@ -1374,6 +1374,13 @@ tools:
   angle-converter:
     title: कोण इकाई कनवर्टर
     description: कोण इकाइयों के बीच मानों को परिवर्तित करें
+    texts:
+      label-degree: डिग्री (°)
+      label-radian: कांति
+      label-turn: मोड़
+      label-gradian: ग्रेडियन
+      label-grad: डिग्री
+      label-gon: गोन
   ansible-vault-crypt-decrypt:
     title: Ansible vault crypt decrypt
     description: Ansible Vault Secrets को एन्क्रिप्ट और डिक्रिप्ट करें
@@ -1419,6 +1426,32 @@ tools:
   area-converter:
     title: क्षेत्रफल इकाई परिवर्तक
     description: क्षेत्रफल इकाइयों के बीच मानों को परिवर्तित करें
+    texts:
+      label-square-meter: वर्ग मीटर
+      label-square-petameter: वर्ग पेटामीटर
+      label-square-terameter: वर्ग टेरामीटर
+      label-square-gigameter: वर्ग गीगामीटर
+      label-square-megameter: वर्ग मेगामीटर
+      label-square-kilometer: वर्ग किलोमीटर
+      label-square-hectometer: वर्ग हेक्टोमीटर
+      label-square-decameter: वर्ग डेकामीटर
+      label-square-decimeter: वर्ग डेसीमीटर
+      label-square-centimeter: वर्ग सेंटीमीटर
+      label-square-millimeter: वर्ग मिलीमीटर
+      label-square-micrometer: वर्ग माइक्रोमीटर
+      label-square-nanometer: वर्ग नैनोमीटर
+      label-square-picometer: वर्ग पिकोमीटर
+      label-square-femtometer: वर्गाकार फेमटोमीटर
+      label-acre: एकड़
+      label-centiare: एक पैसा होना
+      label-deciare: ठान ले
+      label-are: हैं
+      label-decare: डिकेयर
+      label-hectare: हैक्टर
+      label-square-foot-ft2-sq-ft: वर्ग फुट (/ft2/sq ft)
+      label-square-inch-in2-sq-in: वर्ग इंच (/in2/sq in)
+      label-square-yard-yd2-sq-yd: वर्ग गज (yd2/sq yd)
+      label-square-mile-mi2-sq-mi: वर्ग मील (mi2/sq mi)
   aspect-ratio-calculator:
     title: आस्पेक्ट रेशियो कैलकुलेटर
     description: इमेज का आकार बदलते समय आयामों की जांच करने के लिए इस अनुपात
@@ -2087,6 +2120,37 @@ tools:
   energy-converter:
     title: ऊर्जा इकाई परिवर्तक
     description: ऊर्जा इकाइयों के बीच मानों को परिवर्तित करें
+    texts:
+      label-joule: जौल
+      label-petajoule: पेटजूल
+      label-terajoule: टेराजूल
+      label-gigajoule: गीगाजूल
+      label-megajoule: मेगाजूल
+      label-kilojoule: किलो जूल
+      label-hectojoule: हेक्टोजूल
+      label-decajoule: डेकाजूल
+      label-decijoule: डेसीजूल
+      label-centijoule: सेंटीजूल
+      label-millijoule: मिलीजूल
+      label-microjoule: माइक्रोजूल
+      label-nanojoule: नैनोजूल
+      label-picojoule: पिको जूल
+      label-femtojoule: फेम्टोजूल
+      label-watt-hour: वाट घंटे
+      label-petawatt-hour: पेटावाट-घंटा
+      label-terawatt-hour: टेरावाट घंटे
+      label-gigawatt-hour: गीगावाट घंटे
+      label-megawatt-hour: मेगावाट घंटे
+      label-kilowatt-hour: किलोवाट्ट घन्ता
+      label-hectowatt-hour: हेक्टोवाट-घंटा
+      label-decawatt-hour: डेकावॉट-घंटा
+      label-deciwatt-hour: डेसीवॉट-घंटा
+      label-centiwatt-hour: सेंटीवॉट-घंटा
+      label-milliwatt-hour: मिलीवाट-घंटा
+      label-microwatt-hour: माइक्रोवाट-घंटा
+      label-nanowatt-hour: नैनोवाट-घंटा
+      label-picowatt-hour: पिकोवॉट-घंटा
+      label-femtowatt-hour: फेम्टोवाट-घंटा
   file-hasher:
     title: फ़ाइल हैशर
     description: फ़ाइलों का हैश ज्ञात करें
@@ -2142,6 +2206,35 @@ tools:
   force-converter:
     title: बल इकाई परिवर्तक
     description: बल इकाइयों के बीच मानों को परिवर्तित करें
+    texts:
+      label-newton: न्यूटन
+      label-petanewton: पेटन्यूटन
+      label-teranewton: टेरान्यूटन
+      label-giganewton: गिगान्यूटन
+      label-meganewton: मेगान्यूटन
+      label-kilonewton: किलोन्यूटन
+      label-hectonewton: हेक्टोन्यूटन
+      label-decanewton: डेकान्यूटन
+      label-decinewton: डेसिन्यूटन
+      label-centinewton: सेंटीन्यूटन
+      label-millinewton: मिलेन्यूटन
+      label-micronewton: माइक्रोन्यूटन
+      label-nanonewton: नैनोन्यूटन
+      label-piconewton: पिकोन्यूटन
+      label-femtonewton: फेम्टोन्यूटन
+      label-dyne: डाएन
+      label-pound-of-force: बल का पाउंड
+      label-kip: रात बिताने का स्थान
+      label-klb: क्लब
+      label-kipf: किपफ
+      label-klbf: केएलबीएफ
+      label-poundal: पाउंड
+      label-kilogram-force: किलोग्राम बल
+      label-kilopond: किलोपोंड
+      label-megapond: मेगापोंड
+      label-tonne-force: टन-बल
+      label-metric-ton-force: मीट्रिक टन-बल
+      label-megagram-force: मेगाग्राम बल
   geo-distance-calculator:
     title: भौगोलिक दूरी कैलकुलेटर
     description: दो भौगोलिक स्थानों के बीच की दूरी की गणना करें (और उपयोगकर्ता के
@@ -2747,6 +2840,29 @@ tools:
   length-converter:
     title: लंबाई इकाई परिवर्तक
     description: लंबाई इकाइयों से मानों को परिवर्तित करें
+    texts:
+      label-meter: मीटर
+      label-petameter: पेटामीटर
+      label-terameter: टेरामीटर
+      label-gigameter: गीगामीटर
+      label-megameter: मेगामीटर
+      label-kilometer: किलोमीटर
+      label-hectometer: हेक्टोमीटर
+      label-decameter: दस मीटर
+      label-decimeter: मिटर का दशमांश
+      label-centimeter: सेंटीमीटर
+      label-millimeter: मिलीमीटर
+      label-micrometer: माइक्रोमीटर
+      label-nanometer: नैनोमीटर
+      label-picometer: पिकोमीटर
+      label-femtometer: फेम्टोमीटर
+      label-inch: इंच (")
+      label-yard: यार्ड
+      label-mile: मील
+      label-nautical-mile-m-nm: समुद्री मील (M/NM)
+      label-light-year: प्रकाश वर्ष
+      label-parsec: पारसेक
+      label-pica: छापे का पाइका नाप का अक्षर
   list-comparer:
     title: सूचियों की तुलना करें
     description: दो सूची मदों की तुलना करें
@@ -2838,6 +2954,35 @@ tools:
   mass-converter:
     title: द्रव्यमान इकाई परिवर्तक
     description: द्रव्यमान इकाइयों के बीच मानों को परिवर्तित करें
+    texts:
+      label-gram: ग्राम
+      label-petagram: पेटाग्राम
+      label-teragram: टेराग्राम
+      label-gigagram: गीगाग्राम
+      label-megagram: मेगाग्राम
+      label-kilogram: किलोग्राम
+      label-hectogram: हेक्टोग्रम
+      label-decagram: दशग्राम
+      label-decigram: दस ग्राम
+      label-centigram: सेंटीग्राम
+      label-milligram: मिलीग्राम
+      label-microgram: माइक्रोग्राम
+      label-nanogram: नैनोग्राम
+      label-picogram: पिकोग्राम
+      label-femtogram: फेम्टोग्राम
+      label-tonne: टन
+      label-metric-ton: मीट्रिक टन
+      label-kilotonne: किलोटन
+      label-megatonne: मेगाटन
+      label-gigatonne: गीगाटन
+      label-pound: पाउंड
+      label-stone: पत्थर
+      label-ounce: औंस
+      label-short-ton: छोटा टन
+      label-us-ton: अमेरिकी टन
+      label-long-ton: लंबा टन
+      label-imperial-ton: इंपीरियल टन
+      label-displacement-ton: विस्थापन टन
   math-formats-converter:
     title: गणित प्रारूप कनवर्टर
     description: गणितीय व्यंजकों को विभिन्न प्रारूपों के बीच परिवर्तित करें
@@ -3233,9 +3378,63 @@ tools:
   power-converter:
     title: पावर कनवर्टर
     description: पावर यूनिटों के बीच मानों को परिवर्तित करें
+    texts:
+      label-watt: वाट
+      label-petawatt: पेटवाट
+      label-terawatt: टेरावाट
+      label-gigawatt: गीगावाट
+      label-megawatt: मेगावाट
+      label-kilowatt: किलोवाट्ट
+      label-hectowatt: हैक्टोवाट
+      label-decawatt: डेकावाट
+      label-deciwatt: डेसीवॉट
+      label-centiwatt: सेंटीवाट
+      label-milliwatt: मिलीवाट
+      label-microwatt: माइक्रोवाट
+      label-nanowatt: नैनोवाट
+      label-picowatt: पिकोवॉट
+      label-femtowatt: फेम्टोवाट
+      label-horsepower: घोड़े की शक्ति
+      label-mechanical-horsepower: यांत्रिक हॉर्सपावर
   pressure-converter:
     title: दबाव इकाई कनवर्टर
     description: दबाव इकाइयों के बीच मानों को परिवर्तित करें
+    texts:
+      label-pascal: पास्कल
+      label-pettapascal: पेट्टापास्कल
+      label-terapascal: टेरापास्कल
+      label-gigapascal: गीगापास्कल
+      label-megapascal: मेगापास्कल
+      label-kilopascal: किलोपास्कल
+      label-hectopascal: हेक्टोपास्कल
+      label-decapascal: डेकापास्कल
+      label-decipascal: डेसीपास्कल
+      label-centipascal: सेंटीपास्कल
+      label-millipascal: मिलीपास्कल
+      label-micropascal: माइक्रोपास्कल
+      label-nanopascal: नैनोपास्कल
+      label-picopascal: पिकोपास्कल
+      label-femtopascal: फेम्टोपास्कल
+      label-bar: छड़
+      label-petabar: petabar
+      label-terabar: छितराया हुआ
+      label-gigabar: गीगाबार
+      label-megabar: मेगाबार
+      label-kilobar: किलोबार
+      label-hectobar: हेक्टोबार
+      label-decabar: मेरा सिर काट दिया गया था।
+      label-decibar: पढ़ना
+      label-centibar: सेंटीबार
+      label-millibar: मिलीबार
+      label-microbar: माइक्रोबार
+      label-nanobar: nanobar
+      label-picobar: पिकोबार
+      label-femtobar: फेमटोबार
+      label-torr: टॉर
+      label-millitorr: मिलिटोर
+      label-atmosphere: वायुमंडल
+      label-pound-per-square-inch: पाउंड प्रति वर्ग इंच
+      label-lbf-in2: पाउंड फुट/इंच2
   properties-to-yaml:
     title: YAML में प्रॉपर्टीज़
     description: जावा .properties फ़ाइल की सामग्री को YAML में परिवर्तित करें
@@ -3612,6 +3811,65 @@ tools:
   volume-converter:
     title: वॉल्यूम यूनिट कनवर्टर
     description: आयतन इकाइयों से मानों को परिवर्तित करें
+    texts:
+      label-cubic-meter-stere: घन मीटर/स्टीर
+      label-cubic-petameter: घन पेटामीटर
+      label-cubic-terameter: घन टेरामीटर
+      label-cubic-gigameter: घन गीगामीटर
+      label-cubic-megameter: घन मेगामीटर
+      label-cubic-kilometer: घन किलोमीटर
+      label-cubic-hectometer: घन हेक्टोमीटर
+      label-cubic-decameter: घन डेकामीटर
+      label-cubic-decimeter: घन डेसीमीटर
+      label-cubic-centimeter: घन सेंटीमीटर
+      label-cubic-millimeter: घन मिलीमीटर
+      label-cubic-micrometer: घन माइक्रोमीटर
+      label-cubic-nanometer: घन नैनोमीटर
+      label-cubic-picometer: घन पिकोमीटर
+      label-cubic-femtometer: घन फेमटोमीटर
+      label-liter: लीटर
+      label-petaliter: पेटलिटर
+      label-teraliter: टेरालीटर
+      label-gigaliter: गीगालीटर
+      label-megaliter: मेगालीटर
+      label-kiloliter: किलोलीटर
+      label-hectoliter: हेक्टोलिटर
+      label-decaliter: डेकालीटर
+      label-deciliter: एक लिटर का दशमांश
+      label-centiliter: सेंटीलीटर
+      label-milliliter: मिली लीटर
+      label-microliter: माइक्रोलीटर
+      label-nanoliter: नैनोलीटर
+      label-picoliter: पिकोलीटर
+      label-femtoliter: फेम्टोलिटर
+      label-cubic-mile: घन मील
+      label-acre-foot: एकड़ फुट
+      label-cubic-yard: घन गज
+      label-cubic-foot: घन फुट
+      label-board-feet: बोर्ड फीट
+      label-cubic-inch: घन इंच
+      label-measurement-ton: माप टन
+      label-imperial-barrel: शाही बैरल
+      label-imperial-bushel: शाही बुशेल
+      label-imperial-peck: शाही चोंच
+      label-imperial-gallon: इंपीरियल गैलन
+      label-imperial-quart: इंपीरियल क्वार्ट
+      label-imperial-pint: इंपीरियल पिंट
+      label-imperial-fluid-ounce: इंपीरियल फ्लूइड औंस
+      label-teaspoon: छोटी चम्मच
+      label-tablespoon: बड़ा चमचा
+      label-us-fluid-ounce: अमेरिकी द्रव औंस
+      label-cup: कप
+      label-us-legal-cup: यूएस लीगल कप
+      label-us-liquid-pint: अमेरिकी तरल पिंट
+      label-us-liquid-quart: अमेरिकी तरल क्वार्ट
+      label-us-liquid-gallon: अमेरिकी तरल गैलन
+      label-us-bushel: अमेरिकी बुशेल
+      label-us-peck: अमेरिकी पेक
+      label-us-dry-gallon: अमेरिकी शुष्क गैलन
+      label-us-dry-barrel: अमेरिकी शुष्क बैरल
+      label-us-dry-quart: अमेरिकी शुष्क क्वार्ट
+      label-us-dry-pint: अमेरिकी ड्राई पिंट
   week-number-converter:
     title: सप्ताह संख्या परिवर्तक
     description: आईएसओ सप्ताह संख्या, महीने की सप्ताह संख्या और तारीख की सप्ताह
@@ -5875,6 +6133,13 @@ tools:
       label-base64-64: बेस64 (64)
       placeholder-base64-version-will-be-here: Base64 संस्करण जल्द ही उपलब्ध होगा...
       tag-custom: "रिवाज़:"
+      label-space-separation: स्थान पृथक्करण
+      label-binary-size: बाइनरी आकार
+      label-octal-size: अष्टक आकार
+      label-decimal-size: दशमलव आकार
+      label-hexadecimal-size: हेक्स आकार
+      label-base64-size: बेस64 आकार
+      label-custom-size: प्रचलन आकार
     model:
       text:
         invalid-digit-digit-for-base-finalfrombase: आधार {1} के लिए अमान्य अंक "{0}"।
@@ -8210,6 +8475,9 @@ tools:
     title: त्वरण कनवर्टर
     description: त्वरण इकाइयों के बीच मानों को परिवर्तित करें
     externalAccess: व्यर्थ
+    texts:
+      label-g-force: जी बल
+      label-meter-per-second-squared: मीटर प्रति सेकंड वर्ग
   docker-image-downloader:
     title: डॉकर इमेज डाउनलोडर
     description: डॉकर रजिस्ट्री, आर्किटेक्चर और इमेज नाम दिए जाने पर डॉकर इमेज डाउनलोड करें
@@ -8280,6 +8548,16 @@ tools:
     title: फ्रिक्वेंसी परिवर्तक
     description: आवृत्ति इकाइयों के बीच मानों को परिवर्तित करें
     externalAccess: व्यर्थ
+    texts:
+      label-hertz: हेटर्स
+      label-millihertz: मिलीहर्ट्ज़
+      label-kilohertz: किलोहर्ट्ज
+      label-megahertz: मेगाहर्ट्ज़
+      label-gigahertz: गीगाहर्ट्ज़
+      label-terahertz: टेराहर्ट्ज़
+      label-revolutions-per-minute: क्रांतियों प्रति मिनट
+      label-degree-per-second: डिग्री प्रति सेकंड
+      label-radian-per-second: रेडियन प्रति सेकंड
   markdown-to-text:
     title: मार्कडाउन को टेक्स्ट में बदलें
     description: मार्कडाउन को सामान्य टेक्स्ट में बदलें
@@ -8352,6 +8630,12 @@ tools:
     title: स्पीड कन्वर्टर
     description: गति इकाइयों के बीच मानों को परिवर्तित करें
     externalAccess: व्यर्थ
+    texts:
+      label-meter-per-second: मीटर प्रति सेकंड
+      label-kilometer-per-hour: किलोमीटर प्रति घंटा
+      label-miles-per-hour: मील प्रति घंटे
+      label-knot: गाँठ
+      label-feet-per-second: फीट प्रति सेकंड
   tab-to-spaces:
     title: Tab बटन दबाकर Spaces पर जाएं
     description: टैब को एकाधिक स्पेस में बदलें
@@ -8417,6 +8701,44 @@ tools:
     title: आयतन प्रवाह दर कनवर्टर
     description: आयतन प्रवाह दर इकाइयों के बीच मानों को परिवर्तित करें
     externalAccess: व्यर्थ
+    texts:
+      label-cubic-millimeters-per-second: घन मिलीमीटर प्रति सेकंड
+      label-cubic-centimeters-per-second: घन सेंटीमीटर प्रति सेकंड
+      label-milliliters-per-second: मिलीलीटर प्रति सेकंड
+      label-centiliters-per-second: सेंटीलीटर प्रति सेकंड
+      label-deciliters-per-second: डेसीलिटर प्रति सेकंड
+      label-liters-per-second: लीटर प्रति सेकंड
+      label-liters-per-minute: लीटर प्रति मिनट
+      label-liters-per-hour: लीटर प्रति घंटा
+      label-kiloliters-per-second: किलोलीटर प्रति सेकंड
+      label-kiloliters-per-minute: किलोलीटर प्रति मिनट
+      label-kiloliters-per-hour: किलोलीटर प्रति घंटा
+      label-cubic-meters-per-second: घन मीटर प्रति सेकंड
+      label-cubic-meters-per-minute: घन मीटर प्रति मिनट
+      label-cubic-meters-per-hour: घन मीटर प्रति घंटा
+      label-cubic-kilometers-per-second: घन किलोमीटर प्रति सेकंड
+      label-teaspoons-per-second: प्रति सेकंड चम्मच
+      label-tablespoons-per-second: प्रति सेकंड बड़े चम्मच
+      label-cubic-inches-per-second: घन इंच प्रति सेकंड
+      label-cubic-inches-per-minute: घन इंच प्रति मिनट
+      label-cubic-inches-per-hour: घन इंच प्रति घंटा
+      label-fluid-ounces-per-second: प्रति सेकंड द्रव औंस
+      label-fluid-ounces-per-minute: प्रति मिनट द्रव औंस
+      label-fluid-ounces-per-hour: प्रति घंटे द्रव औंस
+      label-cups-per-second: कप प्रति सेकंड
+      label-pints-per-second: पिंट प्रति सेकंड
+      label-pints-per-minute: पिंट प्रति मिनट
+      label-pints-per-hour: पिंट प्रति घंटा
+      label-quarts-per-second: क्वार्ट प्रति सेकंड
+      label-gallons-per-second: गैलन प्रति सेकंड
+      label-gallons-per-minute: गैलन प्रति मिनट
+      label-gallons-per-hour: गैलन प्रति घंटा
+      label-cubic-feet-per-second: घन फीट प्रति सेकंड
+      label-cubic-feet-per-minute: घन फीट प्रति मिनट
+      label-cubic-feet-per-hour: घन फीट प्रति घंटा
+      label-cubic-yards-per-second: घन गज प्रति सेकंड
+      label-cubic-yards-per-minute: घन गज प्रति मिनट
+      label-cubic-yards-per-hour: घन गज प्रति घंटा
   calendar-converter:
     service:
       text:
@@ -9598,6 +9920,26 @@ tools:
       cidr-expands-to-hostcount-ips-exceeding-limit-of-max_cidr_ips: CIDR का विस्तार {0} IP तक हो गया है, जो {1} की सीमा से अधिक है।
       tag-reachable: पहुंच योग्य
       tag-unreachable: नहीं पहुंचा जा सकता
+  command-palette:
+    store:
+      texts:
+        pages: पृष्ठों
+        learn-more-about-it-tools: आईटी टूल्स के बारे में और अधिक जानें।
+        actions-0: कार्रवाई
+        report-a-bug-or-an-issue-to-help-improve-it-tools: आईटी टूल्स को बेहतर बनाने में
+          मदद करने के लिए किसी बग या समस्या की रिपोर्ट करें।
+        report-a-bug-or-an-issue: किसी बग या समस्या की रिपोर्ट करें
+        view-the-source-code-of-it-tools-on-github: it-tools का सोर्स कोड GitHub पर देखें।
+        external: बाहरी
+        github-repository: गिटहब रिपॉजिटरी
+        actions: कार्रवाई
+        toggle-dark-mode-on-or-off: डार्क मोड को चालू या बंद करें।
+        toggle-dark-mode: डार्क मोड चालू/बंद करें
+        tools-0: औजार
+        get-a-random-tool-from-the-list: सूची में से कोई भी टूल चुनें।
+        random-tool: यादृच्छिक उपकरण
+        tools: औजार
+  external-self-hosted-required: बाह्य स्व-होस्टेड आवश्यक है
 collapsibleToolMenu:
   text:
     expanding: विस्तार हो रहा है...
